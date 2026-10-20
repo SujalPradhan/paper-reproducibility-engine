@@ -1,4 +1,4 @@
-papers/*/data/
+papers/*/data/*
 !papers/*/data/README.md
 .venv/
 __pycache__/
