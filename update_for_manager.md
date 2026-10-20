@@ -10,7 +10,7 @@
 - **Reproduced:** 1 paper (the cancer meta-analysis, 6/6 claims).
 - **Partial:** 3 papers.
 - **Claims:** 11 reproduced, 9 partial, 4 not reproduced. No audit overrides.
-- **Why the misses happened:** each had a concrete cause, e.g. inconsistent Ns, wrong p-values, a reversed age effect, a software update silently dropping data.
+- **Why the misses happened:** each had a concrete cause, e.g. inconsistent Ns, wrong p-values, a reversed age effect, values truncated instead of rounded.
 
 **Also built:** 24 AI-lab eval tasks in CORE-Bench format.
 

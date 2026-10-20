@@ -345,7 +345,7 @@ def paper_page(content, p, prev_p, next_p, rows, stats):
     table = "".join(
         f'<tr><th scope="row"><b>{esc(r["label"])}</b><div class="muted">{esc(r["claim"])}</div></th>'
         f'<td class="num">{esc(r["paper_text"])}</td><td class="num">{esc(str(r["ours_value"])) if r["ours_value"] is not None else "not computed"}</td>'
-        f'<td class="num">{("±" + esc(str(r["tolerance"]))) if r["tolerance"] is not None else "—"}</td>'
+        f'<td class="num">{("±" + esc(format(Decimal(repr(r["tolerance"])).normalize(), "f"))) if r["tolerance"] is not None else "—"}</td>'
         f'<td>{badge(r["verdict"])}</td>'
         f'<td>{esc(claim_by_id[r["claim"]].get("notes") or claim_by_id[r["claim"]]["details"].get("reason", ""))}'
         f'<div class="muted">{esc(claim_by_id[r["claim"]].get("location") or "")}</div></td></tr>'

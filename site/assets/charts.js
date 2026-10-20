@@ -223,7 +223,7 @@
       var unit = /%/.test(r.paper_text) ? "%" : "";
       [
         { name: "Paper", display: r.paper_value, value: r.paper_value, fill: cssVar("--ink-2") },
-        { name: "Ours", display: r.ours_value, value: r.ours_value, fill: color(r.verdict) }
+        { name: "Ours", display: r.ours, value: r.ours_value, fill: color(r.verdict) }
       ].forEach(function (series) {
         var display = series.value === null || series.value === undefined ? "not computed" : String(series.display) + unit;
         y += wrapped(row, 0, y + 13, series.name + ": " + display, cellW, "t-ink").height + 2;

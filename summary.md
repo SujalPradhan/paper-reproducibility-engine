@@ -39,7 +39,7 @@ We screened 32 papers to find these. 8 passed the licence and data gate; 3 were 
 - standard errors that cannot produce the printed p-values;
 - a Discussion that contradicts its own table;
 - a decimal slip in a printed statistic;
-- in the salmon paper, a software update that silently drops midnight readings when the authors' own code is re-run today.
+- in the salmon paper, printing: some table values are truncated and others rounded. Separately, a software update now silently drops midnight readings when the authors' own code is re-run; it shifts model diagnostics but no graded number.
 
 ## Business value
 

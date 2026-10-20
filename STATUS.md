@@ -11,7 +11,7 @@ Live site: https://sujalpradhan.github.io/paper-reproducibility-engine/
 - All 4 papers reproduced **and audited**; no auditor overrides:
   - cam4-2024-hpd: Reproduced (6/6)
   - ee-2022-roedeer-sexratio: Partial (2 reproduced, 2 partial, 2 not)
-  - ee-2021-salmon-smr: Partial (3 reproduced, 3 partial; the cause is a date-parsing change that drops midnight readings)
+  - ee-2021-salmon-smr: Partial (3 reproduced, 3 partial; the paper truncates those three values. Separately, a date-parsing change drops midnight readings but moves no graded value)
   - hsr-2023-ei-happiness: Partial (4 partial, 2 not; age effect reverses)
 - Totals: 11 reproduced, 9 partial, 4 not reproduced of 24 claims
 - audit.md, summary.md, update_for_manager.md, tasks.md written
