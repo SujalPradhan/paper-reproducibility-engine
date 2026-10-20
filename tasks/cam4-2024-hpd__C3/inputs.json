@@ -1,0 +1,16 @@
+{
+  "dataset": {
+    "url": "https://doi.org/10.6084/m9.figshare.22256557",
+    "license": "CC BY 4.0",
+    "files": [
+      "updated_extracted_data_HPD_22.08.29.xlsx"
+    ]
+  },
+  "files": [
+    {
+      "name": "updated_extracted_data_HPD_22.08.29.xlsx",
+      "sha256": "6535d5b38afba2ea4473dea9abb29f00c819824f1ff2fa3cf56472da210b0f3a",
+      "bytes": 126259
+    }
+  ]
+}

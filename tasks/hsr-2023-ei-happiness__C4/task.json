@@ -1,0 +1,57 @@
+{
+  "field": "Medical Sciences",
+  "language": "Stata (gamma regression); R (GBRT)",
+  "capsule_title": "Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study",
+  "capsule_id": "hsr-2023-ei-happiness__C4",
+  "task_prompt": "Using only the paper (doi:10.1002/hsr2.1745) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the Exp(B), continuous stress-level perception score, in multiplicative ratio of mean happiness per 1 point of stress VAS behind the claim \"Higher perceived stress (VAS) was associated with significantly lower happiness\" (paper location: Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01').",
+  "results": [
+    {
+      "Report the Exp(B), continuous stress-level perception score, in multiplicative ratio of mean happiness per 1 point of stress VAS behind the claim \"Higher perceived stress (VAS) was associated with significantly lower happiness\" (paper location: Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01').": 0.986494
+    },
+    {
+      "Report the Exp(B), continuous stress-level perception score, in multiplicative ratio of mean happiness per 1 point of stress VAS behind the claim \"Higher perceived stress (VAS) was associated with significantly lower happiness\" (paper location: Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01').": 0.986494
+    },
+    {
+      "Report the Exp(B), continuous stress-level perception score, in multiplicative ratio of mean happiness per 1 point of stress VAS behind the claim \"Higher perceived stress (VAS) was associated with significantly lower happiness\" (paper location: Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01').": 0.986494
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/hsr2.1745",
+  "difficulty": "hard",
+  "paper_value": "0.990",
+  "expected_value": 0.986494,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Partial)",
+  "verdict": "Partial",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.0005,
+    "frozen_tag": "claims-frozen-hsr-2023-ei-happiness"
+  },
+  "source_location": "Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01'",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.6084/m9.figshare.23291780",
+      "license": "CC BY 4.0",
+      "files": [
+        "EI_and_Happiness_raw_Data_with_coding.sav"
+      ]
+    },
+    "files": [
+      {
+        "name": "EI_and_Happiness_raw_Data_with_coding.sav",
+        "sha256": "4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455",
+        "bytes": 67522
+      }
+    ]
+  },
+  "env": {
+    "language": "Stata (gamma regression); R (GBRT)",
+    "lock": "papers/hsr-2023-ei-happiness/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

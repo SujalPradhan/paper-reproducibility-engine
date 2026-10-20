@@ -1,0 +1,57 @@
+{
+  "field": "Medical Sciences",
+  "language": "Stata (gamma regression); R (GBRT)",
+  "capsule_title": "Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study",
+  "capsule_id": "hsr-2023-ei-happiness__C1",
+  "task_prompt": "Using only the paper (doi:10.1002/hsr2.1745) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the Exp(B) (exponentiated gamma-GLM log-link coefficient), Gender = Women vs reference Men, in multiplicative ratio of mean happiness score behind the claim \"Compared with men, women had significantly lower happiness (gamma regression, log link)\" (paper location: Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04').",
+  "results": [
+    {
+      "Report the Exp(B) (exponentiated gamma-GLM log-link coefficient), Gender = Women vs reference Men, in multiplicative ratio of mean happiness score behind the claim \"Compared with men, women had significantly lower happiness (gamma regression, log link)\" (paper location: Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04').": 0.968694
+    },
+    {
+      "Report the Exp(B) (exponentiated gamma-GLM log-link coefficient), Gender = Women vs reference Men, in multiplicative ratio of mean happiness score behind the claim \"Compared with men, women had significantly lower happiness (gamma regression, log link)\" (paper location: Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04').": 0.968694
+    },
+    {
+      "Report the Exp(B) (exponentiated gamma-GLM log-link coefficient), Gender = Women vs reference Men, in multiplicative ratio of mean happiness score behind the claim \"Compared with men, women had significantly lower happiness (gamma regression, log link)\" (paper location: Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04').": 0.968694
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/hsr2.1745",
+  "difficulty": "hard",
+  "paper_value": "0.966",
+  "expected_value": 0.968694,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Not reproduced)",
+  "verdict": "Not reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.0005,
+    "frozen_tag": "claims-frozen-hsr-2023-ei-happiness"
+  },
+  "source_location": "Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04'",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.6084/m9.figshare.23291780",
+      "license": "CC BY 4.0",
+      "files": [
+        "EI_and_Happiness_raw_Data_with_coding.sav"
+      ]
+    },
+    "files": [
+      {
+        "name": "EI_and_Happiness_raw_Data_with_coding.sav",
+        "sha256": "4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455",
+        "bytes": 67522
+      }
+    ]
+  },
+  "env": {
+    "language": "Stata (gamma regression); R (GBRT)",
+    "lock": "papers/hsr-2023-ei-happiness/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

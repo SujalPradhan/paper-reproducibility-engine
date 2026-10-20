@@ -1,0 +1,49 @@
+{
+  "id": "f1f29222-b9aa-528b-8338-f3f5bd32e3b5",
+  "requirements": "Reproduce claim C1 of \"Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study\"",
+  "weight": 1,
+  "sub_tasks": [
+    {
+      "id": "0a7a8ab5-3b49-5683-89c7-6815b5ce7c01",
+      "requirements": "Fetched the deposited dataset and verified it against the SHA-256 checksums in inputs.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Dataset and Model Acquisition"
+    },
+    {
+      "id": "ef51ce5b-ef33-59a7-b418-fdad91e4203c",
+      "requirements": "Code implements the analysis described in the paper's methods for this claim (model, exclusions, reference levels)",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Code Development",
+      "finegrained_task_category": "Method Implementation"
+    },
+    {
+      "id": "3e0fd774-b5bc-5b74-82d7-07dfef15f5ec",
+      "requirements": "The submitted script runs end to end from a clean environment and writes report.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Experimental Setup"
+    },
+    {
+      "id": "22faf7f3-d551-5862-aee4-b11e1498f0d8",
+      "requirements": "Reported value is within tolerance of the expected value 0.968694",
+      "weight": 3,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Evaluation, Metrics & Benchmarking"
+    },
+    {
+      "id": "6cc5179f-4ba2-59bd-a272-dd038c220268",
+      "requirements": "The value is computed from the data, not hard-coded or copied from the paper",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Logging, Analysis & Presentation"
+    }
+  ],
+  "task_category": null,
+  "finegrained_task_category": null
+}

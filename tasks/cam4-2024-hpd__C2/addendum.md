@@ -1,0 +1,10 @@
+# Addendum
+
+Clarifications drawn from the paper (frozen before reproduction):
+
+- Load sheet 1 ('meta_data_22.02.14_analysis') of updated_extracted_data_HPD_22.08.29.xlsx: 34 rows, one per study. Columns: study, year, hpd (events), total (patients), definition (A/B/C), histology (AGC/HCC/NSCLC/RCC/'mixed or other'). Do not exclude anything; all 34 studies enter the main analysis (the paper reports 558 HPD / 4117 patients).
+- Pooled incidence (C1, C2): random-effects meta-analysis of single proportions as a generalized linear mixed model (binomial-normal, logit link), estimated by maximum likelihood with adaptive Gauss-Hermite quadrature. In R: meta::metaprop(event = hpd, n = total, sm = 'PLOGIT', method = 'GLMM', method.tau = 'ML', and t-distribution (Hartung-Knapp) CI: hakn = TRUE / method.random.ci = 'HK' depending on meta version), which calls metafor::rma.glmm(measure = 'PLO', xi = hpd, ni = total, method = 'ML', test = 't'). Back-transform the pooled logit and its 95% CI to percent. Also report Cochran Q (with p), I2 and the 95% prediction interval.
+- Zero-event study: Zheng et al 2021 (hpd = 0, total = 30, RCC). GLMM needs no continuity correction; keep the study as is.
+- Subgroups (context, not headline): fit the same GLMM pooling within each definition (A/B/C) and each histology. Univariable meta-regression on definition gives p = 0.17 and on histology p = 0.004.
+- Multivariable meta-regression (C3–C6): mixed-effects logistic meta-regression rma.glmm(measure = 'PLO', xi = hpd, ni = total, mods = ~ histology + definition, method = 'ML', test = 't') with reference levels histology = 'RCC' and definition = 'C' (relevel factors). Report exp(coef) as adjusted ORs with 95% CI and two-sided p for AGC, HCC, NSCLC, 'mixed or other' (vs RCC) and A, B (vs C). Equivalent: meta::metareg on the metaprop GLMM object with formula ~ histology + definition.
+- Exponentiate the coefficients and CI bounds. Round ORs to 2 decimals and incidence to 1 decimal percent, as the paper prints them.

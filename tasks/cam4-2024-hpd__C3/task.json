@@ -1,0 +1,57 @@
+{
+  "field": "Medical Sciences",
+  "language": "R",
+  "capsule_title": "Incidence of immunotherapy-related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta-analysis",
+  "capsule_id": "cam4-2024-hpd__C3",
+  "task_prompt": "Using only the paper (doi:10.1002/cam4.6970) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the adjusted odds ratio from multivariable meta-regression (AGC vs RCC), in odds ratio behind the claim \"Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type\" (paper location: Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4).",
+  "results": [
+    {
+      "Report the adjusted odds ratio from multivariable meta-regression (AGC vs RCC), in odds ratio behind the claim \"Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type\" (paper location: Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4).": 10.82650882
+    },
+    {
+      "Report the adjusted odds ratio from multivariable meta-regression (AGC vs RCC), in odds ratio behind the claim \"Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type\" (paper location: Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4).": 10.82650882
+    },
+    {
+      "Report the adjusted odds ratio from multivariable meta-regression (AGC vs RCC), in odds ratio behind the claim \"Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type\" (paper location: Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4).": 10.82650882
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/cam4.6970",
+  "difficulty": "hard",
+  "paper_value": "10.83",
+  "expected_value": 10.82650882,
+  "ground_truth_basis": "paper and independent re-run agree",
+  "verdict": "Reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.005,
+    "frozen_tag": "claims-frozen-cam4-2024-hpd"
+  },
+  "source_location": "Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.6084/m9.figshare.22256557",
+      "license": "CC BY 4.0",
+      "files": [
+        "updated_extracted_data_HPD_22.08.29.xlsx"
+      ]
+    },
+    "files": [
+      {
+        "name": "updated_extracted_data_HPD_22.08.29.xlsx",
+        "sha256": "6535d5b38afba2ea4473dea9abb29f00c819824f1ff2fa3cf56472da210b0f3a",
+        "bytes": 126259
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/cam4-2024-hpd/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

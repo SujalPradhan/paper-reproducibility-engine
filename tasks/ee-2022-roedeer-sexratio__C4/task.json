@@ -1,0 +1,69 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation",
+  "capsule_id": "ee-2022-roedeer-sexratio__C4",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8938) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the random-effects meta-analytic mean of d, in standardized effect size d behind the claim \"Overall effect size d for the secondary sex ratio (random-effects model, data-set level) is negative, i.e. male-biased\" (paper location: Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical −0.04 [−0.06, −0.03]).",
+  "results": [
+    {
+      "Report the random-effects meta-analytic mean of d, in standardized effect size d behind the claim \"Overall effect size d for the secondary sex ratio (random-effects model, data-set level) is negative, i.e. male-biased\" (paper location: Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical −0.04 [−0.06, −0.03]).": -0.037635
+    },
+    {
+      "Report the random-effects meta-analytic mean of d, in standardized effect size d behind the claim \"Overall effect size d for the secondary sex ratio (random-effects model, data-set level) is negative, i.e. male-biased\" (paper location: Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical −0.04 [−0.06, −0.03]).": -0.037635
+    },
+    {
+      "Report the random-effects meta-analytic mean of d, in standardized effect size d behind the claim \"Overall effect size d for the secondary sex ratio (random-effects model, data-set level) is negative, i.e. male-biased\" (paper location: Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical −0.04 [−0.06, −0.03]).": -0.037635
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8938",
+  "difficulty": "hard",
+  "paper_value": "−0.04 (CI95 [−0.06, −0.03]",
+  "expected_value": -0.037635,
+  "ground_truth_basis": "paper and independent re-run agree",
+  "verdict": "Reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.005,
+    "frozen_tag": "claims-frozen-ee-2022-roedeer-sexratio"
+  },
+  "source_location": "Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical −0.04 [−0.06, −0.03]",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.6513932",
+      "license": "CC BY 4.0",
+      "files": [
+        "Sex_BW.csv",
+        "Metafor_roe_sex.csv",
+        "Temp_Data_comma_sep.csv"
+      ]
+    },
+    "files": [
+      {
+        "name": "Metafor_roe_sex.csv",
+        "sha256": "6420d015eae45e34904639edd2f571998279727a744a2532ea8d825a94d4fa77",
+        "bytes": 5359
+      },
+      {
+        "name": "Sex_BW.csv",
+        "sha256": "fcacfc6a2cd9688593e0a0ac62e167fc5369286c55118856dbabebb6c5667179",
+        "bytes": 211227
+      },
+      {
+        "name": "Temp_Data_comma_sep.csv",
+        "sha256": "5f32728a4cbea2e164b4930d9b43446fac581cefbdc943c1fb7e35a783f072ab",
+        "bytes": 7142
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2022-roedeer-sexratio/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "3fdd0366-fac7-5f10-b2df-0cc632165d6f",
+  "requirements": "Reproduce claim C5 of \"Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation\"",
+  "weight": 1,
+  "sub_tasks": [
+    {
+      "id": "4c05c58a-8f90-57e3-8cb9-c24bdd860b9c",
+      "requirements": "Fetched the deposited dataset and verified it against the SHA-256 checksums in inputs.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Dataset and Model Acquisition"
+    },
+    {
+      "id": "ff5dc0be-7d4b-57de-9d2d-46ea23a3e130",
+      "requirements": "Code implements the analysis described in the paper's methods for this claim (model, exclusions, reference levels)",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Code Development",
+      "finegrained_task_category": "Method Implementation"
+    },
+    {
+      "id": "b250c969-4be5-5347-8c2f-a22c6bb51041",
+      "requirements": "The submitted script runs end to end from a clean environment and writes report.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Experimental Setup"
+    },
+    {
+      "id": "8b3f76fc-543e-5f51-8615-3fab1e332568",
+      "requirements": "Reported value is within tolerance of the expected value 0.013513",
+      "weight": 3,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Evaluation, Metrics & Benchmarking"
+    },
+    {
+      "id": "52208feb-3012-5e97-8144-fde466f43e73",
+      "requirements": "The value is computed from the data, not hard-coded or copied from the paper",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Logging, Analysis & Presentation"
+    }
+  ],
+  "task_category": null,
+  "finegrained_task_category": null
+}

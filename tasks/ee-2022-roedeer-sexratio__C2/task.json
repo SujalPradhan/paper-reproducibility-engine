@@ -1,0 +1,69 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation",
+  "capsule_id": "ee-2022-roedeer-sexratio__C2",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8938) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the proportion female with exact (Clopper-Pearson) binomial 95% CI, in proportion behind the claim \"Proportion of female offspring among tagged fawns in Baden-Württemberg is below parity (male-biased), 95% CI from exact binomial test\" (paper location: Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90).",
+  "results": [
+    {
+      "Report the proportion female with exact (Clopper-Pearson) binomial 95% CI, in proportion behind the claim \"Proportion of female offspring among tagged fawns in Baden-Württemberg is below parity (male-biased), 95% CI from exact binomial test\" (paper location: Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90).": 0.477764
+    },
+    {
+      "Report the proportion female with exact (Clopper-Pearson) binomial 95% CI, in proportion behind the claim \"Proportion of female offspring among tagged fawns in Baden-Württemberg is below parity (male-biased), 95% CI from exact binomial test\" (paper location: Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90).": 0.477764
+    },
+    {
+      "Report the proportion female with exact (Clopper-Pearson) binomial 95% CI, in proportion behind the claim \"Proportion of female offspring among tagged fawns in Baden-Württemberg is below parity (male-biased), 95% CI from exact binomial test\" (paper location: Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90).": 0.477764
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8938",
+  "difficulty": "hard",
+  "paper_value": "0.48 [0.47, 0.49]",
+  "expected_value": 0.477764,
+  "ground_truth_basis": "paper and independent re-run agree",
+  "verdict": "Reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.005,
+    "frozen_tag": "claims-frozen-ee-2022-roedeer-sexratio"
+  },
+  "source_location": "Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.6513932",
+      "license": "CC BY 4.0",
+      "files": [
+        "Sex_BW.csv",
+        "Metafor_roe_sex.csv",
+        "Temp_Data_comma_sep.csv"
+      ]
+    },
+    "files": [
+      {
+        "name": "Metafor_roe_sex.csv",
+        "sha256": "6420d015eae45e34904639edd2f571998279727a744a2532ea8d825a94d4fa77",
+        "bytes": 5359
+      },
+      {
+        "name": "Sex_BW.csv",
+        "sha256": "fcacfc6a2cd9688593e0a0ac62e167fc5369286c55118856dbabebb6c5667179",
+        "bytes": 211227
+      },
+      {
+        "name": "Temp_Data_comma_sep.csv",
+        "sha256": "5f32728a4cbea2e164b4930d9b43446fac581cefbdc943c1fb7e35a783f072ab",
+        "bytes": 7142
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2022-roedeer-sexratio/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

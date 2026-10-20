@@ -1,0 +1,49 @@
+{
+  "id": "9bc57bca-bdcf-534d-a499-fe6fa3a78d90",
+  "requirements": "Reproduce claim C3 of \"Incidence of immunotherapy-related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta-analysis\"",
+  "weight": 1,
+  "sub_tasks": [
+    {
+      "id": "e357c06f-4f21-5a4d-8fe1-0660ace754f1",
+      "requirements": "Fetched the deposited dataset and verified it against the SHA-256 checksums in inputs.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Dataset and Model Acquisition"
+    },
+    {
+      "id": "fa8efb4d-c9f6-5d37-b8a6-8f353863a960",
+      "requirements": "Code implements the analysis described in the paper's methods for this claim (model, exclusions, reference levels)",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Code Development",
+      "finegrained_task_category": "Method Implementation"
+    },
+    {
+      "id": "09b80332-d6c2-5ce1-9735-ab6d64394144",
+      "requirements": "The submitted script runs end to end from a clean environment and writes report.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Experimental Setup"
+    },
+    {
+      "id": "8947ab3c-5a3d-5429-aa1a-b7f1e3e2db68",
+      "requirements": "Reported value is within tolerance of the expected value 10.8265",
+      "weight": 3,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Evaluation, Metrics & Benchmarking"
+    },
+    {
+      "id": "9971ab56-adfe-5245-b4fa-9a4a047deea4",
+      "requirements": "The value is computed from the data, not hard-coded or copied from the paper",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Logging, Analysis & Presentation"
+    }
+  ],
+  "task_category": null,
+  "finegrained_task_category": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "be786e22-806f-57d9-891b-72d570bb4c84",
+  "requirements": "Reproduce claim C5 of \"Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study\"",
+  "weight": 1,
+  "sub_tasks": [
+    {
+      "id": "65812b50-184a-5220-91e8-e23140717dd7",
+      "requirements": "Fetched the deposited dataset and verified it against the SHA-256 checksums in inputs.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Dataset and Model Acquisition"
+    },
+    {
+      "id": "07e85e50-e4f7-5576-afaf-bed6069611e0",
+      "requirements": "Code implements the analysis described in the paper's methods for this claim (model, exclusions, reference levels)",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Code Development",
+      "finegrained_task_category": "Method Implementation"
+    },
+    {
+      "id": "6a89912e-0d6e-51d9-adc4-8bc4783cd70e",
+      "requirements": "The submitted script runs end to end from a clean environment and writes report.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Experimental Setup"
+    },
+    {
+      "id": "921f28c1-6f42-52ee-9abb-73b099c7c31a",
+      "requirements": "Reported value is within tolerance of the expected value 1.00107",
+      "weight": 3,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Evaluation, Metrics & Benchmarking"
+    },
+    {
+      "id": "c7b45161-8d86-58cc-88ad-ec8622850436",
+      "requirements": "The value is computed from the data, not hard-coded or copied from the paper",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Logging, Analysis & Presentation"
+    }
+  ],
+  "task_category": null,
+  "finegrained_task_category": null
+}

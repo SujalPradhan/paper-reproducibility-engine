@@ -1,0 +1,70 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation",
+  "capsule_id": "ee-2022-roedeer-sexratio__C1",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8938) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the sample size (count of fawns with sex recorded), in fawns behind the claim \"Number of tagged roe deer fawns with known sex in Baden-Württemberg, 1972–2019\" (paper location: Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)).",
+  "results": [
+    {
+      "Report the sample size (count of fawns with sex recorded), in fawns behind the claim \"Number of tagged roe deer fawns with known sex in Baden-Württemberg, 1972–2019\" (paper location: Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)).": 12435
+    },
+    {
+      "Report the sample size (count of fawns with sex recorded), in fawns behind the claim \"Number of tagged roe deer fawns with known sex in Baden-Württemberg, 1972–2019\" (paper location: Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)).": 12435
+    },
+    {
+      "Report the sample size (count of fawns with sex recorded), in fawns behind the claim \"Number of tagged roe deer fawns with known sex in Baden-Württemberg, 1972–2019\" (paper location: Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)).": 12435
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8938",
+  "difficulty": "hard",
+  "paper_value": "N = 12,437",
+  "expected_value": 12435.0,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Partial)",
+  "verdict": "Partial",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision",
+      "reason": "Integer count; must match exactly. A result of 12473 would match the Table 2/3 figure instead; record which one it matches."
+    },
+    "abs": 0.5,
+    "frozen_tag": "claims-frozen-ee-2022-roedeer-sexratio"
+  },
+  "source_location": "Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.6513932",
+      "license": "CC BY 4.0",
+      "files": [
+        "Sex_BW.csv",
+        "Metafor_roe_sex.csv",
+        "Temp_Data_comma_sep.csv"
+      ]
+    },
+    "files": [
+      {
+        "name": "Metafor_roe_sex.csv",
+        "sha256": "6420d015eae45e34904639edd2f571998279727a744a2532ea8d825a94d4fa77",
+        "bytes": 5359
+      },
+      {
+        "name": "Sex_BW.csv",
+        "sha256": "fcacfc6a2cd9688593e0a0ac62e167fc5369286c55118856dbabebb6c5667179",
+        "bytes": 211227
+      },
+      {
+        "name": "Temp_Data_comma_sep.csv",
+        "sha256": "5f32728a4cbea2e164b4930d9b43446fac581cefbdc943c1fb7e35a783f072ab",
+        "bytes": 7142
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2022-roedeer-sexratio/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

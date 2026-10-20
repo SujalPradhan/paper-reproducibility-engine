@@ -1,0 +1,70 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation",
+  "capsule_id": "ee-2022-roedeer-sexratio__C5",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8938) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the binomial GLM coefficient (logit), sex 1=female ~ f(T Oct–Feb) + f(P Sep), f(x)=a0+a1x+a2x^2, in logit per °C behind the claim \"Mean temperature Oct(t−1)–Feb(t) (linear term) is associated with offspring sex in the binomial GLM (Equation 2)\" (paper location: Table 1, row 'Temperature (Oct–Feb)').",
+  "results": [
+    {
+      "Report the binomial GLM coefficient (logit), sex 1=female ~ f(T Oct–Feb) + f(P Sep), f(x)=a0+a1x+a2x^2, in logit per °C behind the claim \"Mean temperature Oct(t−1)–Feb(t) (linear term) is associated with offspring sex in the binomial GLM (Equation 2)\" (paper location: Table 1, row 'Temperature (Oct–Feb)').": 0.013513
+    },
+    {
+      "Report the binomial GLM coefficient (logit), sex 1=female ~ f(T Oct–Feb) + f(P Sep), f(x)=a0+a1x+a2x^2, in logit per °C behind the claim \"Mean temperature Oct(t−1)–Feb(t) (linear term) is associated with offspring sex in the binomial GLM (Equation 2)\" (paper location: Table 1, row 'Temperature (Oct–Feb)').": 0.013513
+    },
+    {
+      "Report the binomial GLM coefficient (logit), sex 1=female ~ f(T Oct–Feb) + f(P Sep), f(x)=a0+a1x+a2x^2, in logit per °C behind the claim \"Mean temperature Oct(t−1)–Feb(t) (linear term) is associated with offspring sex in the binomial GLM (Equation 2)\" (paper location: Table 1, row 'Temperature (Oct–Feb)').": 0.013513
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8938",
+  "difficulty": "hard",
+  "paper_value": "0.019",
+  "expected_value": 0.013513,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Not reproduced)",
+  "verdict": "Not reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision",
+      "reason": "Deterministic GLM. Covariate construction (lapse-rate correction, window averaging) is under-specified and may cause a mismatch, but the tolerance is not loosened for that"
+    },
+    "abs": 0.0005,
+    "frozen_tag": "claims-frozen-ee-2022-roedeer-sexratio"
+  },
+  "source_location": "Table 1, row 'Temperature (Oct–Feb)'",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.6513932",
+      "license": "CC BY 4.0",
+      "files": [
+        "Sex_BW.csv",
+        "Metafor_roe_sex.csv",
+        "Temp_Data_comma_sep.csv"
+      ]
+    },
+    "files": [
+      {
+        "name": "Metafor_roe_sex.csv",
+        "sha256": "6420d015eae45e34904639edd2f571998279727a744a2532ea8d825a94d4fa77",
+        "bytes": 5359
+      },
+      {
+        "name": "Sex_BW.csv",
+        "sha256": "fcacfc6a2cd9688593e0a0ac62e167fc5369286c55118856dbabebb6c5667179",
+        "bytes": 211227
+      },
+      {
+        "name": "Temp_Data_comma_sep.csv",
+        "sha256": "5f32728a4cbea2e164b4930d9b43446fac581cefbdc943c1fb7e35a783f072ab",
+        "bytes": 7142
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2022-roedeer-sexratio/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

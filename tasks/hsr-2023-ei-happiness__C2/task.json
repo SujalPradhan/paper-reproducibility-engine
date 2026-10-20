@@ -1,0 +1,57 @@
+{
+  "field": "Medical Sciences",
+  "language": "Stata (gamma regression); R (GBRT)",
+  "capsule_title": "Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study",
+  "capsule_id": "hsr-2023-ei-happiness__C2",
+  "task_prompt": "Using only the paper (doi:10.1002/hsr2.1745) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \"Age was a significant positive predictor of happiness (per year)\" (paper location: Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')).",
+  "results": [
+    {
+      "Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \"Age was a significant positive predictor of happiness (per year)\" (paper location: Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')).": 0.996905
+    },
+    {
+      "Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \"Age was a significant positive predictor of happiness (per year)\" (paper location: Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')).": 0.996905
+    },
+    {
+      "Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \"Age was a significant positive predictor of happiness (per year)\" (paper location: Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')).": 0.996905
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/hsr2.1745",
+  "difficulty": "hard",
+  "paper_value": "1.016",
+  "expected_value": 0.996905,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Not reproduced)",
+  "verdict": "Not reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision"
+    },
+    "abs": 0.0005,
+    "frozen_tag": "claims-frozen-hsr-2023-ei-happiness"
+  },
+  "source_location": "Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.6084/m9.figshare.23291780",
+      "license": "CC BY 4.0",
+      "files": [
+        "EI_and_Happiness_raw_Data_with_coding.sav"
+      ]
+    },
+    "files": [
+      {
+        "name": "EI_and_Happiness_raw_Data_with_coding.sav",
+        "sha256": "4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455",
+        "bytes": 67522
+      }
+    ]
+  },
+  "env": {
+    "language": "Stata (gamma regression); R (GBRT)",
+    "lock": "papers/hsr-2023-ei-happiness/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

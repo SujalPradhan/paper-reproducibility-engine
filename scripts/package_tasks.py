@@ -53,8 +53,9 @@ def audit_runs(paper_dir, claim_id):
 
 
 def question(claim):
-    unit = f" ({claim['units']})" if claim.get("units") else ""
-    return f"Report {claim['text'].rstrip('.')}{unit}, as in {claim['location']}."
+    unit = f", in {claim['units']}" if claim.get("units") else ""
+    return (f"Report the {claim.get('statistic') or 'value'}{unit} behind the claim "
+            f"\"{claim['text'].rstrip('.')}\" (paper location: {claim['location']}).")
 
 
 def package(paper_dir):

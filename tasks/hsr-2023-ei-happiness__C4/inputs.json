@@ -1,0 +1,16 @@
+{
+  "dataset": {
+    "url": "https://doi.org/10.6084/m9.figshare.23291780",
+    "license": "CC BY 4.0",
+    "files": [
+      "EI_and_Happiness_raw_Data_with_coding.sav"
+    ]
+  },
+  "files": [
+    {
+      "name": "EI_and_Happiness_raw_Data_with_coding.sav",
+      "sha256": "4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455",
+      "bytes": 67522
+    }
+  ]
+}
