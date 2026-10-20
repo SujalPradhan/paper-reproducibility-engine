@@ -1,0 +1,138 @@
+{
+  "paper_id": "ee-2021-salmon-smr",
+  "title": "Standard metabolic rate does not associate with age-at-maturity genotype in juvenile Atlantic salmon",
+  "doi": "10.1002/ece3.8408",
+  "journal": "Ecology and Evolution",
+  "year": 2021,
+  "article_license": "CC BY 4.0",
+  "pmcid": "PMC8794721",
+  "data": {
+    "url": "https://doi.org/10.5281/zenodo.5255061",
+    "license": "CC BY 4.0",
+    "files": [
+      "data-Ash2021-respirometry.txt",
+      "data-Ash2021-sampled-fish.xlsx",
+      "data-Ash2021-genotypes.txt",
+      "data-Ash2021-tank-densities.txt",
+      "data-Ash2021-temp-loggers-small-tanks-Dec2020.txt",
+      "README-Ash2021-description-of-files.txt"
+    ]
+  },
+  "code": {
+    "url": "https://doi.org/10.5281/zenodo.5255061",
+    "language": "R"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Metabolic scaling coefficient (slope of log10 SMR on log10 body mass) in the full mixed model (model 1)",
+      "statistic": "fixed-effect estimate (lmerTest::lmer, REML)",
+      "reported": {"value": 0.878, "text": "0.878", "ci": [0.830, 0.928], "p": "<.001", "F": 1160.548, "den_df": 90.347},
+      "units": "log10(mg O2 h^-1) per log10(g)",
+      "n": 150,
+      "location": "Appendix 2, Table A1(A), row 'Log10 body mass'. Results paragraph 2 rounds it to '0.88 ± 0.05 (95% CI)'",
+      "tolerance": {"type": "reported_precision", "reason": "Deterministic REML fit. mclust MLND is deterministic for a fixed mclust version. Table value printed to 3 dp, so the tolerance is ±0.0005."},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C2",
+      "text": "No significant effect of vgll3 genotype (LL vs EE reference) on mass-adjusted log10 SMR in the full model",
+      "statistic": "fixed-effect estimate vgll3(LL); type III Satterthwaite F-test",
+      "reported": {"value": 0.004, "text": "0.004", "ci": [-0.014, 0.024], "p": "0.771", "F": 0.087, "den_df": 12.943},
+      "units": "log10(mg O2 h^-1)",
+      "n": 150,
+      "location": "Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers",
+      "tolerance": {"type": "reported_precision", "reason": "Deterministic. 3 dp gives ±0.0005. The estimate is close to 0, so also judge by sign of CI (spans 0) and p > 0.05."},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C3",
+      "text": "No significant vgll3 × sex interaction on mass-adjusted log10 SMR in the full model",
+      "statistic": "fixed-effect estimate vgll3(LL):sex(male); type III Satterthwaite F-test",
+      "reported": {"value": -0.014, "text": "−0.014", "ci": [-0.033, 0.003], "p": "0.117", "F": 0.248, "den_df": 136.132},
+      "units": "log10(mg O2 h^-1)",
+      "n": 150,
+      "location": "Appendix 2, Table A1(A), row 'vgll3(LL):Sex(male)'. Results paragraph 2 prints p = .69 for this interaction (conflict, see ambiguities)",
+      "tolerance": {"type": "reported_precision", "reason": "Deterministic, 3 dp. The p-value has two printed versions (.117 in Table A1, .69 in the text). The comparison uses the table, and the reproduction should report which one the p matches."},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C4",
+      "text": "Residual standard deviation of the full SMR model (basis for CV of residuals and the power analysis)",
+      "statistic": "residual SD of lmer fit",
+      "reported": {"value": 0.0269, "text": "0.0269"},
+      "units": "log10(mg O2 h^-1)",
+      "n": 150,
+      "location": "Appendix 2, Table A1(A), Random effects row 'Residual'. Results paragraph 3 rounds it to '0.027'. Results paragraph 2 gives CV of residuals of 6.19% for the full model (6.23% for the simple model)",
+      "tolerance": {"type": "reported_precision", "reason": "Deterministic, 4 dp gives ±0.00005."},
+      "significance": null
+    },
+    {
+      "id": "C5",
+      "text": "No effect of vgll3 genotype on body condition (Fulton's K) in the full condition model (model 2)",
+      "statistic": "fixed-effect estimate vgll3(LL); type III Satterthwaite F-test",
+      "reported": {"value": 0.016, "text": "0.016", "ci": [-0.035, 0.065], "p": "0.326", "F": 1.049, "den_df": 12.177},
+      "units": "Fulton's K units (100 × g / (length)^3)",
+      "n": 150,
+      "location": "Appendix 2, Table A2(A), row 'vgll3 (LL)'. Results paragraph 1 gives 'p = .33'",
+      "tolerance": {"type": "reported_precision", "reason": "Deterministic, 3 dp."},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C6",
+      "text": "Post hoc power analysis: minimum vgll3 effect size on mass-adjusted (non-log) SMR detectable with 80% power",
+      "statistic": "simulated minimum detectable effect (power >= 0.8, alpha 0.05, 10000 simulations per grid point)",
+      "reported": {"value": 4.25, "text": "4.25%"},
+      "units": "% change in mass-adjusted SMR",
+      "n": 150,
+      "location": "Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2",
+      "tolerance": {"type": "abs", "value": 0.25, "partial_rel": 0.25, "reason": "Stochastic Monte Carlo (rnorm, no seed in author script). The result is the first point at which power reaches 0.8 on a discrete grid with step 0.25% (seq(1,5,by=0.25) in script-Ash2021-powerAnalysis.R). Near the 0.8 threshold, Monte Carlo error can move the crossing by one grid step, so ±1 grid step (0.25 percentage points) is allowed. The companion interaction value '6%' (grid step 0.5%) is not scored as a separate claim."},
+      "significance": null
+    }
+  ],
+  "methods_steps": [
+    "Run order per author README: 1-prep-functions.R, 2-prep-data.R, then 4-models-*.R. 3-prep-plots.R and the plotting parts that use axomatic::axis_x/axis_y, extrafont and loadfonts(device='win') are not needed for any claim. Working directory = folder with the data files. Author sets options(na.action='na.fail').",
+    "Load data-Ash2021-sampled-fish.xlsx sheet 1 with readxl::read_xlsx (165 rows). Parse `date` with lubridate::dmy (format d.mm.yy). Compute condition = (weight / (length_standard/10)^3) * 100. Note that this uses length in cm despite the paper saying mm.",
+    "Temperature: read data-Ash2021-temp-loggers-small-tanks-Dec2020.txt. Parse dateTime with ymd_hms and turn tank to numeric (the author code recodes '1_10' and then calls numextract, so the '10_0' label becomes 10). Keep dateTime < 2020-07-15 and tank in 1:14. Average temp across tanks per timestamp (tb_tempLog_one). For each fish, avgTemp = mean of tb_tempLog_one$temp with dateTime strictly between (date - 5 days) and (date - 2 days).",
+    "Join individual data to data-Ash2021-genotypes.txt by ID_sample, which adds sex (female/male) and geno_vgll3 (EE/LL). The author code also joins tank densities and tank mean temps by family = tank, but these are unused in the models.",
+    "Load data-Ash2021-respirometry.txt (read.delim, 7311 rows). Rename Ind -> ID_fish, Mass -> mass, Chamber.No -> chamber_ch, Volume -> volume_ch, Date.Time -> dateTime (ymd_hms on strings like '(2020-Jul-03 16:25:32)'). Left-join individual data by ID_fish.",
+    "SMR per fish: group by ID_fish, mass, volume_ch, chamber_ch, and take SMR = calcSMR(MR.abs)$mlnd. This is the mean of the lowest normal distribution from mclust::Mclust(Y, G=1:4) on all retained phases of that fish, following Chabot et al. 2016. Use the author's calcSMR verbatim, including its `length(time)` quirk (see ambiguities). No extra removal of the acclimation period.",
+    "Exclusions: keep fish with use > 0.5 in the xlsx. This should leave N = 150 (76 LL, 74 EE; 69 males, 81 females; 14 families; 10 batches). Convert family, chamber, geno_vgll3 and sex to factors. The reference levels come out as EE and female (alphabetical), matching the 'vgll3 (LL)' and 'Sex (male)' rows in Table A1.",
+    "Model 1 (C1–C4): lmerTest::lmer(log10(SMR) ~ log10(weight) + geno_vgll3*sex + avgTemp + (1|family) + (1|batch), data = tb_smr), REML. Body mass is the post-respirometry `weight` from the xlsx, not respirometry `Mass`. Report the fixed-effect estimates, Wald or profile 95% CIs from confint() (the author uses the default confint, which is profile for merMod), type III anova (Satterthwaite) for p/F, and sigma() as the residual SD.",
+    "Model 2 (C5): lmerTest::lmer(condition ~ geno_vgll3*sex + (1|batch) + (1|family), data = tb_smr), REML, with confint() and anova(type=3).",
+    "Alternative models for AIC and cross-validation (context only, not scored): rate1.5 (no interaction), rate2 (sex only), rate3 (simple: log10(weight) + avgTemp). Compare them with AIC() and with cvms::cross_validate using 2 folds (odd vs even batch), natural-log variables, and only (1|family) as the random effect.",
+    "CV of residuals (context for C4): residual SD converted from log10 to ln scale (× ln 10) as a percentage, per Garland 1984.",
+    "Power analysis (C6): run script-Ash2021-powerAnalysis.R. For n = 150, simulate y = 1 + 0.83*b0 + c_b1*b1 + c_b12*b1*b2 + N(0, 0.027), with b0 ~ N(1.07, 0.3) (body mass, not logged), b1 = genotype (half 0, half 1) and b2 = sex alternating 0/1. Fit lm(y ~ b0 + b1*b2) and test the b1 coefficient p < 0.05. Use c_b1 = log10(1 + seq(1,5,0.25)/100), with c_b12 = -c_b1 as in the code, and 10000 simulations per grid point. The minimum detectable effect is the smallest grid value with power >= 0.8. multidplyr parallelisation can be dropped. Set a seed and report it."
+  ],
+  "software": [
+    "R 4.0.4",
+    "RStudio 1.4.1717",
+    "FishResp 1.1.0 (slope/MO2 extraction; already applied in the deposited respirometry.txt)",
+    "lme4 1.1.26",
+    "lmerTest 3.1.3",
+    "mclust 5.4.7",
+    "MuMIn 1.43.17",
+    "cvms 1.3.1",
+    "ggeffects 1.1.0",
+    "ggplot2 3.3.5",
+    "Also loaded by author code (versions not stated): tidyverse, lubridate, glue, car, readxl, stringr, sjPlot, janitor, multidplyr, extrafont, viridis, colorspace, mdthemes, axomatic (GitHub eiriksen/axomatic; only axis_x()/axis_y() used, plotting only)"
+  ],
+  "ambiguities": [
+    "The Results text (paragraph 2) gives sex p = .59 and sex:vgll3 p = .69. Table A1(A) for the same full model gives sex p = .322 and vgll3(LL):Sex(male) p = .117, and the text never states the vgll3 main-effect p (Table: .771). The two sources disagree. Claims C2/C3 use the table.",
+    "In Table A1(A), the interaction row has F (type III) = 0.248 with p = .117. With numerator df 1 and DenDF 136, F = 0.248 implies p ≈ 0.62, and Sum Sq 0.002 / residual variance (0.0269^2 ≈ 0.00072) implies F ≈ 2.5. The F value is probably a typo for 2.48, but which of F and p is wrong is unknown.",
+    "Table A1(A): log10 body mass p is printed '>.001', almost certainly a typo for '<.001'. The intercept 95% CI is printed [−1.077, −0.062], which is very asymmetric around −0.853 and is probably −0.620. The random-effect term is written '(1+batch)' rather than '(1|batch)'.",
+    "Results text: the simple-model scaling coefficient is '0.89 ± 0.24', but Table A1(B) gives 0.885 [0.837, 0.932], a half-width of about 0.05. The ± 0.24 looks like a typo.",
+    "Results text: 'the coefficient of variation was 6.23% and 6.19% for the simple and full model, respectively'. The residual SDs are 0.0271 (simple) and 0.0269 (full), and these give about 6.24% and 6.19% when multiplied by ln 10, so the exact CV formula used is not spelled out.",
+    "SMR units: the paper says log10 SMR is in 'mg O2/L/h', but the author code uses calcSMR(MR.abs). MR.abs is absolute oxygen consumption (FishResp, mg O2 h^-1), and MR.mass is mg O2 kg^-1 h^-1. 'mg O2/L/h' does not match either column, but the code is unambiguous: MR.abs.",
+    "avgTemp window: the paper says 'average holding tank temperature (°C) for the last 3 days before the fish entered the acclimation tank'. The code averages the mean-across-all-tanks temperature (not the fish's own family tank) over (date − 5 d, date − 2 d), where date is the respirometry end date. Figure 1 caption gives 10.34 ± 0.77 °C, Figure 3 caption 10.28 °C and a code comment 10.17/10.64 °C. These are inconsistent summaries of the covariate.",
+    "calcSMR (author copy of the Chabot et al. 2016 function) uses `valid <- cl2$Freq >= 0.1*length(time)`. `time` is not defined locally and resolves to stats::time (length 1), so the '>=10% of values' safeguard is effectively disabled and the class labelled 1 by Mclust is always used. Results depend on Mclust's class labelling and so on the mclust version (5.4.7 stated).",
+    "Mass covariate: the model uses `weight` from the xlsx (post-respirometry mass, 0.01 g), while respirometry.txt has a separate `Mass` column. The paper says only 'body mass'. The author code uses weight for the model and mass only as a grouping key.",
+    "Body condition: the paper says Fulton's K = weight (g) / length (mm)^3 × 100. The code divides length_standard by 10 (that is, cm), so the values are on a different scale from the stated formula. Model 2 conclusions are unaffected in direction, but the absolute estimates (C5) follow the code.",
+    "Power analysis: Figure A2 caption says the scaling coefficient was set to 0.8, log(body mass) was the predictor and 'the genotype-sex interaction was fixed at 0%' in the vgll3-effect simulation. The script uses c_b0 = 0.83 on untransformed mass b0 ~ N(1.07, 0.3) and sets c_b12 = −c_b1, so the genotype effect is cancelled in one sex. The script also has no random seed. Caption and code disagree, and the reported 4.25% presumably comes from the code.",
+    "Cross-validation and AIC (Table A1(C)): the code uses natural-log SMR and weight with only (1|family) in cvms, while the main models use log10 with family + batch. The RMSE scale (≈0.065) therefore does not correspond to the log10 residual SD. The text says these models had 'lower AIC and RMSD', but in Table A1(C) the full model has the lowest RMSE (0.0646 vs 0.0653–0.0656), which contradicts the text's claim of higher predictive power for the reduced models.",
+    "Table A2(B) prints the sex-only condition model residual SD as 0.004, against 0.061 in Table A2(A). This is likely a typo.",
+    "Sample accounting: the paper says 160 fish were tested, with 9 removed for technical issues and 1 that died before testing, giving 150. The xlsx has 159 rows with a batch (batch 2 has 15), and respirometry.txt contains 153 distinct individuals. `use` codes are 1/0.9/0.5/0.2/0, and the 0.5 threshold is strict (> 0.5), so use = 0.5 fish are excluded.",
+    "Appendix 1 reports mean body mass '1.08 ± 0.3 g (±SE)', which is evidently an SD. The Methods say respirometry started 4 July 2020, but respirometry.txt timestamps for batch 1 are 3 July (ending 4 July per xlsx date).",
+    "The abstract gives no numeric effect estimates, only N = 150 and 14 families, so all numeric claims come from the Results text and Appendix 2 tables."
+  ]
+}
