@@ -1,0 +1,125 @@
+{
+  "paper_id": "cam4-2024-hpd",
+  "title": "Incidence of immunotherapy-related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta-analysis",
+  "doi": "10.1002/cam4.6970",
+  "journal": "Cancer Medicine",
+  "verdict": "Reproduced",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Pooled incidence of HPD across 34 observational studies is 12.4%",
+      "statistic": "random-effects pooled proportion (GLMM, logit), back-transformed",
+      "location": "Abstract (Results); Results paragraph 4 ('The overall estimated incidence of HPD was 12.4% (95% CI, 10.2%\u201315.0%)'); also reported there: I2 = 72%, 95% PI 4.5%\u201329.7%; 558 events / 4117 patients",
+      "paper_text": "12.4%",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 12.4,
+        "ours": 12.3984744,
+        "diff": -0.001525600000000793,
+        "tolerance": 0.05,
+        "rel_diff": 0.00012303225806458006
+      },
+      "notes": "Pooled incidence % from rma.glmm(PLO, ML, test='t'), back-transformed; t-based 95% CI 10.2-15.0%, 95% PI 4.5-29.6%, I2=78.7%, k=34, events/N=558/4117."
+    },
+    {
+      "id": "C2",
+      "text": "Significant between-study heterogeneity in HPD incidence (Cochran Q)",
+      "statistic": "Cochran Q test for heterogeneity (df = 33 implied)",
+      "location": "Abstract (Results); Results paragraph 4",
+      "paper_text": "119.32",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 119.32,
+        "ours": 119.31950295,
+        "diff": -0.0004970499999927824,
+        "tolerance": 0.005,
+        "rel_diff": 4.1656889037276435e-06
+      },
+      "notes": "Wald-type heterogeneity Q (QE.Wld) from rma.glmm, df=33. LRT Q=141.88 (sensitivity.json). meta::metaprop Wald Q=119.32; meta I2=72.3% (metafor I2=78.7%)."
+    },
+    {
+      "id": "C3",
+      "text": "Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (AGC vs RCC)",
+      "location": "Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4",
+      "paper_text": "10.83",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 10.83,
+        "ours": 10.82650882,
+        "diff": -0.003491179999999261,
+        "tolerance": 0.005,
+        "rel_diff": 0.0003223619575253242
+      },
+      "notes": "Adjusted OR AGC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 3.13-37.47, df=27."
+    },
+    {
+      "id": "C4",
+      "text": "Hepatocellular carcinoma has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (HCC vs RCC)",
+      "location": "Table 1, row 'HCC'; Abstract",
+      "paper_text": "7.99",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 7.99,
+        "ours": 7.99367842,
+        "diff": 0.00367841999999996,
+        "tolerance": 0.005,
+        "rel_diff": 0.00046037797246557696
+      },
+      "notes": "Adjusted OR HCC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 2.41-26.49, df=27."
+    },
+    {
+      "id": "C5",
+      "text": "NSCLC has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (NSCLC vs RCC)",
+      "location": "Table 1, row 'NSCLC'; Abstract",
+      "paper_text": "7.14",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 7.14,
+        "ours": 7.14121972,
+        "diff": 0.0012197199999999242,
+        "tolerance": 0.005,
+        "rel_diff": 0.00017082913165265045
+      },
+      "notes": "Adjusted OR NSCLC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 2.25-22.71, df=27."
+    },
+    {
+      "id": "C6",
+      "text": "Definition B (TGK ratio >= 2) yields higher HPD incidence than Definition C (RECIST PD + deltaTGR > 50), adjusted for tumor type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (definition B vs C)",
+      "location": "Table 1, row 'B (Sa\u00e2da-Bouzid et al)'; Abstract; Results paragraph after Figure 4",
+      "paper_text": "1.82",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 1.82,
+        "ours": 1.81949972,
+        "diff": -0.0005002800000000196,
+        "tolerance": 0.005,
+        "rel_diff": 0.00027487912087913164
+      },
+      "notes": "Adjusted OR definition B vs C from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 1.05-3.15, df=27."
+    }
+  ],
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": false,
+    "runtime_s": 1.5,
+    "software": {
+      "R": "4.6.1",
+      "metafor": "5.2.1",
+      "meta": "8.5.0",
+      "lme4": "2.0.6",
+      "readxl": "1.6.0",
+      "jsonlite": "2.0.0"
+    },
+    "seed": null
+  }
+}

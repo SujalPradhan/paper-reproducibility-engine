@@ -1,0 +1,24 @@
+2026-10-20T14:00:26 START reproduction of cam4-2024-hpd (Reproducer). Read claims.json, data/README.md, paper/fulltext.xml (Methods + Table 1), CLAIMS_SCHEMA.md.
+2026-10-20T14:00:26 CHECKSUM data/updated_extracted_data_HPD_22.08.29.xlsx sha256=6535d5b38afba2ea4473dea9abb29f00c819824f1ff2fa3cf56472da210b0f3a size=126259 -> MATCHES README.
+2026-10-20T14:00:26 CHECKSUM paper/fulltext.xml sha256=65b842e06b45315daf6108a36adcebdc1f20ee73a76e9294d1070b7ce0f45134 -> MATCHES README.
+2026-10-20T14:00:26 PROBLEM: machine has R 4.6.1, not R 4.5 as stated in the task brief, and not the paper's R 4.2.1. Using R 4.6.1.
+2026-10-20T14:00:26 Installed from CRAN: metafor 5.2.1, meta 8.5.0 (existing: readxl 1.6.0, lme4 2.0.6, jsonlite 2.0.0).
+2026-10-20T14:00:26 ASSUMPTION: analysis input is sheet 1 'meta_data_22.02.14_analysis', all 34 rows, no exclusions (per methods_steps).
+2026-10-20T14:00:26 ASSUMPTION: C1 = metafor::rma.glmm(measure='PLO', xi=hpd, ni=total, method='ML', test='t'), package defaults otherwise (model='UM.FS' not applicable for PLO; glmer default nAGQ as set by metafor). Pooled logit and its t-based CI back-transformed with plogis and reported in percent.
+2026-10-20T14:00:26 ASSUMPTION: C2 Q = Wald-type heterogeneity statistic QE (QE.Wld) from the rma.glmm fit, because it is the first/primary heterogeneity statistic metafor reports for GLMMs (meta's print also lists Wald-type first). LRT Q and inverse-variance Q go to sensitivity.json only. Decided before running.
+2026-10-20T14:00:26 ASSUMPTION: C3-C6 = rma.glmm(measure='PLO', mods=~histology+definition, method='ML', test='t') with histology relevelled to 'RCC' and definition to 'C', as in methods_steps; t-test chosen because paper states CIs use Student's t. z-test version goes to sensitivity.json only. Decided before running.
+2026-10-20T14:00:26 ASSUMPTION: claim values are reported unrounded in results.json (rounding to paper precision is done by compare.py tolerance); C1 in percent, ORs as exp(coef).
+2026-10-20T14:01:40 Wrote code/reproduce.R (reads ../data relative to script or a path arg; writes outputs/results.json, outputs/model_output.txt, outputs/sensitivity.json). No seed needed (deterministic).
+2026-10-20T14:01:40 RUN 1 (Rscript, fresh session, cwd /tmp): completed, results.json written.
+2026-10-20T14:01:40 PROBLEM: multivariable rma.glmm warns "Cannot invert the Hessian for the saturated model"; this only affects the residual-heterogeneity tests of the metareg (Wld/LRT printed as degenerate), not the coefficients, CIs or p-values used for C3-C6.
+2026-10-20T14:01:40 POST-HOC: bug fix (no change to any claim value): meta 8.5.0 returns metaprop Q as a length-2 vector (Wald, LRT), which made the C2 notes string duplicate and mislabelled it "inverse-variance" Q in sensitivity.json. Notes/sensitivity now label meta's Q as Wald/LRT. Also fixed empty C1_z_test entry in sensitivity.json (wrong subsetting of the predict object). Reason: code did not do what was intended.
+2026-10-20T14:01:40 RUN 2 (Rscript, fresh session): completed, runtime_s=1.5. Claim values unchanged from run 1.
+2026-10-20T14:01:40 RESULT C1: pooled incidence 12.398% (t 95% CI 10.20-14.99%; PI 4.5-29.6%) vs paper 12.4% (10.2-15.0; PI 4.5-29.7). I2: metafor 78.7%, meta 72.3% (paper 72%, matches meta's I2).
+2026-10-20T14:01:40 RESULT C2: Wald-type Q = 119.3195 (df 33, p=1.1e-11) vs paper 119.32. LRT Q = 141.88.
+2026-10-20T14:01:40 RESULT C3: AGC vs RCC OR 10.827 (t CI 3.13-37.47, p=0.00052) vs paper 10.83 (2.14-54.65, p<0.001).
+2026-10-20T14:01:40 RESULT C4: HCC vs RCC OR 7.994 (t CI 2.41-26.49, p=0.0014) vs paper 7.99 (1.68-38.13, p=0.006).
+2026-10-20T14:01:40 RESULT C5: NSCLC vs RCC OR 7.141 (t CI 2.25-22.71, p=0.0017) vs paper 7.14 (1.58-32.29, p=0.005).
+2026-10-20T14:01:40 RESULT C6: def B vs C OR 1.819 (t CI 1.05-3.15, p=0.033) vs paper 1.82 (1.08-3.07, p=0.025). Also mixed/other OR 5.09 (paper 5.09), def A OR 1.20 (paper 1.20).
+2026-10-20T14:01:40 NOTE: point estimates match; our tumor-type CIs are narrower than Table 1 (consistent with the claims.json ambiguity on Table 1 CI/p inconsistency); def-B p 0.033 (t) / z-test value in sensitivity.json differ from printed 0.025. Not adjusted.
+2026-10-20T14:01:40 Environment: env/sessionInfo.txt, env/install.R (pinned versions), env/Dockerfile (rocker/r-ver:4.6.1, not built). renv.lock not written.
+2026-10-20T14:01:40 compare.py: overall Reproduced; C1-C6 all Reproduced.

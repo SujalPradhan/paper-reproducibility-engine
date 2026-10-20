@@ -1,0 +1,198 @@
+Data (sheet 1):
+                   study year hpd total definition      histology
+1            Mazza et al 2017   1    39          C            RCC
+2          Ferrara et al 2018  56   406          C          NSCLC
+3             Aoki et al 2019  10    34          A            AGC
+4       Kanjanapan et al 2019  12   182          A mixed or other
+5         Scheiner et al 2019   4    52          C            HCC
+6             Tang et al 2019   5    90          A mixed or other
+7           Sasaki et al 2019  13    62          B            AGC
+8              Kim et al 2019  54   263          A          NSCLC
+9        ten Berge et al 2019   4    58          A          NSCLC
+10            Park et al 2019   9    73          A          NSCLC
+11 Ayala de Miguel et al 2020   9   104          C          NSCLC
+12        Petrioli et al 2020   3    47          A mixed or other
+13         Arasanz et al 2020  10    56          A          NSCLC
+14           Refae et al 2020  11    80          B mixed or other
+15           Hwang et al 2020   3   102          A            RCC
+16           Matos et al 2019  14   221          A mixed or other
+17    Karabajakian et al 2020  22   120          B mixed or other
+18             Kim et al 2020  16    83          A          NSCLC
+19 Gomes da Morais et al 2020  17   103          A mixed or other
+20             Kim et al 2020  21   115          A          NSCLC
+21           Zhang et al 2021  11    69          C            HCC
+22           Rocha et al 2022   7    42          A          NSCLC
+23   Economopoulou et al 2021  18    49          B mixed or other
+24             Kim et al 2021  24   189          C            HCC
+25           Zheng et al 2021   0    30          A            RCC
+26     Schuiveling et al 2021   7    75          A mixed or other
+27            Chen et al 2021  38   377          C mixed or other
+28          Matsuo et al 2021  26   176          A          NSCLC
+29            Choi et al 2021  45   184          A            HCC
+30            Wang et al 2021  13   126          A mixed or other
+31         Maesaka et al 2022   9    88          A            HCC
+32       Takahashi et al 2022  45   219          A            AGC
+33          Klemen et al 2022  15   129          C mixed or other
+34            Kang et al 2022   6    74          B          NSCLC
+
+Totals: events = 558  patients = 4117 
+
+==== Pooled GLMM: rma.glmm(PLO, ML, test='t') ====
+
+Random-Effects Model (k = 34; tau^2 estimator: ML)
+
+tau^2 (estimated amount of total heterogeneity): 0.2753
+tau (square root of estimated tau^2 value):      0.5247
+I^2 (total heterogeneity / total variability):   78.69%
+H^2 (total variability / sampling variability):  4.69
+
+Tests for Heterogeneity:
+Wld(df = 33) = 119.3195, p-val < .0001
+LRT(df = 33) = 141.8841, p-val < .0001
+
+Model Results:
+
+estimate      se      tval  df    pval    ci.lb    ci.ub      
+ -1.9552  0.1080  -18.1094  33  <.0001  -2.1749  -1.7356  *** 
+
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Back-transformed pooled incidence (proportion), CI and PI:
+
+   pred  ci.lb  ci.ub  pi.lb  pi.ub 
+ 0.1240 0.1020 0.1499 0.0454 0.2962 
+
+
+==== meta::metaprop (GLMM, ML, HK) ====
+                      proportion           95% CI
+Mazza et al               0.0256 [0.0006; 0.1348]
+Ferrara et al             0.1379 [0.1059; 0.1753]
+Aoki et al                0.2941 [0.1510; 0.4748]
+Kanjanapan et al          0.0659 [0.0345; 0.1123]
+Scheiner et al            0.0769 [0.0214; 0.1854]
+Tang et al                0.0556 [0.0183; 0.1249]
+Sasaki et al              0.2097 [0.1166; 0.3318]
+Kim et al                 0.2053 [0.1582; 0.2592]
+ten Berge et al           0.0690 [0.0191; 0.1673]
+Park et al                0.1233 [0.0580; 0.2212]
+Ayala de Miguel et al     0.0865 [0.0403; 0.1579]
+Petrioli et al            0.0638 [0.0134; 0.1754]
+Arasanz et al             0.1786 [0.0891; 0.3040]
+Refae et al               0.1375 [0.0707; 0.2327]
+Hwang et al               0.0294 [0.0061; 0.0836]
+Matos et al               0.0633 [0.0351; 0.1040]
+Karabajakian et al        0.1833 [0.1186; 0.2643]
+Kim et al                 0.1928 [0.1144; 0.2941]
+Gomes da Morais et al     0.1650 [0.0992; 0.2511]
+Kim et al                 0.1826 [0.1167; 0.2655]
+Zhang et al               0.1594 [0.0824; 0.2674]
+Rocha et al               0.1667 [0.0697; 0.3136]
+Economopoulou et al       0.3673 [0.2342; 0.5171]
+Kim et al                 0.1270 [0.0831; 0.1830]
+Zheng et al               0.0000 [0.0000; 0.1157]
+Schuiveling et al         0.0933 [0.0384; 0.1829]
+Chen et al                0.1008 [0.0723; 0.1357]
+Matsuo et al              0.1477 [0.0988; 0.2089]
+Choi et al                0.2446 [0.1843; 0.3132]
+Wang et al                0.1032 [0.0561; 0.1700]
+Maesaka et al             0.1023 [0.0478; 0.1853]
+Takahashi et al           0.2055 [0.1540; 0.2651]
+Klemen et al              0.1163 [0.0666; 0.1845]
+Kang et al                0.0811 [0.0303; 0.1682]
+
+Number of studies: k = 34
+Number of observations: o = 4117
+Number of events: e = 558
+
+                     proportion           95% CI
+Common effect model      0.1355 [0.1254; 0.1463]
+Random effects model     0.1240 [0.1020; 0.1499]
+Prediction interval             [0.0454; 0.2965]
+
+Quantifying heterogeneity (with 95% CIs):
+ tau^2 = 0.2753; tau = 0.5247; I^2 = 72.3% [61.1%; 80.3%]; H = 1.90 [1.60; 2.26]
+
+Test of heterogeneity:
+           Q d.f.  p-value
+ Wald 119.32   33 < 0.0001
+ LRT  141.88   33 < 0.0001
+
+Details of meta-analysis methods:
+- Random intercept logistic regression model
+- Maximum-likelihood estimator for tau^2
+- Calculation of I^2 based on Q
+- Random effects confidence interval based on t-distribution (df = 33)
+- Prediction interval based on t-distribution (df = 32)
+- Logit transformation
+- Clopper-Pearson confidence interval for individual studies
+
+==== Subgroup GLMMs ====
+definition = C               k= 8  incidence 11.5% (9.5-14.0)
+definition = A               k=21  incidence 12.0% (9.1-15.6)
+definition = B               k= 5  incidence 18.0% (9.5-31.4)
+histology = RCC             k= 3  incidence 2.3% (0.3-17.4)
+histology = AGC             k= 3  incidence 21.6% (13.2-33.2)
+histology = HCC             k= 5  incidence 14.2% (8.3-23.4)
+histology = mixed or other  k=12  incidence 11.1% (7.8-15.7)
+histology = NSCLC           k=11  incidence 14.5% (11.7-17.8)
+
+Univariable omnibus p: definition = 0.166  histology = 0.00358 
+
+==== Multivariable meta-regression: rma.glmm(PLO, ML, test='t') ====
+
+Mixed-Effects Model (k = 34; tau^2 estimator: ML)
+
+tau^2 (estimated amount of residual heterogeneity):     0.0964
+tau (square root of estimated tau^2 value):             0.3105
+I^2 (residual heterogeneity / unaccounted variability): 53.75%
+H^2 (unaccounted variability / sampling variability):   2.16
+
+Tests for Residual Heterogeneity:
+Wld(df = 27) = 812560263731021952.0000, p-val < .0001
+LRT(df = 27) = 0.0000, p-val = 1.0000
+
+Test of Moderators (coefficients 2:7):
+F(df1 = 6, df2 = 27) = 4.5227, p-val = 0.0027
+
+Model Results:
+
+                         estimate      se     tval  df    pval    ci.lb 
+intrcpt                   -3.9360  0.5691  -6.9161  27  <.0001  -5.1038 
+histologyAGC               2.3820  0.6051   3.9368  27  0.0005   1.1405 
+histologyHCC               2.0787  0.5839   3.5600  27  0.0014   0.8806 
+histologymixed or other    1.6264  0.5662   2.8724  27  0.0078   0.4646 
+histologyNSCLC             1.9659  0.5639   3.4861  27  0.0017   0.8088 
+definitionA                0.1835  0.1902   0.9645  27  0.3434  -0.2068 
+definitionB                0.5986  0.2669   2.2427  27  0.0333   0.0510 
+                           ci.ub      
+intrcpt                  -2.7683  *** 
+histologyAGC              3.6235  *** 
+histologyHCC              3.2767   ** 
+histologymixed or other   2.7881   ** 
+histologyNSCLC            3.1229   ** 
+definitionA               0.5737      
+definitionB               1.1462    * 
+
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Adjusted odds ratios (exp(coef)):
+                                           term       OR    ci.lb    ci.ub
+intrcpt                                 intrcpt  0.01953 0.006074  0.06277
+histologyAGC                       histologyAGC 10.82651 3.128364 37.46793
+histologyHCC                       histologyHCC  7.99368 2.412378 26.48792
+histologymixed or other histologymixed or other  5.08543 1.591402 16.25086
+histologyNSCLC                   histologyNSCLC  7.14122 2.245262 22.71317
+definitionA                         definitionA  1.20136 0.813167  1.77487
+definitionB                         definitionB  1.81950 1.052273  3.14612
+                                p
+intrcpt                 1.970e-07
+histologyAGC            5.230e-04
+histologyHCC            1.399e-03
+histologymixed or other 7.837e-03
+histologyNSCLC          1.693e-03
+definitionA             3.434e-01
+definitionB             3.332e-02
