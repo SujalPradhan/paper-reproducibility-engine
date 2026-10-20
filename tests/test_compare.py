@@ -67,6 +67,12 @@ def test_direction_uses_null_value_for_ratios():
     assert judge(c2, ok(0.52))[0] == NOT_REPRODUCED
 
 
+def test_null_significance_block():
+    c = claim("12437")
+    c["significance"] = None
+    assert judge(c, ok(12435))[0] == PARTIAL
+
+
 def test_not_reproducible():
     assert judge(claim("0.42"), None)[0] == NOT_REPRODUCIBLE
     v, d = judge(claim("0.42"), {"id": "C1", "status": "not_computable", "reason": "no site column"})

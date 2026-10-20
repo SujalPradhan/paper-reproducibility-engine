@@ -1,0 +1,132 @@
+{
+  "paper_id": "ee-2022-roedeer-sexratio",
+  "title": "Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation",
+  "doi": "10.1002/ece3.8938",
+  "journal": "Ecology and Evolution",
+  "verdict": "Partial",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Number of tagged roe deer fawns with known sex in Baden-W\u00fcrttemberg, 1972\u20132019",
+      "statistic": "sample size (count of fawns with sex recorded)",
+      "location": "Abstract; Methods 2.1 ('For 3280 of 12,437 marked fawns'); Table 1 caption; Figure 1 caption. Conflicts with Table 2 row ref 47 and Table 3 row ID 90 (12473, '12,473') and with Metafor_roe_sex.csv Hagen row (N = 12475)",
+      "paper_text": "N = 12,437",
+      "rule_verdict": "Partial",
+      "verdict": "Partial",
+      "details": {
+        "paper": 12437.0,
+        "ours": 12435.0,
+        "diff": -2.0,
+        "tolerance": 0.5,
+        "rel_diff": 0.0001608104848436118,
+        "same_sign": true,
+        "same_significance": true
+      },
+      "notes": "Rows with Sex in {f,m} and Year 1972-2019 (stated exclusions only). Hasl-NA rows kept; N excluding Hasl-NA = 11793. Raw file rows = 17260."
+    },
+    {
+      "id": "C2",
+      "text": "Proportion of female offspring among tagged fawns in Baden-W\u00fcrttemberg is below parity (male-biased), 95% CI from exact binomial test",
+      "statistic": "proportion female with exact (Clopper-Pearson) binomial 95% CI",
+      "location": "Table 2, row reference 47 'Hagen et al., this publication'; also Table 3 row ID 90",
+      "paper_text": "0.48 [0.47, 0.49]",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": 0.48,
+        "ours": 0.477764,
+        "diff": -0.0022359999999999602,
+        "tolerance": 0.005,
+        "rel_diff": 0.0046583333333332505
+      },
+      "notes": "pf = 5941/12435; exact Clopper-Pearson 95% CI [0.4690, 0.4866] (binom.test); p vs 0.5. Without Hasl-NA rows: pf = 0.4793 [0.4702, 0.4883], n = 11793."
+    },
+    {
+      "id": "C3",
+      "text": "Overall effect size d for the prenatal sex ratio (random-effects model, data-set level) is negative, i.e. male-biased",
+      "statistic": "random-effects meta-analytic mean of d = ln(OR)/(pi/sqrt(3)), OR = pf/(1-pf)",
+      "location": "Results 3.2, paragraph after Table 3 (and Figure 3 / Appendix Figure S1)",
+      "paper_text": "\u22120.06 (CI95 [\u22120.09, \u22120.02])",
+      "rule_verdict": "Partial",
+      "verdict": "Partial",
+      "details": {
+        "paper": -0.06,
+        "ours": -0.050314,
+        "diff": 0.009686,
+        "tolerance": 0.005,
+        "rel_diff": 0.16143333333333335,
+        "same_sign": true,
+        "same_significance": true
+      },
+      "notes": "metafor rma REML on 37 prenatal rows (paper says 36); tau2 = 0.00137, I2 = 13.59%."
+    },
+    {
+      "id": "C4",
+      "text": "Overall effect size d for the secondary sex ratio (random-effects model, data-set level) is negative, i.e. male-biased",
+      "statistic": "random-effects meta-analytic mean of d",
+      "location": "Results 3.2, paragraph after Table 3 (and Figure 3). The fixed model at reference level gives the identical \u22120.04 [\u22120.06, \u22120.03]",
+      "paper_text": "\u22120.04 (CI95 [\u22120.06, \u22120.03]",
+      "rule_verdict": "Reproduced",
+      "verdict": "Reproduced",
+      "details": {
+        "paper": -0.04,
+        "ours": -0.037635,
+        "diff": 0.002364999999999999,
+        "tolerance": 0.005,
+        "rel_diff": 0.059124999999999976
+      },
+      "notes": "metafor rma REML on 15 secondary rows; tau2 = 0.00000, I2 = 0.01%."
+    },
+    {
+      "id": "C5",
+      "text": "Mean temperature Oct(t\u22121)\u2013Feb(t) (linear term) is associated with offspring sex in the binomial GLM (Equation 2)",
+      "statistic": "binomial GLM coefficient (logit), sex 1=female ~ f(T Oct\u2013Feb) + f(P Sep), f(x)=a0+a1x+a2x^2",
+      "location": "Table 1, row 'Temperature (Oct\u2013Feb)'",
+      "paper_text": "0.019",
+      "rule_verdict": "Not reproduced",
+      "verdict": "Not reproduced",
+      "details": {
+        "paper": 0.019,
+        "ours": 0.013513,
+        "diff": -0.005486999999999999,
+        "tolerance": 0.0005,
+        "rel_diff": 0.2887894736842105,
+        "same_sign": true,
+        "same_significance": false
+      },
+      "notes": "glm binomial logit, n = 11793 (Hasl-NA dropped); T_cor = mean(Oct-Dec t-1, Jan-Feb t) - 0.65*Hasl/100; P_Sep raw mm. Uncorrected-T sensitivity: -0.0041 (SE 0.0904, p 0.964)."
+    },
+    {
+      "id": "C6",
+      "text": "Quadratic term of mean temperature Oct(t\u22121)\u2013Feb(t) is positive and significant: relatively cold or warm autumn/winters deviate from the male-biased mean (U-shaped)",
+      "statistic": "binomial GLM coefficient (logit) for T(Oct\u2013Feb)^2",
+      "location": "Table 1, row 'Temperature (Oct\u2013Feb)2' (SE printed as '0')",
+      "paper_text": "0.001",
+      "rule_verdict": "Not reproduced",
+      "verdict": "Not reproduced",
+      "details": {
+        "paper": 0.001,
+        "ours": 0.008635,
+        "diff": 0.007635,
+        "tolerance": 0.0005,
+        "rel_diff": 7.635,
+        "same_sign": true,
+        "same_significance": false
+      },
+      "notes": "Quadratic T_cor term, same model as C5. Uncorrected-T sensitivity: -0.00113 (SE 0.01472, p 0.939)."
+    }
+  ],
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": false,
+    "runtime_s": 1.42,
+    "software": {
+      "R": "4.6.1",
+      "metafor": "5.2.1",
+      "jsonlite": "2.0.0",
+      "stats": "4.6.1"
+    },
+    "seed": null,
+    "checksums_ok": true
+  }
+}

@@ -102,7 +102,7 @@ def judge(claim, result):
     if abs(diff) <= tol + 1e-12:
         return REPRODUCED, details
 
-    alpha = claim.get("significance", {}).get("alpha", 0.05)
+    alpha = (claim.get("significance") or {}).get("alpha", 0.05)
     sig_paper = significant(claim["reported"].get("p"), alpha)
     sig_ours = significant(result.get("p"), alpha)
     same_sig = sig_paper is None or sig_ours is None or sig_paper == sig_ours

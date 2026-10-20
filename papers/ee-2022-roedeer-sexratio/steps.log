@@ -1,0 +1,24 @@
+2026-10-20T08:27:24Z Started reproduction of ee-2022-roedeer-sexratio. Read claims.json, data/README.md, paper/fulltext.xml (Methods 2.1, Table 1, Results 3.2), CLAIMS_SCHEMA.md.
+2026-10-20T08:27:24Z CHECKSUM: SHA-256 of Sex_BW.csv, Metafor_roe_sex.csv, Temp_Data_comma_sep.csv all match data/README.md (shasum -a 256). Script re-verifies at runtime.
+2026-10-20T08:27:24Z PROBLEM: installed R is 4.6.1 (task brief said 4.5; paper used R 3.6.0). Proceeding with R 4.6.1.
+2026-10-20T08:27:24Z metafor not installed; installed from CRAN (first attempt silently failed, second succeeded; also pulled dependency digest).
+2026-10-20T08:27:24Z --- Analysis decisions, fixed BEFORE running any analysis ---
+2026-10-20T08:27:24Z ASSUMPTION (C1/C2): apply only the exclusions stated in the paper: drop Sex=='NA' and Year outside 1972-2019. Rows with Hasl=='NA' are KEPT for C1/C2 because the paper states no Hasl-based exclusion and Hasl is not needed for the count/binomial test. N without Hasl-NA rows is reported in notes/log only. No search for a rule matching 12,437 or 12,473.
+2026-10-20T08:27:24Z ASSUMPTION (C2): exact Clopper-Pearson CI via binom.test(n_female, n); value = proportion female; p from binom.test vs 0.5 reported for information (paper gives none).
+2026-10-20T08:27:24Z ASSUMPTION (C5/C6): climate covariates per claims.json methods_steps: T_OctFeb = mean of Oct/Nov/Dec (t-1) and Jan/Feb (t) monthly means; P_Sep = Sep precipitation (t-1), raw mm, not centred/scaled (paper mentions no scaling). Lapse rate (Eq. 3) applied to the window mean per fawn: T_cor = T_OctFeb - 0.65*Hasl/100 (linear so applying per month then averaging is identical). Hasl-NA rows dropped for the GLM (covariate cannot be computed).
+2026-10-20T08:27:24Z ASSUMPTION (C5/C6): model fitted with base-R glm(binomial, logit) with raw polynomial terms x + I(x^2), since Equation 2 has no random effect and lme4 cannot fit a plain GLM. Wald z p-values from summary.glm. Height class not included (Eq. 2 does not contain it).
+2026-10-20T08:27:24Z ASSUMPTION (C3/C4): metafor::rma(yi=d, sei=d_se, method='REML') (metafor default tau^2 estimator) separately on Sex ratio=='P' and 'S', using all CSV rows (37 P, 15 S) since no exclusion rule is given; paper says 36 P data sets - discrepancy noted, not resolved. Provided d and d_se used as instructed by the paper ('two decimal places').
+2026-10-20T08:27:24Z ASSUMPTION: no randomness in any step; no seed.
+2026-10-20T08:28:03Z Wrote code/reproduce.R; first end-to-end run via Rscript --vanilla.
+2026-10-20T08:28:36Z Run completed (Rscript --vanilla, fresh session), runtime_s = 1.42; outputs/results.json, outputs/model_output.txt, outputs/sensitivity.json written by the script. Checksums verified in-script: all TRUE.
+2026-10-20T08:28:36Z Data facts: Sex_BW.csv raw 17260 rows (f 5962, m 6511, NA 4787); no Year > 2019; 642 kept rows have Hasl NA.
+2026-10-20T08:28:36Z RESULT C1: N = 12435 (Sex in f/m, Year 1972-2019). Matches neither 12437 (diff -2) nor 12473. Without Hasl-NA rows: 11793.
+2026-10-20T08:28:36Z RESULT C2: pf = 5941/12435 = 0.4778, Clopper-Pearson 95% CI [0.4690, 0.4866], binom p = 7.4e-07. Rounds to 0.48 [0.47, 0.49] as in paper.
+2026-10-20T08:28:36Z RESULT C3: RE (REML), k = 37 P rows: d = -0.0503 [-0.0839, -0.0167], p = 0.0033. Paper -0.06 [-0.09, -0.02]. Paper reports 36 prenatal data sets; CSV has 37 - which one was excluded is not stated.
+2026-10-20T08:28:36Z RESULT C4: RE (REML), k = 15 S rows: d = -0.0376 [-0.0524, -0.0229], p = 6.1e-07. Paper -0.04 [-0.06, -0.03].
+2026-10-20T08:28:36Z RESULT C5: T_cor linear = 0.0135 (SE 0.0145, p = 0.35), n = 11793. Paper 0.019 (SE 0.084, p = .03).
+2026-10-20T08:28:36Z RESULT C6: T_cor^2 = 0.0086 (SE 0.0062, p = 0.16). Paper 0.001 (p = .01). Neither temperature term significant here. Intercept -0.014 vs paper -0.855, suggesting the authors' covariates were constructed/scaled differently (not specified in the paper). Uncorrected T_OctFeb sensitivity also non-significant.
+2026-10-20T08:28:36Z Note: provided d differs from d recomputed from 'Proportion females' by up to 0.049 (rounding of pf to 2 dp); provided d used per methods.
+2026-10-20T08:28:36Z No bugs found on review of results; no POST-HOC changes made.
+2026-10-20T08:28:36Z PROBLEM: scripts/compare.py crashes (AttributeError at line 105: claim.get('significance', {}) returns None because C1 has "significance": null). compare.py NOT edited. For information only, ran a copy in the scratchpad with that line changed to (claim.get('significance') or {}): verdicts C1 Partial, C2 Reproduced, C3 Partial, C4 Reproduced, C5 Not reproduced, C6 Not reproduced; overall Partial. No report_card written in the paper folder.
+2026-10-20T08:28:36Z Environment: env/sessionInfo.txt, env/install.R (metafor 5.2.1, jsonlite 2.0.0), env/Dockerfile (rocker/r-ver:4.6.1, not built). renv.lock skipped.

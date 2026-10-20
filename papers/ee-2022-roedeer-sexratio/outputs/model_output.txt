@@ -1,0 +1,126 @@
+Reproduction of ee-2022-roedeer-sexratio
+Run at 2026-10-20 08:28:04 UTC 
+Checksums OK: Sex_BW.csv TRUE; Metafor_roe_sex.csv TRUE; Temp_Data_comma_sep.csv TRUE 
+
+Sex_BW.csv rows: 17260  years 1966 2019 
+Sex table (raw, incl NA):
+
+   f    m <NA> 
+5962 6511 4787 
+
+After dropping Sex NA and Year outside 1972-2019: N = 12435 
+  of which with non-NA Hasl: 11793 
+  n female = 5941 
+
+	Exact binomial test
+
+data:  n_f and N
+number of successes = 5941, number of trials = 12435, p-value =
+7.387e-07
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.4689508 0.4865883
+sample estimates:
+probability of success 
+             0.4777644 
+
+Sensitivity (Hasl-NA rows dropped): pf = 0.4792674 CI 0.4702146 0.4883303 
+
+GLM data: n = 11793 
+T_cor summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-5.6540 -1.6585 -0.6655 -0.6123  0.4580  4.1260 
+
+== Main GLM (Equation 2, lapse-rate corrected temperature) ==
+
+Call:
+glm(formula = y ~ P_Sep + I(P_Sep^2) + T_cor + I(T_cor^2), family = binomial(link = "logit"), 
+    data = gd)
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept) -1.370e-02  1.247e-01  -0.110    0.913
+P_Sep       -1.558e-03  3.093e-03  -0.504    0.614
+I(P_Sep^2)   4.882e-06  1.797e-05   0.272    0.786
+T_cor        1.351e-02  1.448e-02   0.933    0.351
+I(T_cor^2)   8.635e-03  6.179e-03   1.397    0.162
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 16328  on 11792  degrees of freedom
+Residual deviance: 16325  on 11788  degrees of freedom
+AIC: 16335
+
+Number of Fisher Scoring iterations: 3
+
+
+== Sensitivity GLM: uncorrected T_OctFeb (same rows) ==
+
+Call:
+glm(formula = y ~ P_Sep + I(P_Sep^2) + T_OctFeb + I(T_OctFeb^2), 
+    family = binomial, data = gd)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)
+(Intercept)    1.897e-02  1.645e-01   0.115    0.908
+P_Sep         -1.480e-03  3.133e-03  -0.472    0.637
+I(P_Sep^2)     4.474e-06  1.822e-05   0.246    0.806
+T_OctFeb      -4.114e-03  9.037e-02  -0.046    0.964
+I(T_OctFeb^2) -1.128e-03  1.472e-02  -0.077    0.939
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 16328  on 11792  degrees of freedom
+Residual deviance: 16327  on 11788  degrees of freedom
+AIC: 16337
+
+Number of Fisher Scoring iterations: 3
+
+
+Metafor_roe_sex.csv rows: 52 
+
+ P  S 
+37 15 
+Max |d - d recomputed from Proportion females|: 0.04936445 
+
+== Random-effects (REML), prenatal (P) ==
+
+Random-Effects Model (k = 37; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0014 (SE = 0.0021)
+tau (square root of estimated tau^2 value):      0.0371
+I^2 (total heterogeneity / total variability):   13.59%
+H^2 (total variability / sampling variability):  1.16
+
+Test for Heterogeneity:
+Q(df = 36) = 38.4440, p-val = 0.3594
+
+Model Results:
+
+estimate      se     zval    pval    ci.lb    ci.ub     
+ -0.0503  0.0171  -2.9366  0.0033  -0.0839  -0.0167  ** 
+
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+== Random-effects (REML), secondary (S) ==
+
+Random-Effects Model (k = 15; tau^2 estimator: REML)
+
+tau^2 (estimated amount of total heterogeneity): 0.0000 (SE = 0.0002)
+tau (square root of estimated tau^2 value):      0.0004
+I^2 (total heterogeneity / total variability):   0.01%
+H^2 (total variability / sampling variability):  1.00
+
+Test for Heterogeneity:
+Q(df = 14) = 17.8916, p-val = 0.2118
+
+Model Results:
+
+estimate      se     zval    pval    ci.lb    ci.ub      
+ -0.0376  0.0075  -4.9895  <.0001  -0.0524  -0.0229  *** 
+
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

@@ -1,0 +1,66 @@
+{
+  "paper_id": "ee-2022-roedeer-sexratio",
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": false,
+    "runtime_s": 1.42,
+    "software": {
+      "R": "4.6.1",
+      "metafor": "5.2.1",
+      "jsonlite": "2.0.0",
+      "stats": "4.6.1"
+    },
+    "seed": null,
+    "checksums_ok": true
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "status": "ok",
+      "value": 12435,
+      "notes": "Rows with Sex in {f,m} and Year 1972-2019 (stated exclusions only). Hasl-NA rows kept; N excluding Hasl-NA = 11793. Raw file rows = 17260."
+    },
+    {
+      "id": "C2",
+      "status": "ok",
+      "value": 0.477764,
+      "p": 7.387e-07,
+      "ci": [0.468951, 0.486588],
+      "notes": "pf = 5941/12435; exact Clopper-Pearson 95% CI [0.4690, 0.4866] (binom.test); p vs 0.5. Without Hasl-NA rows: pf = 0.4793 [0.4702, 0.4883], n = 11793."
+    },
+    {
+      "id": "C3",
+      "status": "ok",
+      "value": -0.050314,
+      "p": 0.003318,
+      "ci": [-0.083895, -0.016733],
+      "se": 0.017133,
+      "notes": "metafor rma REML on 37 prenatal rows (paper says 36); tau2 = 0.00137, I2 = 13.59%."
+    },
+    {
+      "id": "C4",
+      "status": "ok",
+      "value": -0.037635,
+      "p": 6.054e-07,
+      "ci": [-0.052418, -0.022851],
+      "se": 0.007543,
+      "notes": "metafor rma REML on 15 secondary rows; tau2 = 0.00000, I2 = 0.01%."
+    },
+    {
+      "id": "C5",
+      "status": "ok",
+      "value": 0.013513,
+      "p": 0.3506,
+      "se": 0.014478,
+      "notes": "glm binomial logit, n = 11793 (Hasl-NA dropped); T_cor = mean(Oct-Dec t-1, Jan-Feb t) - 0.65*Hasl/100; P_Sep raw mm. Uncorrected-T sensitivity: -0.0041 (SE 0.0904, p 0.964)."
+    },
+    {
+      "id": "C6",
+      "status": "ok",
+      "value": 0.008635,
+      "p": 0.1623,
+      "se": 0.006179,
+      "notes": "Quadratic T_cor term, same model as C5. Uncorrected-T sensitivity: -0.00113 (SE 0.01472, p 0.939)."
+    }
+  ]
+}
