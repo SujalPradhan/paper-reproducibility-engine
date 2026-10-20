@@ -6,3 +6,4 @@ __pycache__/
 *.Rproj.user
 renv/library/
 .Rhistory
+.pytest_cache/
