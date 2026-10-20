@@ -15,6 +15,9 @@ import statistics
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from compare import precision_tolerance  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 REPO_URL = "https://github.com/SujalPradhan/paper-reproducibility-engine"
@@ -50,10 +53,14 @@ def chart_rows(papers):
             d = c["details"]
             paper_v = d.get("paper")
             ours = d.get("ours")
-            dev = tol = None
+            dev = tol = digits = digits_tol = None
             if ours is not None and paper_v not in (None, 0):
                 dev = 100 * (ours - paper_v) / abs(paper_v)
                 tol = 100 * d["tolerance"] / abs(paper_v)
+            if ours is not None and paper_v is not None:
+                unit = 2 * precision_tolerance(c["paper_text"])
+                digits = (ours - paper_v) / unit
+                digits_tol = d["tolerance"] / unit
             rows.append({
                 "paper": short,
                 "paper_id": p["card"]["paper_id"],
@@ -64,6 +71,8 @@ def chart_rows(papers):
                 "ours": fmt_value(ours, c["paper_text"]),
                 "dev": dev,
                 "tol": tol,
+                "digits": digits,
+                "digits_tol": digits_tol,
             })
     return rows
 

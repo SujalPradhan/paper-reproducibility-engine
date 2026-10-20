@@ -2,20 +2,34 @@
   "page_title": "Do Wiley papers reproduce?",
   "description": "An AI pipeline re-ran published Wiley papers from their public data and checked every headline number against pre-registered tolerances.",
   "footer": "Straive innovation prototype. Not affiliated with or endorsed by Wiley. Articles are used under CC BY; datasets are linked, not mirrored.",
-  "paper_order": ["cam4-2024-hpd", "ee-2022-roedeer-sexratio", "ee-2021-salmon-smr", "hsr-2023-ei-happiness"],
+  "paper_order": [
+    "cam4-2024-hpd",
+    "ee-2022-roedeer-sexratio",
+    "ee-2021-salmon-smr",
+    "hsr-2023-ei-happiness"
+  ],
   "hero": {
     "kicker": "Reproducibility audit · Wiley open-access papers · prototype",
     "title": "Do Wiley papers reproduce?",
     "lead": "We took {n_papers} open-access Wiley papers, downloaded their public data, and re-ran the analyses without the authors' help. Every headline number was compared against a tolerance we committed to git before running anything.",
     "tiles": [
-      {"value": "{n_reproduced} of {n_claims}", "label": "headline claims reproduced within the pre-registered tolerance"},
-      {"value": "{n_papers_reproduced} of {n_papers}", "label": "papers where every checked claim reproduced"},
-      {"value": "{n_screened}", "label": "papers screened for open data, open licence and a working download"}
+      {
+        "value": "{n_reproduced} of {n_claims}",
+        "label": "headline claims reproduced within the pre-registered tolerance"
+      },
+      {
+        "value": "{n_papers_reproduced} of {n_papers}",
+        "label": "papers where every checked claim reproduced"
+      },
+      {
+        "value": "{n_screened}",
+        "label": "papers screened for open data, open licence and a working download"
+      }
     ]
   },
   "chart_heading": "Most numbers land close. A few don't, and the reasons are specific.",
-  "chart_sub": "Each row is one headline claim. The dot is our value's deviation from the paper's printed value; the green band is the tolerance fixed before we ran anything.",
-  "chart_caption": "Deviation is (ours − paper) ÷ |paper|. Tolerance defaults to half a unit of the last digit the paper printed. Values beyond the axis are drawn at the edge with their real deviation. {n_not_reproducible} claims could not be computed from the deposited data.",
+  "chart_sub": "Each row is one headline claim. The dot shows how far our value is from the paper's, counted in units of the last digit the paper printed: for a printed 0.42, a unit is 0.01. The green band is the tolerance fixed in git before we ran anything; by default it is half a unit, so 'Reproduced' means our number rounds to the paper's.",
+  "chart_caption": "Colour is the verdict, not the distance: a dot can sit close to zero and still be 'Not reproduced' when the significance conclusion flips. The axis is logarithmic beyond one unit so small and large misses fit on one scale. Hover or focus a row for both values, the tolerance and the relative difference. {n_not_reproducible} claims could not be computed from the deposited data.",
   "narrative": [
     "<b>Reproducibility is not a yes-or-no property of a paper.</b> Within a single paper, some numbers came back to the last printed digit and others did not. The useful output is the claim-level table, not a badge.",
     "<b>When a number misses, the paper usually tells you why, if you read closely.</b> In the papers that did not fully reproduce, the reviewers found inconsistencies inside the papers themselves: sample sizes printed differently in different places, standard errors that cannot produce the printed p-values, and Discussion sections that contradict their own tables. These are exactly the signals an editor would want before publication.",

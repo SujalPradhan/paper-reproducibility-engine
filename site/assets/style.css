@@ -94,6 +94,7 @@ pre { background: var(--code-bg); padding: 12px; border-radius: 8px; overflow-x:
 .chart text { fill: var(--ink-2); font-size: 12px; font-family: inherit; }
 .chart .t-ink { fill: var(--ink); }
 .chart .t-muted { fill: var(--muted); }
+.chart .halo { paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
 .chart .grid { stroke: var(--grid); stroke-width: 1; }
 .chart .axis { stroke: var(--axis); stroke-width: 1; }
 .chart .zero { stroke: var(--ink-2); stroke-width: 1; }

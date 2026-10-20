@@ -3,7 +3,6 @@
   var NS = "http://www.w3.org/2000/svg";
   var VERDICT_VAR = { "Reproduced": "--good", "Partial": "--warn", "Not reproduced": "--bad", "Not reproducible": "--na" };
   var VERDICT_ICON = { "Reproduced": "✓", "Partial": "≈", "Not reproduced": "✗", "Not reproducible": "–" };
-  var CLAMP = 100;
 
   var dataEl = document.getElementById("page-data");
   var DATA = dataEl ? JSON.parse(dataEl.textContent) : {};
@@ -35,7 +34,7 @@
     var b = document.createElement("b");
     b.textContent = VERDICT_ICON[r.verdict] + " " + r.verdict;
     tooltip.appendChild(b);
-    var rows = [["Paper", r.paper_text], ["Ours", r.ours], ["Deviation", pct(r.dev)], ["Tolerance", r.tol === null ? "—" : "±" + Math.abs(r.tol).toFixed(2) + "%"]];
+    var rows = [["Paper", r.paper_text], ["Ours", r.ours], ["Off by", digitsText(r.digits) + " in the last printed digit"], ["Tolerance", r.digits_tol === null ? "—" : "±" + digitsText(r.digits_tol).replace("+", "")], ["Relative", pct(r.dev)]];
     rows.forEach(function (kv) {
       var d = document.createElement("div");
       d.className = "tt-row";
@@ -75,6 +74,14 @@
     fig.appendChild(lg);
   }
 
+  function slog(v) { return (v < 0 ? -1 : 1) * Math.log10(1 + Math.abs(v)); }
+  function digitsText(v) {
+    if (v === null || v === undefined) return "—";
+    var a = Math.abs(v);
+    var s = a < 10 ? a.toFixed(1) : Math.round(a).toLocaleString("en");
+    return (v > 0 ? "+" : v < 0 ? "−" : "") + s;
+  }
+
   function deviation(fig) {
     var rows = DATA.rows || [];
     if (fig.dataset.paper) rows = rows.filter(function (r) { return r.paper_id === fig.dataset.paper; });
@@ -86,17 +93,18 @@
     legend(fig, present);
 
     var W = Math.max(320, fig.clientWidth - 32);
-    var labelH = 18, rowH = 46, groupH = 26, padTop = 8, axisH = 28;
+    var labelH = 18, rowH = 46, groupH = 26, padTop = 8, axisH = 34;
     var maxAbs = 10;
     rows.forEach(function (r) {
-      if (r.dev !== null) maxAbs = Math.max(maxAbs, Math.min(CLAMP, Math.abs(r.dev) * 1.15));
-      if (r.tol !== null) maxAbs = Math.max(maxAbs, Math.min(CLAMP, Math.abs(r.tol) * 1.3));
+      if (r.digits !== null) maxAbs = Math.max(maxAbs, Math.abs(r.digits));
+      if (r.digits_tol !== null) maxAbs = Math.max(maxAbs, Math.abs(r.digits_tol));
     });
-    var nice = [10, 20, 25, 50, 100];
-    for (var i = 0; i < nice.length; i++) if (nice[i] >= maxAbs) { maxAbs = nice[i]; break; }
-    var ticks = [-maxAbs, -maxAbs / 2, 0, maxAbs / 2, maxAbs];
+    var top = Math.pow(10, Math.ceil(Math.log10(maxAbs)));
+    var lim = slog(top);
+    var ticks = [0];
+    for (var t = 1; t <= top; t *= 10) { ticks.push(t); ticks.push(-t); }
     var x0 = 8, x1 = W - 8;
-    function sx(v) { return x0 + (Math.max(-maxAbs, Math.min(maxAbs, v)) + maxAbs) / (2 * maxAbs) * (x1 - x0); }
+    function sx(v) { return x0 + (slog(v) + lim) / (2 * lim) * (x1 - x0); }
 
     var groups = [];
     rows.forEach(function (r) {
@@ -106,19 +114,24 @@
     var multi = groups.length > 1;
     var H = padTop + axisH + groups.reduce(function (a, g) { return a + (multi ? groupH : 0) + g.rows.length * rowH; }, 0);
     var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img" }, fig);
-    var title = el("title", {}, svg);
-    title.textContent = fig.getAttribute("aria-label");
+    el("title", {}, svg).textContent = fig.getAttribute("aria-label");
 
     var plotTop = padTop, plotBottom = H - axisH;
+    var narrow = W < 520;
     ticks.forEach(function (t) {
       el("line", { x1: sx(t), x2: sx(t), y1: plotTop, y2: plotBottom, class: t === 0 ? "zero" : "grid" }, svg);
-      text(svg, sx(t), H - 8, (t > 0 ? "+" : "") + t + "%" + (Math.abs(t) === CLAMP ? "+" : ""), "t-muted", t === -maxAbs ? "start" : t === maxAbs ? "end" : "middle");
+      if (narrow && Math.abs(t) > 1 && Math.abs(t) < top) return;
+      var label = t === 0 ? "0" : (t > 0 ? "+" : "−") + Math.abs(t).toLocaleString("en");
+      text(svg, sx(t), plotBottom + 16, label, "t-muted", "middle");
     });
+    text(svg, sx(-top), plotBottom + 30, "← our value lower", "t-muted", "start");
+    text(svg, sx(top), plotBottom + 30, "our value higher →", "t-muted", "end");
 
     var y = plotTop;
     groups.forEach(function (g) {
       if (multi) {
-        text(svg, x0, y + 18, g.paper, "t-ink").setAttribute("font-weight", "600");
+        var gt = text(svg, x0, y + 18, g.paper, "t-ink halo");
+        gt.setAttribute("font-weight", "600");
         y += groupH;
       }
       g.rows.forEach(function (r) {
@@ -127,21 +140,18 @@
         var label = r.claim + " · " + r.text;
         var maxChars = Math.floor((x1 - x0) / 6.6);
         if (label.length > maxChars) label = label.slice(0, maxChars - 1) + "…";
-        text(row, x0, y + labelH - 2, label);
+        text(row, x0, y + labelH - 2, label, "halo");
         var cy = y + labelH + 14;
-        if (r.tol !== null) {
-          var tw = Math.abs(r.tol);
+        if (r.digits_tol !== null) {
+          var tw = Math.abs(r.digits_tol);
           el("rect", { x: sx(-tw), y: cy - 9, width: Math.max(2, sx(tw) - sx(-tw)), height: 18, rx: 4, class: "band" }, row);
         }
-        if (r.dev === null) {
+        if (r.digits === null) {
           text(row, sx(0) + 8, cy + 4, "– could not compute", "t-muted");
         } else {
-          var clamped = Math.abs(r.dev) > maxAbs;
-          var cx = sx(r.dev);
-          el("circle", { cx: cx, cy: cy, r: 6, class: "dot", fill: color(r.verdict) }, row);
-          if (clamped) text(row, cx + (r.dev > 0 ? -12 : 12), cy + 4, (r.dev > 0 ? "▶ " : "◀ ") + pct(r.dev), "t-ink", r.dev > 0 ? "end" : "start");
+          el("circle", { cx: sx(r.digits), cy: cy, r: 6, class: "dot", fill: color(r.verdict) }, row);
         }
-        var hit = el("rect", { x: 0, y: y, width: W, height: rowH, class: "hit" }, row);
+        el("rect", { x: 0, y: y, width: W, height: rowH, class: "hit" }, row);
         row.addEventListener("pointermove", function (e) { showTip(e, r); });
         row.addEventListener("pointerleave", hideTip);
         row.addEventListener("focus", function (e) { showTip(e, r); });
@@ -179,13 +189,13 @@
   function rowsTable() {
     var t = document.querySelector(".rows-table");
     if (!t || !DATA.rows) return;
-    var head = ["Paper", "Claim", "Paper says", "We got", "Deviation", "Verdict"];
+    var head = ["Paper", "Claim", "Paper says", "We got", "Last-digit units off", "Verdict"];
     var tr = document.createElement("tr");
     head.forEach(function (h) { var th = document.createElement("th"); th.textContent = h; tr.appendChild(th); });
     t.appendChild(tr);
     DATA.rows.forEach(function (r) {
       var tr = document.createElement("tr");
-      [r.paper, r.claim + " " + r.text, r.paper_text, r.ours, pct(r.dev), VERDICT_ICON[r.verdict] + " " + r.verdict].forEach(function (v, i) {
+      [r.paper, r.claim + " " + r.text, r.paper_text, r.ours, digitsText(r.digits), VERDICT_ICON[r.verdict] + " " + r.verdict].forEach(function (v, i) {
         var td = document.createElement("td");
         if (i >= 2 && i <= 4) td.className = "num";
         td.textContent = v;
