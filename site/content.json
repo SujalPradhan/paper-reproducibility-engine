@@ -77,8 +77,73 @@
     "ee-2022-roedeer-sexratio": "A separate agent re-ran everything three times with identical results and recomputed every claim in Python to five or more decimals. It agreed with every verdict. It found that the data give exactly the sample size printed in the paper's Tables when no year filter is applied, so the different number in the Abstract is probably a transposition.",
     "hsr-2023-ei-happiness": "A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total."
   },
-  "tools": [],
-  "task_example": null,
+  "tools": [
+    {
+      "tool": "Europe PMC REST API",
+      "role": "Full text (JATS XML), data availability statements, licences",
+      "decision": "Reused",
+      "reason": "Wiley's own site blocks scripted access; Europe PMC serves the same CC BY text"
+    },
+    {
+      "tool": "Crossref REST API",
+      "role": "Licence check per article",
+      "decision": "Reused",
+      "reason": "Licence is checked on the article, not the journal"
+    },
+    {
+      "tool": "Zenodo and Figshare APIs",
+      "role": "Data download",
+      "decision": "Reused",
+      "reason": "Anonymous downloads work; checksums match the repositories' own"
+    },
+    {
+      "tool": "Dryad API",
+      "role": "Data download",
+      "decision": "Reused with token",
+      "reason": "Anonymous file downloads are blocked; a free API token unblocks them"
+    },
+    {
+      "tool": "R: metafor, meta, lme4, glmmTMB, haven",
+      "role": "The analyses themselves",
+      "decision": "Reused",
+      "reason": "The packages the papers used, current CRAN versions, recorded per paper"
+    },
+    {
+      "tool": "CORE-Bench task format",
+      "role": "Evaluation task packaging",
+      "decision": "Adapted",
+      "reason": "MIT licence; extended with pre-registered tolerance and data checksums"
+    },
+    {
+      "tool": "PaperBench rubric format",
+      "role": "Per-task grading rubric",
+      "decision": "Adapted",
+      "reason": "MIT licence; copied the tree format, not the GPU harness"
+    },
+    {
+      "tool": "statcheck",
+      "role": "Checking printed statistics for internal consistency",
+      "decision": "Idea only",
+      "reason": "GPL-3; our auditors did the same checks directly"
+    },
+    {
+      "tool": "GROBID, camelot",
+      "role": "PDF parsing",
+      "decision": "Dropped",
+      "reason": "Not needed once JATS XML is available"
+    },
+    {
+      "tool": "compare.py, build_site.py, package_tasks.py",
+      "role": "Verdicts, this site, task packaging",
+      "decision": "Built",
+      "reason": "Small, deterministic and auditable; verdict rules committed before any reproduction"
+    }
+  ],
+  "task_example": {
+    "heading": "What an AI lab gets",
+    "intro": "Every audited claim becomes an evaluation task with a known answer: {n_tasks} so far. The format follows CORE-Bench, with a PaperBench-style rubric. Where the paper's printed number does not reproduce, the ground truth is the independently re-run value, so an agent that copies the paper fails. This is the task for the reversed age effect.",
+    "path": "tasks/hsr-2023-ei-happiness__C2/task.json"
+  },
   "footnotes": [
     "Papers were chosen for tractability (open data, CC BY licence, analysis runnable in R or Python in under an hour), so these results do not estimate a reproducibility rate for any journal.",
     "Dryad, the most common data repository for Wiley ecology papers, blocks anonymous file downloads (HTTP 401) as of 20 October 2026. Machine access needs an API token.",

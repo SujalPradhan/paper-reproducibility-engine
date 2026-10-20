@@ -96,6 +96,7 @@ def stats_for(papers, rows):
         "n_screened": len(screening),
         "n_gated": sum(1 for x in screening if x["stage"] == "passed"),
         "n_on_request": sum(1 for x in screening if x["stage"] == "on_request"),
+        "n_tasks": len(list((ROOT / "tasks").glob("*__*/task.json"))),
         "n_papers_reproduced": sum(1 for p in papers if p["card"]["verdict"] == "Reproduced"),
         "n_papers_partial": sum(1 for p in papers if p["card"]["verdict"] == "Partial"),
         "median_runtime_s": round(statistics.median(runtimes)) if runtimes else 0,
@@ -279,8 +280,9 @@ def index_page(papers, stats):
     task = CONTENT.get("task_example")
     task_html = ""
     if task:
-        task_html = (f'<section><h2>{esc(task["heading"])}</h2><p>{esc(task["intro"])}</p>'
-                     f'<pre class="task">{esc(task["body"])}</pre></section>')
+        body = (ROOT / task["path"]).read_text() if (ROOT / task["path"]).exists() else ""
+        task_html = (f'<section><h2>{esc(task["heading"])}</h2><p>{fill(task["intro"], stats)}</p>'
+                     f'<details open><summary>{esc(task["path"])}</summary><pre class="task">{esc(body)}</pre></details></section>')
     footnotes = "".join(f"<li>{x}</li>" for x in CONTENT.get("footnotes", []))
     body = f"""
 <section class="hero">

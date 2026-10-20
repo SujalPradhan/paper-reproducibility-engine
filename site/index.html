@@ -45,9 +45,66 @@
 </section>
 <section>
 <h2>What we reused and what we built</h2>
-<div class="table-wrap"><table><tr><th>Tool</th><th>Role</th><th>Decision</th><th>Why</th></tr></table></div>
+<div class="table-wrap"><table><tr><th>Tool</th><th>Role</th><th>Decision</th><th>Why</th></tr><tr><td><b>Europe PMC REST API</b></td><td>Full text (JATS XML), data availability statements, licences</td><td>Reused</td><td>Wiley&#x27;s own site blocks scripted access; Europe PMC serves the same CC BY text</td></tr><tr><td><b>Crossref REST API</b></td><td>Licence check per article</td><td>Reused</td><td>Licence is checked on the article, not the journal</td></tr><tr><td><b>Zenodo and Figshare APIs</b></td><td>Data download</td><td>Reused</td><td>Anonymous downloads work; checksums match the repositories&#x27; own</td></tr><tr><td><b>Dryad API</b></td><td>Data download</td><td>Reused with token</td><td>Anonymous file downloads are blocked; a free API token unblocks them</td></tr><tr><td><b>R: metafor, meta, lme4, glmmTMB, haven</b></td><td>The analyses themselves</td><td>Reused</td><td>The packages the papers used, current CRAN versions, recorded per paper</td></tr><tr><td><b>CORE-Bench task format</b></td><td>Evaluation task packaging</td><td>Adapted</td><td>MIT licence; extended with pre-registered tolerance and data checksums</td></tr><tr><td><b>PaperBench rubric format</b></td><td>Per-task grading rubric</td><td>Adapted</td><td>MIT licence; copied the tree format, not the GPU harness</td></tr><tr><td><b>statcheck</b></td><td>Checking printed statistics for internal consistency</td><td>Idea only</td><td>GPL-3; our auditors did the same checks directly</td></tr><tr><td><b>GROBID, camelot</b></td><td>PDF parsing</td><td>Dropped</td><td>Not needed once JATS XML is available</td></tr><tr><td><b>compare.py, build_site.py, package_tasks.py</b></td><td>Verdicts, this site, task packaging</td><td>Built</td><td>Small, deterministic and auditable; verdict rules committed before any reproduction</td></tr></table></div>
 </section>
-
+<section><h2>What an AI lab gets</h2><p>Every audited claim becomes an evaluation task with a known answer: 18 so far. The format follows CORE-Bench, with a PaperBench-style rubric. Where the paper's printed number does not reproduce, the ground truth is the independently re-run value, so an agent that copies the paper fails. This is the task for the reversed age effect.</p><details open><summary>tasks/hsr-2023-ei-happiness__C2/task.json</summary><pre class="task">{
+  &quot;field&quot;: &quot;Medical Sciences&quot;,
+  &quot;language&quot;: &quot;Stata (gamma regression); R (GBRT)&quot;,
+  &quot;capsule_title&quot;: &quot;Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study&quot;,
+  &quot;capsule_id&quot;: &quot;hsr-2023-ei-happiness__C2&quot;,
+  &quot;task_prompt&quot;: &quot;Using only the paper (doi:10.1002/hsr2.1745) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \&quot;Age was a significant positive predictor of happiness (per year)\&quot; (paper location: Table 2, continuous variables row &#x27;Age&#x27;; Abstract Results (&#x27;Exp (B) = 1.016, p-value &lt; 0.001&#x27;)).&quot;,
+  &quot;results&quot;: [
+    {
+      &quot;Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \&quot;Age was a significant positive predictor of happiness (per year)\&quot; (paper location: Table 2, continuous variables row &#x27;Age&#x27;; Abstract Results (&#x27;Exp (B) = 1.016, p-value &lt; 0.001&#x27;)).&quot;: 0.996905
+    },
+    {
+      &quot;Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \&quot;Age was a significant positive predictor of happiness (per year)\&quot; (paper location: Table 2, continuous variables row &#x27;Age&#x27;; Abstract Results (&#x27;Exp (B) = 1.016, p-value &lt; 0.001&#x27;)).&quot;: 0.996905
+    },
+    {
+      &quot;Report the Exp(B), continuous AGE, in multiplicative ratio of mean happiness per year of age behind the claim \&quot;Age was a significant positive predictor of happiness (per year)\&quot; (paper location: Table 2, continuous variables row &#x27;Age&#x27;; Abstract Results (&#x27;Exp (B) = 1.016, p-value &lt; 0.001&#x27;)).&quot;: 0.996905
+    }
+  ],
+  &quot;capsule_doi&quot;: &quot;https://doi.org/10.1002/hsr2.1745&quot;,
+  &quot;difficulty&quot;: &quot;hard&quot;,
+  &quot;paper_value&quot;: &quot;1.016&quot;,
+  &quot;expected_value&quot;: 0.996905,
+  &quot;ground_truth_basis&quot;: &quot;independent re-run; paper&#x27;s printed value differs (verdict: Not reproduced)&quot;,
+  &quot;verdict&quot;: &quot;Not reproduced&quot;,
+  &quot;tolerance&quot;: {
+    &quot;rule&quot;: &quot;PI95_or_tol&quot;,
+    &quot;pre_registered&quot;: {
+      &quot;type&quot;: &quot;reported_precision&quot;
+    },
+    &quot;abs&quot;: 0.0005,
+    &quot;frozen_tag&quot;: &quot;claims-frozen-hsr-2023-ei-happiness&quot;
+  },
+  &quot;source_location&quot;: &quot;Table 2, continuous variables row &#x27;Age&#x27;; Abstract Results (&#x27;Exp (B) = 1.016, p-value &lt; 0.001&#x27;)&quot;,
+  &quot;data_sources&quot;: {
+    &quot;dataset&quot;: {
+      &quot;url&quot;: &quot;https://doi.org/10.6084/m9.figshare.23291780&quot;,
+      &quot;license&quot;: &quot;CC BY 4.0&quot;,
+      &quot;files&quot;: [
+        &quot;EI_and_Happiness_raw_Data_with_coding.sav&quot;
+      ]
+    },
+    &quot;files&quot;: [
+      {
+        &quot;name&quot;: &quot;EI_and_Happiness_raw_Data_with_coding.sav&quot;,
+        &quot;sha256&quot;: &quot;4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455&quot;,
+        &quot;bytes&quot;: 67522
+      }
+    ]
+  },
+  &quot;env&quot;: {
+    &quot;language&quot;: &quot;Stata (gamma regression); R (GBRT)&quot;,
+    &quot;lock&quot;: &quot;papers/hsr-2023-ei-happiness/env/&quot;
+  },
+  &quot;audit&quot;: {
+    &quot;status&quot;: &quot;audited&quot;,
+    &quot;report&quot;: &quot;audit.md&quot;
+  }
+}
+</pre></details></section>
 <section class="footnotes"><h2>Notes</h2><ol><li>Papers were chosen for tractability (open data, CC BY licence, analysis runnable in R or Python in under an hour), so these results do not estimate a reproducibility rate for any journal.</li><li>Dryad, the most common data repository for Wiley ecology papers, blocks anonymous file downloads (HTTP 401) as of 20 October 2026. Machine access needs an API token.</li><li>Verdicts are produced by <code>scripts/compare.py</code>; its rules and unit tests were committed before any reproduction ran.</li><li>Article text was retrieved as JATS XML from Europe PMC. Wiley Online Library blocks scripted access.</li><li>Prior art: CODECHECK, ReScience C, the Institute for Replication, the Odum Institute (AJPS) and SEER-Repro (arXiv 2610.23845) have reproduced some Wiley papers. None covers Wiley's ecology and health portfolio systematically. See landscape.md.</li><li>Limitation we found in our own process: the claims freeze is verifiable in git, but the reproducers' statement that each assumption was logged before results were seen is self-reported (code, log and outputs were committed together). The next version commits the analysis plan before the first run.</li></ol></section>
 
 </main>
