@@ -1,0 +1,8 @@
+papers/*/data/
+!papers/*/data/README.md
+.venv/
+__pycache__/
+.DS_Store
+*.Rproj.user
+renv/library/
+.Rhistory
