@@ -78,7 +78,7 @@ code, pre { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
 pre { background: var(--code-bg); padding: 12px; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
 
 .topnav { position: sticky; top: 0; z-index: 5; background: var(--page); border-bottom: 1px solid var(--grid); display: flex; align-items: center; gap: 8px; padding: 0 16px; }
-.topnav nav { flex: 1; display: flex; gap: 18px; overflow-x: auto; padding: 12px 0; max-width: 888px; margin: 0 auto; }
+.topnav nav { flex: 1; min-width: 0; display: flex; gap: 18px; overflow-x: auto; padding: 12px 0; max-width: 888px; margin: 0 auto; }
 .topnav a { color: var(--ink-2); text-decoration: none; font-size: 14px; white-space: nowrap; }
 .topnav a:hover { color: var(--ink); }
 .theme { background: none; border: 1px solid var(--grid); color: var(--ink-2); border-radius: 6px; width: 32px; height: 32px; cursor: pointer; font-size: 16px; }
@@ -117,7 +117,7 @@ pre { background: var(--code-bg); padding: 12px; border-radius: 8px; overflow-x:
 .badge.na span { background: var(--na); }
 
 .table-wrap { overflow-x: auto; margin: 12px 0; }
-table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 14px; background: var(--surface); }
 th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--grid); }
 th { color: var(--ink-2); font-weight: 600; font-size: 13px; }
 td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -130,6 +130,10 @@ summary { cursor: pointer; color: var(--ink-2); font-size: 14px; }
 .case-meta { font-style: italic; color: var(--ink-2); font-size: 13px; }
 .case span:last-child { color: var(--ink-2); font-size: 14px; }
 
+.two-col > div { min-width: 0; }
+.two-col li, .methods li, .footnotes li { overflow-wrap: anywhere; }
+td { overflow-wrap: break-word; }
+td:first-child { min-width: 220px; }
 .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
 .rules { list-style: none; padding: 0; }
 .rules li { margin: 8px 0; }

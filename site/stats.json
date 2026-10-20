@@ -1,16 +1,16 @@
 {
-  "n_papers": 3,
-  "n_claims": 18,
+  "n_papers": 4,
+  "n_claims": 24,
   "n_screened": 32,
   "n_gated": 8,
   "n_on_request": 3,
   "n_tasks": 18,
   "n_papers_reproduced": 1,
-  "n_papers_partial": 2,
+  "n_papers_partial": 3,
   "median_runtime_s": 1,
-  "n_reproduced": 8,
-  "n_partial": 6,
+  "n_reproduced": 11,
+  "n_partial": 9,
   "n_not_reproduced": 4,
   "n_not_reproducible": 0,
-  "pct_reproduced": 44
+  "pct_reproduced": 46
 }

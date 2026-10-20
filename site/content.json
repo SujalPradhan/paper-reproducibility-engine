@@ -63,8 +63,8 @@
     },
     "ee-2021-salmon-smr": {
       "short": "Salmon metabolic rate",
-      "finding": "Pending.",
-      "teaser": "Pending."
+      "finding": "The authors' own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss only at the last printed digit, most likely from newer versions of the mixed-model packages. The run also shows a printed F statistic with a slipped decimal point.",
+      "teaser": "Conclusions hold; three numbers miss only at the last printed digit."
     },
     "hsr-2023-ei-happiness": {
       "short": "Medical students' happiness",

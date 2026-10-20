@@ -8,3 +8,4 @@ renv/library/
 .Rhistory
 .pytest_cache/
 papers/*/env/rlib/
+papers/*/env/Rlib*/
