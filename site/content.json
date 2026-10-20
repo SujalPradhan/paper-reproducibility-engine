@@ -1,0 +1,71 @@
+{
+  "page_title": "Do Wiley papers reproduce?",
+  "description": "An AI pipeline re-ran published Wiley papers from their public data and checked every headline number against pre-registered tolerances.",
+  "footer": "Straive innovation prototype. Not affiliated with or endorsed by Wiley. Articles are used under CC BY; datasets are linked, not mirrored.",
+  "paper_order": ["cam4-2024-hpd", "ee-2022-roedeer-sexratio", "ee-2021-salmon-smr", "hsr-2023-ei-happiness"],
+  "hero": {
+    "kicker": "Reproducibility audit · Wiley open-access papers · prototype",
+    "title": "Do Wiley papers reproduce?",
+    "lead": "We took {n_papers} open-access Wiley papers, downloaded their public data, and re-ran the analyses without the authors' help. Every headline number was compared against a tolerance we committed to git before running anything.",
+    "tiles": [
+      {"value": "{n_reproduced} of {n_claims}", "label": "headline claims reproduced within the pre-registered tolerance"},
+      {"value": "{n_papers_reproduced} of {n_papers}", "label": "papers where every checked claim reproduced"},
+      {"value": "{n_screened}", "label": "papers screened for open data, open licence and a working download"}
+    ]
+  },
+  "chart_heading": "Most numbers land close. A few don't, and the reasons are specific.",
+  "chart_sub": "Each row is one headline claim. The dot is our value's deviation from the paper's printed value; the green band is the tolerance fixed before we ran anything.",
+  "chart_caption": "Deviation is (ours − paper) ÷ |paper|. Tolerance defaults to half a unit of the last digit the paper printed. Values beyond the axis are drawn at the edge with their real deviation. {n_not_reproducible} claims could not be computed from the deposited data.",
+  "narrative": [
+    "<b>Reproducibility is not a yes-or-no property of a paper.</b> Within a single paper, some numbers came back to the last printed digit and others did not. The useful output is the claim-level table, not a badge.",
+    "<b>When a number misses, the paper usually tells you why, if you read closely.</b> In the papers that did not fully reproduce, the reviewers found inconsistencies inside the papers themselves: sample sizes printed differently in different places, standard errors that cannot produce the printed p-values, and Discussion sections that contradict their own tables. These are exactly the signals an editor would want before publication.",
+    "<b>The method is the product, not the verdict count.</b> {n_papers} papers is not a rate, and we picked papers we expected to be tractable. What carries over is the pipeline: claims frozen in git before analysis, scripted re-runs from the original repositories, and an independent auditor who re-ran everything from a clean checkout."
+  ],
+  "screening_heading": "Finding reproducible papers is itself a signal",
+  "methods": [
+    "<b>Screen.</b> Search Europe PMC for open-access Wiley papers, read each data availability statement, and check the article licence (CC BY only), the data licence and a real anonymous download.",
+    "<b>Pre-register.</b> An extractor agent reads the full text and writes <code>claims.json</code>: each headline number exactly as printed, its location, the method steps, the ambiguities and a tolerance. The lead commits it and tags it <code>claims-frozen-&lt;paper&gt;</code> before any analysis runs.",
+    "<b>Reproduce.</b> A separate agent runs the authors' code unchanged where it exists, otherwise writes one clean script from the methods. The script itself writes <code>results.json</code>. Every assumption is logged before results are seen; any later change is marked POST-HOC.",
+    "<b>Compare.</b> <code>compare.py</code> applies fixed rules (below) to the frozen claims and the script's output. No human or agent picks the verdict.",
+    "<b>Audit.</b> A fresh agent that saw none of the above clones the repository, re-downloads the data from the original source, checks the checksums, re-runs the script three times, cross-checks key numbers with a different implementation, and can override a verdict only with a written reason.",
+    "<b>Package.</b> Each audited claim becomes an evaluation task in the CORE-Bench format, with a PaperBench-style rubric, for AI-lab evaluation sets."
+  ],
+  "verdict_rules": {
+    "Reproduced": "Our value is within the pre-registered tolerance of the paper's printed value.",
+    "Partial": "Outside tolerance, but the same direction, the same significance conclusion and within half the paper's magnitude.",
+    "Not reproduced": "Computed, but the direction, the significance conclusion or the magnitude differs beyond that.",
+    "Not reproducible": "The value could not be computed from the deposited data and the stated methods."
+  },
+  "cases": {
+    "cam4-2024-hpd": {
+      "short": "Cancer immunotherapy HPD",
+      "finding": "Every headline estimate of the meta-analysis came back to the printed digit. The confidence intervals and p-values in the paper's own Table do not agree with each other, so we graded point estimates.",
+      "teaser": "All headline estimates reproduce to the printed digit."
+    },
+    "ee-2022-roedeer-sexratio": {
+      "short": "Roe deer sex ratio",
+      "finding": "The core sex-ratio result reproduces. The climate model does not: neither temperature term is significant when re-run, and the paper prints three different sample sizes.",
+      "teaser": "Sex ratio holds; the climate effect does not."
+    },
+    "ee-2021-salmon-smr": {
+      "short": "Salmon metabolic rate",
+      "finding": "Pending.",
+      "teaser": "Pending."
+    },
+    "hsr-2023-ei-happiness": {
+      "short": "Medical students' happiness",
+      "finding": "Directions match for most predictors, but magnitudes drift and the age effect reverses sign. The paper's own Discussion also contradicts its table on age.",
+      "teaser": "Directions mostly hold; the age effect flips."
+    }
+  },
+  "audit": {},
+  "tools": [],
+  "task_example": null,
+  "footnotes": [
+    "Papers were chosen for tractability (open data, CC BY licence, analysis runnable in R or Python in under an hour), so these results do not estimate a reproducibility rate for any journal.",
+    "Dryad, the most common data repository for Wiley ecology papers, blocks anonymous file downloads (HTTP 401) as of 20 October 2026. Machine access needs an API token.",
+    "Verdicts are produced by <code>scripts/compare.py</code>; its rules and unit tests were committed before any reproduction ran.",
+    "Article text was retrieved as JATS XML from Europe PMC. Wiley Online Library blocks scripted access.",
+    "Prior art: CODECHECK, ReScience C, the Institute for Replication, the Odum Institute (AJPS) and SEER-Repro (arXiv 2610.23845) have reproduced some Wiley papers. None covers Wiley's ecology and health portfolio systematically. See landscape.md."
+  ]
+}

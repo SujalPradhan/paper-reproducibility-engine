@@ -1,0 +1,226 @@
+[
+  {
+    "doi": "10.1002/cam4.6970",
+    "title": "cam4-2024-hpd",
+    "journal": "Cancer Medicine",
+    "stage": "passed",
+    "reason": "Shortlisted for reproduction"
+  },
+  {
+    "doi": "10.1002/ece3.10528",
+    "title": "ee-2023-honeybee-vairimorpha",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Reserve; data needs a Dryad API token"
+  },
+  {
+    "doi": "10.1002/ece3.10713",
+    "title": "ee-2023-drosophila-nonadditive",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Reserve; passed the gate, not needed"
+  },
+  {
+    "doi": "10.1002/ece3.11160",
+    "title": "ee-2024-ambystoma-hatching",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Reserve; data needs a Dryad API token"
+  },
+  {
+    "doi": "10.1002/ece3.70328",
+    "title": "ee-2024-bumblebee-cyan",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Reserve; passed the gate, not needed"
+  },
+  {
+    "doi": "10.1002/ece3.8408",
+    "title": "ee-2021-salmon-smr",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Shortlisted for reproduction"
+  },
+  {
+    "doi": "10.1002/ece3.8938",
+    "title": "ee-2022-roedeer-sexratio",
+    "journal": "Ecology and Evolution",
+    "stage": "passed",
+    "reason": "Shortlisted for reproduction"
+  },
+  {
+    "doi": "10.1002/hsr2.1745",
+    "title": "hsr-2023-ei-happiness",
+    "journal": "Health Science Reports",
+    "stage": "passed",
+    "reason": "Shortlisted for reproduction"
+  },
+  {
+    "doi": "10.1002/brb3.70643",
+    "title": "The Power of Posing: Do Body Display Instructions Have an Impact on Behavior in Daily Life?",
+    "journal": "Brain and Behavior",
+    "stage": "on_request",
+    "reason": "Data available only on request from the authors"
+  },
+  {
+    "doi": "10.1002/cam4.6828",
+    "title": "10.1002/cam4.6828",
+    "journal": "Cancer Medicine",
+    "stage": "on_request",
+    "reason": "only partial data on OSF/Zenodo; census-tract data are withheld and the rest is \"upon request\""
+  },
+  {
+    "doi": "10.14814/phy2.15775",
+    "title": "Association of postprandial postexercise muscle protein synthesis rates with dietary leucine…",
+    "journal": "Physiological Reports",
+    "stage": "on_request",
+    "reason": "Data available only on request from the authors"
+  },
+  {
+    "doi": "10.1002/brb3.70020",
+    "title": "10.1002/brb3.70020",
+    "journal": "Brain and Behavior",
+    "stage": "rejected",
+    "reason": "Figshare data is CC BY, but the raw data are a 517 MB rar plus 328 MB of EEG, which is too heavy. The analysed .sav is only 3 KB"
+  },
+  {
+    "doi": "10.1002/brb3.70409",
+    "title": "10.1002/brb3.70409",
+    "journal": "Brain and Behavior",
+    "stage": "rejected",
+    "reason": "OSF node 4ugc9 returned 401 (private)"
+  },
+  {
+    "doi": "10.1002/brb3.70542",
+    "title": "10.1002/brb3.70542",
+    "journal": "Brain and Behavior",
+    "stage": "rejected",
+    "reason": "OSF xm3ea is public but has no license"
+  },
+  {
+    "doi": "10.1002/brb3.70897",
+    "title": "10.1002/brb3.70897",
+    "journal": "Brain and Behavior",
+    "stage": "rejected",
+    "reason": "OSF P8ZQF is not resolvable as a node through the API (404)"
+  },
+  {
+    "doi": "10.1002/cam4.3366",
+    "title": "10.1002/cam4.3366",
+    "journal": "Cancer Medicine",
+    "stage": "rejected",
+    "reason": "data are CC BY-NC-ND (Zenodo 582272)"
+  },
+  {
+    "doi": "10.1002/cam4.5608",
+    "title": "10.1002/cam4.5608",
+    "journal": "Cancer Medicine",
+    "stage": "rejected",
+    "reason": "data are CC BY-NC-ND, and Zenodo 6369996 is restricted (0 public files)"
+  },
+  {
+    "doi": "10.1002/cam4.70965",
+    "title": "10.1002/cam4.70965",
+    "journal": "Cancer Medicine",
+    "stage": "rejected",
+    "reason": "no Zenodo record ID in the DAS, and the paper is SEER-based (avoid)"
+  },
+  {
+    "doi": "10.1002/ece3.11021",
+    "title": "10.1002/ece3.11021",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "Zenodo 8329522 is 48 GB of video and has no license"
+  },
+  {
+    "doi": "10.1002/ece3.11061",
+    "title": "10.1002/ece3.11061",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "data in BExIS under a 5-year embargo"
+  },
+  {
+    "doi": "10.1002/ece3.7147",
+    "title": "10.1002/ece3.7147",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "biologging data portals (AODN/AADC) with GIS/tracking-heavy workflows"
+  },
+  {
+    "doi": "10.1002/ece3.7501",
+    "title": "10.1002/ece3.7501",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "biologging data portals (AODN/AADC) with GIS/tracking-heavy workflows"
+  },
+  {
+    "doi": "10.1002/ece3.8225",
+    "title": "10.1002/ece3.8225",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "data in the Hakai catalogue, not a standard open repository. Not tested"
+  },
+  {
+    "doi": "10.1002/ece3.8348",
+    "title": "10.1002/ece3.8348",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "simulation model, with no empirical data to reproduce"
+  },
+  {
+    "doi": "10.1002/ece3.8757",
+    "title": "10.1002/ece3.8757",
+    "journal": "Ecology and Evolution",
+    "stage": "rejected",
+    "reason": "heritability of cortisol, which needs a quantitative-genetics animal model (likely MCMC), so it is too slow"
+  },
+  {
+    "doi": "10.1002/hsr2.1848",
+    "title": "10.1002/hsr2.1848",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "article is CC BY-NC-ND and has no data"
+  },
+  {
+    "doi": "10.1002/hsr2.2168",
+    "title": "10.1002/hsr2.2168",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "article is CC BY-NC-ND (the data are CC BY on Figshare)"
+  },
+  {
+    "doi": "10.1002/hsr2.2271",
+    "title": "10.1002/hsr2.2271",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "article is CC BY-NC, and data are on Mendeley Data"
+  },
+  {
+    "doi": "10.1002/hsr2.70756",
+    "title": "appendicitis ML",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "dataset Zenodo 7669442 is CC BY-NC 4.0, and 523 MB is ultrasound images"
+  },
+  {
+    "doi": "10.1002/hsr2.71125",
+    "title": "10.1002/hsr2.71125",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "article is CC BY-NC-ND, and data are only in the supporting information"
+  },
+  {
+    "doi": "10.1002/hsr2.71493",
+    "title": "10.1002/hsr2.71493",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "DAS says \"not applicable\", so there are no data"
+  },
+  {
+    "doi": "10.1002/hsr2.71672",
+    "title": "10.1002/hsr2.71672",
+    "journal": "Health Science Reports",
+    "stage": "rejected",
+    "reason": "Zenodo 15073308 has no license (all rights reserved by default)"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "paper_id": "hsr-2023-ei-happiness",
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": false,
+    "runtime_s": 0.24,
+    "software": {
+      "R": "4.6.1",
+      "haven": "2.5.5",
+      "jsonlite": "2.0.0"
+    },
+    "seed": null
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "status": "ok",
+      "value": 0.968694,
+      "p": 0.0503814,
+      "se": 0.015746,
+      "ci": [0.938318, 1.000053],
+      "notes": "Multivariable gamma GLM (log link), n=405, term Gender2. Exp(B)=0.9687 SE=0.0157 95%CI=[0.9383, 1.0001] z=-1.957 p=0.05038. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    },
+    {
+      "id": "C2",
+      "status": "ok",
+      "value": 0.996905,
+      "p": 0.53368,
+      "se": 0.004965,
+      "ci": [0.987221, 1.006684],
+      "notes": "Multivariable gamma GLM (log link), n=405, term AGE. Exp(B)=0.9969 SE=0.0050 95%CI=[0.9872, 1.0067] z=-0.622 p=0.5337. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    },
+    {
+      "id": "C3",
+      "status": "ok",
+      "value": 1.077305,
+      "p": 4.70966e-06,
+      "se": 0.017525,
+      "ci": [1.043498, 1.112208],
+      "notes": "Multivariable gamma GLM (log link), n=405, term Personality_assessment2. Exp(B)=1.0773 SE=0.0175 95%CI=[1.0435, 1.1122] z=4.577 p=4.71e-06. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    },
+    {
+      "id": "C4",
+      "status": "ok",
+      "value": 0.986494,
+      "p": 0.000498892,
+      "se": 0.003853,
+      "ci": [0.978971, 0.994075],
+      "notes": "Multivariable gamma GLM (log link), n=405, term Living_stress_score. Exp(B)=0.9865 SE=0.0039 95%CI=[0.9790, 0.9941] z=-3.481 p=0.0004989. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    },
+    {
+      "id": "C5",
+      "status": "ok",
+      "value": 1.00107,
+      "p": 0.0301702,
+      "se": 0.000494,
+      "ci": [1.000103, 1.002039],
+      "notes": "Multivariable gamma GLM (log link), n=405, term self_physical_examination. Exp(B)=1.0011 SE=0.0005 95%CI=[1.0001, 1.0020] z=2.168 p=0.03017. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    },
+    {
+      "id": "C6",
+      "status": "ok",
+      "value": 1.040286,
+      "p": 1.76215e-07,
+      "se": 0.007867,
+      "ci": [1.024981, 1.055819],
+      "notes": "Multivariable gamma GLM (log link), n=405, term Regulation_of_own_emotion. Exp(B)=1.0403 SE=0.0079 95%CI=[1.0250, 1.0558] z=5.223 p=1.762e-07. Pearson dispersion=0.022327; z-based p/CI (Stata-style)."
+    }
+  ]
+}

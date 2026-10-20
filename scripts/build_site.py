@@ -197,11 +197,14 @@ def paper_page(p, prev_p, next_p, stats):
         pager.append(f'<a href="{next_p["card"]["paper_id"]}.html">Next paper →</a>')
     pager.append("</nav>")
     audit_note = CONTENT.get("audit", {}).get(pid, "")
+    code_note = ("We ran the authors' own code first, changing only file paths and plot-only packages."
+                 if run.get("used_author_code")
+                 else "The authors deposited no code, so we wrote the analysis from the methods section.")
     body = f"""
 <section class="hero">
 <p class="kicker">{esc(card['journal'])} · {esc(str(claims.get('year', '')))} · {esc(claims.get('article_license', ''))}</p>
 <h1>{esc(card['title'])}</h1>
-<p class="lead">{esc(case.get('finding', ''))}</p>
+<p class="lead">{esc(fill(case.get('finding', ''), stats))}</p>
 <p>{badge(card['verdict'])}</p>
 <p class="links">{' · '.join(links)}</p>
 </section>
@@ -217,7 +220,7 @@ def paper_page(p, prev_p, next_p, stats):
 <section>
 <h2>How we ran it</h2>
 <ul>
-<li>{'We ran the authors\' own code unchanged first.' if run.get('used_author_code') else 'No authors\' code was available, so we wrote the analysis from the methods section.'}</li>
+<li>{code_note}</li>
 <li>Script: <a href="{REPO_URL}/blob/main/papers/{esc(p['dir'])}/{esc(run.get('script', ''))}"><code>{esc(run.get('script', ''))}</code></a>{f' · runtime {run["runtime_s"]} s' if run.get('runtime_s') is not None else ''}</li>
 <li>Software: {esc(software) or 'see environment files'}</li>
 <li>Claims and tolerances were frozen in git (tag <code>claims-frozen-{esc(pid)}</code>) before any analysis ran.</li>
@@ -247,10 +250,10 @@ def index_page(papers, stats):
         cards.append(
             f'<a class="case" href="papers/{esc(pid)}.html"><span class="case-meta">{esc(p["card"]["journal"])}</span>'
             f'{badge(p["card"]["verdict"])}<b>{esc(case.get("short", pid))}</b>'
-            f'<span>{esc(case.get("finding", ""))}</span></a>'
+            f'<span>{esc(fill(case.get("teaser", case.get("finding", "")), stats))}</span></a>'
         )
     screening_rows = "".join(
-        f'<tr><td>{esc(s["title"])}<div class=muted>{esc(s.get("journal", ""))} · '
+        f'<tr><td>{esc(s["title"]) if s["title"] != s["doi"] else ""}<div class=muted>{esc(s.get("journal", ""))} · '
         f'<a href="https://doi.org/{esc(s["doi"])}">{esc(s["doi"])}</a></div></td>'
         f'<td>{esc(STAGE_LABEL[s["stage"]])}</td><td>{esc(s.get("reason", ""))}</td></tr>'
         for s in CONTENT.get("screening", [])
@@ -322,6 +325,7 @@ STAGE_LABEL = {"passed": "Passed gate", "on_request": "Flagged: data on request"
 
 if __name__ == "__main__":
     CONTENT = json.loads((SITE / "content.json").read_text())
+    CONTENT["screening"] = json.loads((SITE / "screening.json").read_text())
     CONTENT_NAV = [("Overview", "index.html")] + [
         (CONTENT["cases"][pid]["short"], f"papers/{pid}.html") for pid in CONTENT.get("paper_order", [])
         if (ROOT / "papers" / pid / "report_card.json").exists()
