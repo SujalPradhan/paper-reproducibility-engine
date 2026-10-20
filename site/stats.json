@@ -7,10 +7,15 @@
   "n_tasks": 24,
   "n_papers_reproduced": 1,
   "n_papers_partial": 3,
+  "n_audit_overrides": 0,
+  "n_audited": 4,
   "median_runtime_s": 1,
   "n_reproduced": 11,
   "n_partial": 9,
   "n_not_reproduced": 4,
   "n_not_reproducible": 0,
-  "pct_reproduced": 46
+  "n_close": 20,
+  "pct_reproduced": 46,
+  "n_misses": 13,
+  "n_misses_explained": 9
 }

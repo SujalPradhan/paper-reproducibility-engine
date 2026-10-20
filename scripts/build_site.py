@@ -2,10 +2,11 @@
 
 Usage: python scripts/build_site.py
 
-Reads  papers/*/claims.json, report_card.json, outputs/results.json, steps.log
-       site/content.json (narrative copy; must not contain literal digits, so every
+Reads  papers/*/claims.json, report_card.json, outputs/results.json, steps.log, audit.json
+       site/content.json (copy; narrative strings must not contain literal digits, so every
        number on the site comes from pipeline outputs via {placeholders})
-Writes site/index.html, site/papers/<id>.html, site/assets/*
+       site/screening.json (from scripts/extract_screening.py)
+Writes site/index.html, site/papers/<id>.html, site/stats.json
 """
 
 import html
@@ -13,83 +14,95 @@ import json
 import re
 import statistics
 import sys
+from decimal import Decimal
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from compare import precision_tolerance  # noqa: E402
+from compare import null_value, number_text, precision_tolerance  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 REPO_URL = "https://github.com/SujalPradhan/paper-reproducibility-engine"
-VERDICT_ORDER = ["Reproduced", "Partial", "Not reproduced", "Not reproducible"]
-VERDICT_ICON = {"Reproduced": "✓", "Partial": "≈", "Not reproduced": "✗", "Not reproducible": "–"}
-VERDICT_CLASS = {"Reproduced": "good", "Partial": "warn", "Not reproduced": "bad", "Not reproducible": "na"}
+VERDICTS = ["Reproduced", "Partial", "Not reproduced", "Not reproducible"]
+ICON = {"Reproduced": "✓", "Partial": "≈", "Not reproduced": "✗", "Not reproducible": "–"}
+CLS = {"Reproduced": "good", "Partial": "warn", "Not reproduced": "bad", "Not reproducible": "na"}
+STAGE_LABEL = {"passed": "Passed gate", "on_request": "Data on request", "rejected": "Dropped"}
 
 esc = html.escape
 
 
-def load_papers():
+def load_papers(content):
     papers = []
-    for d in sorted((ROOT / "papers").iterdir()):
-        card_path = d / "report_card.json"
-        if not card_path.exists():
-            continue
-        card = json.loads(card_path.read_text())
-        claims = json.loads((d / "claims.json").read_text())
-        results_path = d / "outputs" / "results.json"
-        results = json.loads(results_path.read_text()) if results_path.exists() else {}
-        log = (d / "steps.log").read_text() if (d / "steps.log").exists() else ""
-        papers.append({"dir": d.name, "card": card, "claims": claims, "results": results, "log": log})
-    order = {pid: i for i, pid in enumerate(CONTENT.get("paper_order", []))}
-    papers.sort(key=lambda p: order.get(p["card"]["paper_id"], 99))
+    configured = content["paper_order"]
+    available = {p.parent.name for p in (ROOT / "papers").glob("*/report_card.json")}
+    if len(configured) != len(set(configured)) or set(configured) != available:
+        sys.exit("build_site: paper_order must include every report card exactly once")
+    for pid in content["paper_order"]:
+        d = ROOT / "papers" / pid
+        results = d / "outputs" / "results.json"
+        audit = d / "audit.json"
+        papers.append({
+            "id": pid,
+            "card": json.loads((d / "report_card.json").read_text()),
+            "claims": json.loads((d / "claims.json").read_text()),
+            "results": json.loads(results.read_text()) if results.exists() else {},
+            "log": (d / "steps.log").read_text() if (d / "steps.log").exists() else "",
+            "overrides": json.loads(audit.read_text()).get("overrides", []) if audit.exists() else [],
+            "audited": (d / "audit.md").exists(),
+        })
     return papers
 
 
-def chart_rows(papers):
+def decimals(text):
+    return max(0, -Decimal(number_text(text)).as_tuple().exponent)
+
+
+def fmt_value(x, ref_text):
+    return "not computed" if x is None else f"{x:.{decimals(ref_text) + 1}f}"
+
+
+def claim_rows(papers, content):
     rows = []
     for p in papers:
-        short = CONTENT.get("cases", {}).get(p["card"]["paper_id"], {}).get("short", p["card"]["paper_id"])
+        short = content["cases"][p["id"]]["short"]
+        frozen_claims = {c["id"]: c for c in p["claims"]["claims"]}
         for c in p["card"]["claims"]:
+            key = f"{p['id']}/{c['id']}"
             d = c["details"]
-            paper_v = d.get("paper")
-            ours = d.get("ours")
-            dev = tol = digits = digits_tol = None
-            if ours is not None and paper_v not in (None, 0):
-                dev = 100 * (ours - paper_v) / abs(paper_v)
-                tol = 100 * d["tolerance"] / abs(paper_v)
+            paper_v, ours = d.get("paper"), d.get("ours")
+            digits = digits_tol = None
             if ours is not None and paper_v is not None:
                 unit = 2 * precision_tolerance(c["paper_text"])
                 digits = (ours - paper_v) / unit
                 digits_tol = d["tolerance"] / unit
+            cause = content["causes"].get(key)
+            if c["verdict"] != "Reproduced" and cause not in content["cause_labels"]:
+                sys.exit(f"build_site: no cause assigned for missed claim {key}")
             rows.append({
                 "paper": short,
-                "paper_id": p["card"]["paper_id"],
+                "paper_id": p["id"],
                 "claim": c["id"],
+                "label": content["claim_labels"].get(key, c["text"]),
                 "text": c["text"],
                 "verdict": c["verdict"],
                 "paper_text": c["paper_text"],
                 "ours": fmt_value(ours, c["paper_text"]),
-                "dev": dev,
-                "tol": tol,
+                "paper_value": paper_v,
+                "ours_value": ours,
+                "tolerance": d.get("tolerance"),
+                "reference_value": null_value(frozen_claims[c["id"]]),
                 "digits": digits,
                 "digits_tol": digits_tol,
+                "cause": content["cause_labels"].get(cause) if c["verdict"] != "Reproduced" else None,
+                "cause_key": cause if c["verdict"] != "Reproduced" else None,
             })
     return rows
 
 
-def fmt_value(x, ref_text):
-    if x is None:
-        return "not computed"
-    m = re.search(r"\.(\d+)", str(ref_text))
-    decimals = len(m.group(1)) if m else 0
-    return f"{x:.{decimals + 1}f}"
-
-
-def stats_for(papers, rows):
+def compute_stats(papers, rows, screening):
     verdicts = [r["verdict"] for r in rows]
     runtimes = [p["results"].get("run", {}).get("runtime_s") for p in papers]
-    runtimes = [r for r in runtimes if r is not None]
-    screening = CONTENT.get("screening", [])
+    runtimes = [runtime for runtime in runtimes if runtime is not None]
     s = {
         "n_papers": len(papers),
         "n_claims": len(rows),
@@ -99,54 +112,63 @@ def stats_for(papers, rows):
         "n_tasks": len(list((ROOT / "tasks").glob("*__*/task.json"))),
         "n_papers_reproduced": sum(1 for p in papers if p["card"]["verdict"] == "Reproduced"),
         "n_papers_partial": sum(1 for p in papers if p["card"]["verdict"] == "Partial"),
+        "n_audit_overrides": sum(len(p["overrides"]) for p in papers),
+        "n_audited": sum(1 for p in papers if p["audited"]),
         "median_runtime_s": round(statistics.median(runtimes)) if runtimes else 0,
     }
-    for v in VERDICT_ORDER:
+    for v in VERDICTS:
         s["n_" + v.lower().replace(" ", "_")] = verdicts.count(v)
+    s["n_close"] = s["n_reproduced"] + s["n_partial"]
     s["pct_reproduced"] = round(100 * s["n_reproduced"] / len(rows)) if rows else 0
+    s["n_misses"] = sum(1 for r in rows if r["verdict"] != "Reproduced")
+    s["n_misses_explained"] = sum(1 for r in rows if r["cause"] and r["cause_key"] != "unexplained")
     return s
 
 
 def fill(text, stats):
-    """Fill {placeholders}; copy itself must be digit-free so numbers are traceable."""
+    """Fill {placeholders}; the copy itself must be digit-free so numbers are traceable."""
     if re.search(r"\d", re.sub(r"\{[a-z_]+\}", "", text)):
         sys.exit(f"build_site: literal digit in narrative copy: {text!r}")
     return text.format(**stats)
 
 
 def badge(verdict):
-    return (f'<span class="badge {VERDICT_CLASS[verdict]}"><span aria-hidden="true">'
-            f'{VERDICT_ICON[verdict]}</span> {esc(verdict)}</span>')
+    return (f'<span class="badge {CLS[verdict]}"><span aria-hidden="true">{ICON[verdict]}</span> '
+            f"{esc(verdict)}</span>")
 
 
-def page(title, description, body, depth=0, data=None):
+def page(content, title, description, body, depth=0, data=None):
     prefix = "../" * depth
     data_tag = ""
     if data is not None:
         data_tag = ('<script type="application/json" id="page-data">'
-                    + json.dumps(data).replace("</", "<\\/") + "</script>")
-    nav = "".join(
-        f'<a href="{prefix}{href}">{esc(label)}</a>' for label, href in CONTENT_NAV
-    )
+                    + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    current = ' aria-current="page"'
+    nav = f'<a href="{prefix}index.html"{current if depth == 0 else ""}>Overview</a>'
+    for pid in content["paper_order"]:
+        short = content["cases"][pid]["short"]
+        active = current if depth and title.startswith(short) else ""
+        nav += f'<a href="{prefix}papers/{pid}.html"{active}>{esc(short)}</a>'
     return f"""<!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
 <link rel="stylesheet" href="{prefix}assets/style.css">
-<script>try{{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
+<script>document.documentElement.classList.remove("no-js");try{{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 </head>
 <body>
-<header class="topnav"><nav>{nav}</nav>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topnav"><nav aria-label="Main">{nav}</nav>
 <button class="theme" type="button" aria-label="Toggle light or dark theme">◐</button></header>
-<main>
+<main id="main">
 {body}
 </main>
 <footer class="foot">
-<p>{esc(CONTENT["footer"])}</p>
-<p><a href="{REPO_URL}">Code, data links, logs and audit trail on GitHub</a></p>
+<p>{esc(content["footer"])}</p>
+<p><a href="{REPO_URL}">Code, data links, logs and audits on GitHub</a></p>
 </footer>
 <div class="tooltip" role="status" hidden></div>
 {data_tag}
@@ -156,199 +178,249 @@ def page(title, description, body, depth=0, data=None):
 """
 
 
-def claim_table(card):
-    head = ("<tr><th>Claim</th><th>Paper says</th><th>We got</th><th>Difference</th>"
-            "<th>Tolerance</th><th>Verdict</th><th>Notes</th></tr>")
-    body = []
-    for c in card["claims"]:
-        d = c["details"]
-        notes = c.get("notes") or d.get("reason", "")
-        if c.get("override_reason"):
-            notes += f" Auditor override (rule said {c['rule_verdict']}): {c['override_reason']}"
-        diff = "—" if d.get("diff") is None else f"{d['diff']:+.{decimals(c['paper_text']) + 1}f}"
-        tol = "—" if d.get("tolerance") is None else f"±{d['tolerance']:.{decimals(c['paper_text']) + 1}f}"
-        body.append(
-            f"<tr><td><b>{esc(c['id'])}</b> {esc(c['text'])}"
-            f"<div class=muted>{esc(c.get('location') or '')}</div></td>"
-            f"<td class=num>{esc(c['paper_text'])}</td>"
-            f"<td class=num>{esc(fmt_value(d.get('ours'), c['paper_text']))}</td>"
-            f"<td class=num>{diff}</td><td class=num>{tol}</td>"
-            f"<td>{badge(c['verdict'])}</td><td>{esc(notes)}</td></tr>"
-        )
-    return f'<div class="table-wrap"><table>{head}{"".join(body)}</table></div>'
+def section_head(content, key, stats):
+    s = content["sections"][key]
+    sub = f'<p class="sub">{esc(fill(s["sub"], stats))}</p>' if s.get("sub") else ""
+    return f'<h2>{esc(fill(s["h"], stats))}</h2>{sub}'
 
 
-def decimals(text):
-    m = re.search(r"\.(\d+)", str(text))
-    return len(m.group(1)) if m else 0
+def legend_html():
+    return '<div class="legend">' + "".join(
+        f'<span><i class="sw {CLS[v]}"></i>{ICON[v]} {esc(v)}</span>' for v in VERDICTS[:3]
+    ) + "</div>"
 
 
-def paper_page(p, prev_p, next_p, stats):
-    card, claims, results = p["card"], p["claims"], p["results"]
-    pid = card["paper_id"]
-    case = CONTENT.get("cases", {}).get(pid, {})
-    run = results.get("run", {})
-    data = claims.get("data", {})
-    code = claims.get("code") or {}
-    links = [f'<a href="https://doi.org/{esc(card["doi"])}">Article (doi:{esc(card["doi"])})</a>']
-    if data.get("url"):
-        links.append(f'<a href="{esc(data["url"])}">Dataset ({esc(data.get("license", "license unknown"))})</a>')
-    if code.get("url"):
-        links.append(f'<a href="{esc(code["url"])}">Authors\' code</a>')
-    links.append(f'<a href="{REPO_URL}/tree/main/papers/{esc(p["dir"])}">Our reproduction files</a>')
-    software = ", ".join(f"{k} {v}" for k, v in (run.get("software") or {}).items())
-    log_lines = p["log"].strip().splitlines()
-    log_excerpt = "\n".join(log_lines[:80]) + ("\n…" if len(log_lines) > 80 else "")
-    pager = ['<nav class="pager">']
-    if prev_p:
-        pager.append(f'<a href="{prev_p["card"]["paper_id"]}.html">← Previous paper</a>')
-    pager.append('<a href="../index.html">Overview</a>')
-    if next_p:
-        pager.append(f'<a href="{next_p["card"]["paper_id"]}.html">Next paper →</a>')
-    pager.append("</nav>")
-    audit_note = CONTENT.get("audit", {}).get(pid, "")
-    code_note = ("We ran the authors' own code first, changing only file paths and plot-only packages."
-                 if run.get("used_author_code")
-                 else "The authors deposited no code, so we wrote the analysis from the methods section.")
-    body = f"""
-<section class="hero">
-<p class="kicker">{esc(card['journal'])} · {esc(str(claims.get('year', '')))} · {esc(claims.get('article_license', ''))}</p>
-<h1>{esc(card['title'])}</h1>
-<p class="lead">{esc(fill(case.get('finding', ''), stats))}</p>
-<p>{badge(card['verdict'])}</p>
-<p class="links">{' · '.join(links)}</p>
-</section>
-<section>
-<h2>Claim by claim</h2>
-<figure class="chart" data-chart="deviation" data-paper="{esc(pid)}" aria-label="Deviation of each reproduced value from the paper's value"></figure>
-{claim_table(card)}
-</section>
-<section class="two-col">
-<div><h2>What the paper said to do</h2><ol>{''.join(f'<li>{esc(s)}</li>' for s in claims.get('methods_steps', []))}</ol></div>
-<div><h2>What the paper left unclear</h2><ul>{''.join(f'<li>{esc(s)}</li>' for s in claims.get('ambiguities', [])) or '<li>Nothing material.</li>'}</ul></div>
-</section>
-<section>
-<h2>How we ran it</h2>
-<ul>
-<li>{code_note}</li>
-<li>Script: <a href="{REPO_URL}/blob/main/papers/{esc(p['dir'])}/{esc(run.get('script', ''))}"><code>{esc(run.get('script', ''))}</code></a>{f' · runtime {run["runtime_s"]} s' if run.get('runtime_s') is not None else ''}</li>
-<li>Software: {esc(software) or 'see environment files'}</li>
-<li>Claims and tolerances were frozen in git (tag <code>claims-frozen-{esc(pid)}</code>) before any analysis ran.</li>
-{f'<li>Independent audit: {esc(audit_note)}</li>' if audit_note else ''}
-</ul>
-<details><summary>Step log</summary><pre>{esc(log_excerpt)}</pre></details>
-</section>
-{''.join(pager)}
-"""
-    page_data = {"rows": [r for r in ROWS if r["paper_id"] == pid]}
-    return page(f"{CONTENT.get('cases', {}).get(pid, {}).get('short', pid)} · Reproduction",
-                f"Report card for {card['title']}", body, depth=1, data=page_data)
+def outcome_strip(claims):
+    """A source-derived chart that also works without JavaScript."""
+    return '<div class="outcome-strip" aria-hidden="true">' + "".join(
+        f'<span class="{CLS[v]}" style="flex:{n}"></span>'
+        for v in VERDICTS
+        if (n := sum(c["verdict"] == v for c in claims))
+    ) + "</div>"
 
 
-def index_page(papers, stats):
-    hero = CONTENT["hero"]
+def index_page(content, papers, rows, stats, screening):
+    hero = content["hero"]
     tiles = "".join(
-        f'<div class="tile"><div class="tile-value">{esc(fill(t["value"], stats))}</div>'
-        f'<div class="tile-label">{esc(fill(t["label"], stats))}</div></div>'
+        f'<div class="outcome {CLS[t["verdict"]]}"><div class="tile-value">{esc(fill(t["value"], stats))}'
+        f'<span aria-hidden="true">{ICON[t["verdict"]]}</span></div>'
+        f'<b>{esc(t["verdict"])}</b><div class="tile-label">{esc(t["label"])}</div></div>'
         for t in hero["tiles"]
     )
-    narrative = "".join(f"<p>{fill(x, stats)}</p>" for x in CONTENT["narrative"])
-    cards = []
-    for p in papers:
-        pid = p["card"]["paper_id"]
-        case = CONTENT.get("cases", {}).get(pid, {})
-        cards.append(
-            f'<a class="case" href="papers/{esc(pid)}.html"><span class="case-meta">{esc(p["card"]["journal"])}</span>'
-            f'{badge(p["card"]["verdict"])}<b>{esc(case.get("short", pid))}</b>'
-            f'<span>{esc(fill(case.get("teaser", case.get("finding", "")), stats))}</span></a>'
-        )
+    steps = "".join(
+        f'<li><span class="step-n" aria-hidden="true"></span><b>{esc(s["t"])}</b><span>{esc(s["d"])}</span></li>'
+        for s in content["steps"]
+    )
+    who = "".join(
+        f'<div class="tile"><div class="tile-label strong">{esc(w["label"])}</div>'
+        f'<div class="tile-value">{esc(fill(w["value"], stats))}</div>'
+        f'<div class="tile-label">{esc(fill(w["d"], stats))}</div></div>'
+        for w in content["who"]
+    )
+    cards = "".join(
+        f'<a class="case" href="papers/{esc(p["id"])}.html">'
+        f'<span class="case-meta">{esc(p["card"]["journal"])}</span>'
+        f'<b>{esc(content["cases"][p["id"]]["short"])}</b>{badge(p["card"]["verdict"])}'
+        f'<span>{esc(fill(content["cases"][p["id"]]["finding"], stats))}</span>'
+        f'<span class="case-link">See claims and evidence →</span></a>'
+        for p in papers
+    )
+    rules = "".join(f"<li>{badge(v)} {esc(content['verdict_rules'][v])}</li>" for v in VERDICTS)
     screening_rows = "".join(
-        f'<tr><td>{esc(s["title"]) if s["title"] != s["doi"] else ""}<div class=muted>{esc(s.get("journal", ""))} · '
-        f'<a href="https://doi.org/{esc(s["doi"])}">{esc(s["doi"])}</a></div></td>'
+        f'<tr><td>{esc(s["title"]) + "<br>" if s["title"] != s["doi"] else ""}'
+        f'<span class=muted>{esc(s.get("journal", ""))} · <a href="https://doi.org/{esc(s["doi"])}">{esc(s["doi"])}</a></span></td>'
         f'<td>{esc(STAGE_LABEL[s["stage"]])}</td><td>{esc(s.get("reason", ""))}</td></tr>'
-        for s in CONTENT.get("screening", [])
+        for s in screening
     )
-    tools = "".join(
-        f'<tr><td><b>{esc(t["tool"])}</b></td><td>{esc(t["role"])}</td>'
-        f'<td>{esc(t["decision"])}</td><td>{esc(t["reason"])}</td></tr>'
-        for t in CONTENT.get("tools", [])
+    notes = "".join(f"<li>{esc(fill(n, stats))}</li>" for n in content["notes"])
+    paper_chart_text = "".join(
+        f'<li>{esc(content["cases"][p["id"]]["short"])}: ' + " · ".join(
+            f'{sum(c["verdict"] == v for c in p["card"]["claims"])} {v.lower()}'
+            for v in VERDICTS if any(c["verdict"] == v for c in p["card"]["claims"])
+        ) + "</li>" for p in papers
     )
-    methods = "".join(f"<li>{x}</li>" for x in CONTENT.get("methods", []))
-    rules = "".join(
-        f"<li>{badge(v)} {esc(CONTENT['verdict_rules'][v])}</li>" for v in VERDICT_ORDER
+    audit_chart_text = "".join(
+        f'<li>{esc(label)}: {sum(r["cause_key"] == key for r in rows)}</li>'
+        for key, label in content["cause_labels"].items() if any(r["cause_key"] == key for r in rows)
     )
-    task = CONTENT.get("task_example")
-    task_html = ""
-    if task:
-        body = (ROOT / task["path"]).read_text() if (ROOT / task["path"]).exists() else ""
-        task_html = (f'<section><h2>{esc(task["heading"])}</h2><p>{fill(task["intro"], stats)}</p>'
-                     f'<details open><summary>{esc(task["path"])}</summary><pre class="task">{esc(body)}</pre></details></section>')
-    footnotes = "".join(f"<li>{x}</li>" for x in CONTENT.get("footnotes", []))
     body = f"""
 <section class="hero">
 <p class="kicker">{esc(hero['kicker'])}</p>
 <h1>{esc(hero['title'])}</h1>
-<p class="lead">{fill(hero['lead'], stats)}</p>
-<div class="tiles">{tiles}</div>
+<p class="lead">{esc(fill(hero['lead'], stats))}</p>
+<div class="outcomes" aria-label="Claim results">{tiles}</div>
+{outcome_strip([c for p in papers for c in p['card']['claims']])}
+<p class="scope">{esc(hero['scope'])}</p>
+<div class="jump-links"><a href="#results">Compare papers ↓</a><a href="#method">How we checked ↓</a></div>
 </section>
-<section>
-<h2>{esc(CONTENT['chart_heading'])}</h2>
-<p class="chart-sub">{esc(CONTENT['chart_sub'])}</p>
-<figure class="chart" data-chart="deviation" aria-label="Deviation of every reproduced claim from the paper's value"></figure>
-<p class="caption">{fill(CONTENT['chart_caption'], stats)}</p>
-<details><summary>Show as a table</summary><div class="table-wrap"><table class="rows-table"></table></div></details>
+
+<div class="analysis-grid" id="results">
+<section class="panel">
+{section_head(content, "verdicts", stats)}
+<figure class="chart" data-chart="verdicts" aria-label="Claim verdicts for each paper">{legend_html()}
+<ul class="chart-text">{paper_chart_text}</ul>
+<figcaption>Each block is a claim. {stats['n_papers_reproduced']} paper fully reproduced; {stats['n_papers_partial']} partly reproduced.</figcaption></figure>
+<details class="more"><summary>What the verdicts mean</summary><ul class="rules">{rules}</ul></details>
 </section>
-<section class="narrative">{narrative}</section>
-<section>
-<h2>The papers</h2>
-<div class="cases">{''.join(cards)}</div>
+
+<section class="panel">
+{section_head(content, "causes", stats)}
+<figure class="chart" data-chart="causes" aria-label="Audit observations for non-matching claims">
+<ul class="chart-text">{audit_chart_text}</ul>
+<figcaption>One audit category per claim. These observations do not establish causation.</figcaption></figure>
 </section>
-<section>
-<h2>{esc(CONTENT['screening_heading'])}</h2>
-<figure class="chart" data-chart="screening" aria-label="Papers screened, passed the gate and reproduced"></figure>
-<details><summary>Every paper we screened and why it was kept or dropped</summary>
-<div class="table-wrap"><table><tr><th>Paper</th><th>Outcome</th><th>Reason</th></tr>{screening_rows}</table></div></details>
+</div>
+
+<section class="paper-section" id="papers">
+{section_head(content, "papers", stats)}
+<div class="cases">{cards}</div>
 </section>
-<section>
-<h2>Methods and evidence</h2>
-<ol class="methods">{methods}</ol>
-<h3>Verdict rules (fixed before any reproduction ran)</h3>
-<ul class="rules">{rules}</ul>
+
+<section class="method-section" id="method">
+{section_head(content, "how", stats)}
+<ol class="pipeline">{steps}</ol>
+<p class="audit-note">{stats['n_audited']} independent agent audits · {stats['n_audit_overrides']} verdict overrides · <a href="{REPO_URL}/blob/main/audit.md">Read the audit</a></p>
+<details class="more method-details" data-render-on-open><summary>Paper selection and screening records</summary>
+<div class="selection-grid"><div>
+{section_head(content, "funnel", stats)}
+<figure class="chart" data-chart="funnel" aria-label="Papers screened, passed the gate, selected and audited">
+<figcaption>{stats['n_screened']} screened → {stats['n_gated']} passed → {stats['n_papers']} selected and audited.</figcaption></figure>
+</div><p class="selection-note">{stats['n_on_request']} papers offered data only on request. Selection also considered size and complexity; this pilot does not measure a journal’s reproducibility rate.</p></div>
+<details class="more"><summary>All screened papers and why</summary>
+<div class="table-wrap"><table><caption>Screening decisions</caption><thead><tr><th scope="col">Paper</th><th scope="col">Outcome</th><th scope="col">Reason</th></tr></thead><tbody>{screening_rows}</tbody></table></div></details>
+</details>
+<details class="more" data-render-on-open>
+<summary>Compare all {stats['n_claims']} claims in detail</summary>
+<p class="sub">{esc(fill(content["sections"]["claims"]["sub"], stats))}</p>
+<figure class="chart" data-chart="claims" aria-label="Every claim's distance from the paper's value"><figcaption>Signed logarithmic scale in last-printed-digit units; bands show frozen tolerances. Use the paper reports for original values.</figcaption></figure>
+</details>
+<details class="more"><summary>Scope and limitations</summary><ul class="notes">{notes}</ul></details>
 </section>
-<section>
-<h2>What we reused and what we built</h2>
-<div class="table-wrap"><table><tr><th>Tool</th><th>Role</th><th>Decision</th><th>Why</th></tr>{tools}</table></div>
+
+<section class="value-section">
+{section_head(content, "who", stats)}
+<div class="tiles">{who}</div>
+<p class="sub"><a href="{REPO_URL}/blob/main/tasks.md">How the AI-lab tasks are built</a> · <a href="{REPO_URL}/tree/main/tasks">Browse all tasks</a></p>
 </section>
-{task_html}
-<section class="footnotes"><h2>Notes</h2><ol>{footnotes}</ol></section>
 """
-    screening = {
-        "stages": [
-            {"label": "Screened", "n": stats["n_screened"]},
-            {"label": "Passed license and data gate", "n": stats["n_gated"]},
-            {"label": "Reproduced in full or in part", "n": stats["n_papers_reproduced"] + stats["n_papers_partial"]},
-        ]
-    }
-    return page(CONTENT["page_title"], CONTENT["description"], body, data={"rows": ROWS, "screening": screening})
-
-
-STAGE_LABEL = {"passed": "Passed gate", "on_request": "Flagged: data on request", "rejected": "Dropped"}
-
-if __name__ == "__main__":
-    CONTENT = json.loads((SITE / "content.json").read_text())
-    CONTENT["screening"] = json.loads((SITE / "screening.json").read_text())
-    CONTENT_NAV = [("Overview", "index.html")] + [
-        (CONTENT["cases"][pid]["short"], f"papers/{pid}.html") for pid in CONTENT.get("paper_order", [])
-        if (ROOT / "papers" / pid / "report_card.json").exists()
+    paper_data = [{
+        "id": p["id"],
+        "short": content["cases"][p["id"]]["short"],
+        "verdict": p["card"]["verdict"],
+        "counts": {v: sum(1 for c in p["card"]["claims"] if c["verdict"] == v) for v in VERDICTS},
+        "labels": [{"v": c["verdict"], "l": content["claim_labels"].get(f"{p['id']}/{c['id']}", c["text"])}
+                   for c in sorted(p["card"]["claims"], key=lambda c: VERDICTS.index(c["verdict"]))],
+    } for p in papers]
+    cause_counts = {}
+    for r in rows:
+        if r["cause"]:
+            cause_counts.setdefault(r["cause_key"], []).append(f"{r['paper']}: {r['label']}")
+    causes = sorted(({"key": k, "label": content["cause_labels"][k], "n": len(v), "claims": v}
+                     for k, v in cause_counts.items()),
+                    key=lambda c: (c["key"] == "unexplained", -c["n"]))  # unexplained last, like "Other"
+    funnel = [
+        {"label": "Screened", "n": stats["n_screened"]},
+        {"label": "Passed licence and data gate", "n": stats["n_gated"]},
+        {"label": "Selected and audited", "n": stats["n_papers"]},
     ]
-    papers = load_papers()
-    ROWS = chart_rows(papers)
-    stats = stats_for(papers, ROWS)
+    data = {"rows": rows, "papers": paper_data, "causes": causes, "funnel": funnel}
+    return page(content, content["page_title"], content["description"], body, data=data)
+
+
+def paper_page(content, p, prev_p, next_p, rows, stats):
+    card, claims, run = p["card"], p["claims"], p["results"].get("run", {})
+    pid = p["id"]
+    case = content["cases"][pid]
+    data, code = claims.get("data", {}), claims.get("code") or {}
+    links = [f'<a href="https://doi.org/{esc(card["doi"])}">Article</a>']
+    if data.get("url"):
+        links.append(f'<a href="{esc(data["url"])}">Data ({esc(data.get("license", "licence unknown"))})</a>')
+    if code.get("url"):
+        links.append(f'<a href="{esc(code["url"])}">Authors\' code</a>')
+    links.append(f'<a href="{REPO_URL}/tree/main/papers/{esc(pid)}">Our files</a>')
+    links.append(f'<a href="{REPO_URL}/blob/main/papers/{esc(pid)}/audit.md">Audit report</a>')
+
+    claim_by_id = {c["id"]: c for c in card["claims"]}
+    paper_rows = [r for r in rows if r["paper_id"] == pid]
+    table = "".join(
+        f'<tr><th scope="row"><b>{esc(r["label"])}</b><div class="muted">{esc(r["claim"])}</div></th>'
+        f'<td class="num">{esc(r["paper_text"])}</td><td class="num">{esc(str(r["ours_value"])) if r["ours_value"] is not None else "not computed"}</td>'
+        f'<td class="num">{("±" + esc(str(r["tolerance"]))) if r["tolerance"] is not None else "—"}</td>'
+        f'<td>{badge(r["verdict"])}</td>'
+        f'<td>{esc(claim_by_id[r["claim"]].get("notes") or claim_by_id[r["claim"]]["details"].get("reason", ""))}'
+        f'<div class="muted">{esc(claim_by_id[r["claim"]].get("location") or "")}</div></td></tr>'
+        for r in paper_rows
+    )
+    counts = " · ".join(
+        f'{sum(r["verdict"] == v for r in paper_rows)} {v.lower()}'
+        for v in VERDICTS if any(r["verdict"] == v for r in paper_rows)
+    )
+    code_note = ("Authors' analysis retained; plotting and parallel execution adapted."
+                 if run.get("used_author_code") else "No authors' code; one script written from the methods.")
+    software = ", ".join(f"{k} {v}" for k, v in (run.get("software") or {}).items())
+    log_lines = p["log"].strip().splitlines()
+    log = "\n".join(log_lines[:80]) + ("\n…" if len(log_lines) > 80 else "")
+    li = lambda xs: "".join(f"<li>{esc(x)}</li>" for x in xs)  # noqa: E731
+    pager = '<nav class="pager">'
+    pager += f'<a href="{prev_p["id"]}.html">← {esc(content["cases"][prev_p["id"]]["short"])}</a>' if prev_p else "<span></span>"
+    pager += f'<a href="{next_p["id"]}.html">{esc(content["cases"][next_p["id"]]["short"])} →</a>' if next_p else "<span></span>"
+    pager += "</nav>"
+    body = f"""
+<section class="hero">
+<p class="kicker">{esc(card['journal'])} · {esc(str(claims.get('year', '')))} · {esc(claims.get('article_license', ''))}</p>
+<h1>{esc(case['short'])}</h1>
+<p class="paper-title">{esc(card['title'])}</p>
+<p>{badge(card['verdict'])}</p>
+<p class="lead">{esc(fill(case['finding'], stats))}</p>
+{outcome_strip(card['claims'])}
+<p class="claim-counts">{counts}</p>
+<p class="links">{' · '.join(links)}</p>
+</section>
+<section>
+<h2>Paper vs re-run</h2>
+<p class="sub">Each claim uses its own scale and original units. Bars start at zero, or the no-effect value for ratios and proportions. Verdicts use the frozen tolerances.</p>
+<figure class="chart comparison" data-chart="comparison" data-paper="{esc(pid)}" aria-label="Original paper values compared with re-run values">
+<figcaption>{len(paper_rows)} claims compared. Full values, tolerances and notes are available below.</figcaption></figure>
+<details class="more"><summary>What the audit found</summary><p>{esc(case['evidence'])}</p></details>
+<details class="more evidence"><summary>Full values, tolerances and evidence</summary>
+<div class="table-wrap"><table><caption>Unrounded re-run values and original printed claims</caption><thead><tr><th scope="col">Claim</th><th scope="col">Paper</th><th scope="col">Re-run</th><th scope="col">Tolerance</th><th scope="col">Verdict</th><th scope="col">Evidence</th></tr></thead><tbody>{table}</tbody></table></div></details>
+<details class="more" data-render-on-open><summary>Inspect differences at printed precision</summary>
+<p class="sub">Distance from the paper’s value in last-printed-digit units. The signed logarithmic scale compresses large differences; bands show the frozen tolerances.</p>
+<figure class="chart" data-chart="claims" data-paper="{esc(pid)}" aria-label="Claim differences in last-printed-digit units"></figure></details>
+</section>
+<section>
+<h2>Checks</h2>
+<ul class="checks">
+<li><b>Frozen first.</b> Numbers and tolerances tagged <code>claims-frozen-{esc(pid)}</code> before any analysis.</li>
+<li><b>Re-run.</b> {esc(code_note)} {f'Runtime {run["runtime_s"]:.0f} s.' if run.get('runtime_s') is not None else ''}</li>
+<li><b>Audited.</b> {esc(content['audit'].get(pid, ''))}</li>
+</ul>
+<details class="more"><summary>What the paper says to do</summary><ol>{li(claims.get('methods_steps', []))}</ol></details>
+<details class="more"><summary>What the paper leaves unclear</summary><ul>{li(claims.get('ambiguities', []))}</ul></details>
+<details class="more"><summary>Software</summary><p class="sub">{esc(software)}</p></details>
+<details class="more"><summary>Step log</summary><pre>{esc(log)}</pre></details>
+</section>
+{pager}
+"""
+    return page(content, f"{case['short']} · Reproduction", f"Report card for {card['title']}", body,
+                depth=1, data={"rows": paper_rows})
+
+
+def main():
+    content = json.loads((SITE / "content.json").read_text())
+    screening = json.loads((SITE / "screening.json").read_text())
+    papers = load_papers(content)
+    rows = claim_rows(papers, content)
+    stats = compute_stats(papers, rows, screening)
     (SITE / "papers").mkdir(parents=True, exist_ok=True)
-    (SITE / "index.html").write_text(index_page(papers, stats))
+    (SITE / "index.html").write_text(index_page(content, papers, rows, stats, screening))
     for i, p in enumerate(papers):
         prev_p = papers[i - 1] if i > 0 else None
         next_p = papers[i + 1] if i + 1 < len(papers) else None
-        (SITE / "papers" / f"{p['card']['paper_id']}.html").write_text(paper_page(p, prev_p, next_p, stats))
+        (SITE / "papers" / f"{p['id']}.html").write_text(paper_page(content, p, prev_p, next_p, rows, stats))
     (SITE / "stats.json").write_text(json.dumps(stats, indent=2) + "\n")
     print(json.dumps(stats, indent=2))
+
+
+if __name__ == "__main__":
+    main()

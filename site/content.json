@@ -1,7 +1,7 @@
 {
-  "page_title": "Do Wiley papers reproduce?",
-  "description": "An AI pipeline re-ran published Wiley papers from their public data and checked every headline number against pre-registered tolerances.",
-  "footer": "Straive innovation prototype. Not affiliated with or endorsed by Wiley. Articles are used under CC BY; datasets are linked, not mirrored.",
+  "page_title": "Do the numbers hold up? · Reproducibility Engine",
+  "description": "Headline findings from independently audited reproductions of selected Wiley papers, with claim-level comparisons and original evidence.",
+  "footer": "Straive innovation prototype. Not affiliated with or endorsed by Wiley. Articles used under CC BY; datasets linked, not mirrored.",
   "paper_order": [
     "cam4-2024-hpd",
     "ee-2022-roedeer-sexratio",
@@ -9,148 +9,186 @@
     "hsr-2023-ei-happiness"
   ],
   "hero": {
-    "kicker": "Reproducibility audit · Wiley open-access papers · prototype",
-    "title": "Do Wiley papers reproduce?",
-    "lead": "We took {n_papers} open-access Wiley papers, downloaded their public data, and re-ran the analyses without the authors' help. Every headline number was compared against a tolerance we committed to git before running anything.",
+    "kicker": "Straive · Reproducibility Engine · Pilot",
+    "title": "Do the numbers hold up?",
+    "lead": "We re-ran {n_claims} headline claims across {n_papers} Wiley papers, then independently audited every verdict.",
+    "scope": "Selected pilot papers. These results are not a journal-wide reproducibility rate.",
     "tiles": [
       {
-        "value": "{n_reproduced} of {n_claims}",
-        "label": "headline claims reproduced within the pre-registered tolerance"
+        "value": "{n_reproduced}",
+        "verdict": "Reproduced",
+        "label": "Within the frozen tolerance"
       },
       {
-        "value": "{n_papers_reproduced} of {n_papers}",
-        "label": "papers where every checked claim reproduced"
+        "value": "{n_partial}",
+        "verdict": "Partial",
+        "label": "Direction and significance hold; values differ"
       },
       {
-        "value": "{n_screened}",
-        "label": "papers screened for open data, open licence and a working download"
+        "value": "{n_not_reproduced}",
+        "verdict": "Not reproduced",
+        "label": "Outside the rules for a match"
       }
     ]
   },
-  "chart_heading": "Most numbers land close. A few don't, and the reasons are specific.",
-  "chart_sub": "Each row is one headline claim. The dot shows how far our value is from the paper's, counted in units of the last digit the paper printed: for a printed 0.42, a unit is 0.01. The green band is the tolerance fixed in git before we ran anything; by default it is half a unit, so 'Reproduced' means our number rounds to the paper's.",
-  "chart_caption": "Colour is the verdict, not the distance: a dot can sit close to zero and still be 'Not reproduced' when the significance conclusion flips. The axis is logarithmic beyond one unit so small and large misses fit on one scale. Hover or focus a row for both values, the tolerance and the relative difference. {n_not_reproducible} claims could not be computed from the deposited data.",
-  "narrative": [
-    "<b>Reproducibility is not a yes-or-no property of a paper.</b> Within a single paper, some numbers came back to the last printed digit and others did not. The useful output is the claim-level table, not a badge.",
-    "<b>When a number misses, there is usually a specific, checkable reason.</b> Across these papers the auditors found sample sizes printed differently in different places, standard errors that cannot produce the printed p-values, a Discussion that contradicts its own table, a decimal point slipped in a printed statistic, and, in one case, a software update that silently drops a slice of the data when the authors' own code is re-run today. These are exactly the signals an editor would want before publication, and none of them needs the authors to be wrong about their science.",
-    "<b>The method is the product, not the verdict count.</b> {n_papers} papers is not a rate, and we picked papers we expected to be tractable. What carries over is the pipeline: claims frozen in git before analysis, scripted re-runs from the original repositories, and an independent auditor who re-ran everything from a clean checkout."
+  "sections": {
+    "verdicts": {
+      "h": "Where the results held up",
+      "sub": "Headline claims, grouped by paper."
+    },
+    "causes": {
+      "h": "What the audits flagged",
+      "sub": "Observations across {n_misses} non-matching claims."
+    },
+    "how": {
+      "h": "How we checked",
+      "sub": "Claims and tolerances were frozen before analysis."
+    },
+    "funnel": {
+      "h": "A selected pilot",
+      "sub": "Licence, usable data and project scope determined the shortlist."
+    },
+    "who": {
+      "h": "What this makes possible"
+    },
+    "papers": {
+      "h": "The takeaway from each paper",
+      "sub": "Open a report to compare the original and re-run values."
+    },
+    "claims": {
+      "h": "Every number we checked",
+      "sub": "Distance from the paper’s value in last-printed-digit units. Bands show the frozen tolerance. The signed logarithmic scale compresses large differences."
+    }
+  },
+  "steps": [
+    {
+      "t": "Screen",
+      "d": "Open licence, public data, working download"
+    },
+    {
+      "t": "Freeze",
+      "d": "Headline numbers and tolerances locked in git"
+    },
+    {
+      "t": "Re-run",
+      "d": "Authors' code, or a script from the methods"
+    },
+    {
+      "t": "Compare",
+      "d": "Fixed rules give the verdict"
+    },
+    {
+      "t": "Audit",
+      "d": "A second agent re-runs from scratch"
+    },
+    {
+      "t": "Package",
+      "d": "Each number becomes an AI-lab task"
+    }
   ],
-  "screening_heading": "Finding reproducible papers is itself a signal",
-  "methods": [
-    "<b>Screen.</b> Search Europe PMC for open-access Wiley papers, read each data availability statement, and check the article licence (CC BY only), the data licence and a real anonymous download.",
-    "<b>Pre-register.</b> An extractor agent reads the full text and writes <code>claims.json</code>: each headline number exactly as printed, its location, the method steps, the ambiguities and a tolerance. The lead commits it and tags it <code>claims-frozen-&lt;paper&gt;</code> before any analysis runs.",
-    "<b>Reproduce.</b> A separate agent runs the authors' code unchanged where it exists, otherwise writes one clean script from the methods. The script itself writes <code>results.json</code>. Every assumption is logged before results are seen; any later change is marked POST-HOC.",
-    "<b>Compare.</b> <code>compare.py</code> applies fixed rules (below) to the frozen claims and the script's output. No human or agent picks the verdict.",
-    "<b>Audit.</b> A fresh agent that saw none of the above clones the repository, re-downloads the data from the original source, checks the checksums, re-runs the script three times, cross-checks key numbers with a different implementation, and can override a verdict only with a written reason.",
-    "<b>Package.</b> Each audited claim becomes an evaluation task in the CORE-Bench format, with a PaperBench-style rubric, for AI-lab evaluation sets."
+  "who": [
+    {
+      "value": "{n_papers_reproduced}",
+      "label": "Readers",
+      "d": "paper ready for a “Reproduced” badge"
+    },
+    {
+      "value": "{n_on_request}",
+      "label": "Editors",
+      "d": "papers flagged for “data on request”"
+    },
+    {
+      "value": "{n_tasks}",
+      "label": "AI labs",
+      "d": "evaluation tasks with a known answer"
+    }
   ],
   "verdict_rules": {
-    "Reproduced": "Our value is within the pre-registered tolerance of the paper's printed value.",
-    "Partial": "Outside tolerance, but the same direction, the same significance conclusion and within half the paper's magnitude.",
-    "Not reproduced": "Computed, but the direction, the significance conclusion or the magnitude differs beyond that.",
-    "Not reproducible": "The value could not be computed from the deposited data and the stated methods."
+    "Reproduced": "Within the tolerance frozen before analysis; usually the precision printed in the paper.",
+    "Partial": "Outside that tolerance, with the same direction, the same significance when known, and a bounded relative difference.",
+    "Not reproduced": "Computed, but outside the rules for Reproduced or Partial.",
+    "Not reproducible": "Couldn't be computed from the deposited data."
+  },
+  "cause_labels": {
+    "inconsistent": "Paper contradicts itself",
+    "unstated": "Method detail unresolved",
+    "data": "Possible data discrepancy",
+    "borderline": "Significance threshold sensitive",
+    "unexplained": "Small unexplained drift",
+    "precision": "Printing / precision differences"
+  },
+  "causes": {
+    "ee-2021-salmon-smr/C2": "precision",
+    "ee-2021-salmon-smr/C3": "precision",
+    "ee-2021-salmon-smr/C4": "precision",
+    "ee-2022-roedeer-sexratio/C1": "inconsistent",
+    "ee-2022-roedeer-sexratio/C3": "data",
+    "ee-2022-roedeer-sexratio/C5": "unstated",
+    "ee-2022-roedeer-sexratio/C6": "unstated",
+    "hsr-2023-ei-happiness/C1": "borderline",
+    "hsr-2023-ei-happiness/C2": "inconsistent",
+    "hsr-2023-ei-happiness/C3": "unexplained",
+    "hsr-2023-ei-happiness/C4": "unexplained",
+    "hsr-2023-ei-happiness/C5": "unexplained",
+    "hsr-2023-ei-happiness/C6": "unexplained"
+  },
+  "claim_labels": {
+    "cam4-2024-hpd/C1": "Pooled incidence",
+    "cam4-2024-hpd/C2": "Heterogeneity (Q)",
+    "cam4-2024-hpd/C3": "Gastric vs kidney cancer (odds ratio)",
+    "cam4-2024-hpd/C4": "Liver vs kidney cancer (odds ratio)",
+    "cam4-2024-hpd/C5": "Lung vs kidney cancer (odds ratio)",
+    "cam4-2024-hpd/C6": "Definition B vs C (odds ratio)",
+    "ee-2022-roedeer-sexratio/C1": "Sample size",
+    "ee-2022-roedeer-sexratio/C2": "Share of female fawns",
+    "ee-2022-roedeer-sexratio/C3": "Prenatal sex-ratio effect",
+    "ee-2022-roedeer-sexratio/C4": "Birth sex-ratio effect",
+    "ee-2022-roedeer-sexratio/C5": "Temperature effect",
+    "ee-2022-roedeer-sexratio/C6": "Temperature² effect",
+    "ee-2021-salmon-smr/C1": "Metabolic scaling exponent",
+    "ee-2021-salmon-smr/C2": "Genotype effect",
+    "ee-2021-salmon-smr/C3": "Genotype × sex effect",
+    "ee-2021-salmon-smr/C4": "Model residual spread",
+    "ee-2021-salmon-smr/C5": "Genotype effect on condition",
+    "ee-2021-salmon-smr/C6": "Smallest detectable effect",
+    "hsr-2023-ei-happiness/C1": "Women vs men",
+    "hsr-2023-ei-happiness/C2": "Age",
+    "hsr-2023-ei-happiness/C3": "Extroverts vs introverts",
+    "hsr-2023-ei-happiness/C4": "Stress",
+    "hsr-2023-ei-happiness/C5": "Physical health",
+    "hsr-2023-ei-happiness/C6": "Managing own emotions"
   },
   "cases": {
     "cam4-2024-hpd": {
-      "short": "Cancer immunotherapy HPD",
-      "finding": "Every headline estimate of the meta-analysis came back to the printed digit. The confidence intervals and p-values in the paper's own Table do not agree with each other, so we graded point estimates.",
-      "teaser": "All headline estimates reproduce to the printed digit."
+      "short": "Cancer immunotherapy",
+      "finding": "All point estimates matched; uncertainty reporting has internal inconsistencies.",
+      "evidence": "Every graded point estimate met its frozen tolerance. The paper’s table contains confidence intervals that do not fit its p-values; the verdict applies to the point estimates, not that uncertainty reporting."
     },
     "ee-2022-roedeer-sexratio": {
       "short": "Roe deer sex ratio",
-      "finding": "The core sex-ratio result reproduces. The climate model does not: neither temperature term is significant when re-run, and the paper prints three different sample sizes.",
-      "teaser": "Sex ratio holds; the climate effect does not."
+      "finding": "Female share and the birth estimate match; temperature effects remain unresolved.",
+      "evidence": "The birth sex-ratio point estimate reproduces, but its confidence interval does not. The paper prints conflicting sample sizes; temperature estimates depend on scaling the paper leaves unclear. An extra row in the deposit is a possible explanation for the prenatal discrepancy, not an established cause."
     },
     "ee-2021-salmon-smr": {
-      "short": "Salmon metabolic rate",
-      "finding": "The authors' own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss at the last printed digit. The auditor found why: on current R, a date-parsing call in the authors' code silently drops every midnight temperature reading. Keeping those rows reproduces the paper's model table exactly.",
-      "teaser": "Conclusions hold. A silent date-parsing change explains the last-digit misses."
+      "short": "Salmon metabolism",
+      "finding": "Conclusions hold; partial matches reflect last-digit printing differences.",
+      "evidence": "The audit attributes the graded last-digit misses to inconsistent rounding or truncation. It also found a date-parsing change that drops midnight temperature readings. Restoring those readings reconciles other model diagnostics but leaves every graded verdict unchanged."
     },
     "hsr-2023-ei-happiness": {
-      "short": "Medical students' happiness",
-      "finding": "Directions match for most predictors, but magnitudes drift and the age effect reverses sign. The paper's own Discussion also contradicts its table on age.",
-      "teaser": "Directions mostly hold; the age effect flips."
+      "short": "Students' happiness",
+      "finding": "The age effect reverses; the gender result is sensitive to the significance threshold.",
+      "evidence": "The age estimate crosses the no-effect value and loses significance; the paper’s Discussion also contradicts its table. The gender verdict is sensitive to the standard-error method near the significance threshold. Other estimates retain direction and significance but miss the printed precision. A likely scoring issue in the deposited happiness total remains separate from these graded results."
     }
   },
   "audit": {
-    "cam4-2024-hpd": "A separate agent re-downloaded the data, re-ran the script three times with identical results, and recomputed the estimates by an independent route (direct GLMM and the meta package). It agreed with every verdict. It noted that the paper's Table uses z-based intervals while our script uses t-based ones (only intervals and p-values differ), and that the paper's tumour-type intervals match no standard test.",
-    "ee-2022-roedeer-sexratio": "A separate agent re-ran everything three times with identical results and recomputed every claim in Python to five or more decimals. It agreed with every verdict. It found that the data give exactly the sample size printed in the paper's Tables when no year filter is applied, so the different number in the Abstract is probably a transposition.",
-    "hsr-2023-ei-happiness": "A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total.",
-    "ee-2021-salmon-smr": "A separate agent re-downloaded the data and the authors' scripts, confirmed the scripts are byte-identical to the deposit and that our only edits were to plotting lines, and re-ran everything three times with identical results. It agreed with every verdict. It ruled out package versions as the cause of the small gaps and traced them to a date-parsing change that drops midnight readings. It also found a bug in our environment installer, which we fixed."
+    "cam4-2024-hpd": "Re-run three times, identical. Same estimates by an independent route. No verdict changed.",
+    "ee-2022-roedeer-sexratio": "Re-run three times, identical. Matched in Python. Found the paper's table sample size exactly with no year filter.",
+    "ee-2021-salmon-smr": "Re-run three times, identical. Analysis retained with plotting and parallel execution adapted. Audit separated printing differences from a date-parsing change.",
+    "hsr-2023-ei-happiness": "Re-run three times, identical. Matched in Python. Flagged a likely scoring error in the deposited happiness total."
   },
-  "tools": [
-    {
-      "tool": "Europe PMC REST API",
-      "role": "Full text (JATS XML), data availability statements, licences",
-      "decision": "Reused",
-      "reason": "Wiley's own site blocks scripted access; Europe PMC serves the same CC BY text"
-    },
-    {
-      "tool": "Crossref REST API",
-      "role": "Licence check per article",
-      "decision": "Reused",
-      "reason": "Licence is checked on the article, not the journal"
-    },
-    {
-      "tool": "Zenodo and Figshare APIs",
-      "role": "Data download",
-      "decision": "Reused",
-      "reason": "Anonymous downloads work; checksums match the repositories' own"
-    },
-    {
-      "tool": "Dryad API",
-      "role": "Data download",
-      "decision": "Reused with token",
-      "reason": "Anonymous file downloads are blocked; a free API token unblocks them"
-    },
-    {
-      "tool": "R: metafor, meta, lme4, glmmTMB, haven",
-      "role": "The analyses themselves",
-      "decision": "Reused",
-      "reason": "The packages the papers used, current CRAN versions, recorded per paper"
-    },
-    {
-      "tool": "CORE-Bench task format",
-      "role": "Evaluation task packaging",
-      "decision": "Adapted",
-      "reason": "MIT licence; extended with pre-registered tolerance and data checksums"
-    },
-    {
-      "tool": "PaperBench rubric format",
-      "role": "Per-task grading rubric",
-      "decision": "Adapted",
-      "reason": "MIT licence; copied the tree format, not the GPU harness"
-    },
-    {
-      "tool": "statcheck",
-      "role": "Checking printed statistics for internal consistency",
-      "decision": "Idea only",
-      "reason": "GPL-3; our auditors did the same checks directly"
-    },
-    {
-      "tool": "GROBID, camelot",
-      "role": "PDF parsing",
-      "decision": "Dropped",
-      "reason": "Not needed once JATS XML is available"
-    },
-    {
-      "tool": "compare.py, build_site.py, package_tasks.py",
-      "role": "Verdicts, this site, task packaging",
-      "decision": "Built",
-      "reason": "Small, deterministic and auditable; verdict rules committed before any reproduction"
-    }
-  ],
-  "task_example": {
-    "heading": "What an AI lab gets",
-    "intro": "Every audited claim becomes an evaluation task with a known answer: {n_tasks} so far. The format follows CORE-Bench, with a PaperBench-style rubric. Where the paper's printed number does not reproduce, the ground truth is the independently re-run value, so an agent that copies the paper fails. This is the task for the reversed age effect.",
-    "path": "tasks/hsr-2023-ei-happiness__C2/task.json"
-  },
-  "footnotes": [
-    "Papers were chosen for tractability (open data, CC BY licence, analysis runnable in R or Python in under an hour), so these results do not estimate a reproducibility rate for any journal.",
-    "Dryad, the most common data repository for Wiley ecology papers, blocks anonymous file downloads (HTTP 401) as of 20 October 2026. Machine access needs an API token.",
-    "Verdicts are produced by <code>scripts/compare.py</code>; its rules and unit tests were committed before any reproduction ran.",
-    "Article text was retrieved as JATS XML from Europe PMC. Wiley Online Library blocks scripted access.",
-    "Prior art: CODECHECK, ReScience C, the Institute for Replication, the Odum Institute (AJPS) and SEER-Repro (arXiv 2610.23845) have reproduced some Wiley papers. None covers Wiley's ecology and health portfolio systematically. See landscape.md.",
-    "Limitation we found in our own process: the claims freeze is verifiable in git, but the reproducers' statement that each assumption was logged before results were seen is self-reported (code, log and outputs were committed together). The next version commits the analysis plan before the first run."
+  "notes": [
+    "Papers were picked to be workable, so this is not a reproducibility rate for any journal.",
+    "Audit categories summarise observations, including possible explanations. They do not establish why every discrepancy occurred.",
+    "Not verifiable from git: that reproducers logged assumptions before seeing results. The claims freeze is verifiable."
   ]
 }
