@@ -10,7 +10,8 @@ Writes  papers/<id>/report_card.json and papers/<id>/report_card.md
 Verdict rules (fixed before any reproduction ran):
   Reproduced        |ours - paper| <= tolerance. Tolerance is the pre-registered one
                     if given, else half a unit of the last digit the paper reported.
-  Partial           outside tolerance, but same direction (sign), same significance
+  Partial           outside tolerance, but same direction (side of the null value: 1 for
+                    ratios, 0 otherwise, or claims' null_value), same significance
                     conclusion where both p-values are known, and relative deviation
                     <= partial_rel (default 0.5, pre-registered per claim if changed).
   Not reproduced    anything else that was computed.
@@ -20,6 +21,7 @@ Verdict rules (fixed before any reproduction ran):
 
 import json
 import math
+import re
 import sys
 from decimal import Decimal
 from pathlib import Path
@@ -31,10 +33,21 @@ NOT_REPRODUCIBLE = "Not reproducible"
 VERDICTS = (REPRODUCED, PARTIAL, NOT_REPRODUCED, NOT_REPRODUCIBLE)
 
 
+NUMBER = re.compile(r"[-+]?(?:\d[\d,]*)?\.?\d+")
+
+
+def number_text(reported_text):
+    """The leading number as printed: 'N = 12,437' -> '12437', '−0.06 (CI95 …)' -> '-0.06'."""
+    text = str(reported_text).replace("−", "-").replace("–", "-")
+    match = NUMBER.search(text)
+    if not match:
+        raise ValueError(f"no number in reported text {reported_text!r}")
+    return match.group(0).replace(",", "").lstrip("+")
+
+
 def precision_tolerance(reported_text):
     """Half a unit of the last reported digit: '0.42' -> 0.005, '12' -> 0.5."""
-    text = str(reported_text).strip().lstrip("+").replace("−", "-").rstrip("%")
-    exponent = Decimal(text).as_tuple().exponent
+    exponent = Decimal(number_text(reported_text)).as_tuple().exponent
     return 0.5 * 10.0 ** exponent
 
 
@@ -47,6 +60,17 @@ def tolerance_for(claim):
     if kind == "rel":
         return abs(float(reported["value"])) * float(tol["value"])
     return precision_tolerance(reported.get("text", reported["value"]))
+
+
+RATIO_WORDS = ("ratio", "exp(b)", "odds", "hazard")
+
+
+def null_value(claim):
+    """The no-effect value that 'direction' is measured from: explicit, else 1 for ratios, else 0."""
+    if claim.get("null_value") is not None:
+        return float(claim["null_value"])
+    statistic = f"{claim.get('statistic', '')} {claim.get('units', '')}".lower()
+    return 1.0 if any(w in statistic for w in RATIO_WORDS) else 0.0
 
 
 def significant(p, alpha):
@@ -82,7 +106,8 @@ def judge(claim, result):
     sig_paper = significant(claim["reported"].get("p"), alpha)
     sig_ours = significant(result.get("p"), alpha)
     same_sig = sig_paper is None or sig_ours is None or sig_paper == sig_ours
-    same_sign = (paper >= 0) == (ours >= 0) or paper == 0
+    null = null_value(claim)
+    same_sign = (paper >= null) == (ours >= null) or paper == null
     partial_rel = float((claim.get("tolerance") or {}).get("partial_rel", 0.5))
     details.update({"same_sign": same_sign, "same_significance": same_sig})
 
@@ -111,7 +136,7 @@ def fmt(x, ref_text=None):
         return "∞"
     if ref_text is not None:
         try:
-            decimals = max(0, -Decimal(str(ref_text).rstrip("%")).as_tuple().exponent)
+            decimals = max(0, -Decimal(number_text(ref_text)).as_tuple().exponent)
             return f"{x:.{decimals + 2}f}"
         except Exception:
             pass

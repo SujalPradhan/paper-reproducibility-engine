@@ -1,0 +1,109 @@
+{
+  "paper_id": "hsr-2023-ei-happiness",
+  "title": "Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study",
+  "doi": "10.1002/hsr2.1745",
+  "journal": "Health Science Reports",
+  "year": 2023,
+  "article_license": "CC BY 4.0",
+  "pmcid": "PMC10709659",
+  "data": {
+    "url": "https://doi.org/10.6084/m9.figshare.23291780",
+    "license": "CC BY 4.0",
+    "files": ["EI_and_Happiness_raw_Data_with_coding.sav"]
+  },
+  "code": {"url": null, "language": "Stata (gamma regression); R (GBRT)"},
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Compared with men, women had significantly lower happiness (gamma regression, log link)",
+      "statistic": "Exp(B) (exponentiated gamma-GLM log-link coefficient), Gender = Women vs reference Men",
+      "reported": {"value": 0.966, "text": "0.966", "se": 0.016, "ci": [0.935, 0.998], "p": "0.037"},
+      "units": "multiplicative ratio of mean happiness score",
+      "n": 405,
+      "location": "Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04'",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C2",
+      "text": "Age was a significant positive predictor of happiness (per year)",
+      "statistic": "Exp(B), continuous AGE",
+      "reported": {"value": 1.016, "text": "1.016", "se": 0.003, "ci": [1.010, 1.022], "p": "0.000"},
+      "units": "multiplicative ratio of mean happiness per year of age",
+      "n": 405,
+      "location": "Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C3",
+      "text": "Extroverts had significantly higher happiness than introverts",
+      "statistic": "Exp(B), Personality = Extrovert vs reference Introvert",
+      "reported": {"value": 1.076, "text": "1.076", "se": 0.018, "ci": [1.041, 1.112], "p": "0.000"},
+      "units": "multiplicative ratio of mean happiness score",
+      "n": 405,
+      "location": "Table 2, row 'Personality (Introvert) / Extrovert'; Abstract Results ('Exp (B) = 1.076, p-value < 0.001')",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C4",
+      "text": "Higher perceived stress (VAS) was associated with significantly lower happiness",
+      "statistic": "Exp(B), continuous stress-level perception score",
+      "reported": {"value": 0.990, "text": "0.990", "se": 0.004, "ci": [0.982, 0.997], "p": "0.008"},
+      "units": "multiplicative ratio of mean happiness per 1 point of stress VAS",
+      "n": 405,
+      "location": "Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01'",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C5",
+      "text": "Higher perceived somatic health (VAS 0-100) was associated with significantly higher happiness",
+      "statistic": "Exp(B), continuous somatic health level perception score",
+      "reported": {"value": 1.002, "text": "1.002", "se": 0.000, "ci": [1.001, 1.003], "p": "0.000"},
+      "units": "multiplicative ratio of mean happiness per 1 point of health VAS",
+      "n": 405,
+      "location": "Table 2, continuous variables row 'Somatic health level perception'; Abstract Results ('Exp (B) = 1.002, p-value < 0.001')",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C6",
+      "text": "Regulation of own emotions (EI domain) is the strongest EI predictor of happiness",
+      "statistic": "Exp(B), continuous EI domain score 'Regulation of own emotions' (range 2-10)",
+      "reported": {"value": 1.042, "text": "1.042", "se": 0.008, "ci": [1.027, 1.058], "p": "0.000"},
+      "units": "multiplicative ratio of mean happiness per 1 point of domain score",
+      "n": 405,
+      "location": "Table 2, EI row 'Regulation of own emotions'; also quoted for the GBRT result in Abstract Results and in the Results paragraph after Table 2 ('Exp (B) = 1.042, p-value < 0.001')",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    }
+  ],
+  "methods_steps": [
+    "Load data/EI_and_Happiness_raw_Data_with_coding.sav (SPSS; e.g. pyreadstat or R haven). Expect 405 rows x 90 columns with no missing values. The paper excluded 13 incomplete questionnaires before deposit, so no further exclusions are needed.",
+    "Sanity checks against Table 1 (not graded claims): n = 405; Gender 1=Male 208, 2=Female 197; AGE mean 24.2 (SD 1.82); Personality_assessment 1=Introvert 233, 2=Extrovert 172; Living_stress_score mean 5.82 (SD 2.31); self_physical_examination mean 81.8 (SD 16.6); EI_score_total mean 34.6 (SD 6.16); happiness mean total score/29 = 3.78 (SD 0.85).",
+    "Outcome: happiness = total_Happiness_score / 29 (Oxford Happiness Questionnaire, range 1-6; the 12 reverse-scored items are already reversed in the R_H* columns). Adj_total_happiness is the same quantity as deposited. Under a log-link gamma GLM, rescaling y changes only the intercept, so Exp(B) is the same whether total_Happiness_score or total/29 is used. Prefer total_Happiness_score/29 computed at full precision.",
+    "Categorical predictors as factors, with the reference levels given in Table 2: Gender (ref 1=Male); Marital_status (ref 1=Single; levels Married, In a relationship); Clinical_Grade (ref 1=One-year stager; Two-year stager, Intern); University (ref 1=Shiraz; Fasa, Jahrom); Living (ref 1=Dormitory; Family residence, Independent residence); Ethnicity (ref 1=Persian); Job (ref 0=no part-time job); Salary (ref 1=Without income); Siblings (ref 1='1-2'); Outstanding_students (ref 0=not top student); Parrents_living_status (ref 1=Joint living parents; Separated, Deceased a parent; label 4 has no observations); Personality_assessment (ref 1=Introvert); Thinking_immigration (ref 0); exhustion_to_work (ref 0, emotional exhaustion); No_feeling_at_work (ref 0, depersonalization); Happiness_compared_before_pandemy (ref 1='Get worsed').",
+    "Continuous predictors: AGE (years), Living_stress_score (stress VAS, observed 1-10), self_physical_examination (somatic health VAS, observed 10-100), and the five EI domain scores Appraisal_own_emotions, Regulation_of_own_emotion, Appraisial_of_others_emotion, Regulation_others_emotion, Utilization_of_emotions (each 2-10). EI_score_total is NOT entered, because it is collinear with the domains.",
+    "Primary analysis (pre-registered interpretation): ONE multivariable gamma GLM with log link containing all 16 categorical and 8 continuous predictors listed in Table 2. Stata 17: glm happiness i.Gender i.Marital_status ... AGE Living_stress_score self_physical_examination <5 EI domains>, family(gamma) link(log) eform. R equivalent: glm(happiness ~ ..., family = Gamma(link = 'log')).",
+    "Report for each claim exp(b), the delta-method SE of exp(b) (= exp(b) * se(b), as Stata eform prints), the Wald p-value, and the 95% CI exp(b +/- 1.96 se(b)). Stata glm uses z (normal) p-values and CIs with the Pearson-chi2-based dispersion. R's summary.glm uses t, so compute normal-based p and CI to match Stata.",
+    "Variables in the deposit but NOT in Table 2, which are therefore not in the model: Enterance_year, Semester, Tuition_status, balance_between_salary_and_costs, High_School, Fathers_education, Mothers_Education, Fathers_job, Mothers_job, previous_participitation.",
+    "Sensitivity (diagnostic only, not graded): if the multivariable model fails to match, fit separate univariable gamma GLMs per variable (the Table 2 footnote mentions 'each category regression analysis'), and also report a model with only the EI domains plus the significant covariates.",
+    "Second stage (not graded): GBRT (R 4.1.1, package unspecified, probably gbm) of happiness on the variables significant in stage 1, with relative influence plotted in Figure 3. Hyperparameters and seed are not reported, so only the ranking (Regulation of own emotions first, Utilization of emotions second) could be compared qualitatively."
+  ],
+  "software": ["Stata 17.0 (gamma regression)", "R 4.1.1 (GBRT; package not stated)"],
+  "ambiguities": [
+    "Whether Table 2 comes from a single multivariable gamma model or from separate per-variable (univariable) models is not stated. The Statistical analysis section implies one model, but the Table 2 footnote ('Constant values were considered as the base class for each category regression analysis') could mean separate models. The pre-registered primary interpretation is one multivariable model with all Table 2 variables.",
+    "Direction of the age effect is inconsistent. Table 2, the Abstract and the Results give Exp(B) = 1.016 per year (happiness INCREASES with age), but the Discussion says 'Happiness showed a negative statistically significant relationship with aging' and the Abstract/Conclusion name 'those of higher age' as a vulnerable lower-happiness group.",
+    "Abstract vs Table 2 p-values: women p = 0.04 (Abstract) vs 0.037 (Table 2), and stress p = 0.01 (Abstract) vs 0.008 (Table 2). These look like rounding, but the Table 2 values are taken as authoritative. Table 2 prints p as '0.000', and the Abstract prints '< 0.001'.",
+    "The Abstract attributes 'Exp (B) = 1.042, p < 0.001' to the GBRT model, but GBRT gives relative influence, not Exp(B). The number is identical to the gamma-regression Exp(B) for Regulation of own emotions in Table 2, so it is graded as the gamma estimate (C6). The GBRT relative-influence values appear only in Figure 3 and are not tabulated; GBRT package, hyperparameters, CV and seed are unreported.",
+    "Which 'significant variables' entered the GBRT stage is not listed.",
+    "Table 2 internal inconsistencies: the Ethnicity 'Others' CI 0.966-1.070 is not compatible with Exp(B) 1.033 and SE 0.019 (the lower bound would be about 0.996). The Siblings 'Three and more' CI 0.944-1.022 is identical to the Salary row's CI despite a different Exp(B) and SE (0.983/0.018 vs 0.982/0.020), which suggests a copy error.",
+    "Somatic health SE is printed as 0.000 (rounded), so only Exp(B) and the CI can be checked for C5. At three-decimal reporting precision, C5 (1.002) is a weak test.",
+    "Outcome scale: the paper says the 29-174 total is divided by 29 (1-6). The deposited per-domain 'Adj_' columns for Aesthetic feelings and Self-efficacy have minima of 0.83 and 1.17, which suggests they were divided by 6 rather than by the item count of 5 stated in Table 1. This does not affect the total-score outcome. The Std. Err. column is assumed to be Stata's eform (delta-method) SE of Exp(B), not the SE of B.",
+    "Table 1 describes 'Believed in negative COVID-19 impact on happiness' (241, 59.5%), while Table 2 uses 'Happiness compared before pandemic (Get worse / Get better)'. These are assumed to be the same variable, Happiness_compared_before_pandemy.",
+    "The stress VAS is described as 0-10, but deposited values are 1-10. Depersonalization, emotional exhaustion and migration thinking are single yes/no self-reports. The mapping No_feeling_at_work = depersonalization and exhustion_to_work = emotional exhaustion is inferred from variable names only, not documented.",
+    "Stata glm options (IRLS vs ML, dispersion estimate, robust SEs or not) are not reported; the defaults are assumed. These choices could change the SEs, p-values and CIs but not the Exp(B) point estimates."
+  ]
+}

@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">1740</journal-id><journal-id journal-id-type="pmc-domain">ece</journal-id><journal-title-group><journal-title>Ecology and Evolution</journal-title><abbrev-journal-title>Ecol Evol</abbrev-journal-title></journal-title-group><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC8794721</article-id><article-id pub-id-type="pmcaid">8794721</article-id><article-id pub-id-type="pmcaiid">8794721</article-id><article-id pub-id-type="pmid">35127003</article-id><article-id pub-id-type="doi">10.1002/ece3.8408</article-id><title-group><article-title>Standard metabolic rate does not associate with age‐at‐maturity genotype in juvenile Atlantic salmon</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Åsheim</surname><given-names initials="ER">Eirik R</given-names></name><xref ref-type="aff" rid="ece38408-aff-0001">1</xref><xref ref-type="author-notes" rid="_fncrsp93pmc__">✉</xref></contrib><contrib><name name-style="western"><surname>Prokkola</surname><given-names initials="JM">Jenni M</given-names></name><xref ref-type="aff" rid="ece38408-aff-0001">1</xref></contrib><contrib><name name-style="western"><surname>Morozov</surname><given-names initials="S">Sergey</given-names></name><xref ref-type="aff" rid="ece38408-aff-0001">1</xref></contrib><contrib><name name-style="western"><surname>Aykanat</surname><given-names initials="T">Tutku</given-names></name><xref ref-type="aff" rid="ece38408-aff-0001">1</xref></contrib><contrib><name name-style="western"><surname>Primmer</surname><given-names initials="CR">Craig R</given-names></name><xref ref-type="aff" rid="ece38408-aff-0001">1</xref><xref ref-type="aff" rid="ece38408-aff-0002">2</xref></contrib></contrib-group><aff id="ece38408-aff-0001"><label>
+<sup>1</sup>
+</label>Organismal and Evolutionary Research Programme, University of Helsinki, Helsinki, Finland</aff><aff id="ece38408-aff-0002"><label>
+<sup>2</sup>
+</label>Institute of Biotechnology, HiLIFE, University of Helsinki, Helsinki, Finland</aff><author-notes><fn id="correspondenceTo"><label>*</label><p>
+
+<bold>Correspondence</bold>
+, 
+Eirik R. Åsheim, Organismal and Evolutionary Research Programme, University of Helsinki, 00014 Helsinki, Finland. 
+Email: <email>eirik.asheim@helsinki.fi</email>
+
+</p></fn><fn id="_fncrsp93pmc__"><label>✉</label><p>Corresponding author.</p></fn></author-notes><pub-date><day>21</day><month>12</month><year>2021</year></pub-date><volume>12</volume><issue>1</issue><fpage>e8408</fpage><page-range>e8408</page-range><pub-history><event event-type="pmc-release"><date><day>4</day><month>2</month><year>2022</year></date></event></pub-history><permissions><copyright-statement>© 2021 The Authors. <italic>Ecology and Evolution</italic> published by John Wiley &amp; Sons Ltd.</copyright-statement><license><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://creativecommons.org/licenses/by/4.0/" ext-link-type="uri">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ECE3-12-e8408.pdf" content-type="pmc-pdf"><?cloudpmc-path 540c/8794721/e43d2539de71/ECE3-12-e8408.pdf?><?cloudpmc-bucket app?><?size 1156144?></self-uri><abstract id="ece38408-abs-0001"><title>Abstract</title><p>Atlantic salmon (<italic>Salmo salar</italic>) is a species with diverse life‐history strategies, to which the timing of maturation contributes considerably. Recently, the genome region including the gene <italic>vgll3</italic> has gained attention as a locus with a large effect on Atlantic salmon maturation timing, and recent studies on the <italic>vgll3</italic> locus in salmon have indicated that its effect might be mediated through body condition and accumulation of adipose tissue. However, the cellular and physiological pathways leading from <italic>vgll3</italic> genotype to phenotype are still unknown. Standard metabolic rate is a potentially important trait for resource acquisition and assimilation and we hypothesized that this trait, being a proxy for the maintenance energy expenditure of an individual, could be an important link in the pathway from <italic>vgll3</italic> genotype to maturation timing phenotype. As a first step to studying links between <italic>vgll3</italic> and the metabolic phenotype of Atlantic salmon, we measured the standard metabolic rate of 150 first‐year Atlantic salmon juveniles of both sexes, originating from 14 different families with either late‐maturing or early‐maturing <italic>vgll3</italic> genotypes. No significant difference in mass‐adjusted standard metabolic rate was detected between individuals with different <italic>vgll3</italic> genotypes, indicating that juvenile salmon of different <italic>vgll3</italic> genotypes have similar maintenance energy requirements in the experimental conditions used and that the effects of <italic>vgll3</italic> on body condition and maturation are not strongly related to maintenance energy expenditure in either sex at this life stage.</p><sec id="kwd-group1" sec-type="kwd-group" disp-level="2"><p><bold>Keywords:</bold> genetics, life‐history, maturation, physiology, standard metabolic rate, vgll3</p></sec></abstract><abstract id="ece38408-abs-0002" abstract-type="graphical"><p>We show that <italic>vgll3</italic>, a gene known to have significant effects on Atlantic salmon (<italic>Salmo salar</italic>) life‐history strategy, does not associate with standard metabolic rate in salmon juveniles. This indicates that the effects of vgll3 on age at maturity is not strongly related to maintenance energy expenditure or related physiological mechanisms at the life stage and conditions used in this study.
+</p><boxed-text id="ece38408-blkfxd-0001" position="anchor"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-1" xlink:href="ECE3-12-e8408-g006.jpg"><?cloudpmc-path blobs/540c/8794721/86d37fa3e578/ECE3-12-e8408-g006.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 41?><?original-width 120?><?scaled-height 41?><?scaled-width 120?></graphic></boxed-text></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Revised 2021 Nov 2; Received 2021 Aug 26; Accepted 2021 Nov 11; Collection date 2022 Jan.</p></sec></notes></front><body><sec id="ece38408-sec-0001" disp-level="1"><label>1.</label><title>INTRODUCTION</title><p>Due to their close links with fitness, life‐history traits such as age at maturity, offspring number, and size have been a long‐term focus of research in biology (Stearns, <xref rid="ece38408-bib-0062" ref-type="bibr">1989</xref>). Recent advances in genomics have enabled the identification of genes associated with such traits in an increasingly broad range of species (Barson et al., <xref rid="ece38408-bib-0009" ref-type="bibr">2015</xref>; Lamichhaney et al., <xref rid="ece38408-bib-0037" ref-type="bibr">2016</xref>; Narum et al., <xref rid="ece38408-bib-0046" ref-type="bibr">2018</xref>; Troth et al., <xref rid="ece38408-bib-0066" ref-type="bibr">2018</xref>). However, follow‐up studies for determining the mechanistic basis underlying such associations remain rare, and so, a thorough understanding of the underlying biology, as well as the wider consequences of these genes, is lacking.</p><p>Age at maturity is a key life‐history trait as it is the source of a trade‐off between current and future reproduction (Roff, <xref rid="ece38408-bib-0054" ref-type="bibr">2001</xref>; Stearns, <xref rid="ece38408-bib-0062" ref-type="bibr">1989</xref>), and the different life‐history strategies of the Atlantic salmon (<italic>Salmo salar</italic>, Linnaeus, 1758) are a good example of this trade‐off. A considerable proportion of Atlantic salmon growth occurs during their marine migration, after which they return to freshwater as sexually mature fish. The time spent at sea (sea age at maturity) varies from 1 to 5 years, with an individual's size roughly doubling with every extra year spent feeding at sea (Hutchings &amp; Jones, <xref rid="ece38408-bib-0031" ref-type="bibr">1998</xref>). Spending more time at sea gives a potential fitness advantage, as larger, later‐maturing individuals have a higher reproductive success (Fleming, <xref rid="ece38408-bib-0023" ref-type="bibr">2011</xref>; Fleming &amp; Einum, <xref rid="ece38408-bib-0024" ref-type="bibr">2011</xref>; Mobley et al., <xref rid="ece38408-bib-0044" ref-type="bibr">2020</xref>). However, the increased time at sea also comes with a higher risk of dying before first reproduction, resulting in a trade‐off between size at maturity and risk of mortality (Stearns, <xref rid="ece38408-bib-0063" ref-type="bibr">2000</xref>).</p><p>Analyzing the genetic background for this variation, a genome‐wide association study (GWAS) covering 57 European Atlantic salmon populations identified a large‐effect locus on chromosome 25 that is significantly associated with age at maturity, explaining 39% of the variation in this trait (Barson et al., <xref rid="ece38408-bib-0009" ref-type="bibr">2015</xref>). The strongest candidate gene in this region was the vestigial‐like family member 3 (<italic>vgll3</italic>) gene. The two alleles of this locus, <italic>E</italic> and <italic>L</italic>, associated with either early or late age at maturity, respectively, as well as shorter or longer body length (in equally aged returning individuals). Subsequently, multiple studies have confirmed the large effect of this locus (Ayllon et al., <xref rid="ece38408-bib-0008" ref-type="bibr">2015</xref>; Debes et al., <xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>; Verta et al., <xref rid="ece38408-bib-0067" ref-type="bibr">2020</xref>).</p><p>Taking studies of this gene to the laboratory, examining body condition and maturation probability in a common garden setting, Debes et al. (<xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>) found that the <italic>vgll3*E</italic> allele associated with a higher body condition in males and females (but not body length), as well as a higher probability of male maturation in the first autumn after hatching. Interestingly, Debes et al. (<xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>) also demonstrated a connection between <italic>vgll3</italic> and body condition that is independent of maturation status. At the molecular level, expression of <italic>vgll3</italic> in Atlantic salmon has been linked with activation of the intracellular HIPPO signaling pathway, suggesting a role in inhibiting gonad development and promoting adipocyte differentiation (Kjærner‐Semb et al., <xref rid="ece38408-bib-0034" ref-type="bibr">2018</xref>; Kurko et al., <xref rid="ece38408-bib-0035" ref-type="bibr">2020</xref>; Verta et al., <xref rid="ece38408-bib-0067" ref-type="bibr">2020</xref>). Furthermore, Ahi et al. (<xref rid="ece38408-bib-0001" ref-type="bibr">2021</xref>) reported strong regulatory effects of <italic>vgll3</italic> genotype on the expression of a number of reproductive axis genes in juvenile male Atlantic salmon, indicating that the broad effects of <italic>vgll3</italic> can be mediated via the endocrine system. The findings on the mechanistic basis of the <italic>vgll3</italic>‐maturation pathway so far indicate that different <italic>vgll3</italic> genotypes are linked with differing patterns of resource allocation or assimilation, where the <italic>vgll3*E</italic> allele is positively influencing juvenile body condition, enabling earlier gonadal development in males. However, many aspects of the complete molecular and physiological pathways for this process remain unclear.</p><p>Early‐life performance in acquiring and efficiently using resources sets the stage for the timing of maturation: sexual maturation and reproduction are costly processes, and a key part of juvenile development is the accumulation and storage of excess energy to support future maturation (Hutchings &amp; Jones, <xref rid="ece38408-bib-0031" ref-type="bibr">1998</xref>; Simpson, <xref rid="ece38408-bib-0059" ref-type="bibr">1992</xref>; Thorpe, <xref rid="ece38408-bib-0065" ref-type="bibr">2007</xref>). Standard metabolic rate (SMR) is a potentially important trait with regards to this as it relates to the organism's maintenance energy requirements, capacity for nutrient assimilation, and responses to changing resource availability (Armstrong et al., <xref rid="ece38408-bib-0002" ref-type="bibr">2011</xref>; Auer, Bassar, et al., <xref rid="ece38408-bib-0003" ref-type="bibr">2020</xref>; Auer et al., <xref rid="ece38408-bib-0007" ref-type="bibr">2020</xref>; Bochdansky et al., <xref rid="ece38408-bib-0014" ref-type="bibr">2005</xref>; Millidine et al., <xref rid="ece38408-bib-0042" ref-type="bibr">2009</xref>; Rosenfeld et al., <xref rid="ece38408-bib-0055" ref-type="bibr">2015</xref>). The effect of <italic>vgll3</italic> genotype on body condition as well as its strong effect on age at maturity in Atlantic salmon raises the question of whether <italic>vgll3</italic> might assert some of its effects via SMR, warranting an investigation on the potential influence of <italic>vgll3</italic> on metabolic phenotype. If high SMR confers an improved ability to grow and exploit resources, or if it is indicative of a fast pace of life, we might expect high‐SMR individuals to mature at an earlier time than low‐SMR individuals (Auer et al., <xref rid="ece38408-bib-0004" ref-type="bibr">2018</xref>). If <italic>vgll3</italic> was associated with SMR, it could be one of the traits through which this gene mediates its effect on maturation timing: with early‐maturing <italic>vgll3*EE</italic> individuals being predicted to have a higher metabolic rate than late‐maturing <italic>vgll3*LL</italic> individuals. Additionally, beyond the effects on growth, body condition, and gonad development, little is known about the effects of <italic>vgll3</italic> on a broader range of physiological systems. Given the range of traits found to associate with SMR, testing for an association between SMR and <italic>vgll3</italic> could help in refining the potential traits and physiological processes in the scope of <italic>vgll3</italic>’s effects, such as differences in digestive capacity (Millidine et al., <xref rid="ece38408-bib-0042" ref-type="bibr">2009</xref>), enzyme activity (Norin &amp; Malte, <xref rid="ece38408-bib-0048" ref-type="bibr">2012</xref>), mitochondrial leak respiration (Salin et al., <xref rid="ece38408-bib-0057" ref-type="bibr">2016</xref>, <xref rid="ece38408-bib-0058" ref-type="bibr">2019</xref>), and behavior (Binder et al., <xref rid="ece38408-bib-0012" ref-type="bibr">2016</xref>; Biro &amp; Stamps, <xref rid="ece38408-bib-0013" ref-type="bibr">2010</xref>; Cutts et al., <xref rid="ece38408-bib-0019" ref-type="bibr">1998</xref>; Metcalfe et al., <xref rid="ece38408-bib-0040" ref-type="bibr">1995</xref>; Yamamoto et al., <xref rid="ece38408-bib-0069" ref-type="bibr">1998</xref>).</p><p>To further our understanding of the mechanistic functions of <italic>vgll3</italic>, in this study we test if there is an association between SMR and <italic>vgll3</italic> genotype in a common‐garden environment using 150 juvenile Atlantic salmon (69 males and 81 females) from 14 families with either <italic>vgll3*EE</italic> or <italic>vgll3*LL</italic> genotypes. Based on (1) earlier studies implicating <italic>vgll3</italic> as a resource allocation locus and (2) the association among a high SMR, pace of life, and growth performance in high‐resource environments, we hypothesized that the difference in resource allocation and maturation timing between the <italic>vgll3</italic> genotypes could stem from a difference in metabolic rate. From this, we predicted that individuals with an early‐maturation genotype (<italic>vgll3*EE</italic>) would have a higher SMR than those with the late‐maturation genotype (<italic>vgll3*LL</italic>).</p></sec><sec id="ece38408-sec-0002" disp-level="1"><label>2.</label><title>MATERIALS AND METHODS</title><sec id="ece38408-sec-0003" disp-level="2"><label>2.1.</label><title>Experimental animals and husbandry</title><p>The experiment was conducted under an animal experiment permit granted by the Finnish Project Authorisation Board (permit nr. ESAVI/4511/2020). The cohort of Atlantic salmon used in this study was established using parental individuals deriving from a first‐generation hatchery broodstock of salmon originating from the river Kymijoki in Finland, managed by the Natural Resources Institute Finland (LUKE) at their hatchery in Laukaa. Eggs and milt were collected and transferred to the experimental facilities at the University of Helsinki in October 2019 and parents were crossed to create 14 <italic>vgll3</italic> homozygote full‐sib families (seven <italic>vgll3*EE</italic> families and seven <italic>vgll3*LL</italic> families). We used homozygous families to maximize sample sizes of individuals with genotypes expected to exhibit the largest differences associated with <italic>vgll3</italic>, for example, in SMR. Fertilized eggs were incubated in darkness in vertical incubators in replicated, family‐specific compartments, with a water temperature of 7.2°C until March 2020.</p><p>After hatching, on March 6<sup>th</sup>, 2020, the alevins were transferred to the experimental facilities at Lammi Biological Station (61°04′45″N, 025°00′40″E, Lammi, Finland), several weeks before they commenced independent feeding. Each family was reared in a randomly selected separate circular 165‐L tank (90 cm diameter) and supplied with a continuous flow of UV filtered water from the local lake Pääjärvi, warmed by 1°C through a heat‐exchange system. The incoming water was directed to create a slow circular flow in the tank. The photoperiod was adjusted according to the local latitude for the entire experiment. Initially, fish were fed eight times/day with commercial 0.2 mm pellet food (Vita, Veronesi, Italy), that is, ad libitum. As fish grew, the 0.2 mm feed was gradually replaced with 0.5 mm pellet food at an increasing frequency (up to 12 times/day). The temperature was 4.5°C when the transfer to Lammi Biological Station was made, and rose gradually from an average of 4.7°C in March to 11.5°C in July (Figure <xref rid="ece38408-fig-0001" ref-type="fig">1</xref>). The average temperature during this period was 7.38°C. Tanks were flushed of uneaten food daily, and tank surfaces were carefully scrubbed clean of dirt and algae once or twice each week (depending on temperature). Tanks were checked for dead individuals daily; the mortality rate throughout the study was 3.9%. The specific <italic>vgll3</italic> genotype of each family was not known to people participating in fish husbandry, or to those conducting the respirometry experiments, and was only revealed after the respirometry data had been finalized.</p><fig id="ece38408-fig-0001" position="float"><?disp-level 3?><label>FIGURE 1</label><caption><p>Average daily water temperature in holding tanks at Lammi Biological Station. Water was supplied from the local lake Pääjärvi, and temperature thus fluctuated according to the temperature of the lake. Average temperature of the holding tanks during the respirometry period and the 3 days leading up to it was 10.34 ± 0.77°C (SD). All tested fish were held at a constant temperature of 10.5°C in acclimation tanks for 40 h before respirometry</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-3" xlink:href="ECE3-12-e8408-g002.jpg"><?cloudpmc-path blobs/540c/8794721/5fa93e1c406c/ECE3-12-e8408-g002.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 903?><?original-width 1064?><?scaled-height 602?><?scaled-width 709?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ECE3-12-e8408-g002.gif"><?cloudpmc-path blobs/540c/8794721/792085e95b54/ECE3-12-e8408-g002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="ece38408-sec-0004" disp-level="2"><label>2.2.</label><title>Overall respirometry procedure</title><p>Starting on July 4<sup>th</sup>, 2020 (at about 2150 degree days), one batch of 16 fish was tested using 16 respirometers (Appendix 1—Figure <xref rid="ece38408-fig-0004" ref-type="fig">A1</xref>) each day for 10 days (except on July 5<sup>th</sup>, and with one gap day after 5 days for cleaning and sensor calibration), resulting in a total of 160 individuals tested. Fish from the 14 families were evenly distributed among the 16 respirometers for each batch, along with extra individuals from two families, rotating the extra families between batches (Figure <xref rid="ece38408-fig-0002" ref-type="fig">2</xref>). Prior to respirometry trials, fish were held in an acclimation tank with a constant water temperature of 10.5°C without feed for 40 h. To maintain the family identity of the fish in the acclimation tank, the fish were individually kept in small 20 × 20 × 10 cm cages (stainless steel cage lined with a plastic mosquito‐net mesh) submerged in the acclimation tank. Air exposure of fish was avoided both during capture from holding tanks and when moving them to respirometers by transferring fish in small plastics cups filled with water. A detailed description of the respirometry holding system is in Appendix 1— materials and methods.</p><fig id="ece38408-fig-0002" position="float"><?disp-level 3?><label>FIGURE 2</label><caption><p>Overall respirometry procedure and structure. Fish were reared in 14 tanks, separated by family, with each family having either the <italic>vgll3*EE</italic> or <italic>vgll3*LL</italic> genotype. Fish were tested in 10 batches of 16, with an acclimation period of 40 h (constant temperature, no feed) before being held in respirometers for about 19 h while oxygen consumption was being measured</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-5" xlink:href="ECE3-12-e8408-g005.jpg"><?cloudpmc-path blobs/540c/8794721/dd5cf1c2fb4f/ECE3-12-e8408-g005.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 308?><?original-width 1064?><?scaled-height 205?><?scaled-width 709?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ECE3-12-e8408-g005.gif"><?cloudpmc-path blobs/540c/8794721/71d981a2c7ae/ECE3-12-e8408-g005.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="ece38408-sec-0005" disp-level="2"><label>2.3.</label><title>Respirometry details</title><p>Standard metabolic rate was measured in fish at rest using intermittent flow respirometry (Chabot et al., <xref rid="ece38408-bib-0016" ref-type="bibr">2016</xref>; Forstner, <xref rid="ece38408-bib-0025" ref-type="bibr">1983</xref>; Steffensen et al., <xref rid="ece38408-bib-0064" ref-type="bibr">1984</xref>). Respirometry details and results are included as recommended by Killen et al. (<xref rid="ece38408-bib-0033" ref-type="bibr">2021</xref>) and a detailed description of the SMR definition, protocol, and respirometry system is in Appendix 1— materials and methods. Fish were put in their respirometers around 12:00 at noon, and the procedure was stopped at 7:00 in the morning the next day (total time 19 h). Oxygen concentrations were logged for the entire time the fish were in the respirometers, and data from the period of acclimation were removed during analysis by the MLND calculation (Chabot et al., <xref rid="ece38408-bib-0016" ref-type="bibr">2016</xref>; See extraction of respirometry data in Appendix 1— materials and methods). Temperature was kept the same as in the acclimation tanks at 10.53 ± 0.02°C (mean ± SD) during respirometry. The respirometry tank was covered with a light‐blocking tarp to leave the respirometers in complete darkness, making the fish unable to see each other during the procedure. The respirometry system was in a separate room from other activities in the research building to avoid disturbances.</p><p>Respirometers were set to cycle between the open flush phase and the closed measurement phase in 5‐ (flush) and 15‐min (measurement) intervals, resulting in a total of 50–60 measurement cycles for each batch. Sampling frequency of oxygen concentration was set to one sample every 2 s. The average minimum oxygen concentration reached during the closed phase was 9.52 ± 0.76 mg/L (±SD), equating an average drop in dissolved oxygen of 12 ± 7% (±SD). For the entire experiment, the lowest overall oxygen concentration reached was 4.22 mg/L, and there were 10 cycles in total where the oxygen concentration reached below 6 mg/L. The insides of respirometers were brushed daily to minimize bacterial or algal growth, and oxygen probes were gently wiped with a paper tissue moistened with a 70% ethanol solution before the measurements. After half of the batches were completed, the oxygen probes were recalibrated and the entire system (except acclimation tanks) was cleaned and disinfected with a solution of bleach, followed by thorough rinsing with fresh water. Background respiration was recorded for each batch of measurements before and after putting the fish in the respirometer. This was done individually for each chamber in each batch. The length of each background respiration measurement was 15 min (one closed cycle). The average background respiration was 7.48 ± 4.55% (±SD) of the total respiration in the chamber with fish.</p><p>After each respirometry batch, fish were removed from their respirometers and euthanized (sodium bicarbonate‐buffered methanesulfonate overdose, 250 mg/L), then carefully dried on each side using a tissue paper before their body mass was measured to the nearest 0.01 g using a precision scale (Scout STX222; Ohaus). A fin clip was taken from the caudal fin and stored in ethanol for verifying the <italic>vgll3</italic> genotype and for sex determination. We used Kompetitive allele‐specific polymerase chain reaction (KASP<italic>™</italic>, LGC, UK) assays (He et al., <xref rid="ece38408-bib-0029" ref-type="bibr">2014</xref>) for the <italic>vgll3<sub>TOP</sub>
+</italic> SNP and the sex‐specific SDY locus as described in Sinclair‐Waters et al. (<xref rid="ece38408-bib-0061" ref-type="bibr">2021</xref>).</p></sec><sec id="ece38408-sec-0006" disp-level="2"><label>2.4.</label><title>Statistical analysis</title><p>All data analysis was performed in the <italic>Rstudio</italic> v. 1.4.1717 (RStudio Team, <xref rid="ece38408-bib-0056" ref-type="bibr">2020</xref>) software environment running <italic>R</italic> v. 4.0.4 (R Core Team, <xref rid="ece38408-bib-0052" ref-type="bibr">2021</xref>). R packages used for analysis were <italic>FishResp</italic> v. 1.1.0 (Morozov et al., <xref rid="ece38408-bib-0045" ref-type="bibr">2019</xref>) for extraction of respirometry data; <italic>lme4</italic> v. 1.1.26 (Bates et al., <xref rid="ece38408-bib-0011" ref-type="bibr">2021</xref>, p. 4) and <italic>lmerTest</italic> v.3.1.3 (Kuznetsova et al., <xref rid="ece38408-bib-0036" ref-type="bibr">2020</xref>) for mixed models analysis; <italic>ggplot2</italic> v. 3.3.5 (Wickham et al., <xref rid="ece38408-bib-0068" ref-type="bibr">2021</xref>, p. 2) for data visualization; <italic>ggeffects</italic> v. 1.1.0 (Lüdecke et al., <xref rid="ece38408-bib-0038" ref-type="bibr">2021</xref>) for prediction of marginal means; <italic>cvms</italic> v 1.3.1(Olsen et al., <xref rid="ece38408-bib-0050" ref-type="bibr">2021</xref>) for performing cross‐validation of models; <italic>MuMIn</italic> v 1.43.17 (Bartoń, <xref rid="ece38408-bib-0010" ref-type="bibr">2020</xref>) for calculating R<sup>2</sup> values for mixed‐effect models; and <italic>mclust</italic> v. 5.4.7 (Fraley et al., <xref rid="ece38408-bib-0026" ref-type="bibr">2020</xref>) for calculating the mean lowest normal distributions used for estimation of SMR. A detailed description of the calculation of SMR from the respirometry data is in Appendix 1— materials and methods.</p><p>At the time of respirometry testing, the body mass distributions of the <italic>vgll3</italic>*EE and <italic>vgll3</italic>*LL families were slightly different. This was caused by an earlier experiment utilizing the same study population, which sampled individuals non‐randomly in an attempt to size‐match individuals from different families, causing significant body mass difference between <italic>vgll3</italic> genotypes in this experiment that is not necessarily caused by the <italic>vgll3</italic> genotype. As a consequence of this, no statistical analysis on body mass differences was done, and all analyses controlled for body mass.</p><p>To test if <italic>vgll3</italic> genotype associated with a change in standard metabolic rate, we used the following linear mixed model (model 1):
+</p><disp-formula id="ece38408-disp-0001"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="jats-math-1" display="block"><mml:mrow><mml:msub><mml:mtext>Log</mml:mtext><mml:mn>10</mml:mn></mml:msub><mml:mtext>SMR</mml:mtext><mml:mo>∼</mml:mo><mml:msub><mml:mtext>Log</mml:mtext><mml:mn>10</mml:mn></mml:msub><mml:mtext>BodyMass</mml:mtext><mml:mo>+</mml:mo><mml:mtext>vgll</mml:mtext><mml:mn>3</mml:mn><mml:mo>+</mml:mo><mml:mtext>sex</mml:mtext><mml:mo>+</mml:mo><mml:mtext>vgll</mml:mtext><mml:mn>3</mml:mn><mml:mtext>:Sex + AvgTemp + Family + Batch</mml:mtext></mml:mrow></mml:math></disp-formula><p>where log<sub>10</sub> SMR (mg O<sub>2</sub>/L/h) was fitted against log<sub>10</sub> body mass (g; accounting for allometric scaling), including <italic>vgll3</italic> genotype (LL/EE), sex (m/f), and the interaction between <italic>vgll3</italic> genotype and sex as fixed effects, thus including both the direct effects of <italic>vgll3</italic> genotype and sex on standard metabolic rate, as well as a potential sex difference in the effect of <italic>vgll3</italic>. Family (1–14) was included in the model as a random effect, accounting for variation caused by both tank and family effects as they were confounded in the experiment (one family per tank). Respirometry batch (1–10) was also included as a random effect. To control for potential temperature effects on metabolic rate via thermal acclimation, the average holding tank temperature (°C) for the last 3 days before the fish entered the acclimation tank was included as an additional fixed effect.</p><p>To test if there was an association between <italic>vgll3</italic> and body condition, we used a similar approach as above, where we modeled body condition using the following mixed‐effect model (model 2):
+</p><disp-formula id="ece38408-disp-0002"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="jats-math-2" display="block"><mml:mrow><mml:mtext>Condition</mml:mtext><mml:mo>∼</mml:mo><mml:mtext>vgll</mml:mtext><mml:mn>3</mml:mn><mml:mo>+</mml:mo><mml:mtext>sex</mml:mtext><mml:mo>+</mml:mo><mml:mtext>vgll</mml:mtext><mml:mn>3</mml:mn><mml:mo>:</mml:mo><mml:mtext>Sex</mml:mtext><mml:mo>+</mml:mo><mml:mtext>Family</mml:mtext><mml:mo>+</mml:mo><mml:mtext>Batch</mml:mtext></mml:mrow></mml:math></disp-formula><p>where condition is modeled as a function of <italic>vgll3</italic> genotype, sex, and the interaction between <italic>vgll3</italic> genotype and sex (fixed effects), as well as family and batch (random effects). Body condition was calculated as Fulton's K, which is the body weight (g) divided by the cube of the body length (mm) multiplied by 100, and represents the relationship between the body weight and length (Ricker, <xref rid="ece38408-bib-0053" ref-type="bibr">1975</xref>).</p><p>
+<italic>p</italic>‐ and <italic>F</italic>‐test values were calculated for fixed effects using Satterthwaite's method with type III tests in models with interactions, and type II tests in models without interactions. The full models were compared to three alternative models: A no interaction model removed the interaction between sex and vgll3 genotype; a sex‐only model further removed <italic>vgll3</italic> genotype as a fixed factor, and a simple model removed both sex and <italic>vgll3</italic> genotype. These models were compared to the full model using Akaike's information criteria (AIC) and by testing the predictive power of each model by cross‐validation. Cross‐validation was performed by separating the dataset into two sets of either even‐ or odd‐numbered respirometry batches, and then using the model parameters derived from each set try predicting the SMR of the other; the root‐mean‐square error was then used to compare the predicted values against the observed ones for each model. All models were visually examined and confirmed to have normally distributed residuals. Statistical summaries of both sets of models are shown in Tables <xref rid="ece38408-tbl-0001" ref-type="table">A1</xref> and <xref rid="ece38408-tbl-0002" ref-type="table">A2</xref> in Appendix 2— analysis and data.</p><p>Nine individuals were removed from the analysis because of technical issues (pump, oxygen logger, or identification failure), and one individual that entered acclimation was not tested because of unexpected mortality, leaving the total number of individuals used in analysis at <italic>N</italic> = 150.</p></sec></sec><sec id="ece38408-sec-0007" disp-level="1"><label>3.</label><title>RESULTS</title><p>A total of 150 fish were successfully measured for SMR, of which 76 had the <italic>vgll3</italic>*LL genotype (34 males and 42 females) and 74 had the <italic>vgll3*EE</italic> genotype (35 males and 39 females; Appendix 2—Table <xref rid="ece38408-tbl-0003" ref-type="table">A3</xref>). The number of individuals tested was similar for each family, with an average of 10.7 ± 1.3 (±SD) individuals per family. Mean body length and mass were 41.04 ± 3.19 mm [34.89, 51.31] (±SD [min, max]) and 0.95 ± 0.24 g [0.58, 1.89] for <italic>vgll3*EE</italic> fish and 44.14 ± 3.73 mm [33.97, 50.77] and 1.2 ± 0.30 g [0.50, 1.90] for <italic>vgll3</italic>*LL fish (see note on body mass distributions in the statistical analysis section). <italic>vgll3</italic> genotype had no detectable effect on body condition (<italic>p </italic>= .33, Appendix 2—Table <xref rid="ece38408-tbl-0002" ref-type="table">A2</xref>).</p><p>The <italic>vgll3</italic> genotype had no significant effect on SMR (Figure <xref rid="ece38408-fig-0003" ref-type="fig">3</xref>). There was also no significant effect of sex (<italic>p </italic>= .59) or the sex:<italic>vgll3</italic> interaction (<italic>p </italic>= .69). The models excluding <italic>vgll3</italic>, the <italic>vgll3</italic>:sex interaction, or both sex and <italic>vgll3</italic> as fixed factors, all had a lower AIC and root‐mean‐square deviation (from cross‐validation) than the full model, indicating that the models excluding <italic>vgll3</italic> and sex had a higher relative quality and higher predictive power. The metabolic scaling coefficient was estimated to 0.88 ± 0.05 (95% CI) in the full model and 0.89 ± 0.24 in the simple model, and the coefficient of variation was 6.23% and 6.19% for the simple and full model, respectively. The coefficient of variation was calculated as the SD of residuals after scaling them from log<sub>10</sub> to log<sub>e</sub> scale, as suggested by Garland (<xref rid="ece38408-bib-0028" ref-type="bibr">1984</xref>). See Appendix 2—Table <xref rid="ece38408-tbl-0001" ref-type="table">A1</xref> for the full statistical summary.</p><fig id="ece38408-fig-0003" position="float"><?disp-level 2?><label>FIGURE 3</label><caption><p>Main results. (a) Log<sub>10</sub>‐log<sub>10</sub> plot of standard metabolic rate (mg O<sub>2</sub>/L/h) and body mass (g) for every included individual (<italic>N</italic> = 150). The square and circle with a black border indicate genotype means, and horizontal error bars indicate the standard error for mean body mass. (b) Estimates of model coefficients for the full mixed linear model of log<sub>10</sub> standard metabolic rate (model 1). The full model summary is shown in Appendix 2—Table <xref rid="ece38408-tbl-0001" ref-type="table">A1</xref>. (c) Predicted means of mass‐specific standard metabolic rate (mg O<sub>2</sub>/L/kg/h) for male and female individuals with either <italic>vgll3*EE</italic> or <italic>vgll3*LL</italic> genotypes, fixed for a body mass of 1.08 g and an average temperature of 10.28°C (preceding the respirometry acclimation and trial) at the population level, based on the model estimates in b</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-7" xlink:href="ECE3-12-e8408-g004.jpg"><?cloudpmc-path blobs/540c/8794721/c7312567b55b/ECE3-12-e8408-g004.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 363?><?original-width 1064?><?scaled-height 242?><?scaled-width 709?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ECE3-12-e8408-g004.gif"><?cloudpmc-path blobs/540c/8794721/04b05776bf9f/ECE3-12-e8408-g004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>Using the residual standard deviation of 0.027 obtained from the full model, a post hoc power analysis was performed to estimate the minimum effect size this study should have been able to detect with a power of 80%. Repeatedly simulating datasets (Appendix 2—Figure <xref rid="ece38408-fig-0005" ref-type="fig">A2</xref>) where SMR is affected by <italic>vgll3</italic> genotype and sex as specified in the full model—and testing different values for the effect of <italic>vgll3</italic> and the <italic>vgll3</italic>:sex interaction –, we found a minimum effect size of 4.25% and 6% on mass‐adjusted (non‐log) SMR for the <italic>vgll3</italic> and the <italic>vgll3</italic>:sex effects, respectively (translating to 0.018 and 0.025 for the model estimates). The power analysis indicates that although we did not detect a <italic>vgll3</italic> effect in this experiment, we cannot rule out effects of <italic>vgll3</italic> and <italic>vgll3</italic>:sex on mass‐adjusted SMR smaller than 4.25% and 6%.</p></sec><sec id="ece38408-sec-0008" disp-level="1"><label>4.</label><title>DISCUSSION</title><p>
+<italic>Vgll3</italic> genotype has a strong effect on Atlantic salmon life history (Ayllon et al., <xref rid="ece38408-bib-0008" ref-type="bibr">2015</xref>; Barson et al., <xref rid="ece38408-bib-0009" ref-type="bibr">2015</xref>; Debes et al., <xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>; Verta et al., <xref rid="ece38408-bib-0067" ref-type="bibr">2020</xref>), and recent findings have suggested that this effect might be mediated by <italic>vgll3</italic>‐induced differences in body condition (Debes et al., <xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>). Taking this together with the connections between standard metabolic rate (SMR) and resource acquisition and assimilation (Armstrong et al., <xref rid="ece38408-bib-0002" ref-type="bibr">2011</xref>; Auer, Bassar, et al., <xref rid="ece38408-bib-0003" ref-type="bibr">2020</xref>; Auer, Solowey, et al., <xref rid="ece38408-bib-0007" ref-type="bibr">2020</xref>; Bochdansky et al., <xref rid="ece38408-bib-0014" ref-type="bibr">2005</xref>; Millidine et al., <xref rid="ece38408-bib-0042" ref-type="bibr">2009</xref>; Rosenfeld et al., <xref rid="ece38408-bib-0055" ref-type="bibr">2015</xref>), we hypothesized that <italic>vgll3</italic> genotype might be asserting some of its effects through changes in energetic physiology that would be reflected in SMR. However, we did not detect any difference in either SMR or body condition between juvenile Atlantic salmon individuals of different homozygous <italic>vgll3</italic> genotypes. The lack of difference in body condition might be related to body size or life stage; the fish in the study of Debes et al. (<xref rid="ece38408-bib-0022" ref-type="bibr">2021</xref>) were considerably more developmentally advanced, averaging 19 g, and had been reared for approximately 3100 degree days at stable daily temperatures with many of the males maturing the same autumn. In comparison, the fish in this study averaged just 1.08 g and had been reared at approximately 2150 degree days under a variable temperature regime, which could have further reduced growth (Imholt et al., <xref rid="ece38408-bib-0032" ref-type="bibr">2011</xref>). It might then be possible that the body condition effects of <italic>vgll3</italic> genotype only start to occur later in development when the fish has reached larger body mass, or in the months prior to maturation. Considering the SMR results, measurement error is one factor that could potentially mask <italic>vgll3</italic> effects, but the SMR measurements in this study were generally precise, with a metabolic scaling coefficient well within the range for what has been observed in other fishes (Clarke &amp; Johnston, <xref rid="ece38408-bib-0018" ref-type="bibr">1999</xref>) and a low coefficient of variation for the model's residuals, indicating good precision of the results. Our post hoc power simulation based on our observed residual variation indicated that this experiment, with its comparably high number of individuals, should have been able to detect effects of <italic>vgll3</italic> genotype down to an effect size as small as 4.25% on mass‐adjusted SMR, as well as a sex‐by‐<italic>vgll3</italic> genotype interaction effect down to 6% (Appendix 2—Figure <xref rid="ece38408-fig-0005" ref-type="fig">A2</xref>). This would be a comparably weak effect considering that mass‐ and sex‐adjusted metabolic rates among individuals have been reported to vary two to threefold within a population (Auer et al., <xref rid="ece38408-bib-0006" ref-type="bibr">2018</xref>; Burton et al., <xref rid="ece38408-bib-0015" ref-type="bibr">2011</xref>; Metcalfe et al., <xref rid="ece38408-bib-0039" ref-type="bibr">2016</xref>). Given this, the lack of difference in SMR prior to maturation or prior to a change in body condition does not support SMR of juvenile salmon as a mediator of <italic>vgll3</italic> effects on age at maturity at this particular age and in these conditions. Finally, these results were supported by a parallel study using a different crossing design and juvenile salmon of larger body size (Prokkola et al., <xref rid="ece38408-bib-0051" ref-type="bibr">2021</xref>) where no association between SMR and <italic>vgll3</italic> genotype was found.</p><p>The results indicate that any potential organismal differences caused by <italic>vgll3</italic> genotype do not affect physiological function or body composition in a way that changes SMR at this life stage in these conditions. Such differences could, for example, have been organ size (Rosenfeld et al., <xref rid="ece38408-bib-0055" ref-type="bibr">2015</xref>), enzyme activity (Norin &amp; Malte, <xref rid="ece38408-bib-0048" ref-type="bibr">2012</xref>), mitochondrial leak respiration (Salin et al., <xref rid="ece38408-bib-0057" ref-type="bibr">2016</xref>, <xref rid="ece38408-bib-0058" ref-type="bibr">2019</xref>), or capacities related to digestion or resource acquisition/assimilation (Auer et al., <xref rid="ece38408-bib-0005" ref-type="bibr">2015</xref>; Millidine et al., <xref rid="ece38408-bib-0042" ref-type="bibr">2009</xref>). Alternatively, but less parsimoniously, there may be tissue‐dependent variation in <italic>vgll3</italic>‐effects on metabolic rates which cancel each other out at the organismal level, resulting in similar whole‐animal metabolic rates. For example, <italic>vgll3*EE</italic> individuals could have more metabolically active digestive systems (allowing for faster nutrient assimilation) or increased muscle mass (high MR), but then a higher investment in adipose tissue (low MR) masks this difference's effect on the mass‐specific metabolic rate. Nevertheless, our results indicate that energy‐allocation effects of <italic>vgll3</italic> are not driven by transient whole‐animal maintenance energy requirements at this particular life stage and in these conditions.</p><p>Metabolic phenotype is a multifaceted set of traits, covering not just standard metabolic rate, but also the maximum metabolic rate, aerobic scope, and daily energy expenditure, to mention some. Additionally, the consequences of variation in metabolic traits are context dependent and may change under different environmental conditions and life stages (Auer, Bassar, et al., <xref rid="ece38408-bib-0003" ref-type="bibr">2020</xref>; Auer, Solowey, et al., <xref rid="ece38408-bib-0007" ref-type="bibr">2020</xref>; Bochdansky et al., <xref rid="ece38408-bib-0014" ref-type="bibr">2005</xref>; Millidine et al., <xref rid="ece38408-bib-0042" ref-type="bibr">2009</xref>; Norin &amp; Metcalfe, <xref rid="ece38408-bib-0049" ref-type="bibr">2019</xref>). For example, compared to a natural setting, the ad libitum feeding is a key feature of the environment experienced by the individuals used in this study until the 2 days fasting before the SMR measurements. The benefit of a high metabolic rate may depend on resource availability (Auer, Bassar, et al., <xref rid="ece38408-bib-0003" ref-type="bibr">2020</xref>), which in the wild will be more variable both spatially and temporally compared to this experiment. We initially hypothesized that <italic>vgll3</italic> might influence metabolic rate such that <italic>vgll3*EE</italic> individuals have a higher SMR, benefiting them under high‐resource conditions. This is not what we found, and our findings rather suggest that in ad libitum (high‐resource) conditions, <italic>vgll3</italic> does not influence growth via changes in SMR. Future research on this, and related topics, would benefit from investigations in low‐ or fluctuating resource availability environments in order to assess potential effects via, for example, phenotypic plasticity in metabolic rate (Auer, Solowey, et al., <xref rid="ece38408-bib-0007" ref-type="bibr">2020</xref>; Norin &amp; Gamperl, <xref rid="ece38408-bib-0047" ref-type="bibr">2018</xref>).</p><p>We initially planned to also measure metabolic rate under exhaustive swimming to obtain data on maximum metabolic rate (MMR), but had to abandon these trials as we were unable to motivate juvenile salmon of this age and size to do any exhaustive swimming, either by swim tunnel or by hand chasing. This behavior might be specific to this life stage, as we were eventually successfully able to exercise fish up to MMR by hand chasing in a parallel study using a cohort from the same year that was studied 1–2 summer months later when the fish had grown from 1 to 4 g (Prokkola et al., <xref rid="ece38408-bib-0051" ref-type="bibr">2021</xref>). Besides supporting our finding on the lack of an association between SMR and <italic>vgll3</italic> genotype, Prokkola et al. (<xref rid="ece38408-bib-0051" ref-type="bibr">2021</xref>) found a significantly higher MMR and aerobic scope in vgll3*EE compared to <italic>vgll3</italic>*LL individuals, indicating that <italic>vgll3</italic> genotype does affect the metabolic phenotype, but does so by affecting traits related to MMR without affecting SMR. In the wild, juvenile Atlantic salmon prefer staying in slow‐velocity microhabitats where they act as sit‐and‐wait predators, darting out to catch suitable prey items as they pass by (Fraser et al., <xref rid="ece38408-bib-0027" ref-type="bibr">1993</xref>; Metcalfe et al., <xref rid="ece38408-bib-0041" ref-type="bibr">1997</xref>). It is thus possible that individuals at the life stage studied here are not well physiologically adapted to aerobically exhaustive swimming, but rather shorter bursts, due to their small relative muscle mass and glycogen stores available for exercise. The available literature reporting successful swimming respirometry or MMR measurements of salmon of ~1 g size is very sparse, and the experiments reported by Dabrowski (<xref rid="ece38408-bib-0021" ref-type="bibr">1986</xref>) and Cutts et al. (<xref rid="ece38408-bib-0020" ref-type="bibr">2002</xref>) are to our knowledge the only ones that have been successful in motivating juvenile salmon close to or below this size to swim. We therefore recommend focusing efforts on investigating MMR at the latter end of the early life stage, or carefully devising alternate ways of ethically inducing MMR.</p><p>The lack of association observed here between <italic>vgll3</italic> genotype and SMR indicates that at this life stage and in these conditions, SMR will not necessarily be co‐selected together with <italic>vgll3</italic> genotype. Given these results, we do not expect selection on age at maturity to constrain variation in SMR, at least not via selection on <italic>vgll3</italic>. However, in addition to <italic>vgll3</italic>, other genes have also been identified as potentially important for maturation in Atlantic salmon, such as <italic>six6</italic> (Sinclair‐Waters et al., <xref rid="ece38408-bib-0060" ref-type="bibr">2020</xref>), <italic>akap11</italic> (Barson et al., <xref rid="ece38408-bib-0009" ref-type="bibr">2015</xref>; Kurko et al., <xref rid="ece38408-bib-0035" ref-type="bibr">2020</xref>), and <italic>tead3</italic> (Christensen et al., <xref rid="ece38408-bib-0017" ref-type="bibr">2017</xref>)(see (Mobley et al., <xref rid="ece38408-bib-0043" ref-type="bibr">2021</xref>), for an overview). Furthermore, Prokkola et al. (<xref rid="ece38408-bib-0051" ref-type="bibr">2021</xref>) detected an interaction between six6 and vgll3 genotype which associated with a reduction in maximum metabolic rate in individuals with the vg<italic>ll3*LL six6*LL</italic> genotype combination (although no effect of <italic>six6</italic> on SMR was detected). Thus, while no link between age at maturity genotype and metabolic rate was detected in the current study, it remains to be determined whether there are links with other age at maturity genes or metabolic traits. Studying these could be worthwhile to improve our overall understanding of the connection between energetics and genetic control of maturation timing.</p></sec><sec id="ece38408-sec-0009" disp-level="1"><label>5.</label><title>CONCLUSIONS</title><p>We found that the <italic>vgll3</italic> age‐at‐maturity genotype did not significantly affect standard metabolic rate in small (0.5–2 g) Atlantic salmon juveniles (21 weeks post‐hatch). Our results indicate that <italic>vgll3’s</italic> effect on age at maturity and resource allocation is unlikely to be mediated through maintenance energy requirements or related traits and that juvenile individuals of different <italic>vgll3</italic> genotypes face similar maintenance energy requirements at the developmental stage and conditions used in this study.</p></sec><sec id="ece38408-sec-0011" disp-level="1"><title>CONFLICT OF INTEREST</title><p>The authors declare no competing interests.</p></sec><sec id="ece38408-sec-0012" disp-level="1"><title>AUTHOR CONTRIBUTION</title><p>
+<bold>Eirik R. Åsheim:</bold> Conceptualization (equal); Data curation (equal); Formal analysis (lead); Funding acquisition (supporting); Investigation (equal); Methodology (equal); Project administration (supporting); Validation (equal); Visualization (lead); Writing – original draft (lead); Writing – review &amp; editing (lead). <bold>Jenni M. Prokkola:</bold> Conceptualization (equal); Investigation (equal); Methodology (equal); Project administration (equal); Supervision (equal); Validation (equal); Visualization (supporting); Writing – original draft (supporting); Writing – review &amp; editing (equal). <bold>Sergey Morozov:</bold> Conceptualization (supporting); Data curation (equal); Formal analysis (supporting); Investigation (supporting); Methodology (equal); Software (lead); Validation (equal); Writing – review &amp; editing (equal). <bold>Tutku Aykanat:</bold> Conceptualization (equal); Funding acquisition (supporting); Methodology (supporting); Resources (supporting); Writing – review &amp; editing (equal). <bold>Craig R. Primmer:</bold> Conceptualization (equal); Data curation (equal); Funding acquisition (lead); Methodology (equal); Project administration (equal); Resources (lead); Supervision (equal); Validation (equal); Writing – original draft (supporting); Writing – review &amp; editing (equal).</p></sec><sec id="ece38408-sec-0014" disp-level="2"><title>Open Research Badges</title><p>This article has earned an Open Data Badge. Badge for making publicly available the digitally‐shareable data necessary to reproduce the reported results. The data is available at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://zenodo.org/record/5255061" ext-link-type="uri">https://zenodo.org/record/5255061</ext-link>. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.5281/zenodo.5255061" ext-link-type="uri">https://doi.org/10.5281/zenodo.5255061</ext-link>.</p></sec><sec id="ece38408-sec-0010" sec-type="ack" disp-level="1"><title>ACKNOWLEDGMENTS</title><p>We thank Petra Liljeström, Paul Bangura, Katja Maamela, Markus Lauha, Suvi Ikonen, Nikolai Piavchenko, Anna Toikkainen, and Seija Tillanen for their work with animal husbandry and system maintenance; Heidrikur Bergsson for designing the 3D‐printed chamber caps; Markus Haapala for 3D printing the chamber caps; Nordic University Hub NordicPOP (Nordforsk, project no. 85352) for providing access to the 3D printer; Annukka Ruokolainen and Shadi Jansouz for <italic>vgll3</italic> genotyping and sexing; Tommy Norin for valuable input and advice on building the respirometry setup; Lammi Biological Station for their flexibility in enabling us to conduct this experiment despite the ongoing COVID pandemic; Anna Toikkanen, Antti Miettinen, Jacqueline Moustakas‐Verho, Jukka‐Pekka Verta, Marion Sinclair‐Waters, Nikolai Piavchenko, Shadi Jansouz, Teemu Mäkinen, and the Laukaa hatchery staff for help with egg and milt collection and/or fertilizations; the two reviewers whose comments helped improve this manuscript; and Natural Resources Institute Finland (LUKE) for access to the broodstock.</p></sec><sec id="ece38408-app-0001" sec-type="app" disp-level="1"><label>APPENDIX 1.</label><sec id="ece38408-sec-0017" disp-level="2"><title>Materials and methods</title><sec id="ece38408-sec-0019" disp-level="3"><title>Respirometer design</title><p>Respirometers (Figure <xref rid="ece38408-fig-0004" ref-type="fig">A1</xref>) were designed for intermittent‐flow respirometry (Forstner, <xref rid="ece38408-bib-0025" ref-type="bibr">1983</xref>; Steffensen et al., <xref rid="ece38408-bib-0064" ref-type="bibr">1984</xref>) with optical oxygen probes. The main chamber of the respirometers consisted of a glass tube (Length 70 mm, inner diam. 24 mm) (Schott, Finnish Special Glass, Espoo, Finland) with 3D‐printed ‘HeiBer’ plastic caps (Heidrikur, <xref rid="ece38408-bib-0030" ref-type="bibr">2020</xref>) sealed using a nitrile rubber o‐ring at each end. Each chamber cap had two outlets, one for circulatory flow and one for flush flow. Inside the chamber, a flat circular 3D‐printed plastic baffle partly covered each chamber cap to protect the outlets and to ensure a mixed water flow. The baffles were secured to the chamber caps using a stainless steel screw. The chamber caps and baffles were 3D printed using polyethylene terepthalate glycol (PETG, Devil Design, Mikolow, Poland)</p><p>Respirometer volume was measured using the weight difference between dry respirometers and respirometers filled with water (while plugging the flush‐flow and oxygen probe outlets and inlets). Respirometers had a total volume of 47.3 ml, and the fish had an average weight of 1.08 ± 0.3 g (±SE) giving a 2.2% ratio of animal body mass to volume of respirometer.</p><p>For each chamber, one 3‐6V DC pump acted as a circulation pump (unbranded, China) and was connected with Tygon tubing (Tygon S3 E‐3603, Saint‐Gobain, Paris, France) to one outlet on each chamber cap, providing a circulatory flow through the chamber. A 5‐12V DC pump (DC30C, Anself, China) acting as a flush pump was connected to one chamber cap, and a Tygon tube reaching above the water surface was connected to the opposite chamber cap, serving as an overflow outlet during flushing. Flow speed was set to 0.7 cm s<sup>−1</sup> during the closed phase and 1.8 cm s<sup>−1</sup> during the flush phase. Fish were able to lie still on the bottom of the chamber during both phases.</p><p>The oxygen probe was connected in‐line with the circulation circuit using a plastic t‐junction piece, sealed by threading the probe through a thin silicone tube before inserting it into the t‐piece.</p><p>The 16 respirometers were divided into groups of four, wherein each group one 4‐channel oxygen logger (FSO2‐C4, Pyroscience, Aachen, Germany) recorded the oxygen concentrations from the oxygen probes (OXROB10, Pyroscience, Aachen, Germany), and one PumpResp pump control unit (4‐channel model, FishResp, University of Helsinki, Finland, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://fishresp.org/pumpresp" ext-link-type="uri">https://fishresp.org/pumpresp</ext-link>) automated the work of the flush and circulation pumps. Each oxygen logger used one PT100 temperature probe (TSUB21‐CL5, Pyroscience, Aachen, Germany) to record the temperature of the respirometry tank near its respective respirometers. The oxygen loggers were set to automatically temperature‐compensate the recorded oxygen concentrations. A single pump provided flush flow to all four respirometers. Oxygen probes were calibrated in O<sub>2</sub>‐free water (deoxygenated using sodium sulphate) and air‐saturated water.</p><fig id="ece38408-fig-0004" position="anchor"><?disp-level 4?><label>FIGURE A1</label><caption><p>Design of respirometers. (a) Schematic (not to scale) overview of a single respirometer. (b) One group of four respirometers, in the respirometry tank, with fish, shown from above</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-9" xlink:href="ECE3-12-e8408-g003.jpg"><?cloudpmc-path blobs/540c/8794721/4420fdd48342/ECE3-12-e8408-g003.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 473?><?original-width 1064?><?scaled-height 315?><?scaled-width 709?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ECE3-12-e8408-g003.gif"><?cloudpmc-path blobs/540c/8794721/ab73dee8fcbb/ECE3-12-e8408-g003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="ece38408-sec-0018" disp-level="3"><title>Respirometry holding system</title><p>The full respirometry system consisted of three square 164 L tanks, two acclimation tanks and one respirometry tank, all located in a different room from the holding tanks. As opposed to the holding tanks, which had variable temperatures depending on the temperature of the incoming lake water, the respirometry system was set up to use the same water but to hold a constant temperature of 10.5°C. This was achieved by setting up two 8°C cold‐water reservoir tanks, which both received an incoming 1 L min<sup>‐1</sup> flow of filtered (UV and a 60 µm physical filter) lake water, but were cooled by two separate aquarium coolers. Each of the respirometry system’s three tanks had a temperature‐controlled pump which created a slow flow of 8°C water from the reservoirs into the tank whenever the tank temperature got higher than 10.5°C, achieving a highly stable temperature at 10.53 ± 0.02°C (mean ± SD) for the entirety of the experiment. An overflow pipe drained water from the acclimation tanks back to the cold‐water reservoir. The two acclimation tanks shared one cold‐water reservoir while the respirometry tank used the other. Both the respirometry tank and its cold‐water reservoir were continuously UV filtered to reduce the growth of algae and background respiration. Water in all three tanks was continuously aerated with air‐stones, and each acclimation tank had two Eheim 300 pumps (Eheim, Deizisau, Germany) to keep water mixed. Lighting was provided by one 80‐cm Juwel Novolux LED‐lights (JUWEL Aquarium, Rotenburg, Germany) for each acclimation tank, with photoperiod adjusted according to the local latitude.</p></sec><sec id="ece38408-sec-0020" disp-level="3"><title>Extraction of respirometry data</title><p>All oxygen traces were inspected visually for linearity (and blindly from <italic>vgll3</italic> genotype), using regression diagnostic plots (i.e., residuals vs fitted, normal Q‐Q, and scale‐location), and 1387 slopes were excluded, leaving an average of 47.85 ± 5.1 (±SD) MO<sub>2</sub> measurements per individual used in the statistical analysis. Using the r<sup>2</sup> of the fitted traces to inspect for linearity was dropped as only 0.6% of all slopes (54 out of 8739) failed to pass the coefficient of determination threshold (<italic>r</italic>
+<sup>2</sup> &lt; .95), despite spontaneous fish activity and occasional malfunction of circulation pumps. MO<sub>2</sub> was calculated from each of these slopes as described by Morozov et al. (2020) using the R package FishResp. Mean <italic>r</italic>
+<sup>2</sup> for all oxygen traces used in the statistical analysis was 0.997 ± 0.004 (±SD, <italic>N</italic> = 7311). For each individual, the standard metabolic rate (SMR) was defined as the mean of the lowest normal distribution (MLND) after having fitted all MO<sub>2</sub> measurements to up to four normal distributions as described by Chabot et al. (<xref rid="ece38408-bib-0016" ref-type="bibr">2016</xref>). This method automatically separates the MO<sub>2</sub> measurements into distributions representing the acclimation time, the measurements where the fish are quiescent, and measurements following potential spontaneous activity. In FishResp (Morozov et al., 2020), background respiration was modelled to increase linearly (based on pilot tests) from the pre‐test measurement to the post‐test measurement, and oxygen consumption was controlled for background respiration by subtracting the background respiration (and its predicted linear increase) from the oxygen concentration measurements before calculating the rate of oxygen consumed by the fish.</p></sec></sec></sec><sec id="ece38408-app-0002" sec-type="app" disp-level="1"><label>APPENDIX 2.</label><sec id="ece38408-sec-0021" disp-level="2"><title>Analysis and data</title><fig id="ece38408-fig-0005" position="anchor"><?disp-level 3?><label>FIGURE A2</label><caption><p>Power analysis. Shows the predicted power for this study (<italic>N</italic> = 150 individuals, alpha = 0.05, residual sd = 0.027) to detect an effect on SMR from <italic>vgll3</italic> genotype and an interaction between <italic>vgll3</italic> genotype and sex, given different effect sizes. The analysis gives an indication of the smallest effect sizes this study can detect, given that <italic>vgll3</italic> genotype and sex affects SMR as in the model written below. Effect sizes are shown as the degree that the factors affect the mass‐adjusted metabolic rate (mg O2 L‐1h‐1kg‐1). For example, a 4% effect size would increase or decrease mass‐specific metabolic rate with 4%. Each point represents the proportion of 10000 simulated datasets where a significant effect was found. Simulated datasets are based on a model of the form: log(SMR) = a + b × log(body mass) + c × <italic>vgll3EE</italic> + d × <italic>vgll3EE</italic> × male + e, where a is the intercept; b is the metabolic scaling coefficient, set to 0.8; c and d are the effect sizes of genotype and the interaction between genotype and sex, respectively; and e is the error component, which here is normally distributed with a mean of 0 and a standard deviation of 0.027 (taken from results of this study). In the simulation for effect of genotype, the genotype‐sex interaction was fixed at 0%. In the simulation for interaction of genotype and sex, the effect of genotype was fixed at 4%. The simulated datasets used body mass sampled randomly from a normal distribution with a mean of 1.08 g and a standard deviation of 0.3 (taken from results of this study), balancing <italic>vgll3</italic> genotype and sex evenly across the 150 simulated individuals. The analysis is available in the uploaded R script (see data accessibility)</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="jats-graphic-11" xlink:href="ECE3-12-e8408-g001.jpg"><?cloudpmc-path blobs/540c/8794721/e6ede788d9d9/ECE3-12-e8408-g001.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 494?><?original-width 1064?><?scaled-height 329?><?scaled-width 709?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ECE3-12-e8408-g001.gif"><?cloudpmc-path blobs/540c/8794721/1f6ad6d8e949/ECE3-12-e8408-g001.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><table-wrap id="ece38408-tbl-0001" position="anchor"><?disp-level 3?><label>TABLE A1</label><caption><p>Statistical summaries for mixed‐effect models on log<sub>10</sub> standard metabolic rate</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" colspan="9" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">A) Full model: Log<sub>10</sub>smr∼Log<sub>10</sub>mass+vgll3+sex+vgll3:sex+AvgTemp+(1|family)+(1+batch)</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Fixed effects</th><th align="left" valign="top" rowspan="1" colspan="1">Estimate</th><th align="left" valign="top" rowspan="1" colspan="1">2.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">97.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">Sum Sq</th><th align="left" valign="top" rowspan="1" colspan="1">Mean Sq</th><th align="left" valign="top" rowspan="1" colspan="1">DenDF</th><th align="left" valign="top" rowspan="1" colspan="1">F (type III)</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>p</italic>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Intercept</td><td align="left" rowspan="1" colspan="1">−0.853</td><td align="left" rowspan="1" colspan="1">−1.077</td><td align="left" rowspan="1" colspan="1">−0.062</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub> body mass</td><td align="left" rowspan="1" colspan="1">0.878</td><td align="left" rowspan="1" colspan="1">0.830</td><td align="left" rowspan="1" colspan="1">0.928</td><td align="left" rowspan="1" colspan="1">0.844</td><td align="center" rowspan="1" colspan="1">0.844</td><td align="center" rowspan="1" colspan="1">90.347</td><td align="center" rowspan="1" colspan="1">1160.548</td><td align="center" rowspan="1" colspan="1">&gt;.001</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>vgll3</italic> (LL)</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="left" rowspan="1" colspan="1">−0.014</td><td align="left" rowspan="1" colspan="1">0.024</td><td align="left" rowspan="1" colspan="1">0.000</td><td align="center" rowspan="1" colspan="1">0.000</td><td align="center" rowspan="1" colspan="1">12.943</td><td align="center" rowspan="1" colspan="1">0.087</td><td align="center" rowspan="1" colspan="1">.771</td></tr><tr><td align="left" rowspan="1" colspan="1">Sex (male)</td><td align="left" rowspan="1" colspan="1">0.012</td><td align="left" rowspan="1" colspan="1">−0.001</td><td align="left" rowspan="1" colspan="1">0.025</td><td align="left" rowspan="1" colspan="1">0.0007</td><td align="center" rowspan="1" colspan="1">0.0007</td><td align="center" rowspan="1" colspan="1">129.139</td><td align="center" rowspan="1" colspan="1">0.984</td><td align="center" rowspan="1" colspan="1">.322</td></tr><tr><td align="left" rowspan="1" colspan="1">AvgTemp</td><td align="left" rowspan="1" colspan="1">0.006</td><td align="left" rowspan="1" colspan="1">−0.017</td><td align="left" rowspan="1" colspan="1">0.027</td><td align="left" rowspan="1" colspan="1">0.0002</td><td align="center" rowspan="1" colspan="1">0.0002</td><td align="center" rowspan="1" colspan="1">6.831</td><td align="center" rowspan="1" colspan="1">0.228</td><td align="center" rowspan="1" colspan="1">.647</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>vgll3</italic>(LL):Sex(male)</td><td align="left" rowspan="1" colspan="1">−0.014</td><td align="left" rowspan="1" colspan="1">−0.033</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="center" rowspan="1" colspan="1">0.002</td><td align="center" rowspan="1" colspan="1">136.132</td><td align="center" rowspan="1" colspan="1">0.248</td><td align="center" rowspan="1" colspan="1">.117</td></tr><tr><td align="left" rowspan="1" colspan="1">Random effects</td><td align="left" rowspan="1" colspan="1">Std.dev</td><td align="left" colspan="3" rowspan="1">Coefficient of determination (R2)</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Family</td><td align="left" rowspan="1" colspan="1">0.014</td><td align="left" colspan="3" rowspan="1">Marginal (fixed effects)</td><td align="center" rowspan="1" colspan="1">0.925</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Batch</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="left" colspan="3" rowspan="1">Conditional (whole model)</td><td align="center" rowspan="1" colspan="1">0.942</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Residual</td><td align="left" rowspan="1" colspan="1">0.0269</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr></tbody></table><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" colspan="9" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">B) Simple model: Log<sub>10</sub>smr∼Log<sub>10</sub>mass+AvgTemp+(1|family)+(1+batch)</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Fixed effects</th><th align="left" valign="top" rowspan="1" colspan="1">Estimate</th><th align="left" valign="top" rowspan="1" colspan="1">2.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">97.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">Sum Sq</th><th align="left" valign="top" rowspan="1" colspan="1">Mean Sq</th><th align="left" valign="top" rowspan="1" colspan="1">DenDF</th><th align="left" valign="top" rowspan="1" colspan="1">F (type II)</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>p</italic>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Intercept</td><td align="left" rowspan="1" colspan="1">−0.833</td><td align="left" rowspan="1" colspan="1">−1.072</td><td align="left" rowspan="1" colspan="1">−0.590</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub> Bodymass</td><td align="left" rowspan="1" colspan="1">0.885</td><td align="left" rowspan="1" colspan="1">0.837</td><td align="left" rowspan="1" colspan="1">0.932</td><td align="left" rowspan="1" colspan="1">0.968</td><td align="center" rowspan="1" colspan="1">0.968</td><td align="center" rowspan="1" colspan="1">90.954</td><td align="center" rowspan="1" colspan="1">1318.099</td><td align="center" rowspan="1" colspan="1">&gt;.001</td></tr><tr><td align="left" rowspan="1" colspan="1">AvgTemp</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="left" rowspan="1" colspan="1">−0.019</td><td align="left" rowspan="1" colspan="1">0.027</td><td align="left" rowspan="1" colspan="1">0.0001</td><td align="center" rowspan="1" colspan="1">0.0001</td><td align="center" rowspan="1" colspan="1">6.744</td><td align="center" rowspan="1" colspan="1">0.131</td><td align="center" rowspan="1" colspan="1">.729</td></tr><tr><td align="left" rowspan="1" colspan="1">Random effects</td><td align="left" rowspan="1" colspan="1">Std.dev</td><td align="left" colspan="3" rowspan="1">Coefficient of determination (R<sup>2</sup>)</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Family</td><td align="left" rowspan="1" colspan="1">0.014</td><td align="left" colspan="3" rowspan="1">Marginal (fixed effects)</td><td align="center" rowspan="1" colspan="1">0.926</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Batch</td><td align="left" rowspan="1" colspan="1">0.0002</td><td align="left" colspan="3" rowspan="1">Conditional (whole model)</td><td align="center" rowspan="1" colspan="1">0.942</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Residual</td><td align="left" rowspan="1" colspan="1">0.0271</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr></tbody></table><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">C) Model comparisons</th><th align="left" valign="top" rowspan="1" colspan="1">RMSE</th><th align="left" valign="top" rowspan="1" colspan="1">AIC</th></tr></thead><tbody><tr><td align="left" colspan="3" rowspan="1">
+<bold>Full model</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub>smr∼Log<sub>10</sub>mass+vgll3+sex+vgll3:sex+AvgTemp+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.0646</td><td align="center" rowspan="1" colspan="1">−580.185</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>No interaction</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub>smr∼Log<sub>10</sub>mass+vgll3+sex+avgTemp+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.0653</td><td align="center" rowspan="1" colspan="1">−587.265</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Sex only</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub>smr∼Log<sub>10</sub>mass+sex+AvgTemp+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.0653</td><td align="center" rowspan="1" colspan="1">−596.734</td></tr><tr><td align="left" colspan="3" rowspan="1">
+<bold>Simple model</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Log<sub>10</sub>smr∼Log<sub>10</sub>mass+AvgTemp+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.0656</td><td align="center" rowspan="1" colspan="1">−606.652</td></tr></tbody></table><table-wrap-foot><fn id="ece38408-note-0004"><p>
+<italic>F</italic> and <italic>p</italic> values are calculated using Satterthwaite’s method using type III (full model) or type II (simple model) tests. Mixed models are fitted using restricted maximum likelihood. (A) Summary for the full model, including the fixed effect of sex (m/f) and <italic>vgll3</italic> genotype (EE/LL), as well as their interaction. (B) Summary for the simple model, excluding fixed effect of sex or <italic>vgll3</italic> genotype. (C) Model comparison between the full model, a simple model, no‐interaction model and a sex‐only model (excluding <italic>vgll3</italic> but keeping sex as fixed factor). The Root‐mean‐square error (RMSE) is the result of a cross‐validation of the models, which is obtained by splitting the dataset into two sets of odd‐ and even‐numbered respirometry batches, and using model parameters estimated from one set to predict the results of the other set. The RMSE represents the deviation between the predictions and the real data, and lower values indicate a higher predictive ability. Batch was excluded as a random effect from the models in the cross‐validations due to singularity. The Akaike information criterion (AIC) is an estimation of the relative quality of the models, taking residual variation and model complexity into account; A lower value indicates higher relative quality.</p></fn></table-wrap-foot></table-wrap><table-wrap id="ece38408-tbl-0002" position="anchor"><?disp-level 3?><label>TABLE A2</label><caption><p>Statistical summaries for mixed‐effect models checking for differences in body condition between <italic>vgll3</italic> genotypes</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" colspan="9" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">A) Full model: condition∼vgll3+sex+vgll3:sex+(1|family)+(1+batch)</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Fixed effects</th><th align="left" valign="top" rowspan="1" colspan="1">Estimate</th><th align="left" valign="top" rowspan="1" colspan="1">2.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">97.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">Sum Sq</th><th align="left" valign="top" rowspan="1" colspan="1">Mean Sq</th><th align="left" valign="top" rowspan="1" colspan="1">DenDF</th><th align="left" valign="top" rowspan="1" colspan="1">F (type III)</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>p</italic>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Intercept</td><td align="left" rowspan="1" colspan="1">1.353</td><td align="left" rowspan="1" colspan="1">1.315</td><td align="left" rowspan="1" colspan="1">1.390</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>vgll3</italic> (LL)</td><td align="left" rowspan="1" colspan="1">0.016</td><td align="left" rowspan="1" colspan="1">−0.035</td><td align="left" rowspan="1" colspan="1">0.065</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="center" rowspan="1" colspan="1">0.004</td><td align="center" rowspan="1" colspan="1">12.177</td><td align="center" rowspan="1" colspan="1">1.049</td><td align="center" rowspan="1" colspan="1">.326</td></tr><tr><td align="left" rowspan="1" colspan="1">Sex (male)</td><td align="left" rowspan="1" colspan="1">−0.018</td><td align="left" rowspan="1" colspan="1">−0.045</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">136.196</td><td align="center" rowspan="1" colspan="1">0.785</td><td align="center" rowspan="1" colspan="1">.377</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>vgll3</italic>(LL):Sex(male)</td><td align="left" rowspan="1" colspan="1">0.018</td><td align="left" rowspan="1" colspan="1">−0.023</td><td align="left" rowspan="1" colspan="1">0.058</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">130.933</td><td align="center" rowspan="1" colspan="1">0.725</td><td align="center" rowspan="1" colspan="1">.396</td></tr><tr><td align="left" rowspan="1" colspan="1">Random effects</td><td align="left" rowspan="1" colspan="1">Std.dev</td><td align="left" colspan="3" rowspan="1">Coefficient of determination (<italic>R</italic>
+<sup>2</sup>)</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Family</td><td align="left" rowspan="1" colspan="1">0.040</td><td align="left" colspan="3" rowspan="1">Marginal (fixed effects)</td><td align="center" rowspan="1" colspan="1">0.031</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Batch</td><td align="left" rowspan="1" colspan="1">0.020</td><td align="left" colspan="3" rowspan="1">Conditional (whole model)</td><td align="center" rowspan="1" colspan="1">0.376</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Residual</td><td align="left" rowspan="1" colspan="1">0.061</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr></tbody></table><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" colspan="9" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">B) sex‐only model: condition∼sex+(1|family)+(1+batch)</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Fixed effects</th><th align="left" valign="top" rowspan="1" colspan="1">Estimate</th><th align="left" valign="top" rowspan="1" colspan="1">2.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">97.5% CI</th><th align="left" valign="top" rowspan="1" colspan="1">Sum Sq</th><th align="left" valign="top" rowspan="1" colspan="1">Mean Sq</th><th align="left" valign="top" rowspan="1" colspan="1">DenDF</th><th align="left" valign="top" rowspan="1" colspan="1">F (type II)</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>p</italic>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Intercept</td><td align="left" rowspan="1" colspan="1">1.360</td><td align="left" rowspan="1" colspan="1">1.331</td><td align="left" rowspan="1" colspan="1">1.389</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Sex (male)</td><td align="left" rowspan="1" colspan="1">−0.009</td><td align="left" rowspan="1" colspan="1">−0.031</td><td align="left" rowspan="1" colspan="1">0.011</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">0.003</td><td align="center" rowspan="1" colspan="1">137.06</td><td align="center" rowspan="1" colspan="1">0.844</td><td align="center" rowspan="1" colspan="1">.360</td></tr><tr><td align="left" rowspan="1" colspan="1">Random effects</td><td align="left" rowspan="1" colspan="1">Std.dev</td><td align="left" colspan="3" rowspan="1">Coefficient of determination (<italic>R</italic>
+<sup>2</sup>)</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Family</td><td align="left" rowspan="1" colspan="1">0.040</td><td align="left" colspan="3" rowspan="1">Marginal (fixed effects)</td><td align="center" rowspan="1" colspan="1">0.004</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Batch</td><td align="left" rowspan="1" colspan="1">0.0004</td><td align="left" colspan="3" rowspan="1">Conditional (whole model)</td><td align="center" rowspan="1" colspan="1">0.364</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Residual</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="left" colspan="3" rowspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr></tbody></table><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">C) Model comparisons</th><th align="left" valign="top" rowspan="1" colspan="1">RMSE</th><th align="left" valign="top" rowspan="1" colspan="1">AIC</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>Full model</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">condition∼vgll3+sex+vgll3:sex+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.073</td><td align="center" rowspan="1" colspan="1">−345.384</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>No interaction</bold>
+</td><td align="center" rowspan="1" colspan="1">0.072</td><td align="center" rowspan="1" colspan="1">−352.584</td></tr><tr><td align="left" rowspan="1" colspan="1">condition∼vgll3+sex+(1|family)+(1+batch)</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Sex only</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">condition∼sex+(1|family)+(1+batch)</td><td align="center" rowspan="1" colspan="1">0.072</td><td align="center" rowspan="1" colspan="1">−359.229</td></tr></tbody></table><table-wrap-foot><fn id="ece38408-note-0002"><p>Body condition is calculated as Fulton’s K, where the body condition is the body mass (g) divided by the cube of the body length (mm) and multiplied by 100. F and p values are calculated using Satterthwaite’s method using type III (full model) or type II (sex‐only model) tests. Mixed models are fitted using restricted maximum likelihood. (A) Summary for the full model, including fixed effect of sex (m/f) and <italic>vgll3</italic> genotype (EE/LL), as well as their interaction. (B) Summary for the sex‐only model, excluding effect of <italic>vgll3</italic> genotype. (C) Model comparison between the full model, a no‐interaction model, and sex‐only model. The Root‐mean‐square error (RMSE) is the result of a cross‐validation of the models, which is obtained by splitting the dataset into two sets of odd‐ and even‐numbered respirometry batches, and using model parameters estimated from one set to predict the results of the other set. The RMSE represents the deviation between the predictions and the real data, and lower values indicate a higher predictive ability. Batch was excluded as a random effect from the models in the cross‐validations due to singularity. The Akaike information criterion (AIC) is an estimation of the relative quality of the models, taking residual variation and model complexity into account; A lower value indicates higher relative quality.</p></fn></table-wrap-foot></table-wrap><table-wrap id="ece38408-tbl-0003" position="anchor"><?disp-level 3?><label>TABLE A3</label><caption><p>Count of included individuals (<italic>N</italic> = 150) for each <italic>vgll3</italic> genotype, family and sex</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>vgll3*EE</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.2</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.3</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.7</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.8</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.9</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.11</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.13</th><th align="left" valign="top" rowspan="1" colspan="1">Total</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<italic>N</italic> males</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">7</td><td align="center" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">35</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>N</italic> females</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">39</td></tr><tr><td align="left" rowspan="1" colspan="1">Total</td><td align="center" rowspan="1" colspan="1">11</td><td align="center" rowspan="1" colspan="1">11</td><td align="center" rowspan="1" colspan="1">9</td><td align="center" rowspan="1" colspan="1">9</td><td align="center" rowspan="1" colspan="1">11</td><td align="center" rowspan="1" colspan="1">11</td><td align="center" rowspan="1" colspan="1">12</td><td align="left" rowspan="1" colspan="1">74</td></tr></tbody></table><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>vgll3*LL</italic>
+</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.1</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.4</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.5</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.6</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.10</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.12</th><th align="left" valign="top" rowspan="1" colspan="1">Fam.14</th><th align="left" valign="top" rowspan="1" colspan="1">Total</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<italic>N</italic> males</td><td align="center" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">8</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">34</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>N</italic> females</td><td align="center" rowspan="1" colspan="1">8</td><td align="center" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">9</td><td align="center" rowspan="1" colspan="1">5</td><td align="center" rowspan="1" colspan="1">4</td><td align="center" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">42</td></tr><tr><td align="left" rowspan="1" colspan="1">Total</td><td align="center" rowspan="1" colspan="1">12</td><td align="center" rowspan="1" colspan="1">11</td><td align="center" rowspan="1" colspan="1">12</td><td align="center" rowspan="1" colspan="1">12</td><td align="center" rowspan="1" colspan="1">10</td><td align="center" rowspan="1" colspan="1">8</td><td align="center" rowspan="1" colspan="1">11</td><td align="left" rowspan="1" colspan="1">76</td></tr></tbody></table></table-wrap></sec></sec><sec id="notes1" disp-level="1"><p>
+
+
+Åsheim, E. R.
+, 
+Prokkola, J. M.
+, 
+Morozov, S.
+, 
+Aykanat, T.
+, &amp; 
+Primmer, C. R.
+ (2022). Standard metabolic rate does not associate with age‐at‐maturity genotype in juvenile Atlantic salmon. Ecology and Evolution, 12, e8408. 10.1002/ece3.8408
+
+</p><sec id="ece38408-ntgp-0001" sec-type="fn-group" disp-level="2"><fn-group><fn id="ece38408-note-0001"><p>
+<bold>Funding information</bold>
+</p><p>The study was funded by Academy of Finland (T. Aykanat: 325964 and 328860; C. R. Primmer: 314254, 314255, and 327255), the European Research Council under the European Articles Union's Horizon 2020 research and innovation program (grant no. 742312), the Lammi Biological Station's Environmental Research Foundation (2020 grant award), and the University of Helsinki.</p></fn></fn-group></sec></sec><sec id="ece38408-sec-0015" disp-level="1"><title>DATA AVAILABILITY STATEMENT</title><p>The full datasets and the R scripts used to analyze them are available in Zenodo via the following URL: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.doi.org/10.5281/zenodo.5255061" ext-link-type="uri">https://www.doi.org/10.5281/zenodo.5255061</ext-link>.</p></sec><sec id="ece38408-bibl-0001" sec-type="ref-list" disp-level="1"><title>REFERENCES</title><sec id="ece38408-bibl-0001_sec2" disp-level="2"><ref-list><ref id="ece38408-bib-0001"><mixed-citation id="ece38408-cit-0001"><named-content content-type="citation-string">
+
+Ahi, E. P.
+, 
+Sinclair‐Waters, M.
+, 
+Moustakas‐Verho, J.
+, 
+Jansouz, S.
+, &amp; 
+Primmer, C. R.
+ (2021). Strong regulatory effects of vgll3 genotype on reproductive axis gene expression in immature male Atlantic salmon. <italic>BioRxiv</italic>, 2021.08.08.455548. bioRxiv. 10.1101/2021.08.08.455548
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1101/2021.08.08.455548"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35580687"/></mixed-citation></ref><ref id="ece38408-bib-0002"><mixed-citation id="ece38408-cit-0002"><named-content content-type="citation-string">
+
+Armstrong, J. D.
+, 
+Millidine, K. J.
+, &amp; 
+Metcalfe, N. B.
+ (2011). Ecological consequences of variation in standard metabolism and dominance among salmon parr. Ecology of Freshwater Fish, 20(3), 371–376. 10.1111/j.1600-0633.2011.00486.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1600-0633.2011.00486.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Ecology of Freshwater Fish&amp;title=Ecological consequences of variation in standard metabolism and dominance among salmon parr&amp;author=J. D. Armstrong&amp;author=K. J. Millidine&amp;author=N. B. Metcalfe&amp;volume=20&amp;issue=3&amp;publication_year=2011&amp;pages=371-376&amp;doi=10.1111/j.1600-0633.2011.00486.x&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0003"><mixed-citation id="ece38408-cit-0003"><named-content content-type="citation-string">
+
+Auer, S. K.
+, 
+Bassar, R. D.
+, 
+Turek, D.
+, 
+Anderson, G. J.
+, 
+McKelvey, S.
+, 
+Armstrong, J. D.
+, 
+Nislow, K. H.
+, 
+Downie, H. K.
+, 
+Morgan, T. A. J.
+, 
+McLennan, D.
+, &amp; 
+Metcalfe, N. B.
+ (2020). Metabolic rate interacts with resource availability to determine individual variation in microhabitat use in the wild. The American Naturalist, 196(2), 132–144. 10.1086/709479
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1086/709479"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32673096"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=The American Naturalist&amp;title=Metabolic rate interacts with resource availability to determine individual variation in microhabitat use in the wild&amp;author=S. K. Auer&amp;author=R. D. Bassar&amp;author=D. Turek&amp;author=G. J. Anderson&amp;author=S. McKelvey&amp;volume=196&amp;issue=2&amp;publication_year=2020&amp;pages=132-144&amp;pmid=32673096&amp;doi=10.1086/709479&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0004"><mixed-citation id="ece38408-cit-0004"><named-content content-type="citation-string">
+
+Auer, S. K.
+, 
+Dick, C. A.
+, 
+Metcalfe, N. B.
+, &amp; 
+Reznick, D. N.
+ (2018). Metabolic rate evolves rapidly and in parallel with the pace of life history. Nature Communications, 9(1), 14. 10.1038/s41467-017-02514-z
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41467-017-02514-z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5750215"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29295982"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature Communications&amp;title=Metabolic rate evolves rapidly and in parallel with the pace of life history&amp;author=S. K. Auer&amp;author=C. A. Dick&amp;author=N. B. Metcalfe&amp;author=D. N. Reznick&amp;volume=9&amp;issue=1&amp;publication_year=2018&amp;pages=14&amp;pmid=29295982&amp;doi=10.1038/s41467-017-02514-z&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0005"><mixed-citation id="ece38408-cit-0005"><named-content content-type="citation-string">
+
+Auer, S. K.
+, 
+Salin, K.
+, 
+Anderson, G. J.
+, &amp; 
+Metcalfe, N. B.
+ (2015). Aerobic scope explains individual variation in feeding capacity. Biology Letters, 11(11), 20150793. 10.1098/rsbl.2015.0793
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rsbl.2015.0793"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4685545"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26556902"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biology Letters&amp;title=Aerobic scope explains individual variation in feeding capacity&amp;author=S. K. Auer&amp;author=K. Salin&amp;author=G. J. Anderson&amp;author=N. B. Metcalfe&amp;volume=11&amp;issue=11&amp;publication_year=2015&amp;pages=20150793&amp;pmid=26556902&amp;doi=10.1098/rsbl.2015.0793&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0006"><mixed-citation id="ece38408-cit-0006"><named-content content-type="citation-string">
+
+Auer, S. K.
+, 
+Salin, K.
+, 
+Anderson, G. J.
+, &amp; 
+Metcalfe, N. B.
+ (2018). Individuals exhibit consistent differences in their metabolic rates across changing thermal conditions. Comparative Biochemistry and Physiology Part A: Molecular &amp; Integrative Physiology, 217, 1–6. 10.1016/j.cbpa.2017.11.021
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cbpa.2017.11.021"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5805842"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29223611"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Comparative Biochemistry and Physiology Part A: Molecular &amp; Integrative Physiology&amp;title=Individuals exhibit consistent differences in their metabolic rates across changing thermal conditions&amp;author=S. K. Auer&amp;author=K. Salin&amp;author=G. J. Anderson&amp;author=N. B. Metcalfe&amp;volume=217&amp;publication_year=2018&amp;pages=1-6&amp;pmid=29223611&amp;doi=10.1016/j.cbpa.2017.11.021&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0007"><mixed-citation id="ece38408-cit-0007"><named-content content-type="citation-string">
+
+Auer, S. K.
+, 
+Solowey, J. R.
+, 
+Rajesh, S.
+, &amp; 
+Rezende, E. L.
+ (2020). Energetic mechanisms for coping with changes in resource availability. Biology Letters, 16(11), 20200580. 10.1098/rsbl.2020.0580
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rsbl.2020.0580"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC7728673"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="33142086"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biology Letters&amp;title=Energetic mechanisms for coping with changes in resource availability&amp;author=S. K. Auer&amp;author=J. R. Solowey&amp;author=S. Rajesh&amp;author=E. L. Rezende&amp;volume=16&amp;issue=11&amp;publication_year=2020&amp;pages=20200580&amp;pmid=33142086&amp;doi=10.1098/rsbl.2020.0580&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0008"><mixed-citation id="ece38408-cit-0008"><named-content content-type="citation-string">
+
+Ayllon, F.
+, 
+Kjærner‐Semb, E.
+, 
+Furmanek, T.
+, 
+Wennevik, V.
+, 
+Solberg, M. F.
+, 
+Dahle, G.
+, 
+Taranger, G. L.
+, 
+Glover, K. A.
+, 
+Almén, M. S.
+, 
+Rubin, C. J.
+, 
+Edvardsen, R. B.
+, &amp; 
+Wargelius, A.
+ (2015). The vgll3 locus controls age at maturity in wild and domesticated Atlantic salmon (<italic>Salmo salar</italic> L.) males. PLOS Genetics, 11(11), e1005628. 10.1371/journal.pgen.1005628
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pgen.1005628"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4638356"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26551894"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLOS Genetics&amp;title=The vgll3 locus controls age at maturity in wild and domesticated Atlantic salmon (Salmo salar L.) males&amp;author=F. Ayllon&amp;author=E. Kjærner‐Semb&amp;author=T. Furmanek&amp;author=V. Wennevik&amp;author=M. F. Solberg&amp;volume=11&amp;issue=11&amp;publication_year=2015&amp;pages=e1005628&amp;pmid=26551894&amp;doi=10.1371/journal.pgen.1005628&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0009"><mixed-citation id="ece38408-cit-0009"><named-content content-type="citation-string">
+
+Barson, N. J.
+, 
+Aykanat, T.
+, 
+Hindar, K.
+, 
+Baranski, M.
+, 
+Bolstad, G. H.
+, 
+Fiske, P.
+, 
+Jacq, C.
+, 
+Jensen, A. J.
+, 
+Johnston, S. E.
+, 
+Karlsson, S.
+, 
+Kent, M.
+, 
+Moen, T.
+, 
+Niemelä, E.
+, 
+Nome, T.
+, 
+Næsje, T. F.
+, 
+Orell, P.
+, 
+Romakkaniemi, A.
+, 
+Sægrov, H.
+, 
+Urdal, K.
+, … 
+Primmer, C. R.
+ (2015). Sex‐dependent dominance at a single locus maintains variation in age at maturity in salmon. Nature, 528(7582), 405–408. 10.1038/nature16062
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nature16062"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26536110"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;title=Sex‐dependent dominance at a single locus maintains variation in age at maturity in salmon&amp;author=N. J. Barson&amp;author=T. Aykanat&amp;author=K. Hindar&amp;author=M. Baranski&amp;author=G. H. Bolstad&amp;volume=528&amp;issue=7582&amp;publication_year=2015&amp;pages=405-408&amp;pmid=26536110&amp;doi=10.1038/nature16062&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0010"><mixed-citation id="ece38408-cit-0010"><named-content content-type="citation-string">
+
+Bartoń, K.
+ (2020). MuMIn: Multi‐Model Inference (1.43.17) [Computer software]. https://CRAN.R%2010project.org/package=MuMIn</named-content></mixed-citation></ref><ref id="ece38408-bib-0011"><mixed-citation id="ece38408-cit-0011"><named-content content-type="citation-string">
+
+Bates, D.
+, 
+Maechler, M.
+, 
+Bolker, B.
+, 
+Walker, S.
+, 
+Christensen, R. H. B.
+, 
+Singmann, H.
+, 
+Dai, B.
+, 
+Scheipl, F.
+, 
+Grothendieck, G.
+, 
+Green, P.
+, 
+Fox, J.
+, 
+Bauer, A.
+, &amp; 
+Pavel, N,. K.
+ (2021). 
+<italic>lme4: Linear Mixed‐Effects Models using “Eigen” and S4</italic> (1.1‐27.1) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=lme4" ext-link-type="uri">https://CRAN.R‐project.org/package=lme4</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0012"><mixed-citation id="ece38408-cit-0012"><named-content content-type="citation-string">
+
+Binder, T. R.
+, 
+Wilson, A. D. M.
+, 
+Wilson, S. M.
+, 
+Suski, C. D.
+, 
+Godin, J.‐G.‐J.
+, &amp; 
+Cooke, S. J.
+ (2016). Is there a pace‐of‐life syndrome linking boldness and metabolic capacity for locomotion in bluegill sunfish?
+Animal Behaviour, 121, 175–183. 10.1016/j.anbehav.2016.09.006
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.anbehav.2016.09.006"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Animal Behaviour&amp;title=Is there a pace‐of‐life syndrome linking boldness and metabolic capacity for locomotion in bluegill sunfish?&amp;author=T. R. Binder&amp;author=A. D. M. Wilson&amp;author=S. M. Wilson&amp;author=C. D. Suski&amp;author=J.‐G.‐J. Godin&amp;volume=121&amp;publication_year=2016&amp;pages=175-183&amp;doi=10.1016/j.anbehav.2016.09.006&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0013"><mixed-citation id="ece38408-cit-0013"><named-content content-type="citation-string">
+
+Biro, P. A.
+, &amp; 
+Stamps, J. A.
+ (2010). Do consistent individual differences in metabolic rate promote consistent individual differences in behavior?
+Trends in Ecology &amp; Evolution, 25(11), 653–659. 10.1016/j.tree.2010.08.003
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.tree.2010.08.003"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20832898"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Trends in Ecology &amp; Evolution&amp;title=Do consistent individual differences in metabolic rate promote consistent individual differences in behavior?&amp;author=P. A. Biro&amp;author=J. A. Stamps&amp;volume=25&amp;issue=11&amp;publication_year=2010&amp;pages=653-659&amp;pmid=20832898&amp;doi=10.1016/j.tree.2010.08.003&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0014"><mixed-citation id="ece38408-cit-0014"><named-content content-type="citation-string">
+
+Bochdansky, A. B.
+, 
+Grønkjær, P.
+, 
+Herra, T. P.
+, &amp; 
+Leggett, W. C.
+ (2005). Experimental evidence for selection against fish larvae with high metabolic rates in a food limited environment. Marine Biology, 147(6), 1413–1417. 10.1007/s00227-005-0036-z
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s00227-005-0036-z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Marine Biology&amp;title=Experimental evidence for selection against fish larvae with high metabolic rates in a food limited environment&amp;author=A. B. Bochdansky&amp;author=P. Grønkjær&amp;author=T. P. Herra&amp;author=W. C. Leggett&amp;volume=147&amp;issue=6&amp;publication_year=2005&amp;pages=1413-1417&amp;doi=10.1007/s00227-005-0036-z&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0015"><mixed-citation id="ece38408-cit-0015"><named-content content-type="citation-string">
+
+Burton, T.
+, 
+Killen, S. S.
+, 
+Armstrong, J. D.
+, &amp; 
+Metcalfe, N. B.
+ (2011). What causes intraspecific variation in resting metabolic rate and what are its ecological consequences?
+Proceedings of the Royal Society B: Biological Sciences, 278(1724), 3465–3473. 10.1098/rspb.2011.1778
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rspb.2011.1778"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3189380"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21957133"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proceedings of the Royal Society B: Biological Sciences&amp;title=What causes intraspecific variation in resting metabolic rate and what are its ecological consequences?&amp;author=T. Burton&amp;author=S. S. Killen&amp;author=J. D. Armstrong&amp;author=N. B. Metcalfe&amp;volume=278&amp;issue=1724&amp;publication_year=2011&amp;pages=3465-3473&amp;pmid=21957133&amp;doi=10.1098/rspb.2011.1778&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0016"><mixed-citation id="ece38408-cit-0016"><named-content content-type="citation-string">
+
+Chabot, D.
+, 
+Steffensen, J. F.
+, &amp; 
+Farrell, A. P.
+ (2016). The determination of standard metabolic rate in fishes: Measuring smr in fishes. Journal of Fish Biology, 88(1), 81–121. 10.1111/jfb.12845
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/jfb.12845"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26768973"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=The determination of standard metabolic rate in fishes: Measuring smr in fishes&amp;author=D. Chabot&amp;author=J. F. Steffensen&amp;author=A. P. Farrell&amp;volume=88&amp;issue=1&amp;publication_year=2016&amp;pages=81-121&amp;pmid=26768973&amp;doi=10.1111/jfb.12845&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0017"><mixed-citation id="ece38408-cit-0017"><named-content content-type="citation-string">
+
+Christensen, K. A.
+, 
+Gutierrez, A. P.
+, 
+Lubieniecki, K. P.
+, &amp; 
+Davidson, W. S.
+ (2017). TEAD3, implicated by association to grilsing in Atlantic salmon. Aquaculture, 479, 571–578. 10.1016/j.aquaculture.2017.06.026
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.aquaculture.2017.06.026"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Aquaculture&amp;title=TEAD3, implicated by association to grilsing in Atlantic salmon&amp;author=K. A. Christensen&amp;author=A. P. Gutierrez&amp;author=K. P. Lubieniecki&amp;author=W. S. Davidson&amp;volume=479&amp;publication_year=2017&amp;pages=571-578&amp;doi=10.1016/j.aquaculture.2017.06.026&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0018"><mixed-citation id="ece38408-cit-0018"><named-content content-type="citation-string">
+
+Clarke, A.
+, &amp; 
+Johnston, N. M.
+ (1999). Scaling of metabolic rate with body mass and temperature in teleost fish. Journal of Animal Ecology, 68(5), 893–905. 10.1046/j.1365-2656.1999.00337.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1046/j.1365-2656.1999.00337.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Animal Ecology&amp;title=Scaling of metabolic rate with body mass and temperature in teleost fish&amp;author=A. Clarke&amp;author=N. M. Johnston&amp;volume=68&amp;issue=5&amp;publication_year=1999&amp;pages=893-905&amp;doi=10.1046/j.1365-2656.1999.00337.x&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0019"><mixed-citation id="ece38408-cit-0019"><named-content content-type="citation-string">
+
+Cutts, C. J.
+, 
+Metcalfe, N. B.
+, &amp; 
+Taylor, A. C.
+ (1998). Aggression and growth depression in juvenile Atlantic salmon: The consequences of individual variation in standard metabolic rate. Journal of Fish Biology, 52(5), 1026–1037. 10.1111/j.1095-8649.1998.tb00601.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1095-8649.1998.tb00601.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=Aggression and growth depression in juvenile Atlantic salmon: The consequences of individual variation in standard metabolic rate&amp;author=C. J. Cutts&amp;author=N. B. Metcalfe&amp;author=A. C. Taylor&amp;volume=52&amp;issue=5&amp;publication_year=1998&amp;pages=1026-1037&amp;doi=10.1111/j.1095-8649.1998.tb00601.x&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0020"><mixed-citation id="ece38408-cit-0020"><named-content content-type="citation-string">
+
+Cutts, C. J.
+, 
+Metcalfe, N. B.
+, &amp; 
+Taylor, A. C.
+ (2002). Juvenile Atlantic salmon (<italic>Salmo salar</italic>) with relatively high standard metabolic rates have small metabolic scopes. Functional Ecology, 16(1), 73–78. JSTOR.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Functional Ecology&amp;title=Juvenile Atlantic salmon (Salmo salar) with relatively high standard metabolic rates have small metabolic scopes&amp;author=C. J. Cutts&amp;author=N. B. Metcalfe&amp;author=A. C. Taylor&amp;volume=16&amp;issue=1&amp;publication_year=2002&amp;pages=73-78&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0021"><mixed-citation id="ece38408-cit-0021"><named-content content-type="citation-string">
+
+Dabrowski, K. R.
+ (1986). A new type of metabolism chamber for the determination of active and postprandial metabolism of fish, and consideration of results for coregonid and salmon juveniles. Journal of Fish Biology, 28(1), 105–117. 10.1111/j.1095-8649.1986.tb05147.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1095-8649.1986.tb05147.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=A new type of metabolism chamber for the determination of active and postprandial metabolism of fish, and consideration of results for coregonid and salmon juveniles&amp;author=K. R. Dabrowski&amp;volume=28&amp;issue=1&amp;publication_year=1986&amp;pages=105-117&amp;doi=10.1111/j.1095-8649.1986.tb05147.x&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0022"><mixed-citation id="ece38408-cit-0022"><named-content content-type="citation-string">
+
+Debes, P. V.
+, 
+Piavchenko, N.
+, 
+Ruokolainen, A.
+, 
+Ovaskainen, O.
+, 
+Moustakas‐Verho, J. E.
+, 
+Parre, N.
+, 
+Aykanat, T.
+, 
+Erkinaro, J.
+, &amp; 
+Primmer, C. R.
+ (2021). Polygenic and major‐locus contributions to sexual maturation timing in Atlantic salmon. Molecular Ecology, 30(18), 4505–4519. 10.1111/mec.16062
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/mec.16062"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="34228841"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Molecular Ecology&amp;title=Polygenic and major‐locus contributions to sexual maturation timing in Atlantic salmon&amp;author=P. V. Debes&amp;author=N. Piavchenko&amp;author=A. Ruokolainen&amp;author=O. Ovaskainen&amp;author=J. E. Moustakas‐Verho&amp;volume=30&amp;issue=18&amp;publication_year=2021&amp;pages=4505-4519&amp;pmid=34228841&amp;doi=10.1111/mec.16062&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0023"><mixed-citation id="ece38408-cit-0023"><named-content content-type="citation-string">
+
+Fleming, I. A.
+ (2011). Pattern and variability in the breeding system of Atlantic salmon (<italic>Salmo salar</italic>), with comparisons to other salmonids. Canadian Journal of Fisheries and Aquatic Sciences, 55(S1), 59–76. 10.1139/d98-009
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1139/d98-009"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Canadian Journal of Fisheries and Aquatic Sciences&amp;title=Pattern and variability in the breeding system of Atlantic salmon (Salmo salar), with comparisons to other salmonids&amp;author=I. A. Fleming&amp;volume=55&amp;issue=S1&amp;publication_year=2011&amp;pages=59-76&amp;doi=10.1139/d98-009&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0024"><mixed-citation id="ece38408-cit-0024"><named-content content-type="citation-string">
+
+Fleming, I. A.
+, &amp; 
+Einum, S.
+ (2011). Reproductive ecology: A tale of two sexes. In Aas Ø., Eunum S., Klemetsen A., &amp; Skurdal J. (Eds.), Atlantic Salmon ecology (pp. 33–65). Blackwell Publishing Ltd. 10.1002/9781444327755.ch2
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/9781444327755.ch2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Atlantic Salmon ecology&amp;author=I. A. Fleming&amp;author=S. Einum&amp;publication_year=2011&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0025"><mixed-citation id="ece38408-cit-0025"><named-content content-type="citation-string">
+
+Forstner, H.
+ (1983). An automated multiple‐chamber intermittent‐flow respirometer. In Gnaiger E. &amp; Forstner H. (Eds.), Polarographic oxygen sensors (pp. 111–126). Springer. 10.1007/978-3-642-81863-9_12
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/978-3-642-81863-9_12"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Polarographic oxygen sensors&amp;author=H. Forstner&amp;publication_year=1983&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0026"><mixed-citation id="ece38408-cit-0026"><named-content content-type="citation-string">
+
+Fraley, C.
+, 
+Raftery, A. E.
+, 
+Scrucca, L.
+, 
+Murphy, T. B.
+, &amp; 
+Fop, M.
+ (2020). 
+<italic>mclust: Gaussian Mixture Modelling for Model‐Based Clustering, Classification, and Density Estimation</italic> (5.4.7) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=mclust" ext-link-type="uri">https://CRAN.R‐project.org/package=mclust</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0027"><mixed-citation id="ece38408-cit-0027"><named-content content-type="citation-string">
+
+Fraser, N. H. C.
+, 
+Metcalfe, N. B.
+, &amp; 
+Thorpe, J. E.
+ (1993). Temperature‐dependent switch between diurnal and nocturnal foraging in salmon. Proceedings of the Royal Society of London. Series B: Biological Sciences, 252(1334), 135–139. 10.1098/rspb.1993.0057
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rspb.1993.0057"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proceedings of the Royal Society of London. Series B: Biological Sciences&amp;title=Temperature‐dependent switch between diurnal and nocturnal foraging in salmon&amp;author=N. H. C. Fraser&amp;author=N. B. Metcalfe&amp;author=J. E. Thorpe&amp;volume=252&amp;issue=1334&amp;publication_year=1993&amp;pages=135-139&amp;doi=10.1098/rspb.1993.0057&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0028"><mixed-citation id="ece38408-cit-0028"><named-content content-type="citation-string">
+
+Garland, T.
+ (1984). Physiological correlates of locomotory performance in a lizard: An allometric approach. American Journal of Physiology‐Regulatory, Integrative and Comparative Physiology, 247(5), R806–R815. 10.1152/ajpregu.1984.247.5.R806
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1152/ajpregu.1984.247.5.R806"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="6238543"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=American Journal of Physiology‐Regulatory, Integrative and Comparative Physiology&amp;title=Physiological correlates of locomotory performance in a lizard: An allometric approach&amp;author=T. Garland&amp;volume=247&amp;issue=5&amp;publication_year=1984&amp;pages=R806-R815&amp;pmid=6238543&amp;doi=10.1152/ajpregu.1984.247.5.R806&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0029"><mixed-citation id="ece38408-cit-0029"><named-content content-type="citation-string">
+
+He, C.
+, 
+Holme, J.
+, &amp; 
+Anthony, J.
+ (2014). SNP genotyping: The KASP assay. In Fleury D. &amp; Whitford R. (Eds.), Crop breeding: Methods and protocols (pp. 75–86). Springer. 10.1007/978-1-4939-0446-4_7
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/978-1-4939-0446-4_7"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24816661"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Crop breeding: Methods and protocols&amp;author=C. He&amp;author=J. Holme&amp;author=J. Anthony&amp;publication_year=2014&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0030"><mixed-citation id="ece38408-cit-0030"><named-content content-type="citation-string">
+Heidrikur
+. (2020). 
+Heidrikur/HeiBerCaps: First releases of HeiBer Caps
+. 10.5281/zenodo.4062429
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.5281/zenodo.4062429"/></mixed-citation></ref><ref id="ece38408-bib-0031"><mixed-citation id="ece38408-cit-0031"><named-content content-type="citation-string">
+
+Hutchings, J.
+, &amp; 
+Jones, M.
+ (1998). Life history variation and growth rate thresholds for maturity in Atlantic salmon, Salmo salar. Canadian Journal of Fisheries and Aquatic Sciences, 55, 22–47. 10.1139/cjfas-55-S1-22
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1139/cjfas-55-S1-22"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Canadian Journal of Fisheries and Aquatic Sciences&amp;title=Life history variation and growth rate thresholds for maturity in Atlantic salmon, Salmo salar&amp;author=J. Hutchings&amp;author=M. Jones&amp;volume=55&amp;publication_year=1998&amp;pages=22-47&amp;doi=10.1139/cjfas-55-S1-22&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0032"><mixed-citation id="ece38408-cit-0032"><named-content content-type="citation-string">
+
+Imholt, C.
+, 
+Malcolm, I. A.
+, 
+Bacon, P. J.
+, 
+Gibbins, C. N.
+, 
+Soulsby, C.
+, 
+Miles, M.
+, &amp; 
+Fryer, R. J.
+ (2011). Does diurnal temperature variability affect growth in juvenile Atlantic salmon <italic>Salmo salar</italic>?
+Journal of Fish Biology, 78(2), 436–448. 10.1111/j.1095-8649.2010.02838.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1095-8649.2010.02838.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21284627"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=Does diurnal temperature variability affect growth in juvenile Atlantic salmon Salmo salar?&amp;author=C. Imholt&amp;author=I. A. Malcolm&amp;author=P. J. Bacon&amp;author=C. N. Gibbins&amp;author=C. Soulsby&amp;volume=78&amp;issue=2&amp;publication_year=2011&amp;pages=436-448&amp;pmid=21284627&amp;doi=10.1111/j.1095-8649.2010.02838.x&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0033"><mixed-citation id="ece38408-cit-0033"><named-content content-type="citation-string">
+
+Killen, S.
+, 
+Christensen, E.
+, 
+Cortese, D.
+, 
+Zavorka, L.
+, 
+Cotgrove, L.
+, 
+Crespel, A.
+, 
+Munson, A.
+, 
+Nati, J.
+, 
+Norin, T.
+, 
+Papatheodoulou, M.
+, &amp; 
+McKenzie, D.
+ (2021). 
+Guidelines for reporting methods to estimate metabolic rates by aquatic intermittent‐flow respirometry
+. EcoEvoRxiv. 10.32942/osf.io/gnzh7
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.32942/osf.io/gnzh7"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC8467026"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="34520540"/></mixed-citation></ref><ref id="ece38408-bib-0034"><mixed-citation id="ece38408-cit-0034"><named-content content-type="citation-string">
+
+Kjærner‐Semb, E.
+, 
+Ayllon, F.
+, 
+Kleppe, L.
+, 
+Sørhus, E.
+, 
+Skaftnesmo, K.
+, 
+Furmanek, T.
+, 
+Segafredo, F. T.
+, 
+Thorsen, A.
+, 
+Fjelldal, P. G.
+, 
+Hansen, T.
+, 
+Taranger, G. L.
+, 
+Andersson, E.
+, 
+Schulz, R. W.
+, 
+Wargelius, A.
+, &amp; 
+Edvardsen, R. B.
+ (2018). Vgll3 and the Hippo pathway are regulated in Sertoli cells upon entry and during puberty in Atlantic salmon testis. Scientific Reports, 8, 1912. 10.1038/s41598-018-20308-1
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41598-018-20308-1"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC5789820"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="29382956"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Scientific Reports&amp;title=Vgll3 and the Hippo pathway are regulated in Sertoli cells upon entry and during puberty in Atlantic salmon testis&amp;author=E. Kjærner‐Semb&amp;author=F. Ayllon&amp;author=L. Kleppe&amp;author=E. Sørhus&amp;author=K. Skaftnesmo&amp;volume=8&amp;publication_year=2018&amp;pages=1912&amp;pmid=29382956&amp;doi=10.1038/s41598-018-20308-1&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0035"><mixed-citation id="ece38408-cit-0035"><named-content content-type="citation-string">
+
+Kurko, J.
+, 
+Debes, P. V.
+, 
+House, A. H.
+, 
+Aykanat, T.
+, 
+Erkinaro, J.
+, &amp; 
+Primmer, C. R.
+ (2020). Transcription profiles of age‐at‐maturity‐associated genes suggest cell fate commitment regulation as a key factor in the Atlantic salmon maturation process. G3 Genes|Genomes|Genetics, 10(1), 235–246. 10.1534/g3.119.400882
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1534/g3.119.400882"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6945027"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31740454"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=G3 Genes|Genomes|Genetics&amp;title=Transcription profiles of age‐at‐maturity‐associated genes suggest cell fate commitment regulation as a key factor in the Atlantic salmon maturation process&amp;author=J. Kurko&amp;author=P. V. Debes&amp;author=A. H. House&amp;author=T. Aykanat&amp;author=J. Erkinaro&amp;volume=10&amp;issue=1&amp;publication_year=2020&amp;pages=235-246&amp;pmid=31740454&amp;doi=10.1534/g3.119.400882&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0036"><mixed-citation id="ece38408-cit-0036"><named-content content-type="citation-string">
+
+Kuznetsova, A.
+, 
+Brockhoff, P. B.
+, 
+Christensen, R. H. B.
+, &amp; 
+Jensen, S. P.
+ (2020). 
+<italic>lmerTest: Tests in Linear Mixed Effects Models</italic> (3.1‐3) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=lmerTest" ext-link-type="uri">https://CRAN.R‐project.org/package=lmerTest</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0037"><mixed-citation id="ece38408-cit-0037"><named-content content-type="citation-string">
+
+Lamichhaney, S.
+, 
+Fan, G.
+, 
+Widemo, F.
+, 
+Gunnarsson, U.
+, 
+Thalmann, D. S.
+, 
+Hoeppner, M. P.
+, 
+Kerje, S.
+, 
+Gustafson, U.
+, 
+Shi, C.
+, 
+Zhang, H.
+, 
+Chen, W.
+, 
+Liang, X.
+, 
+Huang, L.
+, 
+Wang, J.
+, 
+Liang, E.
+, 
+Wu, Q.
+, 
+Lee, S.‐M.‐Y.
+, 
+Xu, X.
+, 
+Höglund, J.
+, … 
+Andersson, L.
+ (2016). Structural genomic changes underlie alternative reproductive strategies in the ruff (<italic>Philomachus pugnax</italic>). Nature Genetics, 48(1), 84–88. 10.1038/ng.3430
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/ng.3430"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26569123"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature Genetics&amp;title=Structural genomic changes underlie alternative reproductive strategies in the ruff (Philomachus pugnax)&amp;author=S. Lamichhaney&amp;author=G. Fan&amp;author=F. Widemo&amp;author=U. Gunnarsson&amp;author=D. S. Thalmann&amp;volume=48&amp;issue=1&amp;publication_year=2016&amp;pages=84-88&amp;pmid=26569123&amp;doi=10.1038/ng.3430&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0038"><mixed-citation id="ece38408-cit-0038"><named-content content-type="citation-string">
+
+Lüdecke, D.
+, 
+Aust, F.
+, 
+Crawley, S.
+, &amp; 
+Ben‐Shachar, M. S.
+ (2021). 
+<italic>ggeffects: Create Tidy Data Frames of Marginal Effects for “ggplot” from Model Outputs</italic> (1.1.0) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=ggeffects" ext-link-type="uri">https://CRAN.R‐project.org/package=ggeffects</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0039"><mixed-citation id="ece38408-cit-0039"><named-content content-type="citation-string">
+
+Metcalfe, N. B.
+, 
+Leeuwen, T. E. V.
+, &amp; 
+Killen, S. S.
+ (2016). Does individual variation in metabolic phenotype predict fish behaviour and performance?
+Journal of Fish Biology, 88(1), 298–321. 10.1111/jfb.12699
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/jfb.12699"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4991269"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26577442"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=Does individual variation in metabolic phenotype predict fish behaviour and performance?&amp;author=N. B. Metcalfe&amp;author=T. E. V. Leeuwen&amp;author=S. S. Killen&amp;volume=88&amp;issue=1&amp;publication_year=2016&amp;pages=298-321&amp;pmid=26577442&amp;doi=10.1111/jfb.12699&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0040"><mixed-citation id="ece38408-cit-0040"><named-content content-type="citation-string">
+
+Metcalfe, N. B.
+, 
+Taylor, A. C.
+, &amp; 
+Thorpe, J. E.
+ (1995). Metabolic rate, social status and life‐history strategies in Atlantic salmon. Animal Behaviour, 49(2), 431–436. 10.1006/anbe.1995.0056
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1006/anbe.1995.0056"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Animal Behaviour&amp;title=Metabolic rate, social status and life‐history strategies in Atlantic salmon&amp;author=N. B. Metcalfe&amp;author=A. C. Taylor&amp;author=J. E. Thorpe&amp;volume=49&amp;issue=2&amp;publication_year=1995&amp;pages=431-436&amp;doi=10.1006/anbe.1995.0056&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0041"><mixed-citation id="ece38408-cit-0041"><named-content content-type="citation-string">
+
+Metcalfe, N. B.
+, 
+Valdimarsson, S. K.
+, &amp; 
+Fraser, N. H. C.
+ (1997). Habitat profitability and choice in a sit‐and‐wait predator: juvenile salmon prefer slower currents on darker nights. Journal of Animal Ecology, 66(6), 866–875. 10.2307/6002
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.2307/6002"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Animal Ecology&amp;title=Habitat profitability and choice in a sit‐and‐wait predator: juvenile salmon prefer slower currents on darker nights&amp;author=N. B. Metcalfe&amp;author=S. K. Valdimarsson&amp;author=N. H. C. Fraser&amp;volume=66&amp;issue=6&amp;publication_year=1997&amp;pages=866-875&amp;doi=10.2307/6002&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0042"><mixed-citation id="ece38408-cit-0042"><named-content content-type="citation-string">
+
+Millidine, K. J.
+, 
+Armstrong, J. D.
+, &amp; 
+Metcalfe, N. B.
+ (2009). Juvenile salmon with high standard metabolic rates have higher energy costs but can process meals faster. Proceedings of the Royal Society B: Biological Sciences, 276(1664), 2103–2108. 10.1098/rspb.2009.0080
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rspb.2009.0080"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2677234"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19324750"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proceedings of the Royal Society B: Biological Sciences&amp;title=Juvenile salmon with high standard metabolic rates have higher energy costs but can process meals faster&amp;author=K. J. Millidine&amp;author=J. D. Armstrong&amp;author=N. B. Metcalfe&amp;volume=276&amp;issue=1664&amp;publication_year=2009&amp;pages=2103-2108&amp;pmid=19324750&amp;doi=10.1098/rspb.2009.0080&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0043"><mixed-citation id="ece38408-cit-0043"><named-content content-type="citation-string">
+
+Mobley, K. B.
+, 
+Aykanat, T.
+, 
+Czorlich, Y.
+, 
+House, A.
+, 
+Kurko, J.
+, 
+Miettinen, A.
+, 
+Moustakas‐Verho, J.
+, 
+Salgado, A.
+, 
+Sinclair‐Waters, M.
+, 
+Verta, J.‐P.
+, &amp; 
+Primmer, C. R.
+ (2021). Maturation in Atlantic salmon (<italic>Salmo salar</italic>, Salmonidae): A synthesis of ecological, genetic, and molecular processes. Reviews in Fish Biology and Fisheries, 31(3), 523–571. 10.1007/s11160-021-09656-w
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s11160-021-09656-w"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Reviews in Fish Biology and Fisheries&amp;title=Maturation in Atlantic salmon (Salmo salar, Salmonidae): A synthesis of ecological, genetic, and molecular processes&amp;author=K. B. Mobley&amp;author=T. Aykanat&amp;author=Y. Czorlich&amp;author=A. House&amp;author=J. Kurko&amp;volume=31&amp;issue=3&amp;publication_year=2021&amp;pages=523-571&amp;doi=10.1007/s11160-021-09656-w&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0044"><mixed-citation id="ece38408-cit-0044"><named-content content-type="citation-string">
+
+Mobley, K. B.
+, 
+Granroth‐Wilding, H.
+, 
+Ellmén, M.
+, 
+Orell, P.
+, 
+Erkinaro, J.
+, &amp; 
+Primmer, C. R.
+ (2020). Time spent in distinct life history stages has sex‐specific effects on reproductive fitness in wild Atlantic salmon. Molecular Ecology, 29(6), 1173–1184. 10.1111/mec.15390
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/mec.15390"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32077545"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Molecular Ecology&amp;title=Time spent in distinct life history stages has sex‐specific effects on reproductive fitness in wild Atlantic salmon&amp;author=K. B. Mobley&amp;author=H. Granroth‐Wilding&amp;author=M. Ellmén&amp;author=P. Orell&amp;author=J. Erkinaro&amp;volume=29&amp;issue=6&amp;publication_year=2020&amp;pages=1173-1184&amp;pmid=32077545&amp;doi=10.1111/mec.15390&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0045"><mixed-citation id="ece38408-cit-0045"><named-content content-type="citation-string">
+
+Morozov, S.
+, 
+McCairns, R. J. S.
+, &amp; 
+Merilä, J.
+ (2019). FishResp: R package and GUI application for analysis of aquatic respirometry data. Conservation Physiology, 7, coz003. 10.1093/conphys/coz003
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1093/conphys/coz003"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6364290"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30746152"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Conservation Physiology&amp;title=FishResp: R package and GUI application for analysis of aquatic respirometry data&amp;author=S. Morozov&amp;author=R. J. S. McCairns&amp;author=J. Merilä&amp;volume=7&amp;publication_year=2019&amp;pages=coz003&amp;pmid=30746152&amp;doi=10.1093/conphys/coz003&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0046"><mixed-citation id="ece38408-cit-0046"><named-content content-type="citation-string">
+
+Narum, S. R.
+, 
+Di Genova, A.
+, 
+Micheletti, S. J.
+, &amp; 
+Maass, A.
+ (2018). Genomic variation underlying complex life‐history traits revealed by genome sequencing in Chinook salmon. Proceedings of the Royal Society B: Biological Sciences, 285(1883), 20180935. 10.1098/rspb.2018.0935
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rspb.2018.0935"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6083255"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30051839"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proceedings of the Royal Society B: Biological Sciences&amp;title=Genomic variation underlying complex life‐history traits revealed by genome sequencing in Chinook salmon&amp;author=S. R. Narum&amp;author=A. Di Genova&amp;author=S. J. Micheletti&amp;author=A. Maass&amp;volume=285&amp;issue=1883&amp;publication_year=2018&amp;pages=20180935&amp;pmid=30051839&amp;doi=10.1098/rspb.2018.0935&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0047"><mixed-citation id="ece38408-cit-0047"><named-content content-type="citation-string">
+
+Norin, T.
+, &amp; 
+Gamperl, A. K.
+ (2018). Metabolic scaling of individuals vs. populations: Evidence for variation in scaling exponents at different hierarchical levels. Functional Ecology, 32(2), 379–388. 10.1111/1365-2435.12996
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/1365-2435.12996"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Functional Ecology&amp;title=Metabolic scaling of individuals vs. populations: Evidence for variation in scaling exponents at different hierarchical levels&amp;author=T. Norin&amp;author=A. K. Gamperl&amp;volume=32&amp;issue=2&amp;publication_year=2018&amp;pages=379-388&amp;doi=10.1111/1365-2435.12996&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0048"><mixed-citation id="ece38408-cit-0048"><named-content content-type="citation-string">
+
+Norin, T.
+, &amp; 
+Malte, H.
+ (2012). Intraspecific variation in aerobic metabolic rate of fish: Relations with organ size and enzyme activity in brown trout. Physiological and Biochemical Zoology, 85(6), 645–656. 10.1086/665982
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1086/665982"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23099462"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Physiological and Biochemical Zoology&amp;title=Intraspecific variation in aerobic metabolic rate of fish: Relations with organ size and enzyme activity in brown trout&amp;author=T. Norin&amp;author=H. Malte&amp;volume=85&amp;issue=6&amp;publication_year=2012&amp;pages=645-656&amp;pmid=23099462&amp;doi=10.1086/665982&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0049"><mixed-citation id="ece38408-cit-0049"><named-content content-type="citation-string">
+
+Norin, T.
+, &amp; 
+Metcalfe, N. B.
+ (2019). Ecological and evolutionary consequences of metabolic rate plasticity in response to environmental change. Philosophical Transactions of the Royal Society B: Biological Sciences, 374(1768), 20180180. 10.1098/rstb.2018.0180
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rstb.2018.0180"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6365862"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30966964"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Philosophical Transactions of the Royal Society B: Biological Sciences&amp;title=Ecological and evolutionary consequences of metabolic rate plasticity in response to environmental change&amp;author=T. Norin&amp;author=N. B. Metcalfe&amp;volume=374&amp;issue=1768&amp;publication_year=2019&amp;pages=20180180&amp;pmid=30966964&amp;doi=10.1098/rstb.2018.0180&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0050"><mixed-citation id="ece38408-cit-0050"><named-content content-type="citation-string">
+
+Olsen, L. R.
+, 
+Zachariae, H. B.
+, &amp; 
+Patil, I.
+ (2021). 
+<italic>cvms: Cross‐Validation for Model Selection</italic> (1.3.1) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=cvms" ext-link-type="uri">https://CRAN.R‐project.org/package=cvms</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0051"><mixed-citation id="ece38408-cit-0051"><named-content content-type="citation-string">
+
+Prokkola, J. M.
+, 
+Åsheim, E. R.
+, 
+Morozov, S.
+, 
+Bangura, P.
+, 
+Erkinaro, J.
+, 
+Ruokolainen, A.
+, 
+Primmer, C. R.
+, &amp; 
+Aykanat, T.
+ (2021). Genetic coupling of life‐history and aerobic performance in juvenile Atlantic salmon. <italic>BioRxiv</italic>, 2021.08.23.457324. bioRxiv. 10.1101/2021.08.23.457324
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1101/2021.08.23.457324"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC8790367"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35078367"/></mixed-citation></ref><ref id="ece38408-bib-0052"><mixed-citation id="ece38408-cit-0052"><named-content content-type="citation-string">
+R Core Team
+. (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.R-project.org/" ext-link-type="uri">https://www.R‐project.org/</ext-link>
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=R: A language and environment for statistical computing&amp;publication_year=2021&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0053"><mixed-citation id="ece38408-cit-0053"><named-content content-type="citation-string">
+
+Ricker, W. E.
+ (1975). Computation and interpretation of biological statistics of fish populations. Bulletin – Fisheries Research Board of Canada, 191, 1–382.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Bulletin – Fisheries Research Board of Canada&amp;title=Computation and interpretation of biological statistics of fish populations&amp;author=W. E. Ricker&amp;volume=191&amp;publication_year=1975&amp;pages=1-382&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0054"><mixed-citation id="ece38408-cit-0054"><named-content content-type="citation-string">
+
+Roff, D. A.
+ (2001). Life history evolution (Issue 576.54 R6). Sinauer Associates.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Life history evolution (Issue 576.54 R6)&amp;author=D. A. Roff&amp;publication_year=2001&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0055"><mixed-citation id="ece38408-cit-0055"><named-content content-type="citation-string">
+
+Rosenfeld, J.
+, 
+Leeuwen, T. V.
+, 
+Richards, J.
+, &amp; 
+Allen, D.
+ (2015). Relationship between growth and standard metabolic rate: Measurement artefacts and implications for habitat use and life‐history adaptation in salmonids. Journal of Animal Ecology, 84(1), 4–20. 10.1111/1365-2656.12260
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/1365-2656.12260"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24930825"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Animal Ecology&amp;title=Relationship between growth and standard metabolic rate: Measurement artefacts and implications for habitat use and life‐history adaptation in salmonids&amp;author=J. Rosenfeld&amp;author=T. V. Leeuwen&amp;author=J. Richards&amp;author=D. Allen&amp;volume=84&amp;issue=1&amp;publication_year=2015&amp;pages=4-20&amp;pmid=24930825&amp;doi=10.1111/1365-2656.12260&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0056"><mixed-citation id="ece38408-cit-0056"><named-content content-type="citation-string">
+RStudio Team
+. (2020). 
+<italic>RStudio: Integrated Development Environment for R</italic> (1.4.1717) [Computer software]. RStudio, PBC. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.rstudio.com/" ext-link-type="uri">http://www.rstudio.com/</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0057"><mixed-citation id="ece38408-cit-0057"><named-content content-type="citation-string">
+
+Salin, K.
+, 
+Auer, S. K.
+, 
+Rudolf, A. M.
+, 
+Anderson, G. J.
+, 
+Selman, C.
+, &amp; 
+Metcalfe, N. B.
+ (2016). Variation in metabolic rate among individuals is related to tissue‐specific differences in mitochondrial leak respiration. Physiological and Biochemical Zoology, 89(6), 511–523. 10.1086/688769
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1086/688769"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="27792536"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Physiological and Biochemical Zoology&amp;title=Variation in metabolic rate among individuals is related to tissue‐specific differences in mitochondrial leak respiration&amp;author=K. Salin&amp;author=S. K. Auer&amp;author=A. M. Rudolf&amp;author=G. J. Anderson&amp;author=C. Selman&amp;volume=89&amp;issue=6&amp;publication_year=2016&amp;pages=511-523&amp;pmid=27792536&amp;doi=10.1086/688769&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0058"><mixed-citation id="ece38408-cit-0058"><named-content content-type="citation-string">
+
+Salin, K.
+, 
+Villasevil, E. M.
+, 
+Anderson, G. J.
+, 
+Lamarre, S. G.
+, 
+Melanson, C. A.
+, 
+McCarthy, I.
+, 
+Selman, C.
+, &amp; 
+Metcalfe, N. B.
+ (2019). Differences in mitochondrial efficiency explain individual variation in growth performance. Proceedings of the Royal Society B: Biological Sciences, 286(1909), 20191466. 10.1098/rspb.2019.1466
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1098/rspb.2019.1466"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6732382"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31431161"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proceedings of the Royal Society B: Biological Sciences&amp;title=Differences in mitochondrial efficiency explain individual variation in growth performance&amp;author=K. Salin&amp;author=E. M. Villasevil&amp;author=G. J. Anderson&amp;author=S. G. Lamarre&amp;author=C. A. Melanson&amp;volume=286&amp;issue=1909&amp;publication_year=2019&amp;pages=20191466&amp;pmid=31431161&amp;doi=10.1098/rspb.2019.1466&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0059"><mixed-citation id="ece38408-cit-0059"><named-content content-type="citation-string">
+
+Simpson, A. L.
+ (1992). Differences in body size and lipid reserves between maturing and nonmaturing Atlantic salmon parr, <italic>Salmo salar</italic> L. Canadian Journal of Zoology, 70, 1737–1742. 10.1139/z92-241
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1139/z92-241"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Canadian Journal of Zoology&amp;title=Differences in body size and lipid reserves between maturing and nonmaturing Atlantic salmon parr, Salmo salar L&amp;author=A. L. Simpson&amp;volume=70&amp;publication_year=1992&amp;pages=1737-1742&amp;doi=10.1139/z92-241&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0060"><mixed-citation id="ece38408-cit-0060"><named-content content-type="citation-string">
+
+Sinclair‐Waters, M.
+, 
+Ødegård, J.
+, 
+Korsvoll, S. A.
+, 
+Moen, T.
+, 
+Lien, S.
+, 
+Primmer, C. R.
+, &amp; 
+Barson, N. J.
+ (2020). Beyond large‐effect loci: Large‐scale GWAS reveals a mixed large‐effect and polygenic architecture for age at maturity of Atlantic salmon. Genetics Selection Evolution, 52(1), 9. 10.1186/s12711-020-0529-8
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1186/s12711-020-0529-8"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC7017552"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32050893"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Genetics Selection Evolution&amp;title=Beyond large‐effect loci: Large‐scale GWAS reveals a mixed large‐effect and polygenic architecture for age at maturity of Atlantic salmon&amp;author=M. Sinclair‐Waters&amp;author=J. Ødegård&amp;author=S. A. Korsvoll&amp;author=T. Moen&amp;author=S. Lien&amp;volume=52&amp;issue=1&amp;publication_year=2020&amp;pages=9&amp;pmid=32050893&amp;doi=10.1186/s12711-020-0529-8&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0061"><mixed-citation id="ece38408-cit-0061"><named-content content-type="citation-string">
+
+Sinclair‐Waters, M.
+, 
+Piavchenko, N.
+, 
+Ruokolainen, A.
+, 
+Aykanat, T.
+, 
+Erkinaro, J.
+, &amp; 
+Primmer, C. R.
+ (2021). 
+Refining the genomic location of SNP variation affecting Atlantic salmon maturation timing at a key large‐effect locus
+ (p. 2021.04.26.441431). bioRxiv. 10.1101/2021.04.26.441431
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1101/2021.04.26.441431"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="34716945"/></mixed-citation></ref><ref id="ece38408-bib-0062"><mixed-citation id="ece38408-cit-0062"><named-content content-type="citation-string">
+
+Stearns, S. C.
+ (1989). Trade‐offs in life‐history evolution. Functional Ecology, 3(3), 259–268. 10.2307/2389364
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.2307/2389364"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Functional Ecology&amp;title=Trade‐offs in life‐history evolution&amp;author=S. C. Stearns&amp;volume=3&amp;issue=3&amp;publication_year=1989&amp;pages=259-268&amp;doi=10.2307/2389364&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0063"><mixed-citation id="ece38408-cit-0063"><named-content content-type="citation-string">
+
+Stearns, S. C.
+ (2000). Life history evolution: Successes, limitations, and prospects. Naturwissenschaften, 87(11), 476–486. 10.1007/s001140050763
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s001140050763"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11151666"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Naturwissenschaften&amp;title=Life history evolution: Successes, limitations, and prospects&amp;author=S. C. Stearns&amp;volume=87&amp;issue=11&amp;publication_year=2000&amp;pages=476-486&amp;pmid=11151666&amp;doi=10.1007/s001140050763&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0064"><mixed-citation id="ece38408-cit-0064"><named-content content-type="citation-string">
+
+Steffensen, J.
+, 
+Johansen, K.
+, &amp; 
+Bushnell, P.
+ (1984). An automated swimming respirometer. Comparative Biochemistry and Physiology‐Part A: Physiology, 79(3), 437–440. 10.1016/0300-9629(84)90541-3
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/0300-9629(84)90541-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Comparative Biochemistry and Physiology‐Part A: Physiology&amp;title=An automated swimming respirometer&amp;author=J. Steffensen&amp;author=K. Johansen&amp;author=P. Bushnell&amp;volume=79&amp;issue=3&amp;publication_year=1984&amp;pages=437-440&amp;doi=10.1016/0300-9629(84)90541-3&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0065"><mixed-citation id="ece38408-cit-0065"><named-content content-type="citation-string">
+
+Thorpe, J. E.
+ (2007). Maturation responses of salmonids to changing developmental opportunities. Marine Ecology Progress Series, 335, 285–288. 10.3354/meps335285
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.3354/meps335285"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Marine Ecology Progress Series&amp;title=Maturation responses of salmonids to changing developmental opportunities&amp;author=J. E. Thorpe&amp;volume=335&amp;publication_year=2007&amp;pages=285-288&amp;doi=10.3354/meps335285&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0066"><mixed-citation id="ece38408-cit-0066"><named-content content-type="citation-string">
+
+Troth, A.
+, 
+Puzey, J. R.
+, 
+Kim, R. S.
+, 
+Willis, J. H.
+, &amp; 
+Kelly, J. K.
+ (2018). Selective trade‐offs maintain alleles underpinning complex trait variation in plants. Science (New York, N.Y.), 361(6401), 475–478. 10.1126/science.aat5760
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1126/science.aat5760"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30072534"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Science (New York, N.Y.)&amp;title=Selective trade‐offs maintain alleles underpinning complex trait variation in plants&amp;author=A. Troth&amp;author=J. R. Puzey&amp;author=R. S. Kim&amp;author=J. H. Willis&amp;author=J. K. Kelly&amp;volume=361&amp;issue=6401&amp;publication_year=2018&amp;pages=475-478&amp;pmid=30072534&amp;doi=10.1126/science.aat5760&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0067"><mixed-citation id="ece38408-cit-0067"><named-content content-type="citation-string">
+
+Verta, J.‐P.
+, 
+Debes, P. V.
+, 
+Piavchenko, N.
+, 
+Ruokolainen, A.
+, 
+Ovaskainen, O.
+, 
+Moustakas‐Verho, J. E.
+, 
+Tillanen, S.
+, 
+Parre, N.
+, 
+Aykanat, T.
+, 
+Erkinaro, J.
+, &amp; 
+Primmer, C. R.
+ (2020). Cis‐regulatory differences in isoform expression associate with life history strategy variation in Atlantic salmon. PLoS Genetics, 16(9), e1009055. 10.1371/journal.pgen.1009055
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pgen.1009055"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC7549781"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32997662"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLoS Genetics&amp;title=Cis‐regulatory differences in isoform expression associate with life history strategy variation in Atlantic salmon&amp;author=J.‐P. Verta&amp;author=P. V. Debes&amp;author=N. Piavchenko&amp;author=A. Ruokolainen&amp;author=O. Ovaskainen&amp;volume=16&amp;issue=9&amp;publication_year=2020&amp;pages=e1009055&amp;pmid=32997662&amp;doi=10.1371/journal.pgen.1009055&amp;"/></mixed-citation></ref><ref id="ece38408-bib-0068"><mixed-citation id="ece38408-cit-0068"><named-content content-type="citation-string">
+
+Wickham, H.
+, 
+Chang, W.
+, 
+Henry, L.
+, 
+Pedersen, T. L.
+, 
+Takahashi, K.
+, 
+Wilke, C.
+, 
+Woo, K.
+, 
+Yutani, H.
+, 
+Dunnington, D.
+, &amp; RStudio
+. (2021). 
+<italic>ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics</italic> (3.3.5) [Computer software]. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://CRAN.R-project.org/package=ggplot2" ext-link-type="uri">https://CRAN.R‐project.org/package=ggplot2</ext-link>
+</named-content></mixed-citation></ref><ref id="ece38408-bib-0069"><mixed-citation id="ece38408-cit-0069"><named-content content-type="citation-string">
+
+Yamamoto, T.
+, 
+Ueda, H.
+, &amp; 
+Higashi, S.
+ (1998). Correlation among dominance status, metabolic rate and otolith size in masu salmon. Journal of Fish Biology, 52(2), 281–290. 10.1111/j.1095-8649.1998.tb00799.x
+</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1095-8649.1998.tb00799.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Journal of Fish Biology&amp;title=Correlation among dominance status, metabolic rate and otolith size in masu salmon&amp;author=T. Yamamoto&amp;author=H. Ueda&amp;author=S. Higashi&amp;volume=52&amp;issue=2&amp;publication_year=1998&amp;pages=281-290&amp;doi=10.1111/j.1095-8649.1998.tb00799.x&amp;"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adda93_" xml:lang="en" sec-type="data-availability-statement" disp-level="2"><title>Data Availability Statement</title><p>The full datasets and the R scripts used to analyze them are available in Zenodo via the following URL: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.doi.org/10.5281/zenodo.5255061" ext-link-type="uri">https://www.doi.org/10.5281/zenodo.5255061</ext-link>.</p></sec></sec></body></article>

@@ -1,0 +1,1222 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="hsr21745" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style superscripted?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Health Sci Rep</journal-id><journal-id journal-id-type="iso-abbrev">Health Sci Rep</journal-id><journal-id journal-id-type="pmc-domain-id">3569</journal-id><journal-id journal-id-type="pmc-domain">hscirep</journal-id><journal-id journal-id-type="nlm-id">101728855</journal-id><journal-id journal-id-type="publisher-id">HSR2</journal-id><journal-title-group><journal-title>Health Science Reports</journal-title></journal-title-group><issn pub-type="epub">2398-8835</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC10709659</article-id><article-id pub-id-type="pmcid-ver">PMC10709659.1</article-id><article-id pub-id-type="pmcaid">10709659</article-id><article-id pub-id-type="pmcaiid">10709659</article-id><article-id pub-id-type="pmid">38078302</article-id><article-id pub-id-type="doi">10.1002/hsr2.1745</article-id><article-id pub-id-type="publisher-id">HSR21745</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="article-subject-classification"><subject>Cardiology</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Surgery</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>General Medicine</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Gastroenterology/Hepatology</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Medical Education</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Health Policy</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Psychiatry</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Pharmacology and Pharmacy</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Genetics and Genomics</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Epidemiology</subject></subj-group><subj-group subj-group-type="article-subject-classification"><subject>Public Health</subject></subj-group><subj-group subj-group-type="overline"><subject>Original Research</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Emotional intelligence and happiness in clinical medical students: A cross‐sectional multicenter study</article-title><alt-title alt-title-type="left-running-head">HATAMNEJAD <sc>et al.</sc>
+</alt-title></title-group><contrib-group><contrib id="hsr21745-cr-0001" contrib-type="author"><name name-style="western"><surname>Hatamnejad</surname><given-names initials="MR">Mohammad Reza</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-2239-5539</contrib-id><xref rid="hsr21745-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="hsr21745-cr-0002" contrib-type="author"><name name-style="western"><surname>Hosseinpour</surname><given-names initials="M">Morteza</given-names></name><xref rid="hsr21745-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="hsr21745-cr-0003" contrib-type="author"><name name-style="western"><surname>Shiati</surname><given-names initials="S">Samin</given-names></name><xref rid="hsr21745-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="hsr21745-cr-0004" contrib-type="author"><name name-style="western"><surname>Seifaee</surname><given-names initials="A">Asal</given-names></name><xref rid="hsr21745-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="hsr21745-cr-0005" contrib-type="author"><name name-style="western"><surname>Sayari</surname><given-names initials="M">Mohammad</given-names></name><xref rid="hsr21745-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="hsr21745-cr-0006" contrib-type="author"><name name-style="western"><surname>Seyyedi</surname><given-names initials="F">Faranak</given-names></name><xref rid="hsr21745-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="hsr21745-cr-0007" contrib-type="author"><name name-style="western"><surname>Lankarani</surname><given-names initials="KB">Kamran Bagheri</given-names></name><xref rid="hsr21745-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="hsr21745-cr-0008" contrib-type="author" corresp="yes"><name name-style="western"><surname>Ghahramani</surname><given-names initials="S">Sulmaz</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-4161-5146</contrib-id><xref rid="hsr21745-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>Suli.ghahraman@gmail.com</email></address></contrib></contrib-group><aff id="hsr21745-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Health Policy Research Center, Institute of Health</named-content>
+<institution>Shiraz University of Medical Sciences</institution>
+<city>Shiraz</city>
+<country country="IR">Iran</country>
+</aff><aff id="hsr21745-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Student Research Department</named-content>
+<institution>Shiraz University of Medical Sciences</institution>
+<city>Shiraz</city>
+<country country="IR">Iran</country>
+</aff><aff id="hsr21745-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Department of Sociology</named-content>
+<institution>Arak Azad University</institution>
+<city>Arak</city>
+<country country="IR">Iran</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold> Sulmaz Ghahramani, Health Policy Research Center, Institute of Health, Shiraz University of Medical Sciences, Shiraz, Iran.<break/>
+Email: <email>Suli.ghahraman@gmail.com</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>08</day><month>12</month><year>2023</year></pub-date><pub-date pub-type="collection"><month>12</month><year>2023</year></pub-date><volume>6</volume><issue seq="20">12</issue><issue-id pub-id-type="pmc-issue-id">449939</issue-id><issue-id pub-id-type="doi">10.1002/hsr2.v6.12</issue-id><elocation-id>e1745</elocation-id><history>
+<date date-type="rev-recd"><day>07</day><month>10</month><year>2023</year></date>
+<date date-type="received"><day>18</day><month>7</month><year>2023</year></date>
+<date date-type="accepted"><day>21</day><month>11</month><year>2023</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>08</day><month>12</month><year>2023</year></date></event><event event-type="pmc-live"><date><day>10</day><month>12</month><year>2023</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-02-07 17:25:15.753"><day>07</day><month>02</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2023 The Authors. <italic toggle="yes">Health Science Reports</italic> published by Wiley Periodicals LLC.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="HSR2-6-e1745.pdf"><?pdf-name HSR2-6-e1745.pdf?><?pdf-size 1679090?><?pdf-md5 3e33dc52d28b9dfb5660bda2514ba5f4?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:eb97/10709659/3e33dc52d28b/HSR2-6-e1745.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:HSR2-6-e1745.pdf"/><abstract><title>Abstract</title><sec id="hsr21745-sec-0010"><title>Background and Aims</title><p>Emotional intelligence (EI) has improved job performance and has been associated with the success of individuals. The interfering role of happiness in this equation is unneglectable; however, this association has not been established in clinical medical students exposed to work pressures and stressful hospital atmospheric. The present perusal was conducted to evaluate the relationship between EI and happiness in clinical medical students.</p></sec><sec id="hsr21745-sec-0020"><title>Methods</title><p>A multicenter cross‐sectional investigation was conducted in Iran from December 2021 to June 2022. Multi‐stage cluster sampling followed by a systematic random selection was applied to choose participants. Data gathering was carried out online by Brief Emotional Intelligence Scale‐10 and Oxford Happiness Questionnaire.</p></sec><sec id="hsr21745-sec-0030"><title>Results</title><p>Data from 405 participants were analyzed. The mean age was 24.2 years; men and women constituted 208 (51.4%) and 197 (48.6%) of all participants. Gamma regression analysis has determined age (Exp (B) = 1.016, <italic toggle="yes">p</italic>‐value &lt; 0.001), female gender (Exp (B) = 0.966, <italic toggle="yes">p</italic>‐value = 0.04), extrovert personality (Exp (B) = 1.076, <italic toggle="yes">p</italic>‐value &lt; 0.001), perceived somatic health (Exp (B) = 1.002, <italic toggle="yes">p</italic>‐value &lt; 0.001), and stress level (Exp (B) = 0.990, <italic toggle="yes">p</italic>‐value = 0.01) as predictors of happiness. EI comprises five domains, and except for appraisal of others' emotions, an increase in all other domains of emotional intelligence was associated with higher happiness. GBRT model of significant variables revealed regulation of own emotions is the most happiness‐predictor variable (Exp (B) = 1.042, <italic toggle="yes">p</italic>‐value &lt; 0.001).</p></sec><sec id="hsr21745-sec-0040"><title>Conclusion</title><p>Diminishing the stresses helps medical students have a happier life. In happiness‐boosting strategies, vulnerable individuals (women, introverts, and those of higher age) ought to be noted as the targeted population. In this investigation, emotional intelligence was the most effective predictor of happiness in clinical medical students. Planning to promote happiness in these medical staff by enhancing their EI leads to better decision‐making and more prosperity in their job, resulting in better patient care services.</p></sec></abstract><kwd-group><kwd id="hsr21745-kwd-0001">burnout</kwd><kwd id="hsr21745-kwd-0002">COVID‐19 pandemic</kwd><kwd id="hsr21745-kwd-0003">depersonalization</kwd><kwd id="hsr21745-kwd-0004">emotional intelligence</kwd><kwd id="hsr21745-kwd-0005">extraversion</kwd><kwd id="hsr21745-kwd-0006">happiness</kwd><kwd id="hsr21745-kwd-0007">medical student</kwd><kwd id="hsr21745-kwd-0008">perceived stress</kwd></kwd-group><counts><fig-count count="3"/><table-count count="2"/><page-count count="13"/><word-count count="7281"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>December 2023</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.3.5 mode:remove_FC converted:09.12.2023</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="hsr21745-cit-0074">
+<string-name name-style="western">
+<surname>Hatamnejad</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hosseinpour</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shiati</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Emotional intelligence and happiness in clinical medical students: a cross‐sectional multicenter study</article-title>. <source>Health Sci Rep</source>. <year>2023</year>;<volume>6</volume>:<elocation-id>e1745</elocation-id>. <pub-id pub-id-type="doi">10.1002/hsr2.1745</pub-id>
+<pub-id pub-id-type="pmcid">PMC10709659</pub-id><pub-id pub-id-type="pmid">38078302</pub-id></mixed-citation>
+</p></notes></front><body><sec id="hsr21745-sec-0050"><label>1</label><title>INTRODUCTION</title><p>In recent years, the topic of positive psychology, which deals with fields such as positive emotions, positive characteristics, and the role of these aspects in people's well‐being, has attracted the attention of many researchers.<xref rid="hsr21745-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> One of the essential parts of positive psychology is happiness, which means positive inner feelings in the face of events and, in general, a sense of life satisfaction.<xref rid="hsr21745-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> This element promotes physical and mental health and increases longevity.<xref rid="hsr21745-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> Happiness consists of emotional and cognitive components that can be affected by different personal and social factors such as socioeconomic and cultural status, living environment, and emotional intelligence (EI), possibly the most eminent.<xref rid="hsr21745-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>
+</p><p>Salovey and Mayer initially defined EI as “The ability of individuals to understand and manage their own and others' feelings and use them to facilitate thinking.”<xref rid="hsr21745-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> It is directly associated with normal behaviors, good social interactions, and environmental adaptation; therefore, it can affect the individual's mental health.<xref rid="hsr21745-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref>, <xref rid="hsr21745-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> Csikszentmihalyi figured out that happiness doesn't depend on external factors like money; instead, it is an inner feeling experienced when people are in a flow state. He described flow as a psychological state when people are completely absorbed into a challenging but possible task. They continue to do that like nothing else seems to matter, even if there is a remarkable cost to the seeker.<xref rid="hsr21745-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> The theory is postulated on different bases, for example, establishing a flow state needs immediate feedback as well as a balance between perceived challenge and skills to avoid anxiety or boredom.<xref rid="hsr21745-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> Proper feedback and perception come through how we intelligently appraise, regulate, and utilize emotion to know our capabilities and possible roadblocks. In other words, we are only enthusiastic about doing the works placed slightly above our skills, and challenging them brings us to a flow state and happiness, and this is feasible only if we are emotionally intelligent.<xref rid="hsr21745-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> As demonstrated by Lazzari et al.,<xref rid="hsr21745-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> this applies to healthcare undergraduate students. They experienced optimized interprofessional learning when there was an academic flow based on immediate reflection‐on‐action. They noticed their emotions via ecological momentary assessment (reflection) and learned how to react to them. Also, EI is demonstrated to be associated with some aspects of happiness, including positive moods, reducing negative thoughts, and healthy social relationships.<xref rid="hsr21745-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> Some studies suggest that people with higher EI have greater happiness and life satisfaction <xref rid="hsr21745-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> and express higher levels of health as well.<xref rid="hsr21745-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>
+</p><p>EI in medical education has been noticed recently, which has improved job performance and has been associated with the success of individuals.<xref rid="hsr21745-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> The interfering role of happiness in this equation is unneglectable; hence, by exploring the relationship between these two parameters in medical students, planning to promote EI ability and happiness level with the purpose of better decision‐making and being more prosperous in their job get possible.<xref rid="hsr21745-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>
+</p><p>At first glance, it becomes apparent that EI can indirectly bring medical students happiness through diminishing elements like burnout<xref rid="hsr21745-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> and depression<xref rid="hsr21745-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> and boosting their mental health<xref rid="hsr21745-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> and life satisfaction.<xref rid="hsr21745-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Blanchard et al.<xref rid="hsr21745-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> revealed higher EI level leads to reduced burnout in US medical students; Sfeir et al.<xref rid="hsr21745-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> emphasized the EI‐mediated association between extraversion and depression in Lebanese medical students; Khan et al.<xref rid="hsr21745-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> determined a meaningful direct correlation between EI and mental health in undergraduate medical students in western Uttar Pradesh. Ooi et al.<xref rid="hsr21745-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> stated that EI could positively predict life satisfaction among Malaysian undergraduates. However, through deeper scrutiny, some papers have mentioned the direct association between EI and happiness, whether in the medical industry or other jobs. Tiwari et al.<xref rid="hsr21745-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> declared EI can be associated with authentic happiness among Indians in late adolescence. Elayan et al.<xref rid="hsr21745-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> claimed that employer's EI could enhance employee happiness. Therefore, EI has been introduced by Fallahian et al.<xref rid="hsr21745-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> as a means of happiness mechanism in the workplace environment. In addition, this conclusion has been illustrated in healthcare professions. Ghajarzadeh et al.<xref rid="hsr21745-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> mentioned that happiness is a predictor of EI in medical residents in Iran. The predictability of happiness by EI is once more approved by the study of Gupta et al.<xref rid="hsr21745-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> on dental students of Faridabad. The significant association between EI and happiness in 120 medical students (not specified whether in basic science level or clinical grade) of Isfahan University of Medical Sciences (in Iran) was demonstrated by Sasanpour et al.<xref rid="hsr21745-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> Our previous study<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> concluded a significant relationship between happiness and emotional intelligence in medical students at the basic science level; however, data on EI and happiness association in clinical medical students is missed. On the other hand, happiness and its influential factors differ between clinical and basic science medical learners, as clinical students are exposed to more stressful events, including committing a medical fault, observing the patient's expiration, and upcoming residency exams. In this context, Kulkarni et al.<xref rid="hsr21745-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref> revealed that happiness level decreases marginally as the academic year progresses. Thus, contrary to our previous research,<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> in which such a relation was scrutinized in preclinical medical students, medical students at the clinical stage are now targeted.</p><p>Medical education in Iran is a 7‐year (14 semesters) program with preclinical and clinical phases. The preclinical course comprises 2.5 years (five semesters) of studying the basic science programs and 1 year (two semesters) of undertaking the Physiopathology stage. The clinical practice consists of first‐year Stager, second‐year Stager, and internship. First and second‐year Stagers are equivalent to the first and second‐year medical clerkships in other medical educations. The internship is also assumed as a postgraduation program in different medical education systems, but in Iran, it is assumed as part of pre‐graduation curriculum. Hence, Stager and Intern grades are considered to appraise the study purpose within the clinical medical students.</p><p>Overworking pressures and stressful hospital atmospheres, particularly with emerging situations like the COVID‐19 pandemic, affect the students' happiness level and their clinical practice.<xref rid="hsr21745-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> Therefore, it is more reasonable to consider these junior medical staff (interns and stagers) to boost the quality of patient care and clinical performance. So, this study has been performed to evaluate the relationship between EI and happiness in Stager and Intern medical students. We hypothesized that EI is significantly correlated with happiness levels among clinical medical students, and independent variables affecting this association differ from the previous investigation, which was conducted in the setting of medical students who have not experienced clinical practice.<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>
+</p></sec><sec sec-type="materials-and-methods" id="hsr21745-sec-0060"><label>2</label><title>MATERIALS AND METHODS</title><sec id="hsr21745-sec-0070"><label>2.1</label><title>Study design</title><p>The current cross‐sectional, observational, and multicenter investigation was conducted at medical colleges of the principal universities of Fars province in Iran, including Shiraz, Fasa, and Jahrom University of Medical Sciences, from December 2021 to June 2022. The study was performed in compliance with the international guidelines on clinical investigation of the World Medical Association's Declaration of Helsinki; the Shiraz University ethics committee approved the study protocol (ethics code: IR. SUMS. REC.1400.828).</p></sec><sec id="hsr21745-sec-0080"><label>2.2</label><title>Aims and objectives</title><sec id="hsr21745-sec-0090"><label>2.2.1</label><title>Study aims</title><p>Evaluation of EI and happiness association in clinical medical students.</p><p>
+<bold>Research hypothesis (H</bold>
+<sub>
+<bold>1</bold>
+</sub>
+<bold>):</bold> EI and happiness significantly correlate in clinical medical students.</p><p>
+<bold>Null hypothesis (H</bold>
+<sub>
+<bold>0</bold>
+</sub>
+<bold>):</bold> No significant correlation exists between EI and happiness in clinical medical students.</p></sec><sec id="hsr21745-sec-0100"><label>2.2.2</label><title>Objectives</title><p>
+<list list-type="simple"><list-item><label>−</label><p>Determining the total happiness score in clinical medical students.</p></list-item><list-item><label>−</label><p>Determining the total emotional intelligence and its domains scores in clinical medical students.</p></list-item><list-item><label>−</label><p>Determining the predictors (independent variables) of happiness (dependent variable) in clinical medical students.</p></list-item><list-item><label>−</label><p>Evaluation of EI and its domains as predictors of happiness in the targeted population.</p></list-item></list>
+</p></sec></sec><sec id="hsr21745-sec-0110"><label>2.3</label><title>Participants selection</title><p>The minimum sample size, using Cochran's formula, with the predicted lowest correlation coefficient of 0.25, 95% confidence interval, 5% alpha error, and 80% power, was estimated at 123 students; however, to conduct the study in the three centers, the engagement cut‐off point was considered as 400 contributors.</p><p>Multi‐stage cluster sampling was performed in three steps (Figure <xref rid="hsr21745-fig-0001" ref-type="fig">1</xref>). At first, the allocated contributing proportion to each university and the clinical stage was determined based on its population; therefore, participants were dedicated to Shiraz University of Medical Sciences, and intern grades were two times higher than other sub‐classes. Then, attempts were made to have almost equal numbers of men and women participants. Systematic random sampling was exerted to select the participants within each cluster. Willing candidates were included based on providing written informed consent and not being a guest or exchanged student. The exclusion was considered for those who filled out the questionnaires incompletely.</p><fig position="float" fig-type="Figure" id="hsr21745-fig-0001" orientation="portrait"><label>Figure 1</label><caption><p>Multi‐stage cluster sampling. At first, the allocated contributing proportion to each university and clinical stage was determined based on its population; therefore, participants were dedicated to Shiraz University of Medical Sciences, and intern grades two times higher than other sub‐classes. Then, attempts were made to have almost equal numbers of men and women participants.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="HSR2-6-e1745-g001.jpg"><?image-name HSR2-6-e1745-g001.jpg?><?image-size 70251?><?image-md5 c74768f3dd188fb89cfa71904f0b0a56?><?image-image-server-status NEVER_LOAD?><?image-original-height 701?><?image-original-width 700?><?image-scaled-height 701?><?image-scaled-width 700?><?image-cloudpmc-urn urn:cdn:blobs/eb97/10709659/c74768f3dd18/HSR2-6-e1745-g001.jpg?><?thumb-name HSR2-6-e1745-g001.gif?><?thumb-size 3559?><?thumb-md5 d9abd70e1b20d2a41fc3f741ba361aad?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 100?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/eb97/10709659/d9abd70e1b20/HSR2-6-e1745-g001.gif?></graphic></fig><p>The flowchart of the participant's selection is presented in Figure <xref rid="hsr21745-fig-0002" ref-type="fig">2</xref>. During the study period, 450 clinical students from three medical universities were invited to participate in the research project. Among them, 32 students did not meet the inclusion criteria; thus, 418 students were eligible for the study. Thirteen students were excluded after the primary assessment due to incomplete filling out the questionnaires. Therefore, the data of 405 students were analyzed.</p><fig position="float" fig-type="Figure" id="hsr21745-fig-0002" orientation="portrait"><label>Figure 2</label><caption><p>Flowchart of participant's selection. Among 450 clinical students who were invited by social media to participate in the research project, 418 were eligible for the study. Thirteen students were excluded. Thus, the data of 405 participants were analyzed.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="HSR2-6-e1745-g003.jpg"><?image-name HSR2-6-e1745-g003.jpg?><?image-size 32097?><?image-md5 4afa21bf27c1f8ec06d2343b82103e82?><?image-image-server-status NEVER_LOAD?><?image-original-height 224?><?image-original-width 600?><?image-scaled-height 224?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/eb97/10709659/4afa21bf27c1/HSR2-6-e1745-g003.jpg?><?thumb-name HSR2-6-e1745-g003.gif?><?thumb-size 5812?><?thumb-md5 d6d8f280cecb49d81c8f9c69faadc431?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 75?><?thumb-scaled-width 200?><?thumb-cloudpmc-urn urn:cdn:blobs/eb97/10709659/d6d8f280cecb/HSR2-6-e1745-g003.gif?></graphic></fig></sec><sec id="hsr21745-sec-0120"><label>2.4</label><title>Data gathering process</title><p>Due to the limitations imposed by the COVID‐19 pandemic, the data gathering was mainly carried out online via social networks including, WhatsApp, Telegram, and electronic email. Individuals were contacted, and an informed consent form was sent. After explaining the purposes of the research and obtaining their agreement, a link to accomplish the questionnaire was given.</p></sec><sec id="hsr21745-sec-0130"><label>2.5</label><title>Data collection instruments</title><p>The questionnaire contains three main parts. Information on various participants' backgrounds, including age, gender, educational level, socioeconomic status, family structure, and personal self‐evaluations, constitutes the demographic component.</p><p>In personal self‐evaluation, participants were asked about happiness‐affecting factors, including depersonalization,<xref rid="hsr21745-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref> emotional exhaustion (burnout),<xref rid="hsr21745-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> and perceived stress/health status in the last 60 days. EI comprises the appraisal and regulation of one's emotions; thereby, more intelligently use of emotions leads to more awareness about the stress/health status and more efficient adjusting them to come up with happiness and well‐being.<xref rid="hsr21745-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref> Literature addressed the interrelational role of EI in the perception of stress/health and happiness. Ruiz‐Arandain et al. pointed out the mediating effect of perceived stress in the relation between happiness and EI in female student health professionals.<xref rid="hsr21745-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref> Augusto Landa et al. explained that EI leads to individual stress‐handling disparities, eventually resulting in different happiness statuses.<xref rid="hsr21745-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> In addition, a significant effect of perceived stress/health status was discovered in the previous paper about EI and happiness in medical students at the basic science level<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>; hence, perceived stress and health status were assessed by a visual analog scale (VAS), resembling our previous study. In this method, participants were requested to estimate their perceived stress/health statuses by donating a number from 0 to 10 (for stress) or 100 (for health). Exploitation of VAS to assess perceived health and stress levels was previously demonstrated by Nicholas<xref rid="hsr21745-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> and Lesage et al.,<xref rid="hsr21745-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> respectively. Besides, depersonalization, emotional exhaustion, the detrimental impact of COVID‐19 development,<xref rid="hsr21745-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> and thinking about forced international migration and its negative effect on happiness,<xref rid="hsr21745-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> as the other self‐perceptive questions, were assessed qualitatively (First, they read what the feature [e.g., depersonalization] means and then check whether this event happened to them [existed or not]).</p><p>In subsequent sections, measuring emotional intelligence and happiness was facilitated by the Brief Emotional Intelligence Scale‐10 (BEIS‐10) and Oxford Happiness Questionnaire, respectively.</p><sec id="hsr21745-sec-0140"><label>2.5.1</label><title>Brief Emotional Intelligence Scale‐10</title><p>As a shortened version of the Schutte 33‐item Emotional Intelligence Scale,<xref rid="hsr21745-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref> Davies et al. developed a valid brief questionnaire containing five domains: appraisal of own emotions, regulation of own emotions, appraisal of others' emotions, regulation of others' emotions, and utilization of emotions.<xref rid="hsr21745-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref> Each domain comprises two sectors that subjects can answer with a 5‐point Likert scale from 1 (never) to 5 (always). Eventually, the total score of the 10‐item questionnaire is from 10 to 50, and individuals with higher scores have more EI ability. Hadadian et al.<xref rid="hsr21745-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> explored trans‐cultural adaptation in Iranian society and represented that the Persian version of BEIS‐10 is valid and reliable (intraclass correlation coefficient= 0.612, Cronbach's alpha = 0.748). Respecting the briefness and time‐saving properties of BIES‐10 compared with other EI assessment scales, the investigators utilized the BEIS‐10 in contrast to the prior experience that the Siberia Schering questionnaire employed.<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>
+</p></sec><sec id="hsr21745-sec-0150"><label>2.5.2</label><title>Oxford happiness questionnaire</title><p>Argyle and Hills extended the range of answering Likert score (from 4 to 6 degrees), applied the reverse scoring for 12 questions with the inverted verb, and ultimately established the Oxford happiness questionnaire to enhance the accuracy of the previous version of the happiness questionnaire (Oxford happiness Inventory).<xref rid="hsr21745-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> It is organized by 29 items related to seven domains: self‐concept, aesthetic feeling, self‐efficacy, emotional readiness, life satisfaction, hopefulness, and spiritual intelligence. Each person can acquire a score from 29 to 174, divided by 29 to calculate the happiness score; higher marks indicate happier ones. Najafi et al. confirmed the reliability and validity of the questionnaire, and Cronbach's α was calculated at 0.901.<xref rid="hsr21745-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref>
+</p></sec></sec><sec id="hsr21745-sec-0160"><label>2.6</label><title>Statistical analysis</title><p>Mean ± standard deviation was used to express continuous variables. However, categorical variables were represented by numbers and percentages. This research used a two‐stage procedure to evaluate the effects of variables related to happiness. In the first stage, gamma regression was used to identify the significant variables. The gamma regression with a log link is suitable for analyzing positively skewed continuous outcomes. In the second stage, the significant variables were entered into the gradient‐boosted regression trees (GBRT) model to extract the variable's importance. As a machine‐learning method, GBRT modifies the classification and regression trees. GBRT generates regression trees sequentially, drawing upon the information from previous trees to enhance prediction performance. The final model results from aggregating weak prediction models (learners).<xref rid="hsr21745-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref>, <xref rid="hsr21745-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref> The statistical analysis, including gamma regression, was carried out using Stata (version 17.0); the GBRT procedure was performed via the R statistical package (version 4.1.1). A <italic toggle="yes">p</italic>‐value less than 0.05 considers the result substantial.</p></sec></sec><sec sec-type="results" id="hsr21745-sec-0170"><label>3</label><title>RESULTS</title><p>The detail of the data is illustrated in Table <xref rid="hsr21745-tbl-0001" ref-type="table">1</xref>. The mean age was 24.2 years; men and women constituted 208 (51.4%) and 197 (48.6%) of all participants.</p><table-wrap position="float" id="hsr21745-tbl-0001" content-type="Table" orientation="portrait"><label>Table 1</label><caption><p>Descriptive statistics of participants' variables</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><thead valign="bottom"><tr valign="bottom" style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1">Variables</th><th align="left" valign="bottom" rowspan="1" colspan="1">
+<p>Mean ± SD or</p>
+<p>Number (%)</p>
+</th><th align="left" valign="bottom" rowspan="1" colspan="1">Variables</th><th align="left" valign="bottom" rowspan="1" colspan="1">
+<p>Mean ± SD or</p>
+<p>Number (%)</p>
+</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Age</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">24.2 ± 1.82</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Father's Job</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Gender</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Employee</td><td align="left" valign="top" rowspan="1" colspan="1">362 (89.4%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Men</td><td align="left" valign="top" rowspan="1" colspan="1">208 (51.4%)</td><td align="left" valign="top" rowspan="1" colspan="1">Unemployed</td><td align="left" valign="top" rowspan="1" colspan="1">13 (3.2%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Women</td><td align="left" valign="top" rowspan="1" colspan="1">197 (48.6%)</td><td align="left" valign="top" rowspan="1" colspan="1">Retired with pension</td><td align="left" valign="top" rowspan="1" colspan="1">30 (7.4%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Relationship Status</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Father's educational level</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Single</td><td align="left" valign="top" rowspan="1" colspan="1">254 (62.7%)</td><td align="left" valign="top" rowspan="1" colspan="1">Illiterate</td><td align="left" valign="top" rowspan="1" colspan="1">8 (2%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Married</td><td align="left" valign="top" rowspan="1" colspan="1">54 (13.3%)</td><td align="left" valign="top" rowspan="1" colspan="1">Middle school diploma</td><td align="left" valign="top" rowspan="1" colspan="1">22 (5.4%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">In a relationship</td><td align="left" valign="top" rowspan="1" colspan="1">97 (24%)</td><td align="left" valign="top" rowspan="1" colspan="1">High school diploma</td><td align="left" valign="top" rowspan="1" colspan="1">111 (27.4%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Clinical Grade</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">University's degrees</td><td align="left" valign="top" rowspan="1" colspan="1">264 (65.2%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">First‐year Stager</td><td align="left" valign="top" rowspan="1" colspan="1">108 (26.7%)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Mother's educational level</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Second‐year Stager</td><td align="left" valign="top" rowspan="1" colspan="1">116 (28.6%)</td><td align="left" valign="top" rowspan="1" colspan="1">Illiterate</td><td align="left" valign="top" rowspan="1" colspan="1">17 (4.2%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Intern</td><td align="left" valign="top" rowspan="1" colspan="1">181 (44.7%)</td><td align="left" valign="top" rowspan="1" colspan="1">Middle school diploma</td><td align="left" valign="top" rowspan="1" colspan="1">41 (10.1%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Tuition status</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">High school diploma</td><td align="left" valign="top" rowspan="1" colspan="1">143 (35.3%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Scholarships students</td><td align="left" valign="top" rowspan="1" colspan="1">329 (81.2%)</td><td align="left" valign="top" rowspan="1" colspan="1">University's degrees</td><td align="left" valign="top" rowspan="1" colspan="1">204 (50.4%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Fee‐paying students</td><td align="left" valign="top" rowspan="1" colspan="1">76 (18.8%)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Parental Living Status</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>University</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Joint living parents</td><td align="left" valign="top" rowspan="1" colspan="1">344 (84.9%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Shiraz</td><td align="left" valign="top" rowspan="1" colspan="1">203 (50.1%)</td><td align="left" valign="top" rowspan="1" colspan="1">Separated parents</td><td align="left" valign="top" rowspan="1" colspan="1">22 (5.4%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Fasa</td><td align="left" valign="top" rowspan="1" colspan="1">100 (24.7%)</td><td align="left" valign="top" rowspan="1" colspan="1">Deceased a parent</td><td align="left" valign="top" rowspan="1" colspan="1">39 (9.6%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Jahrom</td><td align="left" valign="top" rowspan="1" colspan="1">102 (25.2%)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Self‐perception</bold>
+<xref rid="hsr21745-tbl1-note-0002" ref-type="table-fn">b</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Place of Living</bold>
+<xref rid="hsr21745-tbl1-note-0001" ref-type="table-fn">a</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Stress level<xref rid="hsr21745-tbl1-note-0003" ref-type="table-fn">c</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1">5.82 ± 2.31</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Dormitory</td><td align="left" valign="top" rowspan="1" colspan="1">163 (40.2%)</td><td align="left" valign="top" rowspan="1" colspan="1">Somatic health level<xref rid="hsr21745-tbl1-note-0003" ref-type="table-fn">c</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1">81.8 ± 16.6</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Family residence</td><td align="left" valign="top" rowspan="1" colspan="1">135 (33.3%)</td><td align="left" valign="top" rowspan="1" colspan="1">Depersonalization<xref rid="hsr21745-tbl1-note-0004" ref-type="table-fn">d</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1">162 (40%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Independent residence</td><td align="left" valign="top" rowspan="1" colspan="1">107 (26.4%)</td><td rowspan="3" align="left" valign="top" colspan="1">Believed in negative COVID‐19 impact on happiness</td><td rowspan="3" align="left" valign="top" colspan="1">241 (59.5%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Ethnicity</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Persian</td><td align="left" valign="top" rowspan="1" colspan="1">262 (64.7%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Others</td><td align="left" valign="top" rowspan="1" colspan="1">143 (35.3%)</td><td rowspan="3" align="left" valign="top" colspan="1">
+<p>Emotional exhaustion</p>
+<p>Thinking about migrating</p>
+<p>
+<bold>Emotional Intelligence</bold>
+<xref rid="hsr21745-tbl1-note-0005" ref-type="table-fn">e</xref>
+</p>
+</td><td rowspan="3" align="left" valign="top" colspan="1">
+<p>271 (66.9%)</p>
+<p>262 (64.7%)</p>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Students with a part‐time job</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">93 (23%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> 
+<bold>Salary</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Without Income</td><td align="left" valign="top" rowspan="1" colspan="1">183 (45.1%)</td><td align="left" valign="top" rowspan="1" colspan="1">Appraisal of own emotions</td><td align="left" valign="top" rowspan="1" colspan="1">6.94 ± 1.52</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">With Income</td><td align="left" valign="top" rowspan="1" colspan="1">222 (54.9%)</td><td align="left" valign="top" rowspan="1" colspan="1">Regulation of own emotions</td><td align="left" valign="top" rowspan="1" colspan="1">6.98 ± 1.50</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Income‐expenses Balance</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Appraisal of others' emotions</td><td align="left" valign="top" rowspan="1" colspan="1">6.76 ± 1.64</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Expenses &gt; Income</td><td align="left" valign="top" rowspan="1" colspan="1">159 (39.3%)</td><td align="left" valign="top" rowspan="1" colspan="1">Regulation others' emotions</td><td align="left" valign="top" rowspan="1" colspan="1">6.61 ± 1.64</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Expenses = Income</td><td align="left" valign="top" rowspan="1" colspan="1">194 (47.9%)</td><td align="left" valign="top" rowspan="1" colspan="1">Utilization of emotions</td><td align="left" valign="top" rowspan="1" colspan="1">7.38 ± 1.56</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Expenses &lt; Income</td><td align="left" valign="top" rowspan="1" colspan="1">52 (12.8%)</td><td align="left" valign="top" rowspan="1" colspan="1">Total score (10–50)</td><td align="left" valign="top" rowspan="1" colspan="1">34.6 ± 6.16</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Siblings</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td colspan="2" align="left" valign="top" rowspan="1">
+<bold>Happiness scores (Total range/Number of</bold>
+</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">One and two</td><td align="left" valign="top" rowspan="1" colspan="1">283 (69.9%)</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>items)</bold>
+<xref rid="hsr21745-tbl1-note-0006" ref-type="table-fn">f</xref>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Three and more</td><td align="left" valign="top" rowspan="1" colspan="1">122 (30.1%)</td><td align="left" valign="top" rowspan="1" colspan="1">Self‐concept (8–48)/8</td><td align="left" valign="top" rowspan="1" colspan="1">3.74 ± 1.05</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Special talent's high‐schools</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">267 (65.9%)</td><td align="left" valign="top" rowspan="1" colspan="1">Aesthetic Feeling (5–30)/5</td><td align="left" valign="top" rowspan="1" colspan="1">3.16 ± 0.78</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Top student of class (rank 1</bold>–<bold>10)</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">69 (17%)</td><td align="left" valign="top" rowspan="1" colspan="1">Self‐efficacy (5–30)/5</td><td align="left" valign="top" rowspan="1" colspan="1">3.25 ± 0.53</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Personality</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Emotional Readiness (4–24)/4</td><td align="left" valign="top" rowspan="1" colspan="1">3.77 ± 1.05</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Introvert</td><td align="left" valign="top" rowspan="1" colspan="1">233 (57.5%)</td><td align="left" valign="top" rowspan="1" colspan="1">Life satisfaction (3–18)/3</td><td align="left" valign="top" rowspan="1" colspan="1">3.58 ± 1.25</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Extrovert</td><td align="left" valign="top" rowspan="1" colspan="1">172 (42.5%)</td><td align="left" valign="top" rowspan="1" colspan="1">Hopefulness (2–12)/2</td><td align="left" valign="top" rowspan="1" colspan="1">3.94 ± 1.23</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Mother's Job</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Spiritual Intelligence (2–12)/2</td><td align="left" valign="top" rowspan="1" colspan="1">3.71 ± 1.26</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Housekeeper</td><td align="left" valign="top" rowspan="1" colspan="1">230 (56.8%)</td><td align="left" valign="top" rowspan="1" colspan="1">Mean total Score (29–174)/29</td><td align="left" valign="top" rowspan="1" colspan="1">3.78 ± 0.85</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Employee</td><td align="left" valign="top" rowspan="1" colspan="1">175 (43.2%)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr></tbody></table><table-wrap-foot><fn id="hsr21745-tbl1-note-0001"><label>
+<sup>a</sup>
+</label><p>Family residence means living with other family members in a shared house; Independent residence means living apart from family in a separate home.</p></fn><fn id="hsr21745-tbl1-note-0002"><label>
+<sup>b</sup>
+</label><p>Self‐perception refers to the personal self‐evaluations within the last 60‐days.</p></fn><fn id="hsr21745-tbl1-note-0003"><label>
+<sup>c</sup>
+</label><p>Perceived stress and health status were assessed by a visual analog scale. In this method, participants were requested to estimate their perceived stress/health statuses by donating a number from 0 to 10 (for stress) or 100 (for health).</p></fn><fn id="hsr21745-tbl1-note-0004"><label>
+<sup>d</sup>
+</label><p>It defines as: I get the feeling that I treat some patients/colleagues impersonally as if they were objects.</p></fn><fn id="hsr21745-tbl1-note-0005"><label>
+<sup>e</sup>
+</label><p>The Emotional Intelligence domains' scores range are 2–10.</p></fn><fn id="hsr21745-tbl1-note-0006"><label>
+<sup>f</sup>
+</label><p>The mean scores of happiness and its domains' range are 1–6.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap><p>The majority of subjects believed in (1) the adverse impression of COVID‐19 on their happiness level 241 (59.5%), (2) emotional exhaustion about hospital work 271 (66.9%), (3) and forced immigration to developed countries to find a job or proceed the education 262 (64.7%). Mostly, they assumed themselves as introverted individuals 233 (57.5%), with a relatively healthy physical status (mean estimated score of 81.8 on a scale from 0 to 100) and a moderately stressful life (mean estimated score of 5.82 on a scale from 0 to 10). EI (34.6/50, 69.2% of total) and mean happiness (3.78/6, 63% of total) scores indicate research candidates are placed in the second quartile and possess relatively sufficient happiness and EI. Inquiring into each category domain demonstrates the utilization of emotions (7.38/10), and hopefulness (3.94/6) are the categories related to EI and happiness, respectively, that students are most efficient.</p><p>Gamma regression analysis of happiness and its independent variables are shown in Table <xref rid="hsr21745-tbl-0002" ref-type="table">2</xref>. Compared to men, women significantly owned lower happiness (Exp (B) = 0.966). Individuals with extroverted personalities compared to introverted ones significantly possessed higher happiness (Exp (B) = 1.076). In addition, increasing age (Exp (B) = 1.016 per year) and somatic (physical) health level (Exp (B) = 1.002 per one score) have been found to be significant predictors of happiness. On the contrary, a significant reverse happiness level was obtained in the individuals with higher stress levels (Exp (B) = 0.990, per one score). Except for the appraisal of others' emotions, an increase in all other domains of emotional intelligence was associated with higher happiness (H<sub>1</sub> was approved, and H<sub>0</sub> was declined).</p><table-wrap position="float" id="hsr21745-tbl-0002" content-type="Table" orientation="portrait"><label>Table 2</label><caption><p>Gamma regression analysis of happiness and its independent variables.</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><thead valign="bottom"><tr valign="bottom" style="border-bottom:solid 1px #000000"><th align="left" colspan="2" valign="bottom" rowspan="1">Categorical variables (constant values)<xref rid="hsr21745-tbl2-note-0001" ref-type="table-fn">a</xref>
+</th><th align="left" valign="bottom" rowspan="1" colspan="1">Exp (B)</th><th align="left" valign="bottom" rowspan="1" colspan="1">Std. Err.</th><th align="left" valign="bottom" rowspan="1" colspan="1">P &gt; Z</th><th align="left" valign="bottom" rowspan="1" colspan="1">95% Confidence Interval</th></tr></thead><tbody valign="top"><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Gender (Men)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Women</td><td align="left" valign="top" rowspan="1" colspan="1">0.966</td><td align="left" valign="top" rowspan="1" colspan="1">0.016</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.037</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">0.935–0.998</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Relationship Status (Single)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Married</td><td align="left" valign="top" rowspan="1" colspan="1">1.026</td><td align="left" valign="top" rowspan="1" colspan="1">0.026</td><td align="left" valign="top" rowspan="1" colspan="1">0.318</td><td align="left" valign="top" rowspan="1" colspan="1">0.976–1.078</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">In a relationship</td><td align="left" valign="top" rowspan="1" colspan="1">1.009</td><td align="left" valign="top" rowspan="1" colspan="1">0.020</td><td align="left" valign="top" rowspan="1" colspan="1">0.668</td><td align="left" valign="top" rowspan="1" colspan="1">0.969–1.050</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Clinical grade (First‐year Stager)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Two‐year stager</td><td align="left" valign="top" rowspan="1" colspan="1">1.024</td><td align="left" valign="top" rowspan="1" colspan="1">0.024</td><td align="left" valign="top" rowspan="1" colspan="1">0.320</td><td align="left" valign="top" rowspan="1" colspan="1">0.977–1.072</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Intern</td><td align="left" valign="top" rowspan="1" colspan="1">1.017</td><td align="left" valign="top" rowspan="1" colspan="1">0.023</td><td align="left" valign="top" rowspan="1" colspan="1">0.467</td><td align="left" valign="top" rowspan="1" colspan="1">0.973–1.063</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>University (Shiraz)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Fasa</td><td align="left" valign="top" rowspan="1" colspan="1">1.005</td><td align="left" valign="top" rowspan="1" colspan="1">0.021</td><td align="left" valign="top" rowspan="1" colspan="1">0.819</td><td align="left" valign="top" rowspan="1" colspan="1">0.964–1.047</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Jahrom</td><td align="left" valign="top" rowspan="1" colspan="1">1.023</td><td align="left" valign="top" rowspan="1" colspan="1">0.021</td><td align="left" valign="top" rowspan="1" colspan="1">0.275</td><td align="left" valign="top" rowspan="1" colspan="1">0.982–1.065</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Place of Living (Dormitory)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Family residence</td><td align="left" valign="top" rowspan="1" colspan="1">1.025</td><td align="left" valign="top" rowspan="1" colspan="1">0.021</td><td align="left" valign="top" rowspan="1" colspan="1">0.222</td><td align="left" valign="top" rowspan="1" colspan="1">0.985–1.068</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Independent residence</td><td align="left" valign="top" rowspan="1" colspan="1">1.037</td><td align="left" valign="top" rowspan="1" colspan="1">0.021</td><td align="left" valign="top" rowspan="1" colspan="1">0.076</td><td align="left" valign="top" rowspan="1" colspan="1">0.996–1.080</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Ethnicity (Persian)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Others</td><td align="left" valign="top" rowspan="1" colspan="1">1.033</td><td align="left" valign="top" rowspan="1" colspan="1">0.019</td><td align="left" valign="top" rowspan="1" colspan="1">0.077</td><td align="left" valign="top" rowspan="1" colspan="1">0.966–1.070</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>A part‐time job (Without)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Own a part‐time job</td><td align="left" valign="top" rowspan="1" colspan="1">1.025</td><td align="left" valign="top" rowspan="1" colspan="1">0.023</td><td align="left" valign="top" rowspan="1" colspan="1">0.288</td><td align="left" valign="top" rowspan="1" colspan="1">0.980–1.072</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Salary (Without Income)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">With Income</td><td align="left" valign="top" rowspan="1" colspan="1">0.982</td><td align="left" valign="top" rowspan="1" colspan="1">0.020</td><td align="left" valign="top" rowspan="1" colspan="1">0.370</td><td align="left" valign="top" rowspan="1" colspan="1">0.944–1.022</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Siblings (One and two)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Three and more Siblings</td><td align="left" valign="top" rowspan="1" colspan="1">0.983</td><td align="left" valign="top" rowspan="1" colspan="1">0.018</td><td align="left" valign="top" rowspan="1" colspan="1">0.363</td><td align="left" valign="top" rowspan="1" colspan="1">0.944–1.022</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Top student of class (Not being)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Being a top student of class</td><td align="left" valign="top" rowspan="1" colspan="1">1.020</td><td align="left" valign="top" rowspan="1" colspan="1">0.022</td><td align="left" valign="top" rowspan="1" colspan="1">0.370</td><td align="left" valign="top" rowspan="1" colspan="1">0.977–1.064</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Parental Living Status (Joint living parents)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Separated Parents</td><td align="left" valign="top" rowspan="1" colspan="1">0.976</td><td align="left" valign="top" rowspan="1" colspan="1">0.035</td><td align="left" valign="top" rowspan="1" colspan="1">0.506</td><td align="left" valign="top" rowspan="1" colspan="1">0.909–1.048</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Deceased a parent</td><td align="left" valign="top" rowspan="1" colspan="1">1.013</td><td align="left" valign="top" rowspan="1" colspan="1">0.028</td><td align="left" valign="top" rowspan="1" colspan="1">0.635</td><td align="left" valign="top" rowspan="1" colspan="1">0.960–1.070</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Personality (Introvert)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Extrovert</td><td align="left" valign="top" rowspan="1" colspan="1">1.076</td><td align="left" valign="top" rowspan="1" colspan="1">0.018</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.041–1.112</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Forced migrating and its negative impacts (Not thinking)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Thinking about migrating</td><td align="left" valign="top" rowspan="1" colspan="1">0.967</td><td align="left" valign="top" rowspan="1" colspan="1">0.017</td><td align="left" valign="top" rowspan="1" colspan="1">0.052</td><td align="left" valign="top" rowspan="1" colspan="1">0.935–1.000</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Emotional exhaustion (Without)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Emotionally exhausted</td><td align="left" valign="top" rowspan="1" colspan="1">0.977</td><td align="left" valign="top" rowspan="1" colspan="1">0.018</td><td align="left" valign="top" rowspan="1" colspan="1">0.205</td><td align="left" valign="top" rowspan="1" colspan="1">0.942–1.013</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Depersonalization (Without)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Depersonalized</td><td align="left" valign="top" rowspan="1" colspan="1">0.968</td><td align="left" valign="top" rowspan="1" colspan="1">0.017</td><td align="left" valign="top" rowspan="1" colspan="1">0.061</td><td align="left" valign="top" rowspan="1" colspan="1">0.935–1.002</td></tr><tr><td colspan="6" align="left" valign="top" rowspan="1">
+<bold>Happiness compared before pandemic (Get worse)</bold>
+</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Get better</td><td align="left" valign="top" rowspan="1" colspan="1">1.024</td><td align="left" valign="top" rowspan="1" colspan="1">0.018</td><td align="left" valign="top" rowspan="1" colspan="1">0.165</td><td align="left" valign="top" rowspan="1" colspan="1">0.990–1.059</td></tr><tr><td colspan="2" style="padding-left:10%" align="left" valign="top" rowspan="1">Continuous variables</td><td align="left" valign="top" rowspan="1" colspan="1">Exp (B)</td><td align="left" valign="top" rowspan="1" colspan="1">Std. Err.</td><td align="left" valign="top" rowspan="1" colspan="1">P &gt; Z</td><td align="left" valign="top" rowspan="1" colspan="1">95% Confidence Interval</td></tr><tr><td colspan="2" align="left" valign="top" rowspan="1"> 
+<bold>Age</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.016</td><td align="left" valign="top" rowspan="1" colspan="1">0.003</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.010–1.022</td></tr><tr><td colspan="2" align="left" valign="top" rowspan="1"> 
+<bold>Stress level perception</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">0.990</td><td align="left" valign="top" rowspan="1" colspan="1">0.004</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.008</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">0.982–0.997</td></tr><tr><td colspan="2" align="left" valign="top" rowspan="1"> 
+<bold>Somatic health level perception</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.002</td><td align="left" valign="top" rowspan="1" colspan="1">0.000</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.001–1.003</td></tr><tr><td rowspan="5" align="left" valign="top" colspan="1"> 
+<bold>EI</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Appraisal of own emotions</td><td align="left" valign="top" rowspan="1" colspan="1">1.023</td><td align="left" valign="top" rowspan="1" colspan="1">0.008</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.009–1.038</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Regulation of own emotions</td><td align="left" valign="top" rowspan="1" colspan="1">1.042</td><td align="left" valign="top" rowspan="1" colspan="1">0.008</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.027–1.058</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Appraisal of others’ emotions</td><td align="left" valign="top" rowspan="1" colspan="1">0.995</td><td align="left" valign="top" rowspan="1" colspan="1">0.007</td><td align="left" valign="top" rowspan="1" colspan="1">0.493</td><td align="left" valign="top" rowspan="1" colspan="1">0.982–1.009</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Regulation others’ emotions</td><td align="left" valign="top" rowspan="1" colspan="1">1.026</td><td align="left" valign="top" rowspan="1" colspan="1">0.007</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.014–1.039</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Utilization of emotions</td><td align="left" valign="top" rowspan="1" colspan="1">1.030</td><td align="left" valign="top" rowspan="1" colspan="1">0.007</td><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.000</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">1.016–1.045</td></tr></tbody></table><table-wrap-foot><fn id="hsr21745-tbl2-note-0001"><label>
+<sup>a</sup>
+</label><p>Constant values were considered as the base class for each category regression analysis.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap><p>The result of GBRT in terms of relative influence, which shows the impact of the explanatory variables in predicting happiness, is illustrated in Figure <xref rid="hsr21745-fig-0003" ref-type="fig">3</xref>. As can be seen, regulation of own emotions is the most happiness‐predictor variable (Exp (B) = 1.042, <italic toggle="yes">p</italic>‐value &lt; 0.001), followed by utilization of emotions (Exp (B) = 1.030, <italic toggle="yes">p</italic>‐value &lt; 0.001).</p><fig position="float" fig-type="Figure" id="hsr21745-fig-0003" orientation="portrait"><label>Figure 3</label><caption><p>GBRT to indicate the impact of the variables in predicting happiness.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="HSR2-6-e1745-g002.jpg"><?image-name HSR2-6-e1745-g002.jpg?><?image-size 23158?><?image-md5 d78afb86a51421e117243bb34184602f?><?image-image-server-status NEVER_LOAD?><?image-original-height 346?><?image-original-width 450?><?image-scaled-height 346?><?image-scaled-width 450?><?image-cloudpmc-urn urn:cdn:blobs/eb97/10709659/d78afb86a514/HSR2-6-e1745-g002.jpg?><?thumb-name HSR2-6-e1745-g002.gif?><?thumb-size 1727?><?thumb-md5 01ee946e4c8e2f974d894df88d6ec283?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 104?><?thumb-cloudpmc-urn urn:cdn:blobs/eb97/10709659/01ee946e4c8e/HSR2-6-e1745-g002.gif?></graphic></fig></sec><sec sec-type="discussion" id="hsr21745-sec-0180"><label>4</label><title>DISCUSSION</title><p>Happiness positively and significantly affects performance in the workplace,<xref rid="hsr21745-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref> so it can lead to the better function of clinical students and improve the care of hospitalized patients. Various factors affect happiness. EI is one of the paramount happiness‐facilitating elements.<xref rid="hsr21745-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> The present study evaluated the relationship between happiness and EI in medical students at the clinical stage, which showed a significant positive correlation between these variables. The results also support the relation of happiness with age, gender, personality, and self‐perceptions about somatic health and stress level.</p><p>The limited literature on happiness and EI relation in medical education made our work distinctive.<xref rid="hsr21745-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>, <xref rid="hsr21745-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref> Moreover, it is noteworthy to mention that current research differs from previous projects regarding the use of BEIS‐10 as an EI indicator <xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>, <xref rid="hsr21745-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref>, <xref rid="hsr21745-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref>, <xref rid="hsr21745-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref> and large sample size (multicenter methodology).<xref rid="hsr21745-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>, <xref rid="hsr21745-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="hsr21745-bib-0049" ref-type="bibr">
+<sup>49</sup>
+</xref> Besides, more comparative detail will be elaborated between present and previous studies to clarify the study methodology and justification for conducting a similar project. Firstly, in the current investigation, the Oxford Happiness Questionnaire was applied. It comprises a broader Likert range of answers with a reverse scoring system that, in comparison to the previous study in which the Oxford Happiness Inventory was used, resulted in a more accurate happiness measurement. Also, BIES‐10 aided us in scaling the EI and led to a higher response rate than the previous study in which a 33‐item Siberia Schering questionnaire had been employed. Secondly, the current investigation was conducted on 405 subjects in three medical centers; meanwhile, the former perusal explored the research question in 300 participants in one medical university. Thirdly, two study designs measured different confounding factors in EI and happiness association. The former project appraised age, gender, perceived stress/health status, personality, and educational grade along with EI as the predictors of happiness; nevertheless, present research considered more factors, like sibling, ethnicity, place of living, parental socio‐educational status, living expenses, and perceived burnout/depersonalization feeling in addition to previous elements for happiness evaluation; all these aspects narrate generalizability of the current study result.</p><p>Happiness showed a negative statistically significant relationship with aging in this perusal. Blanchflower<xref rid="hsr21745-bib-0050" ref-type="bibr">
+<sup>50</sup>
+</xref> re‐examined the relationship between various measures of well‐being and happiness with age in 145 countries, confirming the U‐shape curve relation between these variables. It mentioned that the nadir part of the curve is located around midlife, which can be due to exposure to life problems. At this stage of life, people need to undertake responsibility. The consequences of confronting multiple stressors at this stage can stop or even decrease life satisfaction until the brain adapts to the new situation, learns, and allows life satisfaction to increase again.<xref rid="hsr21745-bib-0051" ref-type="bibr">
+<sup>51</sup>
+</xref> However, Steptoe et al.<xref rid="hsr21745-bib-0052" ref-type="bibr">
+<sup>52</sup>
+</xref> believed that the U‐shape pattern is not universal and differs in some parts of the world. Frackowiak et al.<xref rid="hsr21745-bib-0053" ref-type="bibr">
+<sup>53</sup>
+</xref> showed age as a negative predictor of happiness among Polish people. As mentioned in this study, a negative correlation between age and happiness may be due to the participants' age range located in descending part of the U‐shape curve.</p><p>In the current study, happiness showed a positive correlation with the male gender, which contrasts with Meimanat's<xref rid="hsr21745-bib-0054" ref-type="bibr">
+<sup>54</sup>
+</xref> essay. Mahmoodi et al. found that the men students were happier compared to women. These differences may be attributed to social context and cultural norms that may cause gender‐based differences.<xref rid="hsr21745-bib-0055" ref-type="bibr">
+<sup>55</sup>
+</xref> These differences can be attributed to gender‐related roles (such as childbearing, maternal responsibilities, employment, and parenthood) and social support (i.e., emotional, financial, and instrumental), which lead to the diversity in gender base individual happiness.<xref rid="hsr21745-bib-0056" ref-type="bibr">
+<sup>56</sup>
+</xref>
+</p><p>Extraversion is an energetic approach to social life that includes socialization, activeness, resoluteness, and courage. Personality evaluations represented that introverts encounter less pleasure and more pain,<xref rid="hsr21745-bib-0057" ref-type="bibr">
+<sup>57</sup>
+</xref> and on the other hand, researchers revealed that extroverts are happier<xref rid="hsr21745-bib-0057" ref-type="bibr">
+<sup>57</sup>
+</xref>, <xref rid="hsr21745-bib-0058" ref-type="bibr">
+<sup>58</sup>
+</xref>, <xref rid="hsr21745-bib-0059" ref-type="bibr">
+<sup>59</sup>
+</xref> based on different grounds. Affective reactivity is one of the hypotheses that may justify the fact that extroverts are happier. It explains in response to positive or rewarding stimuli (situations where the person receives a reward in exchange for accomplishing a task), extroversions reflect more positive satisfaction, such as happiness.<xref rid="hsr21745-bib-0060" ref-type="bibr">
+<sup>60</sup>
+</xref> Another explaining theory is the Person‐by‐Situation Fit perspective. The group participating in activities is much more gratifying than individually performing; consequently, extroverts with more social interaction experience more happiness. Hence, the direct effect of extroversion on momentary pleasure will be mediated by rewarding activities and social interactions.<xref rid="hsr21745-bib-0061" ref-type="bibr">
+<sup>61</sup>
+</xref> Richițeanu‐Năstase et al. believed that extroverts are happier; nevertheless, education can alter this personality component. They suggested workshops and counseling centers should be held by universities to make students more joyful, social, and efficient.<xref rid="hsr21745-bib-0058" ref-type="bibr">
+<sup>58</sup>
+</xref> Lauriola et al. believed that extroverts are happier than others because they approach life positively and with greater confidence.<xref rid="hsr21745-bib-0062" ref-type="bibr">
+<sup>62</sup>
+</xref> However, the present paper, aligned with the previous investigation,<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> suggests extrovert personality is a potent indicator in every domain of happiness.</p><p>This investigation showed that a less stressful life connects with happiness. Dhingra et al. indicated that a high level of perceived stress leads to a feeling of low psychological well‐being and happiness.<xref rid="hsr21745-bib-0063" ref-type="bibr">
+<sup>63</sup>
+</xref> Mehrzad et al. demonstrated that happiness has a reverse relationship with depression, anxiety, and stress. Stress leads to emotional imbalance and physiological changes in the body, interfering with vital processes and affecting mental health and happiness.<xref rid="hsr21745-bib-0064" ref-type="bibr">
+<sup>64</sup>
+</xref> Csikszentmihalyi explained workflow as an optimal state in which persons eagerly participate in activities regardless of their consequences<xref rid="hsr21745-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref>, <xref rid="hsr21745-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref>; on this occasion, there is a direct balance between our skills and challenges to be in a flow state. If our skills exceed the challenge's requirement, we will get bored; however, overwhelming the challenge demands on our capabilities makes us stressed and anxious.<xref rid="hsr21745-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> Therefore, skill‐boosting educational strategies are necessary to restore the mentioned balance; Lazzari et al., throughout repetitive real‐time data gathering via an ecological momentary survey, figured out that undergraduate healthcare students were more satisfied and with lower stress when they underwent interprofessional education courses, accompanied by more patient care and less fault.<xref rid="hsr21745-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref>
+</p><p>A link between three areas of EI, well‐being (happiness), and career success has been illustrated before.<xref rid="hsr21745-bib-0065" ref-type="bibr">
+<sup>65</sup>
+</xref> The investigation by Badri and his colleagues on young adults demonstrated a robust statistical relationship between EI and happiness.<xref rid="hsr21745-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> Callea et al. conducted a study on 216 participants; They revealed that people with higher levels of EI own more elevated levels of flourishing and happiness.<xref rid="hsr21745-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> Extremera et al. disclosed that coping ability, focus on planning, positive reappraisal, and putting into perspective are bridging pathways between EI, psychological well‐being, and life satisfaction.<xref rid="hsr21745-bib-0066" ref-type="bibr">
+<sup>66</sup>
+</xref> Present perusal confirmed the premise of parallel association between these factors and is consistent with our previous scrutiny.<xref rid="hsr21745-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>
+</p><p>In a systematic review, Kotsou et al.<xref rid="hsr21745-bib-0067" ref-type="bibr">
+<sup>67</sup>
+</xref> demonstrated that among 46 interventional studies for enhancing EI, two of them were dedicated to medical students; meanwhile, four investigations were conducted on the other medical staff. The core of these interventions was postulated based on training; however, different approaches have led to different outcomes. Abe et al.<xref rid="hsr21745-bib-0068" ref-type="bibr">
+<sup>68</sup>
+</xref> held a 2‐h mental health workshop for medical students, and at the end of the intervention, EI didn't change significantly. In contrast, Dugan et al.<xref rid="hsr21745-bib-0069" ref-type="bibr">
+<sup>69</sup>
+</xref> demonstrated that with an 8‐h highly interactive EI training within 7 years, a significant change in EI level appears to correlate with patient satisfaction. In addition, Fletcher et al.<xref rid="hsr21745-bib-0070" ref-type="bibr">
+<sup>70</sup>
+</xref> concluded that 4‐h EI workshops within a 7‐month training program effectively enhance EI in medical students. Therefore, pooled results suggest training workshops (especially in concise sessions within the long interventional period) as the EI boosting strategies in medical students at clinical grade. Planning to promote happiness in these medical staff by enhancing their EI leads to better decision‐making and more prosperity in their job, which subsequently results in better patient care services.</p><p>The cross‐sectional nature of the study design limits the causality claim for the association between EI and happiness and could be better validated through a cohort study; thus, further studies are required. Evaluation of depersonalization and emotional exhaustion in the workplace (burnout) were not carried out by their specific questionnaire (such as the Burnout Assessment Tool or Maslach Burnout Inventory) since the present data questionnaire is lengthy (80 items), and if more questions were added, it would be tedious and may cause the failure to fill out the entire questionnaire (decreasing the response rate); therefore, they were evaluated in self‐perception qualitative mode (First, they read what the feature [e.g., depersonalization] means and then check whether this event happened to them [existed or not] in previous 60 days). This may have affected our result; nevertheless, all efforts were made to alleviate this limitation by evaluating their qualitative values. Yildirim et al.<xref rid="hsr21745-bib-0071" ref-type="bibr">
+<sup>71</sup>
+</xref> exhibited that levels of perceived risk associated with COVID‐19 can harm mental health by stimulating morbidity susceptibility, reducing happiness, and diminishing positive views about self, life, and the future. In addition, COVID‐19, through causing burnout among health workers, alleviated happiness levels<xref rid="hsr21745-bib-0072" ref-type="bibr">
+<sup>72</sup>
+</xref>, <xref rid="hsr21745-bib-0073" ref-type="bibr">
+<sup>73</sup>
+</xref>; although, in this investigation, the impact of the COVID‐19 pandemic on happiness was not proved. Such a result may have arisen due to the cross‐sectional methodology limitation; long period follow‐up for a more precise conclusion is needed.</p></sec><sec sec-type="conclusions" id="hsr21745-sec-0190"><label>5</label><title>CONCLUSION</title><p>Present perusal introduced EI, age, gender, personality, and self‐perception (about somatic health and stress level) as independent predictors of happiness in clinical medical students. These outcomes convey some concepts. Diminishing the stresses in life approaches could help medical students to have happier lives. Women, introverts, and those of higher age are more prone to lower happiness levels; hence, these vulnerable individuals should be noted as the targeted population in happiness‐boosting strategies. Further studies, with long‐term follow‐up (cohort setting) and more comprehensive population study (participants from all medical stages), are recommended to explore the association of EI and happiness more accurately.</p></sec><sec id="hsr21745-sec-0210"><title>AUTHOR CONTRIBUTIONS</title><p>
+<bold>Mohammad Reza Hatamnejad</bold>: Conceptualization; Data curation; Formal analysis; Investigation; Methodology; Resources; Software; Validation; Visualization; Writing—original draft; Writing—review &amp; editing. <bold>Morteza Hosseinpour</bold>: Investigation; Methodology; Writing—original draft; Writing—review &amp; editing. <bold>Samin Shiati</bold>: Data curation; Investigation; Project administration; Writing—original draft; Writing—review &amp; editing. <bold>Asal Seifaee</bold>: Data curation; Writing—original draft; Writing—review &amp; editing. <bold>Mohammad Sayari</bold>: Formal analysis; Software. <bold>Faranak Seyyedi</bold>: Conceptualization; Investigation; Supervision; Validation; Visualization; Writing—review &amp; editing. <bold>Kamran Bagheri Lankarani</bold>: Conceptualization; Methodology; Project administration; Supervision; Writing—original draft; Writing—review &amp; editing. <bold>Sulmaz Ghahramani</bold>: Conceptualization; Investigation; Methodology; Project administration; Supervision; Writing—review &amp; editing.</p></sec><sec id="hsr21745-sec-0200"><title>ETHICAL APPROVAL</title><p>All patients gave written informed consent before the study. The Shiraz University ethics committee approved the study protocol (ethics code: IR. SUMS. REC.1400.828). Participants declared their agreement in the written informed consent for publication.</p></sec><sec id="hsr21745-sec-0240"><title>TRANSPARENCY STATEMENT</title><p>The lead author Sulmaz Ghahramani affirms that this manuscript is an honest, accurate, and transparent account of the study being reported; that no important aspects of the study have been omitted; and that any discrepancies from the study as planned (and, if relevant, registered) have been explained.</p></sec></body><back><sec sec-type="data-availability" id="hsr21745-sec-0230"><title>DATA AVAILABILITY STATEMENT</title><p>The datasets used and/or analyzed during the current study are available in figshare repository via the DOI: 10.6084/m9. figshare.23291780.</p></sec><ref-list content-type="cited-references" id="hsr21745-bibl-0001"><title>REFERENCES</title><ref id="hsr21745-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="hsr21745-cit-0001">
+<string-name name-style="western">
+<surname>Guerra‐Bustamante</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>León‐Del‐Barco</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yuste‐Tosina</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>López‐Ramos</surname>
+<given-names>VM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mendo‐Lázaro</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Emotional intelligence and psychological well‐being in adolescents</article-title>. <source>Int J Environ Res Public Health</source>. <year>2019</year>;<volume>16</volume>(<issue>10</issue>):<fpage>1720</fpage>.<pub-id pub-id-type="pmid">31100799</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijerph16101720</pub-id><pub-id pub-id-type="pmcid">PMC6572191</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="hsr21745-cit-0002">
+<string-name name-style="western">
+<surname>Abdollahi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abu Talib</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Motalebi</surname>
+<given-names>SA</given-names>
+</string-name>. <article-title>Emotional intelligence and depressive symptoms as predictors of happiness among adolescents</article-title>. <source>Iran J Psychiatry Behav Sci</source>. <year>2015</year>;<volume>9</volume>(<issue>4</issue>):<elocation-id>e2268</elocation-id>.<pub-id pub-id-type="pmid">26834804</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.17795/ijpbs-2268</pub-id><pub-id pub-id-type="pmcid">PMC4733308</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="hsr21745-cit-0003">
+<string-name name-style="western">
+<surname>Tan</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abdin</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shahwan</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Happiness and cognitive impairment among older adults: investigating the mediational roles of disability, depression, social contact frequency, and loneliness</article-title>. <source>Int J Environ Res Public Health</source>. <year>2019</year>;<volume>16</volume>(<issue>24</issue>):<fpage>4954</fpage>.<pub-id pub-id-type="pmid">31817633</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijerph16244954</pub-id><pub-id pub-id-type="pmcid">PMC6950127</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="hsr21745-cit-0004">
+<string-name name-style="western">
+<surname>Badri</surname>
+<given-names>SKZ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kong</surname>
+<given-names>MY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wan Mohd Yunus</surname>
+<given-names>WMA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nordin</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yap</surname>
+<given-names>WM</given-names>
+</string-name>. <article-title>Trait emotional intelligence and happiness of young adults: the mediating role of perfectionism</article-title>. <source>Int J Environ Res Public Health</source>. <year>2021</year>;<volume>18</volume>(<issue>20</issue>):<elocation-id>10800</elocation-id>.<pub-id pub-id-type="pmid">34682544</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijerph182010800</pub-id><pub-id pub-id-type="pmcid">PMC8536024</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="hsr21745-cit-0005">
+<string-name name-style="western">
+<surname>Salovey</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mayer</surname>
+<given-names>JD</given-names>
+</string-name>. <article-title>Emotional intelligence</article-title>. <source>Imagin Cogn Personality</source>. <year>1990</year>;<volume>9</volume>(<issue>3</issue>):<fpage>185</fpage>‐<lpage>211</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/00223891.1990.9674037</pub-id><pub-id pub-id-type="pmid">2348356</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="hsr21745-cit-0006">
+<string-name name-style="western">
+<surname>Farrahi</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kafi</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karimi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Delazar</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Emotional intelligence and its relationship with general health among the students of University of Guilan, Iran</article-title>. <source>Iran J Psychiatry Behav Sci</source>. <year>2015</year>;<volume>9</volume>(<issue>3</issue>):<elocation-id>e1582</elocation-id>.<pub-id pub-id-type="pmid">26576167</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.17795/ijpbs-1582</pub-id><pub-id pub-id-type="pmcid">PMC4644614</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="hsr21745-cit-0007">
+<string-name name-style="western">
+<surname>Fata</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mootabi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shakiba</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barooti</surname>
+<given-names>E</given-names>
+</string-name>. <article-title>Social‐emotional intelligence as predictor of general mental health</article-title>. <source>J Psychol Studies</source>. <year>2008</year>;<volume>4</volume>(<issue>2</issue>):<fpage>101</fpage>‐<lpage>124</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="hsr21745-cit-0008">
+<string-name name-style="western">
+<surname>Csikszentmihalyi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>LeFevre</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Optimal experience in work and leisure</article-title>. <source>J Pers Soc Psychol</source>. <year>1989</year>;<volume>56</volume>(<issue>5</issue>):<fpage>815</fpage>‐<lpage>822</lpage>.<pub-id pub-id-type="pmid">2724069</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1037//0022-3514.56.5.815</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0009"><label>9</label><mixed-citation publication-type="book" id="hsr21745-cit-0009">
+<string-name name-style="western">
+<surname>Csikszentmihalyi</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Beyond boredom and anxiety</article-title>. <publisher-loc>San Francisco, CA, US</publisher-loc>: <publisher-name>Jossey‐Bass</publisher-name>; <year>2000</year>.</mixed-citation></ref><ref id="hsr21745-bib-0010"><label>10</label><mixed-citation publication-type="book" id="hsr21745-cit-0010">
+<string-name name-style="western">
+<surname>Csikszentmihalyi</surname>
+<given-names>M</given-names>
+</string-name>. <source>Flow: The classic work on how to achieve happiness</source>. <publisher-name>Random House</publisher-name>; <year>2002</year>.</mixed-citation></ref><ref id="hsr21745-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="hsr21745-cit-0011">
+<string-name name-style="western">
+<surname>Lazzari</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McAleer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nusair</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rabottini</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Psychiatric training during covid‐19 pandemic benefits from integrated practice in interprofessional teams and ecological momentary e‐assessment</article-title>. <source>Rivista di psichiatria</source>. <year>2021</year>;<volume>56</volume>(<issue>2</issue>):<fpage>74</fpage>‐<lpage>84</lpage>.<pub-id pub-id-type="pmid">33899828</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1708/3594.35765</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="hsr21745-cit-0012">
+<string-name name-style="western">
+<surname>Naseem</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Job stress, happiness and life satisfaction: the moderating role of emotional intelligence empirical study in telecommunication sector Pakistan</article-title>. <source>J Soc Sci Humanity Stud</source>. <year>2018</year>;<volume>4</volume>(<issue>1</issue>):<fpage>7</fpage>‐<lpage>14</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="hsr21745-cit-0013">
+<string-name name-style="western">
+<surname>Callea</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Rosa</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferri</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lipari</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Costanzi</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Are more intelligent people happier? emotional intelligence as mediator between need for relatedness, happiness and flourishing</article-title>. <source>Sustainability</source>. <year>2019</year>;<volume>11</volume>(<issue>4</issue>):<fpage>1022</fpage>.</mixed-citation></ref><ref id="hsr21745-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="hsr21745-cit-0014">
+<string-name name-style="western">
+<surname>Ghajarzadeh</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mohammadifar</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Emotional intelligence of medical residents of Tehran University of Medical Sciences</article-title>. <source>Acta Med Iranica</source>. <year>2013</year>;<volume>51</volume>(<issue>3</issue>):<fpage>185</fpage>‐<lpage>188</lpage>.<pub-id pub-id-type="pmid">23605604</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="hsr21745-cit-0015">
+<string-name name-style="western">
+<surname>Mahmoudi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mahmoudi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shamsaei</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Raeisi Shahraki</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kakaei</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Determination of the level of happiness among students of Shiraz University of medical sciences, Iran</article-title>. <source>J Res Med Dent Sci</source>. <year>2019</year>;<volume>7</volume>(<issue>2</issue>):<fpage>52</fpage>‐<lpage>56</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="hsr21745-cit-0016">
+<string-name name-style="western">
+<surname>Blanchard</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kravets</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schenker</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moore</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Emotional intelligence, burnout, and professional fulfillment in clinical year medical students</article-title>. <source>Med Teach</source>. <year>2021</year>;<volume>43</volume>(<issue>9</issue>):<fpage>1063</fpage>‐<lpage>1069</lpage>.<pub-id pub-id-type="pmid">33929929</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/0142159X.2021.1915468</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="hsr21745-cit-0017">
+<string-name name-style="western">
+<surname>Sfeir</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>El Othman</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barakat</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hallit</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Obeid</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Personality traits and mental health among Lebanese medical students: the mediating role of emotional intelligence</article-title>. <source>Healthcare</source>. <year>2022</year>;<volume>10</volume>(<issue>12</issue>):<fpage>2516</fpage>.<pub-id pub-id-type="pmid">36554039</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/healthcare10122516</pub-id><pub-id pub-id-type="pmcid">PMC9778120</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="hsr21745-cit-0018">
+<string-name name-style="western">
+<surname>Khan</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gupta</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mishra</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>An assessment and correlation of emotional intelligence and mental health of medical students</article-title>. <source>Ind J Commun Health</source>. <year>2022</year>;<volume>34</volume>(<issue>3</issue>):<fpage>352</fpage>‐<lpage>356</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0019"><label>19</label><mixed-citation publication-type="miscellaneous" id="hsr21745-cit-0019">
+<string-name name-style="western">
+<surname>Ooi</surname>
+<given-names>YJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lim</surname>
+<given-names>SW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cham</surname>
+<given-names>HT</given-names>
+</string-name>. Perceived stress and emotional intelligence as predictors of life satisfaction among undergraduates in Malaysia: UTAR; <year>2022</year>.</mixed-citation></ref><ref id="hsr21745-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="hsr21745-cit-0020">
+<string-name name-style="western">
+<surname>Savita</surname>
+<given-names>KT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shubham</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Akshyata</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Impact of authentic happiness on emotional intelligence among Indians in late adolescence</article-title>. <source>Int J Indian Psychȯl</source>. <year>2022</year>;<volume>8</volume>(<issue>1</issue>):<fpage>629</fpage>‐<lpage>634</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="hsr21745-cit-0021">
+<string-name name-style="western">
+<surname>Elayan</surname>
+<given-names>MB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Albalawi</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shalan</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Al‐Hoorie</surname>
+<given-names>AH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shamout</surname>
+<given-names>MD</given-names>
+</string-name>. <article-title>Perceived manager's emotional intelligence and happiness at work: the mediating role of job satisfaction and affective organizational commitment</article-title>. <source>Organizacija</source>. <year>2023</year>;<volume>56</volume>(<issue>1</issue>):<fpage>18</fpage>‐<lpage>31</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="hsr21745-cit-0022">
+<string-name name-style="western">
+<surname>Fallahian</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aghaei</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Neshat Doost</surname>
+<given-names>HT</given-names>
+</string-name>. <article-title>Developing of the native model of the effective factors on employees' happiness in Mobarakeh Steel Company in Isfahan</article-title>. <source>J Res Behav Sci</source>. <year>2021</year>;<volume>18</volume>(<issue>4</issue>):<fpage>535</fpage>‐<lpage>552</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="hsr21745-cit-0023">
+<string-name name-style="western">
+<surname>Gupta</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaur</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jain</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Happiness, a function of emotional intelligence: an analysis among dental students of faridabad</article-title>. <source>J Positive School Psychol</source>. <year>2022</year>;<volume>6</volume>(<issue>6</issue>):<fpage>8971</fpage>‐<lpage>8976</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="hsr21745-cit-0024">
+<string-name name-style="western">
+<surname>Sasanpour</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khodabakhshi</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nooryan</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>The relationship between emotional intelligence, happiness and mental health in students of medical sciences of Isfahan University</article-title>. <source>Int J Collab Res Intern Med Public Health</source>. <year>2012</year>;<volume>4</volume>(<issue>9</issue>):<fpage>1614</fpage>‐<lpage>1620</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="hsr21745-cit-0025">
+<string-name name-style="western">
+<surname>Ghahramani</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jahromi</surname>
+<given-names>AT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khoshsoroor</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Seifooripour</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sepehrpoor</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>The relationship between emotional intelligence and happiness in medical students</article-title>. <source>Korean J Med Educ</source>. <year>2019</year>;<volume>31</volume>(<issue>1</issue>):<fpage>29</fpage>‐<lpage>38</lpage>.<pub-id pub-id-type="pmid">30852859</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3946/kjme.2019.116</pub-id><pub-id pub-id-type="pmcid">PMC6589629</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="hsr21745-cit-0026">
+<string-name name-style="western">
+<surname>Kulkarni</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sanjeev</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Happiness level among medical students of a medical college</article-title>. <source>Int J Commun Med Public Health</source>. <year>2019</year>;<volume>6</volume>:<fpage>3024</fpage>.</mixed-citation></ref><ref id="hsr21745-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="hsr21745-cit-0027">
+<string-name name-style="western">
+<surname>Kulkarni</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chincholikar</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Happiness level among medical students of a medical college</article-title>. <source>IMSEAR</source>. <year>2019</year>;<volume>6</volume>:<elocation-id>sea‐201561</elocation-id>.</mixed-citation></ref><ref id="hsr21745-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="hsr21745-cit-0028">
+<string-name name-style="western">
+<surname>Sar</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Türk</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Öztürk</surname>
+<given-names>E</given-names>
+</string-name>. <article-title>Fear of happiness among college students: the role of gender, childhood psychological trauma, and dissociation</article-title>. <source>Indian J Psychiatry</source>. <year>2019</year>;<volume>61</volume>(<issue>4</issue>):<fpage>389</fpage>‐<lpage>394</lpage>.<pub-id pub-id-type="pmid">31391643</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4103/psychiatry.IndianJPsychiatry_52_17</pub-id><pub-id pub-id-type="pmcid">PMC6657544</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="hsr21745-cit-0029">
+<string-name name-style="western">
+<surname>Fontana</surname>
+<given-names>MCP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Generoso</surname>
+<given-names>IP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sizilio</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bivanco‐Lima</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Burnout syndrome, extracurricular activities and social support among Brazilian internship medical students: a cross‐sectional analysis</article-title>. <source>BMC Med Educ</source>. <year>2020</year>;<volume>20</volume>(<issue>1</issue>):<fpage>81</fpage>.<pub-id pub-id-type="pmid">32188433</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12909-020-01998-6</pub-id><pub-id pub-id-type="pmcid">PMC7081526</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="hsr21745-cit-0030">
+<string-name name-style="western">
+<surname>Brackett</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mayer</surname>
+<given-names>JD</given-names>
+</string-name>. <article-title>Convergent, discriminant, and incremental validity of competing measures of emotional intelligence</article-title>. <source>Pers Soc Psychol Bull</source>. <year>2003</year>;<volume>29</volume>(<issue>9</issue>):<fpage>1147</fpage>‐<lpage>1158</lpage>.<pub-id pub-id-type="pmid">15189610</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0146167203254596</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="hsr21745-cit-0031">
+<string-name name-style="western">
+<surname>Ruiz‐Aranda</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Extremera</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pineda‐Galán</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Emotional intelligence, life satisfaction and subjective happiness in female student health professionals: the mediating effect of perceived stress</article-title>. <source>J Psychiatr Ment Health Nurs</source>. <year>2014</year>;<volume>21</volume>(<issue>2</issue>):<fpage>106</fpage>‐<lpage>113</lpage>.<pub-id pub-id-type="pmid">23578272</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/jpm.12052</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="hsr21745-cit-0032">
+<string-name name-style="western">
+<surname>Augusto Landa</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>López‐Zafra</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Berrios Martos</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aguilar‐Luzón</surname>
+<given-names>MC</given-names>
+</string-name>. <article-title>The relationship between emotional intelligence, occupational stress and health in nurses: a questionnaire survey</article-title>. <source>Int J Nurs Stud</source>. <year>2008</year>;<volume>45</volume>(<issue>6</issue>):<fpage>888</fpage>‐<lpage>901</lpage>.<pub-id pub-id-type="pmid">17509597</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijnurstu.2007.03.005</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="hsr21745-cit-0033">
+<string-name name-style="western">
+<surname>Nicholas</surname>
+<given-names>PK</given-names>
+</string-name>. <article-title>Hardiness, self‐care practices and perceived health status in older adults</article-title>. <source>J Adv Nurs</source>. <year>1993</year>;<volume>18</volume>(<issue>7</issue>):<fpage>1085</fpage>‐<lpage>1094</lpage>.<pub-id pub-id-type="pmid">8370898</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1046/j.1365-2648.1993.18071085.x</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="hsr21745-cit-0034">
+<string-name name-style="western">
+<surname>Lesage</surname>
+<given-names>FX</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Berjot</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deschamps</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Clinical stress assessment using a visual analogue scale</article-title>. <source>Occup Med</source>. <year>2012</year>;<volume>62</volume>(<issue>8</issue>):<fpage>600</fpage>‐<lpage>605</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/occmed/kqs140</pub-id><pub-id pub-id-type="pmid">22965867</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="hsr21745-cit-0035">
+<string-name name-style="western">
+<surname>Abdolkarimi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Masoomi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lotfipur</surname>
+<given-names>SS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zakeri</surname>
+<given-names>MA</given-names>
+</string-name>. <article-title>The relationship between spiritual health and happiness in medical students during the COVID‐19 outbreak: a survey in southeastern Iran</article-title>. <source>Front Psychol</source>. <year>2022</year>;<volume>13</volume>:<elocation-id>974697</elocation-id>.<pub-id pub-id-type="pmid">36033099</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fpsyg.2022.974697</pub-id><pub-id pub-id-type="pmcid">PMC9404234</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="hsr21745-cit-0036">
+<string-name name-style="western">
+<surname>Assari</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Najand</surname>
+<given-names>B</given-names>
+</string-name>. <article-title>Immigration, educational attainment, and happiness in Europe</article-title>. <source>J Int J Travel Med Global Health</source>. <year>2022</year>;<volume>10</volume>(<issue>4</issue>):<fpage>137</fpage>‐<lpage>146</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="hsr21745-cit-0037">
+<string-name name-style="western">
+<surname>Schutte</surname>
+<given-names>NS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Malouff</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hall</surname>
+<given-names>LE</given-names>
+</string-name>, et al. <article-title>Development and validation of a measure of emotional intelligence</article-title>. <source>Pers Individ Dif</source>. <year>1998</year>;<volume>25</volume>(<issue>2</issue>):<fpage>167</fpage>‐<lpage>177</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="hsr21745-cit-0038">
+<string-name name-style="western">
+<surname>Davies</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lane</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Devonport</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Scott</surname>
+<given-names>JA</given-names>
+</string-name>. <article-title>Validity and reliability of a Brief Emotional Intelligence Scale (BEIS‐10)</article-title>. <source>J Indiv Diff</source>. <year>2010</year>;<volume>31</volume>:<fpage>198</fpage>‐<lpage>208</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="hsr21745-cit-0039">
+<string-name name-style="western">
+<surname>Hadadian‐Chaghaei</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Haghani</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Feizi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Taleghani</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alimohammadi</surname>
+<given-names>N</given-names>
+</string-name>. <article-title>Transcultural adaptation and validation of the Persian version of the Brief Emotional Intelligence Scale</article-title>. <source>J Res Med Sci</source>. <year>2021</year>;<volume>26</volume>:<fpage>73</fpage>.<pub-id pub-id-type="pmid">34759990</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4103/jrms.JRMS_1250_20</pub-id><pub-id pub-id-type="pmcid">PMC8548899</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="hsr21745-cit-0040">
+<string-name name-style="western">
+<surname>Hills</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Argyle</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>The Oxford Happiness Questionnaire: a compact scale for the measurement of psychological well‐being</article-title>. <source>Pers Individ Dif</source>. <year>2002</year>;<volume>33</volume>(<issue>7</issue>):<fpage>1073</fpage>‐<lpage>1082</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="hsr21745-cit-0041">
+<string-name name-style="western">
+<surname>Mahmoud</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gholamreza</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Solmaz</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mansoureh</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nosrat</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Psychometric properties of farsi version of the Oxford happiness questionnaire among college students</article-title>. <source>Train Measur</source>. <year>2013</year>;<volume>3</volume>(<issue>10</issue>):<fpage>55</fpage>‐<lpage>73</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="hsr21745-cit-0042">
+<string-name name-style="western">
+<surname>Quan</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Valdez</surname>
+<given-names>EA</given-names>
+</string-name>. <article-title>Predictive analytics of insurance claims using multivariate decision trees</article-title>. <source>Depend Model</source>. <year>2018</year>;<volume>6</volume>(<issue>1</issue>):<fpage>377</fpage>‐<lpage>407</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="hsr21745-cit-0043">
+<string-name name-style="western">
+<surname>Friedman</surname>
+<given-names>JH</given-names>
+</string-name>. <article-title>Greedy function approximation: a gradient boosting machine</article-title>. <source>Ann Statistics</source>. <year>2001</year>;<volume>29</volume>(<issue>5</issue>):<fpage>1189</fpage>‐<lpage>1232</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="hsr21745-cit-0044">
+<string-name name-style="western">
+<surname>Bataineh</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Impact of work‐life balance, happiness at work, on employee performance</article-title>. <source>Int Bus Res</source>. <year>2019</year>;<volume>12</volume>:<fpage>99</fpage>.</mixed-citation></ref><ref id="hsr21745-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="hsr21745-cit-0045">
+<string-name name-style="western">
+<surname>Beierle</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kirkpatrick</surname>
+<given-names>BA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heidel</surname>
+<given-names>RE</given-names>
+</string-name>, et al. <article-title>Evaluating and exploring variations in surgical resident emotional intelligence and burnout</article-title>. <source>J Surg Educ</source>. <year>2019</year>;<volume>76</volume>(<issue>3</issue>):<fpage>628</fpage>‐<lpage>636</lpage>.<pub-id pub-id-type="pmid">30658946</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jsurg.2018.11.004</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="hsr21745-cit-0046">
+<string-name name-style="western">
+<surname>Acosta‐Prado</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zárate‐Torres</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tafur‐Mendoza</surname>
+<given-names>AA</given-names>
+</string-name>. <article-title>Psychometric properties of the Wong and Law Emotional Intelligence Scale in a Colombian manager sample</article-title>. <source>J Intell</source>. <year>2022</year>;<volume>10</volume>(<issue>2</issue>):<fpage>29</fpage>.<pub-id pub-id-type="pmid">35645238</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jintelligence10020029</pub-id><pub-id pub-id-type="pmcid">PMC9150008</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="hsr21745-cit-0047">
+<string-name name-style="western">
+<surname>Abe</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niwa</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fujisaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Suzuki</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Associations between emotional intelligence, empathy and personality in Japanese medical students</article-title>. <source>BMC Med Educ</source>. <year>2018</year>;<volume>18</volume>(<issue>1</issue>):<fpage>47</fpage>.<pub-id pub-id-type="pmid">29587725</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12909-018-1165-7</pub-id><pub-id pub-id-type="pmcid">PMC5870303</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="hsr21745-cit-0048">
+<string-name name-style="western">
+<surname>Abdollahpour</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nedjat</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Besharat</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hosseini</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Salimi</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Emotional intelligence: a comparison between medical and non‐medical students</article-title>. <source>Iran J Publ Health</source>. <year>2016</year>;<volume>45</volume>(<issue>2</issue>):<fpage>214</fpage>‐<lpage>222</lpage>.<pub-id pub-id-type="pmcid">PMC4841876</pub-id><pub-id pub-id-type="pmid">27114986</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="hsr21745-cit-0049">
+<string-name name-style="western">
+<surname>Daniel‐González</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moral‐de la Rubia</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Valle‐de la</surname>
+<given-names>OA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martínez‐Martí</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name name-style="western">
+<surname>García‐Cadena</surname>
+<given-names>CH</given-names>
+</string-name>. <article-title>A predictive model of happiness among medical students</article-title>. <source>Curr Psychol</source>. <year>2021</year>;<volume>4</volume>(<issue>1</issue>):<fpage>1</fpage>‐<lpage>12</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="hsr21745-cit-0050">
+<string-name name-style="western">
+<surname>Blanchflower</surname>
+<given-names>DG</given-names>
+</string-name>. <article-title>Is happiness U‐shaped everywhere? Age and subjective well‐being in 145 countries</article-title>. <source>J Popul Econ</source>. <year>2021</year>;<volume>34</volume>(<issue>2</issue>):<fpage>575</fpage>‐<lpage>624</lpage>.<pub-id pub-id-type="pmid">32929308</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00148-020-00797-z</pub-id><pub-id pub-id-type="pmcid">PMC7480662</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="hsr21745-cit-0051">
+<string-name name-style="western">
+<surname>Karwetzky</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Michaelsen</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Werdecker</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Esch</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>The U‐curve of happiness revisited: correlations and differences in life satisfaction over the span of life‐an empirical evaluation based on data from 1,597 individuals aged 12‐94 in Germany</article-title>. <source>Front Psychol</source>. <year>2022</year>;<volume>13</volume>:<elocation-id>837638</elocation-id>.<pub-id pub-id-type="pmid">35572301</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fpsyg.2022.837638</pub-id><pub-id pub-id-type="pmcid">PMC9096900</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="hsr21745-cit-0052">
+<string-name name-style="western">
+<surname>Steptoe</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deaton</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stone</surname>
+<given-names>AA</given-names>
+</string-name>. <article-title>Subjective wellbeing, health, and ageing</article-title>. <source>The Lancet</source>. <year>2015</year>;<volume>385</volume>(<issue>9968</issue>):<fpage>640</fpage>‐<lpage>648</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S0140-6736(13)61489-0</pub-id><pub-id pub-id-type="pmcid">PMC4339610</pub-id><pub-id pub-id-type="pmid">25468152</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="hsr21745-cit-0053">
+<string-name name-style="western">
+<surname>Frackowiak</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oleszkiewicz</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Butovskaya</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Subjective happiness among Polish and Hadza people</article-title>. <source>Front Psychol</source>. <year>2020</year>;<volume>11</volume>:<fpage>1173</fpage>.<pub-id pub-id-type="pmid">32581967</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fpsyg.2020.01173</pub-id><pub-id pub-id-type="pmcid">PMC7296072</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="hsr21745-cit-0054">
+<string-name name-style="western">
+<surname>Tabbodi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rahgozar</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mozaffari Makki Abadi</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>The relationship between happiness and academic achievements</article-title>. <source>J Eur Online J Nat Soc Sci</source>. <year>2015</year>;<volume>4</volume>:<fpage>241</fpage>‐<lpage>246</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="hsr21745-cit-0055">
+<string-name name-style="western">
+<surname>Mahmoodi</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nadrian</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Javid</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Factors associated with happiness among college students: do academic self‐efficacy and stress predict happiness</article-title>. <source>Int J Happ Develop</source>. <year>2019</year>;<volume>5</volume>:<fpage>14</fpage>.</mixed-citation></ref><ref id="hsr21745-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="hsr21745-cit-0056">
+<string-name name-style="western">
+<surname>Hori</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kamo</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Gender differences in happiness: the effects of marriage, social roles, and social support in East Asia</article-title>. <source>Appl Res Qual Life</source>. <year>2018</year>;<volume>13</volume>(<issue>4</issue>):<fpage>839</fpage>‐<lpage>857</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="hsr21745-cit-0057">
+<string-name name-style="western">
+<surname>Bagherian</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mojembari</surname>
+<given-names>AK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Naghibian</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nik</surname>
+<given-names>SF</given-names>
+</string-name>. <article-title>The relationship between happiness and self‐awareness among introverts and extroverts</article-title>. <source>Psychology</source>. <year>2016</year>;<volume>07</volume>:<fpage>1119</fpage>‐<lpage>1125</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="hsr21745-cit-0058">
+<string-name name-style="western">
+<surname>Richițeanu‐Năstase</surname>
+<given-names>ER</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stăiculescu</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Are extrovert people more satisfied with life? Case study</article-title>. <source>Mental Health Global Challenges J</source>. <year>2019</year>;<volume>1</volume>(<issue>1</issue>):<fpage>68</fpage>‐<lpage>70</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="hsr21745-cit-0059">
+<string-name name-style="western">
+<surname>Salary</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shaieri</surname>
+<given-names>MR</given-names>
+</string-name>. <article-title>Study of the relationship between happiness and dimensions of psychosis, neurosis and personality extraversion</article-title>. <source>Proc Soc Behav Sci</source>. <year>2013</year>;<volume>84</volume>:<fpage>1143</fpage>‐<lpage>1148</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="hsr21745-cit-0060">
+<string-name name-style="western">
+<surname>Lucas</surname>
+<given-names>RE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baird</surname>
+<given-names>BM</given-names>
+</string-name>. <article-title>Extraversion and emotional reactivity</article-title>. <source>J Pers Soc Psychol</source>. <year>2004</year>;<volume>86</volume>(<issue>3</issue>):<fpage>473</fpage>‐<lpage>485</lpage>.<pub-id pub-id-type="pmid">15008650</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1037/0022-3514.86.3.473</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="hsr21745-cit-0061">
+<string-name name-style="western">
+<surname>Oerlemans</surname>
+<given-names>WGM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bakker</surname>
+<given-names>AB</given-names>
+</string-name>. <article-title>Why extraverts are happier: a day reconstruction study</article-title>. <source>J Res Pers</source>. <year>2014</year>;<volume>50</volume>:<fpage>11</fpage>‐<lpage>22</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="hsr21745-cit-0062">
+<string-name name-style="western">
+<surname>Lauriola</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Iani</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Does positivity mediate the relation of extraversion and neuroticism with subjective happiness?</article-title>
+<source>PLoS One</source>. <year>2015</year>;<volume>10</volume>(<issue>3</issue>):<elocation-id>e0121991</elocation-id>.<pub-id pub-id-type="pmid">25781887</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0121991</pub-id><pub-id pub-id-type="pmcid">PMC4363494</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0063"><label>63</label><mixed-citation publication-type="journal" id="hsr21745-cit-0063">
+<string-name name-style="western">
+<surname>Dhingra</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dhingra</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Effect of perceived stress on psychological well‐being of health care workers during COVID 19: mediating role of subjective happiness</article-title>. <source>Eur J Mol Clin Med</source>. <year>2020</year>;<volume>7</volume>(<issue>2</issue>):<fpage>3683</fpage>‐<lpage>3701</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0064"><label>64</label><mixed-citation publication-type="journal" id="hsr21745-cit-0064">
+<string-name name-style="western">
+<surname>Mehrzad</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yazdanpanah</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arab</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ghasemi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Radfar</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Relationship between stress, anxiety, and depression with happiness in students of Bam medical university in 2019</article-title>. <source>J Adv Pharm Educ Res</source>. <year>2022</year>;<volume>12</volume>(<issue>2</issue>):<fpage>51</fpage>‐<lpage>56</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0065"><label>65</label><mixed-citation publication-type="journal" id="hsr21745-cit-0065">
+<string-name name-style="western">
+<surname>Villagran</surname>
+<given-names>MAL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Academic librarians: their understanding and use of emotional intelligence and happiness</article-title>. <source>J Acad Librarianship</source>. <year>2022</year>;<volume>48</volume>:<elocation-id>102466</elocation-id>.</mixed-citation></ref><ref id="hsr21745-bib-0066"><label>66</label><mixed-citation publication-type="journal" id="hsr21745-cit-0066">
+<string-name name-style="western">
+<surname>Extremera</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sánchez‐Álvarez</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rey</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Pathways between ability emotional intelligence and subjective well‐being: bridging links through cognitive emotion regulation strategies</article-title>. <source>Sustainability</source>. <year>2020</year>;<volume>12</volume>(<issue>5</issue>):<fpage>2111</fpage>.</mixed-citation></ref><ref id="hsr21745-bib-0067"><label>67</label><mixed-citation publication-type="journal" id="hsr21745-cit-0067">
+<string-name name-style="western">
+<surname>Kotsou</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mikolajczak</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heeren</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grégoire</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leys</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Improving emotional intelligence: a systematic review of existing work and future challenges</article-title>. <source>Emotion Rev</source>. <year>2019</year>;<volume>11</volume>(<issue>2</issue>):<fpage>151</fpage>‐<lpage>165</lpage>.</mixed-citation></ref><ref id="hsr21745-bib-0068"><label>68</label><mixed-citation publication-type="journal" id="hsr21745-cit-0068">
+<string-name name-style="western">
+<surname>Abe</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Evans</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Austin</surname>
+<given-names>EJ</given-names>
+</string-name>, et al. <article-title>Expressing one's feelings and listening to others increases emotional intelligence: a pilot study of Asian medical students</article-title>. <source>BMC Med Educ</source>. <year>2013</year>;<volume>13</volume>:<fpage>82</fpage>.<pub-id pub-id-type="pmid">23742245</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/1472-6920-13-82</pub-id><pub-id pub-id-type="pmcid">PMC3685545</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0069"><label>69</label><mixed-citation publication-type="journal" id="hsr21745-cit-0069">
+<string-name name-style="western">
+<surname>Dugan</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weatherly</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Girod</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barber</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tsue</surname>
+<given-names>TT</given-names>
+</string-name>. <article-title>A longitudinal study of emotional intelligence training for otolaryngology residents and faculty</article-title>. <source>JAMA Otolaryngol Head Neck Surg</source>. <year>2014</year>;<volume>140</volume>(<issue>8</issue>):<fpage>720</fpage>‐<lpage>726</lpage>.<pub-id pub-id-type="pmid">25011036</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamaoto.2014.1169</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0070"><label>70</label><mixed-citation publication-type="journal" id="hsr21745-cit-0070">
+<string-name name-style="western">
+<surname>Fletcher</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leadbetter</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Curran</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>O'Sullivan</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>A pilot study assessing emotional intelligence training and communication skills with 3rd year medical students</article-title>. <source>Patient Educ Couns</source>. <year>2009</year>;<volume>76</volume>(<issue>3</issue>):<fpage>376</fpage>‐<lpage>379</lpage>.<pub-id pub-id-type="pmid">19674861</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.pec.2009.07.019</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0071"><label>71</label><mixed-citation publication-type="journal" id="hsr21745-cit-0071">
+<string-name name-style="western">
+<surname>Yıldırım</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Güler</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Positivity explains how COVID‐19 perceived risk increases death distress and reduces happiness</article-title>. <source>Pers Individ Dif</source>. <year>2021</year>;<volume>168</volume>:<elocation-id>110347</elocation-id>.<pub-id pub-id-type="pmid">32843780</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.paid.2020.110347</pub-id><pub-id pub-id-type="pmcid">PMC7439822</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0072"><label>72</label><mixed-citation publication-type="journal" id="hsr21745-cit-0072">
+<string-name name-style="western">
+<surname>Kamali</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kalateh Sadati</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khademi</surname>
+<given-names>MR</given-names>
+</string-name>, et al. <article-title>Burnout among nurses during coronavirus disease 2019 outbreak in Shiraz</article-title>. <source>Galen Med J</source>. <year>2020</year>;<volume>9</volume>:<elocation-id>e1956</elocation-id>.<pub-id pub-id-type="pmid">34466619</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.31661/gmj.v9i0.1956</pub-id><pub-id pub-id-type="pmcid">PMC8343654</pub-id></mixed-citation></ref><ref id="hsr21745-bib-0073"><label>73</label><mixed-citation publication-type="journal" id="hsr21745-cit-0073">
+<string-name name-style="western">
+<surname>Ghahramani</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lankarani</surname>
+<given-names>KB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yousefi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heydari</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shahabi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Azmand</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>A systematic review and meta‐analysis of burnout among healthcare workers during COVID‐19</article-title>. <source>Front Psychiatry</source>. <year>2021</year>;<volume>12</volume>:<elocation-id>758849</elocation-id>.<pub-id pub-id-type="pmid">34858231</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fpsyt.2021.758849</pub-id><pub-id pub-id-type="pmcid">PMC8631719</pub-id></mixed-citation></ref></ref-list></back></article>

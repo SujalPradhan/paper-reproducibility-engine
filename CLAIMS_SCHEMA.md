@@ -32,6 +32,8 @@
 }
 ```
 
+Optional `null_value` sets the no-effect value used for "direction" (default 1 for ratio statistics, else 0).
+
 `tolerance.type` is one of `reported_precision` (default: half a unit of the last reported digit), `abs` (`value`), `rel` (`value` as a fraction). An optional `partial_rel` (default 0.5) sets the largest relative deviation that can still count as Partial. Choose these **before** seeing any reproduced number. If a looser tolerance is justified (stochastic method, rounding in a figure), write the justification in `tolerance.reason`.
 
 ## `papers/<id>/outputs/results.json` — written by the reproduction script itself (not by hand)

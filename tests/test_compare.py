@@ -30,6 +30,10 @@ def test_precision_tolerance():
     assert precision_tolerance("12") == 0.5
     assert abs(precision_tolerance("3.1%") - 0.05) < 1e-12
     assert abs(precision_tolerance("-0.130") - 0.0005) < 1e-12
+    assert precision_tolerance("N = 12,437") == 0.5
+    assert precision_tolerance("0.48 [0.47, 0.49]") == 0.005
+    assert precision_tolerance("−0.06 (CI95 [−0.09, −0.02])") == 0.005
+    assert precision_tolerance(".03") == 0.005
 
 
 def test_reproduced_at_reported_precision_boundary():
@@ -50,6 +54,17 @@ def test_partial_needs_sign_significance_and_magnitude():
     assert judge(claim("0.42"), ok(-0.40))[0] == NOT_REPRODUCED
     assert judge(claim("0.42"), ok(0.10))[0] == NOT_REPRODUCED
     assert judge(claim("0.42", tolerance={"partial_rel": 0.9}), ok(0.10))[0] == PARTIAL
+
+
+def test_direction_uses_null_value_for_ratios():
+    c = claim("0.966")
+    c["statistic"] = "odds ratio"
+    assert judge(c, ok(0.95))[0] == PARTIAL
+    assert judge(c, ok(1.02))[0] == NOT_REPRODUCED
+    c2 = claim("0.48")
+    c2["null_value"] = 0.5
+    assert judge(c2, ok(0.47))[0] == PARTIAL
+    assert judge(c2, ok(0.52))[0] == NOT_REPRODUCED
 
 
 def test_not_reproducible():

@@ -1,0 +1,826 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="cam46970" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style superscripted?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cancer Med</journal-id><journal-id journal-id-type="iso-abbrev">Cancer Med</journal-id><journal-id journal-id-type="pmc-domain-id">1974</journal-id><journal-id journal-id-type="pmc-domain">canmed</journal-id><journal-id journal-id-type="nlm-id">101595310</journal-id><journal-id journal-id-type="publisher-id">CAM4</journal-id><journal-title-group><journal-title>Cancer Medicine</journal-title></journal-title-group><issn pub-type="epub">2045-7634</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC10891462</article-id><article-id pub-id-type="pmcid-ver">PMC10891462.1</article-id><article-id pub-id-type="pmcaid">10891462</article-id><article-id pub-id-type="pmcaiid">10891462</article-id><article-id pub-id-type="pmid">38400685</article-id><article-id pub-id-type="doi">10.1002/cam4.6970</article-id><article-id pub-id-type="publisher-id">CAM46970</article-id><article-id pub-id-type="other">CAM4-2023-10-4800</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Articles</subject></subj-group></article-categories><title-group><article-title>Incidence of immunotherapy‐related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta‐analysis</article-title><alt-title alt-title-type="left-running-head">Kim et al.</alt-title></title-group><contrib-group><contrib id="cam46970-cr-0001" contrib-type="author"><name name-style="western"><surname>Kim</surname><given-names initials="MJ">Min Jeong</given-names></name><xref rid="cam46970-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cam46970-cr-0002" contrib-type="author"><name name-style="western"><surname>Hong</surname><given-names initials="SPD">Seung Pyo D.</given-names></name><xref rid="cam46970-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cam46970-cr-0003" contrib-type="author"><name name-style="western"><surname>Park</surname><given-names initials="Y">Yeonggyeong</given-names></name><xref rid="cam46970-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="cam46970-cr-0004" contrib-type="author" corresp="yes"><name name-style="western"><surname>Chae</surname><given-names initials="YK">Young Kwang</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-1557-7235</contrib-id><xref rid="cam46970-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="cam46970-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>young.chae@northwestern.edu</email></address></contrib></contrib-group><aff id="cam46970-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Medicine</named-content>
+<institution>Northwestern University Feinberg School of Medicine</institution>
+<city>Chicago</city>
+<named-content content-type="country-part">Illinois</named-content>
+<country country="US">USA</country>
+</aff><aff id="cam46970-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Robert H. Lurie Comprehensive Cancer Center</named-content>
+<institution>Northwestern University</institution>
+<city>Chicago</city>
+<named-content content-type="country-part">Illinois</named-content>
+<country country="US">USA</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold>
+<break/>
+Young Kwang Chae, Division of Hematology and Oncology, Department of Medicine, Northwestern University Feinberg School of Medicine, 645 N. Michigan Avenue, Suite 1006, Chicago, IL 60611, USA.<break/>
+Email: <email>young.chae@northwestern.edu</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>24</day><month>2</month><year>2024</year></pub-date><pub-date pub-type="collection"><month>2</month><year>2024</year></pub-date><volume>13</volume><issue seq="60">3</issue><issue-id pub-id-type="pmc-issue-id">456456</issue-id><issue-id pub-id-type="doi">10.1002/cam4.v13.3</issue-id><elocation-id>e6970</elocation-id><history>
+<date date-type="received"><day>03</day><month>10</month><year>2023</year></date>
+<date date-type="accepted"><day>02</day><month>1</month><year>2024</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>24</day><month>02</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>25</day><month>02</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-02-25 11:25:10.803"><day>25</day><month>02</month><year>2024</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2024 The Authors. <italic toggle="yes">Cancer Medicine</italic> published by John Wiley &amp; Sons Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="CAM4-13-e6970.pdf"><?pdf-name CAM4-13-e6970.pdf?><?pdf-size 2796068?><?pdf-md5 fe14a8aa0994a3fbac87854a8860b952?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:f79d/10891462/fe14a8aa0994/CAM4-13-e6970.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:CAM4-13-e6970.pdf"/><abstract><title>Abstract</title><sec id="cam46970-sec-0001"><title>Background</title><p>While evidence of hyperprogressive disease (HPD) continues to grow, the lack of a consensual definition obscures a proper characterization of HPD incidence. We examined how HPD incidence varies by the tumor type or the type of definition used.</p></sec><sec id="cam46970-sec-0002"><title>Methods</title><p>We searched PubMed, Embase, the Cochrane Library of Systematic Reviews, and Web of Science from database inception to June 21, 2022. Observational studies reporting HPD incidence, in patients diagnosed with solid malignant tumors and treated with immune checkpoint inhibitors (ICI), were included. Random‐effects meta‐analyses were performed, and all statistical tests were 2‐sided.</p></sec><sec id="cam46970-sec-0003"><title>Results</title><p>HPD incidence was 12.4% (95% CI 10.2%–15.0%) with evidence of heterogeneity (<italic toggle="no">Q</italic> = 119.32, <italic toggle="no">p</italic> &lt; 0.001). Meta‐regression showed that the risk of developing HPD was higher in patients with advanced gastric cancer (adjusted odds ratio [OR], 10.83; 95% CI, 2.14–54.65; <italic toggle="no">p</italic> &lt; 0.001), hepatocellular carcinoma (adjusted OR, 7.99; 95% CI, 1.68–38.13; <italic toggle="no">p</italic> = 0.006), non‐small cell lung cancer (adjusted OR, 7.14; 95% CI, 1.58–32.29; <italic toggle="no">p</italic> = 0.005), and mixed or other types (adjusted OR, 5.09; 95% CI, 1.12–23.14, <italic toggle="no">p</italic> = 0.018) than in patients with renal cell carcinoma. Across definitions, HPD defined as a tumor growth kinetics ratio ≥ 2 (adjusted OR, 1.82; 95% CI, 1.08–3.07; <italic toggle="no">p</italic> = 0.025) based on the Response Evaluation Criteria in Solid Tumors (RECIST) reported higher incidence than when HPD was defined as RECIST‐defined progressive disease and a change in the tumor growth rate (TGR) exceeding 50% (∆TGR &gt; 50).</p></sec><sec id="cam46970-sec-0004"><title>Conclusions</title><p>The incidence of immunotherapy‐related HPD may vary across tumor types and definitions used, supporting the argument for a uniform and improved method of HPD evaluation for informed clinical decision‐making.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cam46970-kwd-0001">antineoplastic agent resistance</kwd><kwd id="cam46970-kwd-0002">immunotherapy</kwd><kwd id="cam46970-kwd-0003">systematic review</kwd></kwd-group><counts><fig-count count="4"/><table-count count="1"/><page-count count="12"/><word-count count="6689"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>February 2024</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.3.8 mode:remove_FC converted:24.02.2024</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="CAM46970-cit-2001">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hong</surname>
+<given-names>SPD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Park</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chae</surname>
+<given-names>YK</given-names>
+</string-name>. <article-title>Incidence of immunotherapy‐related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta‐analysis</article-title>. <source>Cancer Med</source>. <year>2024</year>;<volume>13</volume>:<elocation-id>e6970</elocation-id>. doi:<pub-id pub-id-type="doi">10.1002/cam4.6970</pub-id>
+<pub-id pub-id-type="pmid">38400685</pub-id></mixed-citation>
+</p></notes></front><body id="cam46970-body-0001"><sec id="cam46970-sec-0005"><label>1</label><title>INTRODUCTION</title><p>Immune checkpoint inhibitors (ICI) have revolutionized cancer therapy, demonstrating potential for durable response in a subset of patients across multiple advanced tumor types. At the same time, the past decade of ICI therapy has witnessed novel patterns of response previously unobserved with standard regimens. In particular, a paradoxical acceleration in the rate of tumor growth termed hyperprogressive disease (HPD) has been of increasing interest due to evidence of potential implications on patient prognosis.</p><p>As radiological criteria for objective progression are based on an evaluation of therapeutic efficacy from treatment onset, they are not sufficient to distinguish between a naturally aggressive disease course and a therapy‐related change in the tumor growth kinetics. Thus, a consideration of the pretreatment kinetics of tumor growth has been critical to defining this phenomenon from its earliest descriptions in 2017. A scalar comparison of changes in the longitudinal tumor burden between the treatment period and the pretreatment counterpart, accordingly, has been key in developing approaches to evaluate HPD.</p><p>Several different metrics have been proposed to describe the magnitude of change in the tumor's growth rate before and after immunotherapy in patients experiencing HPD. At the most fundamental level, the difference between these metrics is how the tumor size is quantified—unidimensional and bidimensional measurements, as well as volume estimates based on these measurements—have been used as surrogates for the tumor burden. The tumor growth kinetics (TGK)<xref rid="cam46970-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> calculates a unidimensional change in the tumor size per unit time based on the sum of the diameters of target lesions per Response Evaluation Criteria in Solid Tumours (RECIST). The tumor growth rate (TGR)<xref rid="cam46970-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> utilizes linear measurements of RECIST to estimate a percentage change in the tumor volume per month, based on the assumption that the tumor is roughly spherical and follows an exponential model of growth. The “progression pace”<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> measures a bidimensional change in the tumor size per unit time using the sum of the products of the greatest axial dimensions of target lesions according to the immune‐related response criteria (irRC); another key difference that arises from using irRC instead of RECIST is that new lesions are incorporated into the sum of the measurements.</p><p>Despite the growing body of literature on this phenomenon, HPD continues to lack a standardized definition. Consequently, various operationalizations in the method of HPD evaluation—from the choice of radiological criteria to the quantitative approach in describing the change in tumor growth kinetics—has made challenging a proper interpretation of data. While incidences range from 0% in renal cell carcinoma<xref rid="cam46970-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> to 29% in head and neck squamous cell carcinoma,<xref rid="cam46970-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> it is difficult to determine whether these varying estimates reflect differential tumor‐intrinsic behavior or arise from differences across current definitions of HPD.</p><p>A 2019 meta‐analysis evaluated evidence on HPD incidence and risk factors associated with the phenomenon, although it was limited to nine studies and therefore could not assess potential differences across tumor types or the types of definition used. Another systematic review and meta‐analysis, based only on NSCLC cohorts, reported on predictive clinicopathological factors of HPD and demonstrated an association between HPD patients and worse overall survival. This review included six studies in which no definitions were identical, and two definitions did not incorporate pretreatment tumor kinetics in the evaluation of HPD. The most recent and comprehensive systematic review and meta‐analysis—including a total of 24 studies—conducted subgroup analyses according to the tumor type and four categories of HPD definitions. However, these analyses were limited to two tumor types; additionally, the definitions were classified into broad categories, with varying thresholds and evaluation criteria within each category. The consistency in incidence estimates within and between definitions, which would make possible a robust comparison between tumor types, has yet been documented in any meta‐analytic study.</p><p>The aims of this systematic review were to describe and evaluate the current evidence on HPD across variable definitions integrating pretreatment tumor growth kinetics and to investigate whether the incidence varies by the type of definition or tumor type.</p></sec><sec sec-type="materials-and-methods" id="cam46970-sec-0006"><label>2</label><title>MATERIALS AND METHODS</title><sec id="cam46970-sec-0007"><label>2.1</label><title>This study followed <styled-content style="fixed-case" toggle="no">PRISMA</styled-content> guidelines. The protocol was not registered online</title><sec id="cam46970-sec-0008"><label>2.1.1</label><title>Study eligibility</title><p>The Population, Exposure, Comparator, and Outcome (PECO) framework was used to define the eligibility criteria (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S1</xref>). The eligibility criteria included observational cohort studies in which patients were diagnosed with malignant solid tumors and treated with ICI, evaluated for HPD by a definition that considers the pretreatment tumor growth kinetics, and in which sufficient incidence data with a numerator and denominator were provided. Additionally, non‐English‐language studies were excluded. The search strategy was reviewed according to the Peer Review of Electronic Search Strategies checklist by a clinical informationist (Appendix <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S1</xref>).</p></sec><sec id="cam46970-sec-0009"><label>2.1.2</label><title>Data sources</title><p>One reviewer (MK) conducted the literature search for eligible articles in the scientific and grey literature in PubMed, Embase, Web of Science, and the Cochrane Database of Systematic Reviews from database inception to June 21, 2022. Bibliographies of previous systematic reviews were additionally scanned to identify any additional eligible articles. Database search results were exported into Endnote (version 20.4), where duplicates were removed both electronically and manually.</p></sec><sec id="cam46970-sec-0010"><label>2.1.3</label><title>Study screening</title><p>To assess eligibility, pairs of two reviewers (MK and SH or YP) independently screened each title and abstract, followed by full‐text screening. Any discrepancies were discussed with a third reviewer (SH or YP) to reach a consensus.</p></sec><sec id="cam46970-sec-0011"><label>2.1.4</label><title>Risk of bias assessment</title><p>The study quality and risk of bias for studies included in the meta‐analysis were independently assessed by two authors (MK and SH) based on the Newcastle‐Ottawa Scale. A score greater than or equal to 7 was considered high‐quality. The contour‐enhanced funnel plot and the Egger test were used to assess small‐study effects. The Grading of Recommendations Assessment, Development and Evaluation (GRADE) framework was used to assess the certainty of the primary outcome (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S2</xref>).</p></sec><sec id="cam46970-sec-0012"><label>2.1.5</label><title>Data synthesis</title><p>Data were extracted by one primary reviewer (MK) then independently reviewed by two secondary reviewers (SH and YP). The following data were extracted into an Excel spreadsheet: author, year of publication, study design, study location, study duration, HPD definition and incidence, tumor type, type of therapy, associated clinical and biological factors, and prognosis of patients. In one study<xref rid="cam46970-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> which reported cohorts with urothelial carcinoma (UC) and renal cell carcinoma (RCC) arms, the larger cohort (RCC) was used to avoid correlated data. For studies with overlapping cohorts, the cohort with a longer follow‐up was included. Each study was categorized by the tumor type and the type of definition that was used in order to synthesize and review evidence of associations with incidence both quantitatively and qualitatively.</p><p>The study team made a pragmatic decision to only include studies in which HPD was defined by and evaluated in a method consistent with one of the following three seminal<xref rid="cam46970-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> studies and their respective definitions—(1) RECIST‐defined progressive disease with at least a two‐fold increase in the TGR by Champiat et al<xref rid="cam46970-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> (definition A), (2) at least a two‐fold increase in the RECIST‐based TGK by Saâda Bouzid et al (definition B),<xref rid="cam46970-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> and (3) RECIST‐defined PD with at least a 50% increase in the TGR (ΔTGR&gt;50) by Ferrara et al<xref rid="cam46970-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> (definition C). While the definition proposed by Kato et al<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>—time‐to‐treatment failure (TTF) less than 2 months, a greater than 50% increase in tumor burden after immunotherapy, and a greater than increase in progression pace—is also recognized as one of the main definitions of HPD,<xref rid="cam46970-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> the use of the immune‐related response criteria (irRC) instead of RECIST introduces three major methodological differences in HPD evaluation that complicate quantitative synthesis with the other three definitions. Firstly, Kato et al<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> carried out evaluations for HPD only among patients with TTF &lt;2 months instead of including all patients who were evaluable for tumor growth kinetics analysis (i.e. the availability of all three CT scans) to calculate the incidence. Secondly, a 50% increase in the tumor burden by irRC, which corresponds to the criterion for progression proposed by the Southwest Oncology Group (SWOG), corresponds to a 83.7% increase in the volume of a spherical tumor while RECIST progression corresponds to a 72.8% increase. Thirdly, irRC incorporates new lesions into the sum of the target lesions while RECIST does not.</p><p>Accordingly, studies were not eligible if (1) one of the three definitions were not used, (2) the tumor growth kinetics analysis did not specify the requirement of having three CT scans (pre‐baseline/baseline/post‐baseline), and (3) the radiological criteria used in the study incorporated new lesions into the sum of target lesions. The exclusion criteria was revised to mitigate the methodological heterogeneity arising from various operationalizations of HPD evaluation, enhancing the interpretability and clinical relevance of the current data on HPD. Authors of studies that did not meet the revised eligibility criteria were contacted to request additional information or to request an adjusted incidence according to either definition A, B, or C if possible.</p><p>The primary outcome was the HPD incidence, and meta‐analysis was performed using the generalized linear mixed model, fit using log‐odds transformation and maximum likelihood estimation based on the adaptive Gaussian hermite quadrature. The presence of statistical heterogeneity was assessed using the Cochran <italic toggle="yes">Q</italic> statistic, and the Higgins <italic toggle="yes">I</italic>
+<sup>2</sup> statistic was calculated to measure the degree of heterogeneity arising from true variation in the study effects. Potential sources of heterogeneity across studies were explored in univariable and multivariable meta‐regression analyses for the tumor type and the type of HPD definition, which were established a priori. Tumor types were considered as subgroups only when more than two studies were available.</p><p>For all statistical tests, two‐sided <italic toggle="yes">p</italic> values were reported, and a value less than 0.05 was considered statistically significant. As confidence intervals (CI) based on the normal approximation have been associated with poor coverage for meta‐analyses with a small number of studies or substantial heterogeneity, 95% CIs were estimated using the Student's <italic toggle="yes">t</italic>‐distribution.<xref rid="cam46970-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> 95% prediction intervals were reported to quantify the extent of between‐study variation in the incidences and odds ratios. All analyses were performed using the metafor and meta packages in R version 4.2.1.</p><p>Finally, the threshold inequalities defining HPD—TGK ratio ≥ 2, TGR ratio ≥ 2, and Δ TGR &gt; 50—were expressed such that the change in the tumor burden after immunotherapy is a function of the change in the tumor burden before immunotherapy as previously modeled by Kas et al<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> (additional information can be found in Appendix <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S1</xref>). This graphical representation was used to characterize differences across definitions based on incidence data reported in studies which calculated HPD incidence for different definitions.</p></sec></sec></sec><sec sec-type="results" id="cam46970-sec-0013"><label>3</label><title>RESULTS</title><p>A total of 1619 records were identified through database searches (Figure <xref rid="cam46970-fig-0001" ref-type="fig">1</xref>). After screening and eligibility assessment, a total of three prospective and 31 retrospective observational cohort studies involving a total of 4117 patients in 12 countries were included in the systematic review and meta‐analysis (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S3</xref>).<xref rid="cam46970-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>, <xref rid="cam46970-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref>, <xref rid="cam46970-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>, <xref rid="cam46970-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref>, <xref rid="cam46970-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref>, <xref rid="cam46970-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref>, <xref rid="cam46970-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref>, <xref rid="cam46970-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="cam46970-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="cam46970-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="cam46970-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="cam46970-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>, <xref rid="cam46970-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="cam46970-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref>, <xref rid="cam46970-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref>, <xref rid="cam46970-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref>, <xref rid="cam46970-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref>, <xref rid="cam46970-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref>, <xref rid="cam46970-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>, <xref rid="cam46970-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>, <xref rid="cam46970-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref>, <xref rid="cam46970-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref>, <xref rid="cam46970-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref>, <xref rid="cam46970-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref>, <xref rid="cam46970-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref>, <xref rid="cam46970-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="cam46970-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref>, <xref rid="cam46970-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref>, <xref rid="cam46970-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref>, <xref rid="cam46970-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref>, <xref rid="cam46970-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref>, <xref rid="cam46970-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref>, <xref rid="cam46970-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref>, <xref rid="cam46970-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> A list of excluded studies from the full‐text screening, with reasons for their exclusion, can be found in Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S4</xref>.</p><fig position="float" fig-type="FIGURE" id="cam46970-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>Flow diagram of study inclusion.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="CAM4-13-e6970-g003.jpg"><?image-name CAM4-13-e6970-g003.jpg?><?image-size 38023?><?image-md5 0f674a9368008aafebb83434e582182b?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 627?><?image-original-width 1064?><?image-scaled-height 418?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/f79d/10891462/0f674a936800/CAM4-13-e6970-g003.jpg?><?thumb-name CAM4-13-e6970-g003.gif?><?thumb-size 2806?><?thumb-md5 5b47c1857e9f30e593367e52b3aea434?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 135?><?thumb-cloudpmc-urn urn:cdn:blobs/f79d/10891462/5b47c1857e9f/CAM4-13-e6970-g003.gif?></graphic></fig><p>Given the broad range of operationalizations associated with HPD definitions, the studies were first categorized by the number of metrics used to estimate the tumor growth kinetics in each study. Unlike the original HPD definitions by Champiat et al,<xref rid="cam46970-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> Saâda Bouzid et al,<xref rid="cam46970-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> Ferrara et al,<xref rid="cam46970-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> and Kato et al<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> which proposed a single metric to describe the tumor growth kinetics, six studies<xref rid="cam46970-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="cam46970-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>, <xref rid="cam46970-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="cam46970-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref>, <xref rid="cam46970-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="cam46970-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> used combinations of the TGK ratio, TGR ratio, and ΔTGR to define HPD (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S5</xref>). The studies were further categorized according to the original HPD definition that the study's definition of HPD was based on. Besides using combinations of tumor growth kinetics metrics, other operationalizations of the HPD definition included the following: (1) a change in the threshold values,<xref rid="cam46970-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="cam46970-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="cam46970-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> (2) the addition<xref rid="cam46970-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> or exclusion<xref rid="cam46970-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> of the clinical criterion of time to treatment failure less than 2 months, and (3) the application of unidimensional RECIST<xref rid="cam46970-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref>, <xref rid="cam46970-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>, <xref rid="cam46970-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref> to define a 50% change in the tumor burden, which was originally based on irRC's bidimensional measurements according to Kato et al.<xref rid="cam46970-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>
+</p><p>Studies were also categorized by the tumor type (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S6</xref>). Patients were treated for non‐small cell lung cancer (NSCLC; <italic toggle="yes">n</italic> = 11), hepatocellular carcinoma (HCC; <italic toggle="yes">n</italic> = 5), advanced gastric cancer (AGC; <italic toggle="yes">n</italic> = 3), renal cell carcinoma (RCC; <italic toggle="yes">n</italic> = 3), head and neck squamous cell carcinoma (HNSCC; <italic toggle="yes">n</italic> = 2), melanoma (<italic toggle="yes">n</italic> = 2), sarcoma (<italic toggle="yes">n</italic> = 1), and mixed tumor types (<italic toggle="yes">n</italic> = 7). The quality of included studies was high (NOS score ≥7) in 28 (82.3%) of 34 studies, with a median score of 7.5 (IQR 7–8). Details on the quality assessment according to the Newcastle‐Ottawa Scale are reported in Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S7</xref>.</p><p>Collectively, 34 studies included in the meta‐analysis reported 558 cases of HPD among 4117 patients across seven single tumor types and mixed tumor types. The overall estimated incidence of HPD was 12.4% (95% CI, 10.2%–15.0%) and ranged from 0.0% to 36.73%, with evidence for heterogeneity that was statistically significant (<italic toggle="yes">Q</italic> = 119.32, <italic toggle="yes">p</italic> &lt; 0.001). The moderately high degree of inconsistency (<italic toggle="yes">I</italic>
+<sup>
+<italic toggle="yes">2</italic>
+</sup> = 72%) demonstrated that a substantial proportion of the observed variance in the incidence reflects variance in the true effects, while the wide prediction interval (PI, 4.5%‐29.7%) indicated that the extent of dispersion in the true effects is non‐negligible. The Egger test suggested evidence of bias (<italic toggle="yes">p</italic> = 0.006), but an inspection of the contour‐enhanced funnel plot showed that the region in which the missing data were expected to be found corresponded to areas of high statistical significance—a pattern suggesting that asymmetry may not be attributed to small study effects (Figure <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S1</xref>).</p><p>HPD incidence was compared across different definitions both qualitatively and quantitatively. The graphical representation of definitions A–C, based on the threshold of change in the tumor growth kinetics for each definition, revealed several qualitative differences which have not been previously described<xref rid="cam46970-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> (Figure <xref rid="cam46970-fig-0002" ref-type="fig">2</xref>). First of all, as the threshold for definitions A and B are based on a ratio where both the numerator and denominator must be a value greater than zero, these two definitions can only describe HPD in patients who experience an increase in the tumor burden during both the pre‐immunotherapy and post‐immunotherapy periods. By contrast, definition C—which is based on the difference in the tumor growth rate between the two time intervals—can capture HPD patients who experience a decrease in the tumor burden during the washout‐period and an increase in the tumor burden after starting immunotherapy.</p><fig position="float" fig-type="FIGURE" id="cam46970-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>HPD incidence defined according to RECIST‐based changes in the tumor burden. Lines represent the threshold of change in the tumor growth kinetics consistent with definitions A, B, and C. Each threshold inequality graphically represents how the changes in the tumor burden before and after immunotherapy predict HPD occurrence. Area D represents a subset of patients who are evaluated as having HPD according to definition A but not definition C. The range of post‐immunotherapy tumor burden changes that characterize this area (0%–26%) suggests that these patients are more likely to meet the criteria of progression based on appearance of new lesions and not based on an increase in the tumor size that is greater than 20%. RECIST, Response Evaluation Criteria in Solid Tumors. Figure adapted from Kas et al<xref rid="cam46970-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> with permission from the American Medical Association.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="CAM4-13-e6970-g001.jpg"><?image-name CAM4-13-e6970-g001.jpg?><?image-size 47045?><?image-md5 65ada190e1ae0eba919f36a7510319a6?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 768?><?image-original-width 1064?><?image-scaled-height 512?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/f79d/10891462/65ada190e1ae/CAM4-13-e6970-g001.jpg?><?thumb-name CAM4-13-e6970-g001.gif?><?thumb-size 2752?><?thumb-md5 b6ebf4e61bf39e4210bece3981a0bd42?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 79?><?thumb-scaled-width 110?><?thumb-cloudpmc-urn urn:cdn:blobs/f79d/10891462/b6ebf4e61bf3/CAM4-13-e6970-g001.gif?></graphic></fig><p>The lowest estimated incidence of HPD was reported for definition C at 10.5% (95% CI, 7.1%–15.1%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 15%; Figure <xref rid="cam46970-fig-0003" ref-type="fig">3</xref>), followed by definition A at 12.2% (95% CI, 9.6%–15.3%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 75%) and definition B at 18.0% (95% CI, 11.5%–27.12%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 75%). Univariable analysis showed that the type of definition did not have a trend for significance as a moderator for HPD incidence (<italic toggle="yes">p</italic> = 0.17).</p><fig position="float" fig-type="FIGURE" id="cam46970-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>Forest plots of HPD Incidence and 95% confidence intervals (95% CI) across three HPD definitions. The 95% prediction interval (95% PI) estimates where the true effect would be found in 95% of similar studies conducted in the future.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="CAM4-13-e6970-g004.jpg"><?image-name CAM4-13-e6970-g004.jpg?><?image-size 102753?><?image-md5 b38860ab79018ab6fa3c38cc264af310?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1092?><?image-original-width 1064?><?image-scaled-height 728?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/f79d/10891462/b38860ab7901/CAM4-13-e6970-g004.jpg?><?thumb-name CAM4-13-e6970-g004.gif?><?thumb-size 4968?><?thumb-md5 74f1427ddf2ff111f4d94f84d0bf1413?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 103?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/f79d/10891462/74f1427ddf2f/CAM4-13-e6970-g004.gif?></graphic></fig><p>The estimated incidence of HPD was also obtained for each tumor type subgroup (Figure <xref rid="cam46970-fig-0004" ref-type="fig">4</xref>). The estimate was highest for AGC (22.5%; 95% CI, 14.4%–33.4%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 0%), followed by HCC (14.3%; 95% CI 9.8%–20.4%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 74%), NSCLC (14.1%; 95% CI, 10.9%–18.0%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 44%), and mixed or other types (11.3%; 95% CI, 8.8%–14.4%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 77%). RCC had the lowest estimate of 2.2% (95% CI, 0.7%–6.5%; <italic toggle="yes">I</italic>
+<sup>2</sup> = 0%). Univariable analysis showed tumor histology as a significant moderator for HPD incidence (<italic toggle="yes">p</italic> = 0.004), with the estimated incidence of HPD significantly higher in AGC (<italic toggle="yes">p</italic> &lt; 0.001), NSCLC (<italic toggle="yes">p</italic> = 0.002), HCC (<italic toggle="yes">p</italic> = 0.002), and mixed or other (<italic toggle="yes">p</italic> = 0.005) than in RCC.</p><fig position="float" fig-type="FIGURE" id="cam46970-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>Forest plots of HPD incidence and 95% confidence intervals (95% CI) across tumor types. The 95% prediction interval (95% PI) estimates where the true effect would be found in 95% of similar studies conducted in the future.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="CAM4-13-e6970-g002.jpg"><?image-name CAM4-13-e6970-g002.jpg?><?image-size 116076?><?image-md5 2158499eed82ceeccd725f43fc7d8503?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1248?><?image-original-width 1064?><?image-scaled-height 832?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/f79d/10891462/2158499eed82/CAM4-13-e6970-g002.jpg?><?thumb-name CAM4-13-e6970-g002.gif?><?thumb-size 5547?><?thumb-md5 a939b406f1e5a598691f7d3b3bd85a83?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 117?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/f79d/10891462/a939b406f1e5/CAM4-13-e6970-g002.gif?></graphic></fig><p>After adjusting for the definitions used, the risk of developing HPD was higher in AGC (adjusted OR, 10.83; 95% CI, 2.14–54.65; <italic toggle="yes">p</italic> &lt; 0.001), HCC (adjusted OR, 7.99; 95% CI, 1.68–38.13; <italic toggle="yes">p</italic> = 0.006), NSCLC (adjusted OR, 7.14; 95% CI, 1.58–32.29; <italic toggle="yes">p</italic> = 0.005), and mixed or other types (adjusted OR, 5.09; 95% CI, 1.12–23.14, <italic toggle="yes">p</italic> = 0.018) than in RCC (Table <xref rid="cam46970-tbl-0001" ref-type="table">1</xref>). After adjusting for the tumor type, Definition B (adjusted OR, 1.82; 95% CI, 1.08–3.07; <italic toggle="yes">p</italic> = 0.025) reported higher incidences of HPD than Definition C.</p><table-wrap position="float" id="cam46970-tbl-0001" content-type="TABLE" orientation="portrait"><label>TABLE 1</label><caption><p>Multivariable analyses results for HPD incidence.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1">Variable</th><th align="left" valign="bottom" rowspan="1" colspan="1">Odds ratio (95% CI)</th><th align="left" valign="bottom" rowspan="1" colspan="1">
+<italic toggle="yes">p</italic>‐Value<xref rid="cam46970-note-0001" ref-type="table-fn">
+<sup>a</sup>
+</xref>
+</th></tr></thead><tbody valign="top"><tr><td align="left" colspan="3" valign="top" rowspan="1">Tumor types</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">AGC</td><td align="left" valign="top" rowspan="1" colspan="1">10.83 (2.14–54.65)</td><td align="left" valign="top" rowspan="1" colspan="1">&lt;0.001</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">HCC</td><td align="left" valign="top" rowspan="1" colspan="1">7.99 (1.68–38.13)</td><td align="left" valign="top" rowspan="1" colspan="1">0.006</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">NSCLC</td><td align="left" valign="top" rowspan="1" colspan="1">7.14 (1.58–32.29)</td><td align="left" valign="top" rowspan="1" colspan="1">0.005</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">Mixed or other</td><td align="left" valign="top" rowspan="1" colspan="1">5.09 (1.12–23.14)</td><td align="left" valign="top" rowspan="1" colspan="1">0.018</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">RCC</td><td align="left" valign="top" rowspan="1" colspan="1">Reference</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Definition types</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">A (Champiat et al<xref rid="cam46970-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>)</td><td align="left" valign="top" rowspan="1" colspan="1">1.20 (0.83–1.74)</td><td align="left" valign="top" rowspan="1" colspan="1">0.335</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">B (Saâda‐Bouzid et al<xref rid="cam46970-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>)</td><td align="left" valign="top" rowspan="1" colspan="1">1.82 (1.08–3.07)</td><td align="left" valign="top" rowspan="1" colspan="1">0.025</td></tr><tr><td align="left" style="padding-left:10%" valign="top" rowspan="1" colspan="1">C (Ferrara et al<xref rid="cam46970-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>)</td><td align="left" valign="top" rowspan="1" colspan="1">Reference</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr></tbody></table><table-wrap-foot id="cam46970-ntgp-0001"><fn id="cam46970-note-0001"><label>
+<sup>a</sup>
+</label><p>Mixed‐effects analysis.</p></fn></table-wrap-foot></table-wrap><p>Post hoc sensitivity analyses were carried out to test the robustness of the results. Meta‐analyses were repeated after excluding studies that were prospective observational cohorts, received NOS scores fewer than 7, obtained from the grey literature, or outliers. Outliers were identified using the Baujat plot<xref rid="cam46970-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref> (Figure <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S2</xref>), in which studies found in the upper right quadrant represent studies with a substantial contribution to both the estimated heterogeneity and the pooled effect. The results were consistent with the main findings (Table <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S8</xref>).</p><p>Clinical and biological factors associated with HPD were not amenable to quantitative synthesis due to use of adjusted incidences in this meta‐analysis and therefore are summarized in Appendix <xref rid="cam46970-supitem-0001" ref-type="supplementary-material">S1</xref>.</p></sec><sec sec-type="discussion" id="cam46970-sec-0014"><label>4</label><title>DISCUSSION</title><sec id="cam46970-sec-0015"><label>4.1</label><title>Overall findings</title><p>Although differences arising from operationalizations of HPD definitions were accounted for in the meta‐analysis—as the adjusted incidence according to definition A, B, or C were obtained from the text or provided by the authors—the considerable variation observed in the literature illustrates the current challenges in conducting a proper synthesis of the evidence on HPD.</p><p>This meta‐analysis of 34 studies from 12 countries was consistent with previous findings that there is statistically significant heterogeneity in the HPD incidence.<xref rid="cam46970-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref> As the prediction interval estimates where the true effect would lie for 95% of similar studies, the wide prediction interval in this meta‐analysis demonstrates that the incidence varies substantially across studies; this suggests that there may be subsets of patients that are less or more likely to experience HPD.</p><p>Specifically, the odds of experiencing HPD was significantly higher for AGC, HCC, NSCLC, and mixed or other types than patients with RCC. The HPD incidence was also higher for definition B compared to C with statistical significance, which introduces uncertainty in the estimation of true HPD incidence. While our findings indicate that there may be differences in HPD incidence by the type of tumor or definition used, the evidence should be interpreted with caution due to the small number of included studies.</p><p>What further limits an interpretation of these observed differences is the fact that the mechanism behind HPD remains to be elucidated. Current hypotheses for ICI‐related HPD suggest possible association with mechanisms of adaptive resistance which involve changes in the immune contexture of the tumor microenvironment (TME).</p><p>Firstly,  an alteration of T cell subsets or the polarization of the myeloid subset in the TME have been previously reported. Marked increase in tumor‐infiltrating proliferative effector regulatory T (eT<sub>reg</sub>) cells was observed in tissue samples of gastric cancer patients,<xref rid="cam46970-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref> and a significant increase in CD4<sup>+</sup>CD25<sup>+</sup>CD127<sup>lo</sup>FoxP3<sup>+</sup> T<sub>reg</sub> cells<xref rid="cam46970-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref> or CD28<sup>−</sup> CD4<sup>+</sup> highly differentiated T‐cells (T<sub>HD</sub>)<xref rid="cam46970-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> was independently reported from peripheral blood analysis of NSCLC patients who experienced HPD post‐immunotherapy. One study observed tumor infiltration by clusters of M2‐like epithelioid macrophages in both xenograft models and pretreatment tissue samples from NSCLC patients who experienced HPD,<xref rid="cam46970-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref> consistent with previous findings of dampened T‐cell‐mediated immune responses via enrichment of macrophages in the TME due to engagement between the anti‐PD‐1 Fc fragment and Fc receptors.<xref rid="cam46970-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref> In these studies, however, the pretreatment tumor kinetics was not considered in the assessment for HPD; as a result, patients classified as having experienced HPD may have included those with naturally aggressive disease.</p><p>Hyperprogression has also been associated with upregulation of alternative immune‐checkpoints as a compensatory mechanism. While this hypothesis was previously demonstrated with T‐cell immunoglobulin and mucin domain 3 (TIM‐3) in preclinical models,<xref rid="cam46970-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref> Kim et al<xref rid="cam46970-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> observed the expansion of T‐cell immunoreceptor with Ig and ITIM domains (TIGIT)‐positive subtype among PD‐1<sup>+</sup>CD8<sup>+</sup> T cells from peripheral blood.<xref rid="cam46970-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>
+</p></sec><sec id="cam46970-sec-0016"><label>4.2</label><title>Implications for research</title><p>While the underlying reasons for differences across tumor types remain to be further studied, differences in the HPD incidence across tumor types may be attributable to the immune landscape of each tumor type. Based on the classification of immune subtypes from immunogenomics analysis of TCGA data,<xref rid="cam46970-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref> AGC's IFN‐γ dominant subtype is characterized by the lowest Th1/Th2 ratio, a high proliferation rate, and the highest intratumoral heterogeneity, while RCC's inflammatory subtype demonstrates the opposite trend: a high Th1/Th2 ratio, low proliferation rate, and the lowest intratumoral heterogeneity.</p><p>While the relationship between HPD and a tumor subtype characterized by IFN‐γ—a cytokine often associated with antitumor responses including the recruitment of CD8+ cells and upregulation of the antigen‐presenting machinery—may seem paradoxical, growing evidence shows that IFN‐γ signaling can also have varying effects depending on the balance of tumor and immune cells in the TME, each of which respond differently to IFN‐γ signaling.<xref rid="cam46970-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref> A recent study by Zou et al<xref rid="cam46970-bib-0049" ref-type="bibr">
+<sup>49</sup>
+</xref> reported that patients who experienced HPD highly expressed fibroblast growth factor 2 (FGF2) and Wnt‐β‐catenin gene signatures; through preclinical models, the authors demonstrated that IFN‐γ production by CD8+ T cells may alter the PKM2/NAD<sup>+</sup>/β‐catenin signaling to enhance the tumor's oncogenic potential. Given the non‐negligible presence of the IFN‐γ dominant subtype in cancers with higher rates of HPD, future studies are needed to characterize how the immune landscape of each tumor type contributes to differential responses to immunotherapy, as well as how it is altered by the introduction of immunotherapeutic agents in the TME.</p></sec><sec id="cam46970-sec-0017"><label>4.3</label><title>Implications for practice</title><p>After multivariable adjustment based on the tumor type, our study also found evidence that HPD incidence was higher for definition B than definition C with statistical significance. More importantly, this finding suggests that variations in the HPD incidence arising from the use of multiple definitions present challenges in understanding the phenomenon.</p><p>The consequences of using different HPD definitions are not limited to a general overestimation or underestimation of HPD incidence. As observed by the graphical representation of pretreatment and post‐treatment changes that describe patients who experience HPD (Figure <xref rid="cam46970-fig-0002" ref-type="fig">2</xref>), definition C is able to evaluate HPD even in those who experience a negative tumor growth rate in the pretreatment period. Definitions A and B, which cannot evaluate HPD in this subpopulation, may describe patients with potential differences in the clinical outcome as well.</p><p>A closer look at studies in this meta‐analysis which compared multiple definitions reveal additional concerns in current methods of HPD evaluation. While the areas of HPD incidence modeled by Kas et al<xref rid="cam46970-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> suggest that definition A is more restrictive than definition C in estimating HPD incidence, two studies<xref rid="cam46970-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="cam46970-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> from our analysis that explored multiple HPD definitions showed that incidence for the same cohort was higher for definition A than definition C. According to the graphical representation of regions defining HPD (Figure <xref rid="cam46970-fig-0002" ref-type="fig">2</xref>), this observation is possible only if a substantial portion of patients who developed HPD demonstrated changes in the pre‐ and post‐immunotherapy tumor burden that correspond to area D in Figure. This region is characterized by a post‐treatment increase in the tumor burden between 0% and 26%—a range in which the criteria for progressive disease is met not only by a quantitative change in the tumor size that is greater than 20%, but also by the appearance of new lesions. This finding suggests that HPD may have a characteristic distribution of pretreatment and post‐treatment changes in the tumor burden. At the same time, it sheds light on the current limitations of RECIST: the exclusion of new lesions in the measurement of the tumor burden may prevent a more accurate evaluation of tumor growth kinetics. These limitations may be overcome by the adoption of immune‐specific criteria that incorporate new lesions, a revision of the currently used RECIST criteria to include new lesions in the calculation of tumor burden for HPD evaluation, and ultimately by radiomics‐based approaches that directly measure the tumor volume.</p></sec><sec id="cam46970-sec-0018"><label>4.4</label><title>Strengths and potential limitations</title><p>Our study has several limitations. First and foremost, this meta‐analysis consisted of observational studies, which are prone to selection bias and confounding effects. Secondly, imprecision in the estimates due to the small number of studies per subgroup and inherent clinical and statistical heterogeneity of the primary studies—constrain our interpretation of results. Thirdly, results from this meta‐analysis are based on aggregate data and not individual patient data, presenting the risk of ecological fallacy. Lastly, methodological heterogeneity (i.e., prior lines of therapy and type of immune checkpoint inhibitor) precludes an in‐depth quantitative analysis exploring clinicopathological factors with potential predictive and prognostic value. Nevertheless, our study also has strengths. All published studies including conference abstracts were screened to provide a comprehensive overview of all available data. Furthermore, additional exclusion criteria were specified at the eligibility stage in order to increase the likelihood of presenting clinically reliable estimates and interpretable data, despite inevitable methodological heterogeneity in the current data on HPD.</p><p>Evidence from this meta‐analysis supports the argument for the adoption of a uniform HPD definition. An accurate estimate of HPD incidence is necessary to characterize the potential risks associated with immunotherapy as well as provide timely diagnosis and proper care to patients who receive it. While clear biological underpinnings of HPD are currently lacking, we believe that the aggravating consequences of immunotherapy merit further attention to this phenomenon in future studies.</p></sec></sec><sec id="cam46970-sec-0025"><title>AUTHOR CONTRIBUTIONS</title><p>
+<bold>Min Jeong Kim:</bold> Conceptualization (equal); data curation (lead); formal analysis (lead); investigation (lead); methodology (lead); visualization (lead); writing – original draft (lead); writing – review and editing (lead). <bold>Seung Pyo D. Hong:</bold> Conceptualization (supporting); investigation (supporting); methodology (supporting); writing – review and editing (supporting). <bold>Yeonggyeong Park:</bold> Investigation (supporting); writing – review and editing (supporting). <bold>Young Kwang Chae:</bold> Conceptualization (equal); methodology (supporting); supervision (lead); writing – review and editing (supporting).</p></sec><sec id="cam46970-sec-0020"><title>FUNDING INFORMATION</title><p>The author(s) received no specific funding for this work.</p></sec><sec sec-type="COI-statement" id="cam46970-sec-0021"><title>CONFLICT OF INTEREST STATEMENT</title><p>Dr. Chae reports receiving a research grant to the institution from Abbvie, BMS, Biodesix, Lexent Bio, and Freenome; he has also received honoraria from or is in advisory boards for Roche/Genentech, BMS, AstraZeneca, Merck, Foundation Medicine, Counsyl, Neogenomics, Guardant Health, Boehringher Ingelheim, Biodesix, Immuneoncia, Lilly Oncology, Merck, Takeda, Pfizer, Tempus, Lunit, and Jazz Pharmaceuticals.</p></sec><sec id="cam46970-sec-0024"><title>ETHICS STATEMENT</title><p>No Institutional Review Board review or approval was necessary for the conduct of this systematic review, and consent was not required.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="cam46970-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>
+Data S1
+</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="CAM4-13-e6970-s001.docx" position="float" orientation="portrait"><?suppdata-name CAM4-13-e6970-s001.docx?><?suppdata-size 1219975?><?suppdata-md5 733b57795d433094f6f7c40a3ba9b2b0?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type vnd.openxmlformats-officedocument.wordprocessingml.document?><?suppdata-cloudpmc-urn urn:app:f79d/10891462/733b57795d43/CAM4-13-e6970-s001.docx?></media></supplementary-material></sec></body><back><ack id="cam46970-sec-0019"><title>ACKNOWLEDGMENTS</title><p>We thank the authors who re‐examined the data and shared additional information with us for this project, with special thanks to Chang Gon Kim, MD, PhD (Yonsei Cancer Center); Won‐Mook Choi, MD, PhD (Asan Medical Center); Inhwan Hwang, MD (Daejeon Eulji Medical Center); Yoshiaki Nakamura, MD, PhD (National Cancer Center Hospital East); Akinori Sasaki, MD, PhD (Tokyo Bay Urayasu Ichikawa Medical Center); Shuixing Zhang, MD, PhD (The First Affiliated Hospital of Jinan University); Emiliano Calvo, MD, PhD (START Madrid‐Centro Integral Oncológico Clara Campal Hospital); Kyung Hwan Kim, MD, PhD (Yonsei Cancer Center); Hugo Arasanz Esteban, MD, PhD (Hospital Universitario de Navarra); Pablo Ayala de Miguel, MD (University Hospital San Pedro de Alcántara), Koichi Azuma, MD, PhD (Kurume University School of Medicine); Deirdre M.H.J. ten Berge (Erasmus University Medical Center); Bernhard Scheiner, MD, PhD (Medical University of Vienna); and Ryusuke Nakamoto, MD, PhD (Kyoto University Hospital). We would also like to thank Corinne Miller, MLIS (Northwestern University Feinberg School of Medicine) for her advice and her assistance with the design of the search strategy. We also thank Allison Belette, MD (The University of Texas Health Science Center at Houston), Chi Woo Song, MD (Nowon Eulji Medical Center), Sukjoo Cho, MD (Emory University School of Medicine), Youjin Oh, MD (John H. Stroger Jr. Hospital of Cook County), and Ilene Hong (Northwestern University) for their contributions to the preliminary data. We also want to thank those who responded to our inquiries whether or not additional data could be made available. Finally, we give thanks to the patients without whom this work would not be possible.</p></ack><sec sec-type="data-availability" id="cam46970-sec-0023"><title>DATA AVAILABILITY STATEMENT</title><p>The data used in this study can be found in the figshare database [<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://figshare.com/articles/dataset/updated_extracted_data_HPD_22_08_29_xlsx/22256557" ext-link-type="uri" specific-use="software is-supplemented-by">https://figshare.com/articles/dataset/updated_extracted_data_HPD_22_08_29_xlsx/22256557</ext-link>].</p></sec><ref-list content-type="cited-references" id="cam46970-bibl-0001"><title>REFERENCES</title><ref id="cam46970-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="cam46970-cit-0001">
+<string-name name-style="western">
+<surname>Saâda‐Bouzid</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Defaucheux</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karabajakian</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Hyperprogression during anti‐PD‐1/PD‐L1 therapy in patients with recurrent and/or metastatic head and neck squamous cell carcinoma</article-title>. <source>Ann Oncol</source>. <year>2017</year>;<volume>28</volume>:<fpage>1605</fpage>‐<lpage>1611</lpage>.<pub-id pub-id-type="pmid">28419181</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/annonc/mdx178</pub-id></mixed-citation></ref><ref id="cam46970-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cam46970-cit-0002">
+<string-name name-style="western">
+<surname>Champiat</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dercle</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ammari</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease is a new pattern of progression in cancer patients treated by anti‐PD‐1/PD‐L1</article-title>. <source>Clin Cancer Res</source>. <year>2017</year>;<volume>23</volume>:<fpage>1920</fpage>‐<lpage>1928</lpage>.<pub-id pub-id-type="pmid">27827313</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-16-1741</pub-id></mixed-citation></ref><ref id="cam46970-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cam46970-cit-0003">
+<string-name name-style="western">
+<surname>Kato</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Goodman</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Walavalkar</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barkauskas</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sharabi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kurzrock</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Hyperprogressors after immunotherapy: analysis of genomic alterations associated with accelerated growth rate</article-title>. <source>Clin Cancer Res</source>. <year>2017</year>;<volume>23</volume>:<fpage>4242</fpage>‐<lpage>4250</lpage>.<pub-id pub-id-type="pmid">28351930</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-16-3133</pub-id><pub-id pub-id-type="pmcid">PMC5647162</pub-id></mixed-citation></ref><ref id="cam46970-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cam46970-cit-0004">
+<string-name name-style="western">
+<surname>Zheng</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shin</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guo</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Comparison of radiological tumor response based on iRECIST and RECIST 1.1 in metastatic clear‐cell renal cell carcinoma patients treated with programmed cell Death‐1 inhibitor therapy</article-title>. <source>Korean J Radiol</source>. <year>2021</year>;<volume>22</volume>:<fpage>366</fpage>‐<lpage>375</lpage>.<pub-id pub-id-type="pmid">33289356</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3348/kjr.2020.0404</pub-id><pub-id pub-id-type="pmcid">PMC7909853</pub-id></mixed-citation></ref><ref id="cam46970-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cam46970-cit-0005">
+<string-name name-style="western">
+<surname>Hwang</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Park</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yoon</surname>
+<given-names>S‐K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>JL</given-names>
+</string-name>. <article-title>Hyperprogressive disease in patients with urothelial carcinoma or renal cell carcinoma treated with PD‐1/PD‐L1 inhibitors</article-title>. <source>Clin Genitourin Cancer</source>. <year>2020</year>;<volume>18</volume>:<fpage>e122</fpage>‐<lpage>e133</lpage>.<pub-id pub-id-type="pmid">31837940</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.clgc.2019.09.009</pub-id></mixed-citation></ref><ref id="cam46970-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cam46970-cit-0006">
+<string-name name-style="western">
+<surname>Champiat</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferrara</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Massard</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease: recognizing a novel pattern to improve patient management</article-title>. <source>Nat Rev Clin Oncol</source>. <year>2018</year>;<volume>15</volume>:<fpage>748</fpage>‐<lpage>762</lpage>.<pub-id pub-id-type="pmid">30361681</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41571-018-0111-2</pub-id></mixed-citation></ref><ref id="cam46970-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="cam46970-cit-0007">
+<string-name name-style="western">
+<surname>Ferrara</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mezquita</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Texier</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease in patients with advanced non–small cell lung cancer treated with PD‐1/PD‐L1 inhibitors or with single‐agent chemotherapy</article-title>. <source>JAMA Oncol</source>. <year>2018</year>;<volume>4</volume>:<fpage>1543</fpage>‐<lpage>1552</lpage>.<pub-id pub-id-type="pmid">30193240</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamaoncol.2018.3676</pub-id><pub-id pub-id-type="pmcid">PMC6248085</pub-id></mixed-citation></ref><ref id="cam46970-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="cam46970-cit-0008">
+<string-name name-style="western">
+<surname>Seide</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Röver</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Friede</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Likelihood‐based random‐effects meta‐analysis with few studies: empirical and simulation studies</article-title>. <source>BMC Med Res Methodol</source>. <year>2019</year>;<volume>19</volume>:<fpage>16</fpage>.<pub-id pub-id-type="pmid">30634920</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12874-018-0618-3</pub-id><pub-id pub-id-type="pmcid">PMC6330405</pub-id></mixed-citation></ref><ref id="cam46970-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cam46970-cit-0009">
+<string-name name-style="western">
+<surname>Matos</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin‐Liberal</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>García‐Ruiz</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Capturing Hyperprogressive disease with immune‐checkpoint inhibitors using RECIST 1.1 criteria</article-title>. <source>Clin Cancer Res</source>. <year>2020</year>;<volume>26</volume>:<fpage>1846</fpage>‐<lpage>1855</lpage>.<pub-id pub-id-type="pmid">31757877</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-19-2226</pub-id></mixed-citation></ref><ref id="cam46970-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cam46970-cit-0010">
+<string-name name-style="western">
+<surname>Kanjanapan</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Day</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease in early‐phase immunotherapy trials: clinical predictors and association with immune‐related toxicities</article-title>. <source>Cancer</source>. <year>2019</year>;<volume>125</volume>:<fpage>1341</fpage>‐<lpage>1349</lpage>.<pub-id pub-id-type="pmid">30768786</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/cncr.31999</pub-id></mixed-citation></ref><ref id="cam46970-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cam46970-cit-0011">
+<string-name name-style="western">
+<surname>Refae</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gal</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Brest</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Hyperprogression under immune checkpoint inhibitor: a potential role for germinal immunogenetics</article-title>. <source>Sci Rep</source>. <year>2020</year>;<volume>10</volume>:<fpage>3565</fpage>.<pub-id pub-id-type="pmid">32107407</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-020-60437-0</pub-id><pub-id pub-id-type="pmcid">PMC7046673</pub-id></mixed-citation></ref><ref id="cam46970-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cam46970-cit-0012">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gou</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yan</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease caused by PD‐1 inhibitors for the treatment of pan‐cancer</article-title>. <source>Dis Markers</source>. <year>2021</year>;<volume>2021</volume>:<elocation-id>e6639366</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2021/6639366</pub-id><pub-id pub-id-type="pmcid">PMC8241516</pub-id><pub-id pub-id-type="pmid">34239621</pub-id></mixed-citation></ref><ref id="cam46970-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cam46970-cit-0013">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pyo</surname>
+<given-names>K‐H</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease during PD‐1/PD‐L1 blockade in patients with non‐small‐cell lung cancer</article-title>. <source>Ann Oncol</source>. <year>2019</year>;<volume>30</volume>:<fpage>1104</fpage>‐<lpage>1113</lpage>.<pub-id pub-id-type="pmid">30977778</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/annonc/mdz123</pub-id></mixed-citation></ref><ref id="cam46970-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cam46970-cit-0014">
+<string-name name-style="western">
+<surname>Park</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oh</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>P1.04‐70 application of tumor kinetics for evaluation of hyperprogression in immune checkpoint inhibitor treatment for non‐small cell lung cancer</article-title>. <source>J Thorac Oncol</source>. <year>2019</year>;<volume>14</volume>:<fpage>S469</fpage>.</mixed-citation></ref><ref id="cam46970-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cam46970-cit-0015">
+<string-name name-style="western">
+<surname>Gomes da Morais</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>de Miguel</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cardenas</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Calvo</surname>
+<given-names>E</given-names>
+</string-name>. <article-title>Comparison of radiological criteria for hyperprogressive disease in response to immunotherapy</article-title>. <source>Cancer Treat Rev</source>. <year>2020</year>;<volume>91</volume>:<elocation-id>102116</elocation-id>.<pub-id pub-id-type="pmid">33157360</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ctrv.2020.102116</pub-id></mixed-citation></ref><ref id="cam46970-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cam46970-cit-0016">
+<string-name name-style="western">
+<surname>Rocha</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ramal</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ripoll</surname>
+<given-names>E</given-names>
+</string-name>, et al. <article-title>Comparison of different methods for defining hyperprogressive disease in NSCLC</article-title>. <source>JTO Clin Res Rep</source>. <year>2021</year>;<volume>2</volume>:<elocation-id>100115</elocation-id>.<pub-id pub-id-type="pmid">34589976</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtocrr.2020.100115</pub-id><pub-id pub-id-type="pmcid">PMC8474364</pub-id></mixed-citation></ref><ref id="cam46970-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cam46970-cit-0017">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Q</given-names>
+</string-name>, et al. <article-title>Predicting hyperprogressive disease in patients with advanced hepatocellular carcinoma treated with anti‐programmed cell death 1 therapy</article-title>. <source>EClinicalMedicine</source>. <year>2021</year>;<volume>31</volume>:<elocation-id>100673</elocation-id>.<pub-id pub-id-type="pmid">33554079</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.eclinm.2020.100673</pub-id><pub-id pub-id-type="pmcid">PMC7846667</pub-id></mixed-citation></ref><ref id="cam46970-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cam46970-cit-0018">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yoon</surname>
+<given-names>SE</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease during PD‐1 blockade in patients with advanced hepatocellular carcinoma</article-title>. <source>J Hepatol</source>. <year>2021</year>;<volume>74</volume>:<fpage>350</fpage>‐<lpage>359</lpage>.<pub-id pub-id-type="pmid">32810553</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jhep.2020.08.010</pub-id></mixed-citation></ref><ref id="cam46970-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cam46970-cit-0019">
+<string-name name-style="western">
+<surname>Schuiveling</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tonk</surname>
+<given-names>EHJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Verheijden</surname>
+<given-names>RJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Suijkerbuijk</surname>
+<given-names>KPM</given-names>
+</string-name>. <article-title>Hyperprogressive disease rarely occurs during checkpoint inhibitor treatment for advanced melanoma</article-title>. <source>Cancer Immunol Immunother</source>. <year>2021</year>;<volume>70</volume>:<fpage>1491</fpage>‐<lpage>1496</lpage>.<pub-id pub-id-type="pmid">32929554</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00262-020-02716-3</pub-id><pub-id pub-id-type="pmcid">PMC8053186</pub-id></mixed-citation></ref><ref id="cam46970-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cam46970-cit-0020">
+<string-name name-style="western">
+<surname>Maesaka</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sakamori</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yamada</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease in patients with unresectable hepatocellular carcinoma receiving atezolizumab plus bevacizumab therapy</article-title>. <source>Hepatol Res</source>. <year>2022</year>;<volume>52</volume>:<fpage>298</fpage>‐<lpage>307</lpage>.<pub-id pub-id-type="pmid">34918428</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/hepr.13741</pub-id></mixed-citation></ref><ref id="cam46970-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="cam46970-cit-0021">
+<string-name name-style="western">
+<surname>Mazza</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arfi‐Rouche</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Koscielny</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Effect of nivolumab on tumor growth rate (TGR) in metastatic renal cell carcinoma (mRCC)</article-title>. <source>J Clin Oncol</source>. <year>2017</year>;<volume>35</volume>:<fpage>481</fpage>.</mixed-citation></ref><ref id="cam46970-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cam46970-cit-0022">
+<string-name name-style="western">
+<surname>Aoki</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shoji</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nagashima</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease during nivolumab or irinotecan treatment in patients with advanced gastric cancer</article-title>. <source>ESMO Open</source>. <year>2019</year>;<volume>4</volume>:<elocation-id>e000488</elocation-id>.<pub-id pub-id-type="pmid">31231567</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/esmoopen-2019-000488</pub-id><pub-id pub-id-type="pmcid">PMC6555603</pub-id></mixed-citation></ref><ref id="cam46970-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cam46970-cit-0023">
+<string-name name-style="western">
+<surname>Scheiner</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kirstein</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hucke</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Programmed cell death protein‐1 (PD‐1)‐targeted immunotherapy in advanced hepatocellular carcinoma: efficacy and safety data from an international multicentre real‐world cohort</article-title>. <source>Aliment Pharmacol Ther</source>. <year>2019</year>;<volume>49</volume>:<fpage>1323</fpage>‐<lpage>1333</lpage>.<pub-id pub-id-type="pmid">30980420</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/apt.15245</pub-id><pub-id pub-id-type="pmcid">PMC6593858</pub-id></mixed-citation></ref><ref id="cam46970-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cam46970-cit-0024">
+<string-name name-style="western">
+<surname>Tang</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chi</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sheng</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Tumor growth rate as an early indicator of the efficacy of anti‐PD‐1 immunotherapy in advanced melanoma</article-title>. <source>J Clin Oncol</source>. <year>2019</year>;<volume>37</volume>:<elocation-id>e21050</elocation-id>.</mixed-citation></ref><ref id="cam46970-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cam46970-cit-0025">
+<string-name name-style="western">
+<surname>Sasaki</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nakamura</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mishima</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Predictive factors for hyperprogressive disease during nivolumab as anti‐PD1 treatment in patients with advanced gastric cancer</article-title>. <source>Gastric Cancer</source>. <year>2019</year>;<volume>22</volume>:<fpage>793</fpage>‐<lpage>802</lpage>.<pub-id pub-id-type="pmid">30627987</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10120-018-00922-8</pub-id></mixed-citation></ref><ref id="cam46970-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cam46970-cit-0026">
+<string-name name-style="western">
+<surname>ten Berge</surname>
+<given-names>DMHJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hurkmans</surname>
+<given-names>DP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>den Besten</surname>
+<given-names>I</given-names>
+</string-name>, et al. <article-title>Tumour growth rate as a tool for response evaluation during PD‐1 treatment for non‐small cell lung cancer: a retrospective analysis</article-title>. <source>ERJ Open Res</source>. <year>2019</year>;<volume>5</volume>:<elocation-id>00179‐2019</elocation-id>.<pub-id pub-id-type="pmid">31857994</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1183/23120541.00179-2019</pub-id><pub-id pub-id-type="pmcid">PMC6911925</pub-id></mixed-citation></ref><ref id="cam46970-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="cam46970-cit-0027">
+<string-name name-style="western">
+<surname>Petrioli</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mazzei</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Giorgi</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease in advanced cancer patients treated with nivolumab: a case series study</article-title>. <source>Anti‐Cancer Drugs</source>. <year>2020</year>;<volume>31</volume>:<fpage>190</fpage>‐<lpage>195</lpage>.<pub-id pub-id-type="pmid">31850916</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/CAD.0000000000000864</pub-id></mixed-citation></ref><ref id="cam46970-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="cam46970-cit-0028">
+<string-name name-style="western">
+<surname>Karabajakian</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garrivier</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Crozes</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>Hyperprogression and impact of tumor growth kinetics after PD1/PDL1 inhibition in head and neck squamous cell carcinoma</article-title>. <source>Oncotarget</source>. <year>2020</year>;<volume>11</volume>:<fpage>1618</fpage>‐<lpage>1628</lpage>.<pub-id pub-id-type="pmid">32405337</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.18632/oncotarget.27563</pub-id><pub-id pub-id-type="pmcid">PMC7210015</pub-id></mixed-citation></ref><ref id="cam46970-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="cam46970-cit-0029">
+<string-name name-style="western">
+<surname>Ayala de Miguel</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>López Gallego</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gorospe García</surname>
+<given-names>I</given-names>
+</string-name>, et al. <article-title>Hyperprogressive disease during treatment with immune checkpoint inhibitors in patients with advanced non‐small cell lung cancer (NSCLC)</article-title>. <source>J Clin Oncol</source>. <year>2020</year>;<volume>38</volume>:<elocation-id>e21664</elocation-id>.</mixed-citation></ref><ref id="cam46970-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="cam46970-cit-0030">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Choi</surname>
+<given-names>C‐M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>DH</given-names>
+</string-name>, et al. <article-title>Clinical outcomes of nivolumab in patients with advanced non‐small cell lung cancer in real‐world practice, with an emphasis on hyper‐progressive disease</article-title>. <source>J Cancer Res Clin Oncol</source>. <year>2020</year>;<volume>146</volume>:<fpage>3025</fpage>‐<lpage>3036</lpage>.<pub-id pub-id-type="pmid">32583235</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00432-020-03293-9</pub-id><pub-id pub-id-type="pmcid">PMC11804452</pub-id></mixed-citation></ref><ref id="cam46970-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="cam46970-cit-0031">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hur</surname>
+<given-names>JY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Koh</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Immunological characteristics of Hyperprogressive disease in patients with non‐small cell lung cancer treated with anti‐PD‐1/PD‐L1 abs</article-title>. <source>Immune Netw</source>. <year>2020</year>;<volume>20</volume>:<elocation-id>e48</elocation-id>.<pub-id pub-id-type="pmid">33425433</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4110/in.2020.20.e48</pub-id><pub-id pub-id-type="pmcid">PMC7779871</pub-id></mixed-citation></ref><ref id="cam46970-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="cam46970-cit-0032">
+<string-name name-style="western">
+<surname>Matsuo</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Azuma</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kojima</surname>
+<given-names>T</given-names>
+</string-name>, et al. <article-title>Comparative incidence of immune‐related adverse events and hyperprogressive disease in patients with non‐small cell lung cancer receiving immune checkpoint inhibitors with and without chemotherapy</article-title>. <source>Investig New Drugs</source>. <year>2021</year>;<volume>39</volume>:<fpage>1150</fpage>‐<lpage>1158</lpage>.<pub-id pub-id-type="pmid">33483882</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10637-021-01069-7</pub-id></mixed-citation></ref><ref id="cam46970-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="cam46970-cit-0033">
+<string-name name-style="western">
+<surname>Economopoulou</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Anastasiou</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Papaxoinis</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Patterns of response to immune checkpoint inhibitors in association with genomic and clinical features in patients with head and neck squamous cell carcinoma (HNSCC)</article-title>. <source>Cancer</source>. <year>2021</year>;<volume>13</volume>:<fpage>286</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/cancers13020286</pub-id><pub-id pub-id-type="pmcid">PMC7828787</pub-id><pub-id pub-id-type="pmid">33466719</pub-id></mixed-citation></ref><ref id="cam46970-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="cam46970-cit-0034">
+<string-name name-style="western">
+<surname>Choi</surname>
+<given-names>W‐M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>JY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Choi</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Kinetics of the neutrophil‐lymphocyte ratio during PD‐1 inhibition as a prognostic factor in advanced hepatocellular carcinoma</article-title>. <source>Liver Int</source>. <year>2021</year>;<volume>41</volume>:<fpage>2189</fpage>‐<lpage>2199</lpage>.<pub-id pub-id-type="pmid">33966338</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/liv.14932</pub-id></mixed-citation></ref><ref id="cam46970-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="cam46970-cit-0035">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bai</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>Redefine hyperprogressive disease during treatment with immune‐checkpoint inhibitors in patients with gastrointestinal cancer</article-title>. <source>Front Oncol</source>. <year>2021</year>;<volume>11</volume>:<elocation-id>761110</elocation-id>. doi:<pub-id pub-id-type="doi">10.3389/fonc.2021.761110</pub-id>
+<pub-id pub-id-type="pmid">34858840</pub-id>
+<pub-id pub-id-type="pmcid">PMC8630635</pub-id></mixed-citation></ref><ref id="cam46970-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="cam46970-cit-0036">
+<string-name name-style="western">
+<surname>Takahashi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sunakawa</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Inoue</surname>
+<given-names>E</given-names>
+</string-name>, et al. <article-title>Real‐world effectiveness of nivolumab in advanced gastric cancer: the DELIVER trial (JACCRO GC‐08)</article-title>. <source>Gastric Cancer</source>. <year>2022</year>;<volume>25</volume>:<fpage>235</fpage>‐<lpage>244</lpage>.<pub-id pub-id-type="pmid">34427838</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10120-021-01237-x</pub-id></mixed-citation></ref><ref id="cam46970-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="cam46970-cit-0037">
+<string-name name-style="western">
+<surname>Klemen</surname>
+<given-names>ND</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hwang</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bradic</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Long‐term follow‐up and patterns of response, progression, and hyperprogression in patients after PD‐1 blockade in advanced sarcoma</article-title>. <source>Clin Cancer Res</source>. <year>2022</year>;<volume>28</volume>:<fpage>939</fpage>‐<lpage>947</lpage>.<pub-id pub-id-type="pmid">34965948</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-21-3445</pub-id><pub-id pub-id-type="pmcid">PMC8898277</pub-id></mixed-citation></ref><ref id="cam46970-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="cam46970-cit-0038">
+<string-name name-style="western">
+<surname>Kang</surname>
+<given-names>DH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chung</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Circulating regulatory T cells predict efficacy and atypical responses in lung cancer patients treated with PD‐1/PD‐L1 inhibitors</article-title>. <source>Cancer Immunol Immunother</source>. <year>2022</year>;<volume>71</volume>:<fpage>579</fpage>‐<lpage>588</lpage>.<pub-id pub-id-type="pmid">34278517</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00262-021-03018-y</pub-id><pub-id pub-id-type="pmcid">PMC8854239</pub-id></mixed-citation></ref><ref id="cam46970-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="cam46970-cit-0039">
+<string-name name-style="western">
+<surname>Arasanz</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zuazo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bocanegra</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Early detection of Hyperprogressive disease in non‐small cell lung cancer by monitoring of systemic T cell dynamics</article-title>. <source>Cancer</source>. <year>2020</year>;<volume>12</volume>:<fpage>E344</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/cancers12020344</pub-id><pub-id pub-id-type="pmcid">PMC7073153</pub-id><pub-id pub-id-type="pmid">32033028</pub-id></mixed-citation></ref><ref id="cam46970-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="cam46970-cit-0040">
+<string-name name-style="western">
+<surname>Kas</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Talbot</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferrara</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Clarification of definitions of Hyperprogressive disease during immunotherapy for non‐small cell lung cancer</article-title>. <source>JAMA Oncol</source>. <year>2020</year>;<volume>6</volume>:<fpage>1039</fpage>‐<lpage>1046</lpage>.<pub-id pub-id-type="pmid">32525513</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamaoncol.2020.1634</pub-id><pub-id pub-id-type="pmcid">PMC7290708</pub-id></mixed-citation></ref><ref id="cam46970-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="cam46970-cit-0041">
+<string-name name-style="western">
+<surname>Baujat</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mahé</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignon</surname>
+<given-names>J‐P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hill</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>A graphical method for exploring heterogeneity in meta‐analyses: application to a meta‐analysis of 65 trials</article-title>. <source>Stat Med</source>. <year>2002</year>;<volume>21</volume>:<fpage>2641</fpage>‐<lpage>2652</lpage>.<pub-id pub-id-type="pmid">12228882</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/sim.1221</pub-id></mixed-citation></ref><ref id="cam46970-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="cam46970-cit-0042">
+<string-name name-style="western">
+<surname>Park</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>KW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Won</surname>
+<given-names>SE</given-names>
+</string-name>, et al. <article-title>Definition, incidence, and challenges for assessment of Hyperprogressive disease during cancer treatment with immune checkpoint inhibitors: a systematic review and meta‐analysis</article-title>. <source>JAMA Netw Open</source>. <year>2021</year>;<volume>4</volume>:<elocation-id>e211136</elocation-id>.<pub-id pub-id-type="pmid">33760090</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamanetworkopen.2021.1136</pub-id><pub-id pub-id-type="pmcid">PMC7991969</pub-id></mixed-citation></ref><ref id="cam46970-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="cam46970-cit-0043">
+<string-name name-style="western">
+<surname>Kamada</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Togashi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tay</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>PD‐1+ regulatory T cells amplified by PD‐1 blockade promote hyperprogression of cancer</article-title>. <source>Proc Natl Acad Sci</source>. <year>2019</year>;<volume>116</volume>:<fpage>9999</fpage>‐<lpage>10008</lpage>.<pub-id pub-id-type="pmid">31028147</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1822001116</pub-id><pub-id pub-id-type="pmcid">PMC6525547</pub-id></mixed-citation></ref><ref id="cam46970-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="cam46970-cit-0044">
+<string-name name-style="western">
+<surname>Lo Russo</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moro</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sommariva</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Antibody‐fc/FcR interaction on macrophages as a mechanism for Hyperprogressive disease in non‐small cell lung cancer subsequent to PD‐1/PD‐L1 blockade</article-title>. <source>Clin Cancer Res</source>. <year>2019</year>;<volume>25</volume>:<fpage>989</fpage>‐<lpage>999</lpage>.<pub-id pub-id-type="pmid">30206165</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-18-1390</pub-id></mixed-citation></ref><ref id="cam46970-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="cam46970-cit-0045">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Song</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>The binding of an anti‐PD‐1 antibody to FcγRΙ has a profound impact on its biological functions</article-title>. <source>Cancer Immunol Immunother</source>. <year>2018</year>;<volume>67</volume>:<fpage>1079</fpage>‐<lpage>1090</lpage>.<pub-id pub-id-type="pmid">29687231</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00262-018-2160-x</pub-id><pub-id pub-id-type="pmcid">PMC6006217</pub-id></mixed-citation></ref><ref id="cam46970-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="cam46970-cit-0046">
+<string-name name-style="western">
+<surname>Koyama</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Akbay</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>YY</given-names>
+</string-name>, et al. <article-title>Adaptive resistance to therapeutic PD‐1 blockade is associated with upregulation of alternative immune checkpoints</article-title>. <source>Nat Commun</source>. <year>2016</year>;<volume>7</volume>:<elocation-id>10501</elocation-id>.<pub-id pub-id-type="pmid">26883990</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ncomms10501</pub-id><pub-id pub-id-type="pmcid">PMC4757784</pub-id></mixed-citation></ref><ref id="cam46970-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="cam46970-cit-0047">
+<string-name name-style="western">
+<surname>Thorsson</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gibbs</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Brown</surname>
+<given-names>SD</given-names>
+</string-name>, et al. <article-title>The immune landscape of cancer</article-title>. <source>Immunity</source>. <year>2018</year>;<volume>48</volume>:<fpage>812</fpage>‐<lpage>830.e14</lpage>.<pub-id pub-id-type="pmid">29628290</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.immuni.2018.03.023</pub-id><pub-id pub-id-type="pmcid">PMC5982584</pub-id></mixed-citation></ref><ref id="cam46970-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="cam46970-cit-0048">
+<string-name name-style="western">
+<surname>Gocher</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Workman</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vignali</surname>
+<given-names>DAA</given-names>
+</string-name>. <article-title>Interferon‐γ: teammate or opponent in the tumour microenvironment?</article-title>
+<source>Nat Rev Immunol</source>. <year>2022</year>;<volume>22</volume>:<fpage>158</fpage>‐<lpage>172</lpage>.<pub-id pub-id-type="pmid">34155388</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41577-021-00566-3</pub-id><pub-id pub-id-type="pmcid">PMC8688586</pub-id></mixed-citation></ref><ref id="cam46970-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="cam46970-cit-0049">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Choi</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kryczek</surname>
+<given-names>I</given-names>
+</string-name>, et al. <article-title>Intersection of immune and oncometabolic pathways drives cancer hyperprogression during immunotherapy</article-title>. <source>Cancer Cell</source>. <year>2023</year>;<volume>41</volume>:<fpage>304</fpage>‐<lpage>322.e7</lpage>.<pub-id pub-id-type="pmid">36638784</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ccell.2022.12.008</pub-id><pub-id pub-id-type="pmcid">PMC10286807</pub-id></mixed-citation></ref></ref-list></back></article>

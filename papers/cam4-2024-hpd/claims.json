@@ -1,0 +1,104 @@
+{
+  "paper_id": "cam4-2024-hpd",
+  "title": "Incidence of immunotherapy-related hyperprogressive disease (HPD) across HPD definitions and cancer types in observational studies: A systematic review and meta-analysis",
+  "doi": "10.1002/cam4.6970",
+  "journal": "Cancer Medicine",
+  "year": 2024,
+  "article_license": "CC BY 4.0",
+  "pmcid": "PMC10891462",
+  "data": {
+    "url": "https://doi.org/10.6084/m9.figshare.22256557",
+    "license": "CC BY 4.0",
+    "files": ["updated_extracted_data_HPD_22.08.29.xlsx"]
+  },
+  "code": {"url": null, "language": "R"},
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Pooled incidence of HPD across 34 observational studies is 12.4%",
+      "statistic": "random-effects pooled proportion (GLMM, logit), back-transformed",
+      "reported": {"value": 12.4, "text": "12.4%", "ci": [10.2, 15.0], "p": null},
+      "units": "percent",
+      "n": 34,
+      "location": "Abstract (Results); Results paragraph 4 ('The overall estimated incidence of HPD was 12.4% (95% CI, 10.2%–15.0%)'); also reported there: I2 = 72%, 95% PI 4.5%–29.7%; 558 events / 4117 patients",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C2",
+      "text": "Significant between-study heterogeneity in HPD incidence (Cochran Q)",
+      "statistic": "Cochran Q test for heterogeneity (df = 33 implied)",
+      "reported": {"value": 119.32, "text": "119.32", "p": "<0.001"},
+      "units": "chi-square statistic",
+      "n": 34,
+      "location": "Abstract (Results); Results paragraph 4",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C3",
+      "text": "Advanced gastric cancer has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (AGC vs RCC)",
+      "reported": {"value": 10.83, "text": "10.83", "ci": [2.14, 54.65], "p": "<0.001"},
+      "units": "odds ratio",
+      "n": 34,
+      "location": "Table 1, row 'AGC'; Abstract; Results paragraph after Figure 4",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C4",
+      "text": "Hepatocellular carcinoma has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (HCC vs RCC)",
+      "reported": {"value": 7.99, "text": "7.99", "ci": [1.68, 38.13], "p": "0.006"},
+      "units": "odds ratio",
+      "n": 34,
+      "location": "Table 1, row 'HCC'; Abstract",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C5",
+      "text": "NSCLC has higher odds of HPD than RCC, adjusted for definition type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (NSCLC vs RCC)",
+      "reported": {"value": 7.14, "text": "7.14", "ci": [1.58, 32.29], "p": "0.005"},
+      "units": "odds ratio",
+      "n": 34,
+      "location": "Table 1, row 'NSCLC'; Abstract",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    },
+    {
+      "id": "C6",
+      "text": "Definition B (TGK ratio >= 2) yields higher HPD incidence than Definition C (RECIST PD + deltaTGR > 50), adjusted for tumor type",
+      "statistic": "adjusted odds ratio from multivariable meta-regression (definition B vs C)",
+      "reported": {"value": 1.82, "text": "1.82", "ci": [1.08, 3.07], "p": "0.025"},
+      "units": "odds ratio",
+      "n": 34,
+      "location": "Table 1, row 'B (Saâda-Bouzid et al)'; Abstract; Results paragraph after Figure 4",
+      "tolerance": {"type": "reported_precision"},
+      "significance": {"alpha": 0.05}
+    }
+  ],
+  "methods_steps": [
+    "Load sheet 1 ('meta_data_22.02.14_analysis') of updated_extracted_data_HPD_22.08.29.xlsx: 34 rows, one per study. Columns: study, year, hpd (events), total (patients), definition (A/B/C), histology (AGC/HCC/NSCLC/RCC/'mixed or other'). Do not exclude anything; all 34 studies enter the main analysis (the paper reports 558 HPD / 4117 patients).",
+    "Pooled incidence (C1, C2): random-effects meta-analysis of single proportions as a generalized linear mixed model (binomial-normal, logit link), estimated by maximum likelihood with adaptive Gauss-Hermite quadrature. In R: meta::metaprop(event = hpd, n = total, sm = 'PLOGIT', method = 'GLMM', method.tau = 'ML', and t-distribution (Hartung-Knapp) CI: hakn = TRUE / method.random.ci = 'HK' depending on meta version), which calls metafor::rma.glmm(measure = 'PLO', xi = hpd, ni = total, method = 'ML', test = 't'). Back-transform the pooled logit and its 95% CI to percent. Also report Cochran Q (with p), I2 and the 95% prediction interval.",
+    "Zero-event study: Zheng et al 2021 (hpd = 0, total = 30, RCC). GLMM needs no continuity correction; keep the study as is.",
+    "Subgroups (context, not headline): fit the same GLMM pooling within each definition (A/B/C) and each histology. Univariable meta-regression on definition gives p = 0.17 and on histology p = 0.004.",
+    "Multivariable meta-regression (C3–C6): mixed-effects logistic meta-regression rma.glmm(measure = 'PLO', xi = hpd, ni = total, mods = ~ histology + definition, method = 'ML', test = 't') with reference levels histology = 'RCC' and definition = 'C' (relevel factors). Report exp(coef) as adjusted ORs with 95% CI and two-sided p for AGC, HCC, NSCLC, 'mixed or other' (vs RCC) and A, B (vs C). Equivalent: meta::metareg on the metaprop GLMM object with formula ~ histology + definition.",
+    "Exponentiate the coefficients and CI bounds. Round ORs to 2 decimals and incidence to 1 decimal percent, as the paper prints them."
+  ],
+  "software": ["R 4.2.1", "metafor (version not stated)", "meta (version not stated)", "Endnote 20.4 (deduplication only)"],
+  "ambiguities": [
+    "Internal inconsistency between the reported ORs, CIs and p-values in Table 1 / Abstract: back-calculating a Wald SE from the printed tumor-type CIs gives p of about 0.004 (AGC), 0.009 (HCC), 0.011 (NSCLC) and 0.035 (mixed/other). The printed values are <0.001, 0.006, 0.005 and 0.018, and with a t-based CI the implied p would be even larger. The definition rows (A: 0.335, B: 0.025) are consistent with their CIs. Either the CIs and p-values come from different tests (e.g., CI t-based, p from a z or likelihood-ratio test), or the p-values were taken from another model (the univariable p-values in the Results text are AGC <0.001, NSCLC 0.002, HCC 0.002, mixed 0.005, which do not match either). The p-values for C3–C5 should therefore not be expected to match the CIs exactly.",
+    "Which Q statistic: for a GLMM, metafor/meta report both a Wald-type and a likelihood-ratio heterogeneity test (QE.Wld, QE.LRT), and meta's print also gives an inverse-variance Q. The paper does not say which one is Q = 119.32.",
+    "The t-distribution CI is stated ('95% CIs were estimated using the Student's t-distribution'), but it is unclear whether the t-adjustment (test = 't') was also applied to the meta-regression CIs and p-values in Table 1, and what df was used.",
+    "Meta-regression reference levels and coding are taken from Table 1 (RCC, definition C). 'Mixed or other' in the data pools mixed cohorts (7) with HNSCC (2), melanoma (2) and sarcoma (1), following the rule 'tumor types were considered as subgroups only when more than two studies were available'. The data file already encodes this, but the paper does not say so explicitly.",
+    "The method text says 'adaptive Gaussian hermite quadrature', but the number of quadrature points (nAGQ, passed to lme4::glmer by rma.glmm for measure='PLO') and the optimizer are not stated. These can shift ORs in the second decimal.",
+    "Package versions for metafor and meta are not given. meta's argument names for the t-based/HK CI changed across versions (hakn vs method.random.ci).",
+    "Sheet names say '22.02.14' while the file name says '22.08.29'; sheet 1 and sheet 2 list the same 34 studies in slightly different order. It is assumed sheet 1 was the analysis input.",
+    "The Results text gives the definition B subgroup CI upper bound as '27.12%' (2 decimals), while the other bounds use 1 decimal. This is a minor inconsistency in printing precision.",
+    "Methods mention 'univariable and multivariable meta-regression'. The Abstract wording ('risk of developing HPD was higher') presents odds ratios as risk, which is a wording issue only.",
+    "Studies with overlapping cohorts and one two-cohort study (UC/RCC, the RCC arm kept) were resolved before deposit; the deposit cannot verify these choices."
+  ]
+}
