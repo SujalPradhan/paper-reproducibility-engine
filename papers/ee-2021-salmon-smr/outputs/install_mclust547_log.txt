@@ -1,0 +1,38 @@
+trying URL 'https://cran.r-project.org/src/contrib/Archive/mclust/mclust_5.4.7.tar.gz'
+Content type 'application/x-gzip' length 2862001 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+* installing *source* package ‘mclust’ ...
+** this is package ‘mclust’ version ‘5.4.7’
+** package ‘mclust’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘Apple clang version 17.0.0 (clang-1700.0.13.5)’
+using Fortran compiler: ‘GNU Fortran (Homebrew GCC 16.2.0) 16.2.0’
+using SDK: ‘MacOSX15.5.sdk’
+/opt/homebrew/opt/gcc/bin/gfortran  -fPIC  -g -O2  -c dmvnorm.f -o dmvnorm.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG   -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c init.c -o init.o
+/opt/homebrew/opt/gcc/bin/gfortran  -fPIC  -g -O2  -c mclust.f -o mclust.o
+/opt/homebrew/opt/gcc/bin/gfortran  -fPIC  -g -O2  -c mclustaddson.f -o mclustaddson.o
+clang -std=gnu23 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -L/opt/homebrew/Cellar/r/4.6.1_1/lib/R/lib -L/opt/homebrew/opt/gettext/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/xz/lib -L/opt/homebrew/lib -o mclust.so dmvnorm.o init.o mclust.o mclustaddson.o -L/opt/homebrew/Cellar/r/4.6.1_1/lib/R/lib -lRlapack -L/opt/homebrew/opt/openblas/lib -lopenblas -L/opt/homebrew/opt/gcc/lib/gcc/current/gcc/aarch64-apple-darwin25/16 -L/opt/homebrew/opt/gcc/lib/gcc/current/gcc -L/opt/homebrew/opt/gcc/lib/gcc/current -lemutls_w -lheapt_w -lgfortran -lquadmath -L/opt/homebrew/opt/gcc/lib/gcc/current/gcc/aarch64-apple-darwin25/16 -L/opt/homebrew/opt/gcc/lib/gcc/current/gcc -L/opt/homebrew/opt/gcc/lib/gcc/current -lemutls_w -lheapt_w -lgfortran -lquadmath -L/opt/homebrew/Cellar/r/4.6.1_1/lib/R/lib -lR
+ld: warning: ignoring duplicate libraries: '-lemutls_w', '-lgfortran', '-lheapt_w', '-lquadmath'
+ld: warning: object file (/private/var/folders/f6/46thp31x4z596rtylqh_sf080000gn/T/Rtmpz3SdAb/R.INSTALL15ab85f8f6d5d/mclust/src/dmvnorm.o) was built for newer 'macOS' version (26.0) than being linked (15.5)
+ld: warning: object file (/private/var/folders/f6/46thp31x4z596rtylqh_sf080000gn/T/Rtmpz3SdAb/R.INSTALL15ab85f8f6d5d/mclust/src/mclust.o) was built for newer 'macOS' version (26.0) than being linked (15.5)
+ld: warning: object file (/private/var/folders/f6/46thp31x4z596rtylqh_sf080000gn/T/Rtmpz3SdAb/R.INSTALL15ab85f8f6d5d/mclust/src/mclustaddson.o) was built for newer 'macOS' version (26.0) than being linked (15.5)
+installing to /Users/sujal/Wiley-RP/papers/ee-2021-salmon-smr/env/Rlib_mclust547/00LOCK-mclust/00new/mclust/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mclust)

@@ -1,0 +1,58 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: log10(SMR) ~ log10(weight) + geno_vgll3 * sex + avgTemp + (1 |  
+    family) + (1 | batch)
+   Data: tb_smr
+
+REML criterion at convergence: -598.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.38616 -0.54010  0.08106  0.53433  2.42218 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 2.002e-04 0.014150
+ batch    (Intercept) 6.334e-06 0.002517
+ Residual             7.277e-04 0.026975
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                       Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)           -0.852679   0.123029   6.951745  -6.931 0.000232 ***
+log10(weight)          0.877721   0.025774  90.518301  34.054  < 2e-16 ***
+geno_vgll3LL           0.004585   0.010237  20.182091   0.448 0.659034    
+sexmale                0.011818   0.006506 134.800612   1.817 0.071492 .  
+avgTemp                0.005707   0.011907   6.833596   0.479 0.646704    
+geno_vgll3LL:sexmale  -0.014553   0.009241 136.127032  -1.575 0.117605    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) lg10() gn_3LL sexmal avgTmp
+log10(wght)  0.258                            
+gen_vgll3LL -0.117 -0.313                     
+sexmale     -0.107 -0.167  0.343              
+avgTemp     -0.998 -0.248  0.076  0.082       
+gn_vgll3LL:  0.074  0.182 -0.460 -0.711 -0.056
+                             2.5 %       97.5 %
+.sig01                0.0066076697  0.021583428
+.sig02                0.0000000000  0.009413060
+.sigma                0.0237609198  0.030232603
+(Intercept)          -1.0944421155 -0.606784373
+log10(weight)         0.8294780684  0.928389146
+geno_vgll3LL         -0.0148932618  0.024080471
+sexmale              -0.0006479033  0.024770186
+avgTemp              -0.0181141887  0.029142481
+geno_vgll3LL:sexmale -0.0326348632  0.003387749
+Type III Analysis of Variance Table with Satterthwaite's method
+                Sum Sq Mean Sq NumDF   DenDF   F value Pr(>F)    
+log10(weight)  0.84387 0.84387     1  90.518 1159.6818 <2e-16 ***
+geno_vgll3     0.00006 0.00006     1  12.943    0.0877 0.7718    
+sex            0.00072 0.00072     1 129.113    0.9843 0.3230    
+avgTemp        0.00017 0.00017     1   6.834    0.2297 0.6467    
+geno_vgll3:sex 0.00180 0.00180     1 136.127    2.4803 0.1176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+           R2m       R2c
+[1,] 0.9251162 0.9416731

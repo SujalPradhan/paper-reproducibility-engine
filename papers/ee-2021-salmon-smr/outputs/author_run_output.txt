@@ -1,0 +1,1113 @@
+
+
+########## SOURCING script-Ash2021-1-prep-functions.R ##########
+
+> numextract <- function(string) {
++     require(stringr)
++     as.numeric(str_extract(string, "\\-*\\d+\\.*\\d*"))
++ }
+
+> modify_respfile <- function(filename) {
++     read_tsv(filename, col_types = cols()) %>% mutate(name_file = filename) %>% 
++         rename(Ox_1 = Ox.1, Ox_2 = Ox.2, Ox_3 = Ox.3, Ox_4 = Ox.4, 
++             Temp_1 = Temp.1, Temp_2 = Temp.2, Temp_3 = Temp.3, 
++             Temp_4 = Temp.4) %>% pivot_longer(cols = -c(Date.Time, 
++         Phase, name_file), names_to = c(".value", "Channel"), 
++         names_sep = "_")
++ }
+
+> iqr_outliers_toNA <- function(x, range = 5, bound = "both") {
++     upperBound = mean(x, na.rm = T) + IQR(x, na.rm = T) * range
++     lowerBound = mean(x, na.rm = T) - IQR(x, na.rm = T) * range
++     print(glue::glue("Upper outliers:{paste(x[x > upperBound],' ',collapse='')}"))
++     print(glue::glue("Lower outliers:{paste(x[x < lowerBound],' ',collapse='')}"))
++     if (bound == "both") 
++         x[x > upperBound | x < lowerBound] = NA
++     if (bound == "lower") 
++         x[x < lowerBound] = NA
++     if (bound == "upper") 
++         x[x > upperBound] = NA
++     return(x)
++ }
+
+> funkyTranspose = function(df) {
++     df_t <- t(df[, 2:ncol(df)])
++     colnames(df_t) <- t(df[, 1])
++     return(df_t)
++ }
+
+> calcSMR = function(Y, q = c(0.1, 0.15, 0.2, 0.25, 
++     0.3), G = 1:4) {
++     require(mclust)
++     u = sort(Y)
++     the.Mclust <- Mclust(Y, G = G, verbose = F)
++     cl <- the.Mclust$classification
++     cl2 <- as.data.frame(table(cl))
++     cl2$cl <- as.numeric(levels(cl2$cl))
++     valid <- cl2$Freq >= 0.1 * length(time)
++     the.cl <- min(cl2$cl[valid])
++     left.distr <- Y[the.Mclust$classification == the.cl]
++     mlnd = the.Mclust$parameters$mean[the.cl]
++     CVmlnd = sd(left.distr)/mlnd * 100
++     quant = quantile(Y, q)
++     low10 = mean(u[1:10])
++     low10pc = mean(u[6:(5 + round(0.1 * (length(u) - 5)))])
++     return(list(mlnd = mlnd, quant = quant, low10 = low10, low10pc = low10pc, 
++         cl = cl, CVmlnd = CVmlnd))
++ }
+
+> f_avgTemp <- function(tb_temp, date_start, date_end, 
++     SD = F) {
++     temps <- tb_temp %>% filter(dateTime > date_start & dateTime < 
++         date_end) %>% pull(temp)
++     if (SD == T) 
++         return(meanSD(temps))
++     else return(mean(temps, na.rm = T))
++ }
+
+> sem <- function(x) sqrt(var(x, na.rm = T)/(sum(!is.na(x))))
+
+> meanSem <- function(x, dec_mean = 2, dec_spread = 2) {
++     require(glue)
++     .mean <- round(mean(x, na.rm = T), dec_mean)
++     .sem <- round(sem(x), dec_spread)
++     .n <- length(x[!is.na(x)])
++     glue("{.mean}±{.sem} (±SE, n={.n})")
++ }
+
+> meanSD <- function(x, dec_mean = 2, dec_spread = 2) {
++     require(glue)
++     .mean <- round(mean(x, na.rm = T), dec_mean)
++     .sd <- round(sd(x), dec_spread)
++     .n <- length(x[!is.na(x)])
++     glue("{.mean}±{.sd} (±SD, n={.n})")
++ }
+
+> range(c(1, 2, 3, 4, 5))
+[1] 1 5
+
+> rangePrint <- function(x) {
++     return(glue("[{min(x)},{max(x)}]"))
++ }
+
+########## END script-Ash2021-1-prep-functions.R status: ok time_s: 0 ##########
+
+
+########## SOURCING script-Ash2021-2-prep-data.R ##########
+
+> library(tidyverse)
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.3     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+> library(lubridate)
+
+> library(glue)
+
+> library(mclust)
+Package 'mclust' version 6.1.3
+Type 'citation("mclust")' for citing this R package in publications.
+
+Attaching package: ‘mclust’
+
+The following object is masked from ‘package:dplyr’:
+
+    count
+
+The following object is masked from ‘package:purrr’:
+
+    map
+
+
+> library(lme4)
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+
+> library(car)
+Loading required package: carData
+Registered S3 method overwritten by 'car':
+  method           from
+  na.action.merMod lme4
+
+Attaching package: ‘car’
+
+The following object is masked from ‘package:dplyr’:
+
+    recode
+
+The following object is masked from ‘package:purrr’:
+
+    some
+
+
+> library(readxl)
+
+> options(na.action = "na.fail")
+
+> tb_tankDensities <- read_delim("data-Ash2021-tank-densities.txt") %>% 
++     mutate(tankDensity = n_fish)
+Rows: 14 Columns: 2
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+dbl (2): tank, n_fish
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+> tb_tempLog <- read_delim("data-Ash2021-temp-loggers-small-tanks-Dec2020.txt") %>% 
++     mutate(dateTime = ymd_hms(dateTime), tank = dplyr::recode(tank, 
++         `1_10` = "10") %>% numextract()) %>% filter(dateTime < 
++     ymd("2020 07 15"), tank %in% c(1:14))
+Rows: 258365 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr  (1): tank
+dbl  (1): temp
+dttm (1): dateTime
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+> tb_tempLog_one <- tb_tempLog %>% group_by(dateTime) %>% 
++     summarise(temp = mean(temp, na.rm = T))
+
+> tb_tankTemp <- tb_tempLog %>% group_by(tank) %>% summarise(temp_mean = mean(temp, 
++     na.rm = T))
+
+> tb_genotypes <- read_delim("data-Ash2021-genotypes.txt")
+Rows: 165 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (2): sex, geno_vgll3
+dbl (1): ID_sample
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+> tb_resp_raw <- list.files(pattern = "*.resp - FishResp.txt", 
++     recursive = T) %>% lapply(modify_respfile) %>% bind_rows()
+
+> tb_indivData <- read_xlsx("data-Ash2021-sampled-fish.xlsx") %>% 
++     group_by(ID_fish) %>% mutate(date = date(dmy(date)), condition = ((weight)/(length_standard/10)^3) * 
++     100, avgTemp = f_avgTemp(tb_tempLog_one, date - days(5), 
++     date - days(2))) %>% ungroup() %>% left_join(tb_genotypes, 
++     by = "ID_sample") %>% left_join(tb_tankDensities, by = c(family = "tank")) %>% 
++     left_join(tb_tankTemp, by = c(family = "tank")) %>% filter(!is.na("family"))
+
+> tb_respirometry <- read.delim(file = "data-Ash2021-respirometry.txt") %>% 
++     rename(chamber_ch = Chamber.No, ID_fish = Ind, mass = Mass, 
++         volume_ch = Volume, dateTime = Date.Time) %>% mutate(dateTime = ymd_hms(dateTime), 
++     hour = hour(dateTime)) %>% left_join(y = tb_indivData, by = "ID_fish")
+
+> tb_smr <- tb_respirometry %>% group_by(ID_fish, mass, 
++     volume_ch, chamber_ch) %>% summarise(rate = calcSMR(MR.mass)$mlnd, 
++     rate_p = calcSMR(MR.mass)$quant[3], SMR = calcSMR(MR.abs)$mlnd %>% 
++         unname(), CVmlnd = calcSMR(MR.mass, G = 1:4)$CVmlnd, 
++     time_start = dateTime %>% min(), time_end = dateTime %>% 
++         max()) %>% ungroup() %>% left_join(y = tb_indivData, 
++     by = "ID_fish") %>% group_by(family) %>% mutate(m_SMR = lm(log(SMR) ~ 
++     log(mass)) %>% residuals()) %>% ungroup() %>% filter(use > 
++     0.5) %>% mutate(ID_sample = factor(ID_sample), family = factor(family), 
++     chamber = factor(chamber), geno_vgll3 = factor(geno_vgll3), 
++     sex = factor(sex))
+`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by ID_fish, mass, volume_ch, and chamber_ch.
+ℹ Output is grouped by ID_fish, mass, and volume_ch.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(ID_fish, mass, volume_ch, chamber_ch))` for
+  per-operation grouping (`?dplyr::dplyr_by`) instead.
+
+########## END script-Ash2021-2-prep-data.R status: ok time_s: 2.8 ##########
+Warning message:
+There was 1 warning in `mutate()`.
+ℹ In argument: `dateTime = ymd_hms(dateTime)`.
+Caused by warning:
+!  5377 failed to parse. 
+
+
+########## SOURCING script-Ash2021-4-outputs-various.R ##########
+
+> tb_indivData %>% nrow()
+[1] 159
+
+> tb_indivData %>% filter(use > 0.5) %>% nrow()
+[1] 150
+
+> tb_smr$weight %>% meanSem()
+1.08±0.02 (±SE, n=150)
+
+> tb_smr$weight %>% meanSD()
+1.08±0.3 (±SD, n=150)
+
+> tb_smr %>% group_by(geno_vgll3) %>% summarise(w = meanSD(weight), 
++     rng_w = rangePrint(weight), l = meanSD(length_standard), 
++     rng_l = rangePrint(length_standard))
+# A tibble: 2 × 5
+  geno_vgll3 w                     rng_w       l                      rng_l     
+  <fct>      <glue>                <glue>      <glue>                 <glue>    
+1 EE         0.95±0.24 (±SD, n=74) [0.58,1.89] 41.04±3.19 (±SD, n=74) [34.89,51…
+2 LL         1.2±0.3 (±SD, n=76)   [0.5,1.9]   44.15±3.73 (±SD, n=76) [33.97,50…
+
+> tb_smr %>% group_by(family) %>% summarize(n = n(), 
++     vgll3 = paste(unique(geno_vgll3), collapse = ",")) %>% pull(n) %>% 
++     meanSD()
+10.71±1.27 (±SD, n=14)
+
+> tb_EE <- tb_smr %>% filter(geno_vgll3 == "EE", use > 
++     0.5) %>% group_by(family) %>% summarise(n_M = sum(sex == 
++     "male"), n_F = sum(sex == "female"), ) %>% janitor::adorn_totals() %>% 
++     funkyTranspose() %>% print()
+    2 3 7 8 9 11 13 Total
+n_M 6 7 3 5 5  5  4    35
+n_F 5 4 6 4 6  6  8    39
+
+> tb_LL <- tb_smr %>% filter(geno_vgll3 == "LL", use > 
++     0.5) %>% group_by(family) %>% summarise(n_M = sum(sex == 
++     "male"), n_F = sum(sex == "female"), ) %>% janitor::adorn_totals() %>% 
++     funkyTranspose() %>% print()
+    1 4 5 6 10 12 14 Total
+n_M 4 8 6 3  5  4  4    34
+n_F 8 3 6 9  5  4  7    42
+
+> tb_smr %>% group_by(geno_vgll3) %>% summarise(n = n(), 
++     n_fam = length(unique(family)), p_male = sum(sex == "male")/n(), 
++     weight = meanSem(weight))
+# A tibble: 2 × 5
+  geno_vgll3     n n_fam p_male weight               
+  <fct>      <int> <int>  <dbl> <glue>               
+1 EE            74     7  0.473 0.95±0.03 (±SE, n=74)
+2 LL            76     7  0.447 1.2±0.03 (±SE, n=76) 
+
+> tb_smr %>% group_by(batch) %>% summarise(t = meanSD(avgTemp, 
++     3, 20))
+# A tibble: 10 × 2
+   batch t                   
+   <dbl> <glue>              
+ 1     1 10.315±0 (±SD, n=16)
+ 2     2 10.127±0 (±SD, n=14)
+ 3     3 10.182±0 (±SD, n=16)
+ 4     4 10.206±0 (±SD, n=10)
+ 5     5 10.224±0 (±SD, n=16)
+ 6     6 10.11±0 (±SD, n=16) 
+ 7     7 10.187±0 (±SD, n=14)
+ 8     8 10.081±0 (±SD, n=16)
+ 9     9 10.69±0 (±SD, n=16) 
+10    10 10.613±0 (±SD, n=16)
+
+> tb_smr %>% filter(!batch %in% c(9, 10)) %>% pull(avgTemp) %>% 
++     meanSD()
+10.18±0.07 (±SD, n=118)
+
+> tb_smr %>% filter(batch %in% c(9, 10)) %>% pull(avgTemp) %>% 
++     meanSD()
+10.65±0.04 (±SD, n=32)
+
+> tb_respirometry %>% mutate(batch = substr(ID_fish, 
++     0, 2)) %>% group_by(batch) %>% summarise(t = meanSD(Temp, 
++     3, 3))
+# A tibble: 10 × 2
+   batch t                        
+   <chr> <glue>                   
+ 1 1-    10.534±0.022 (±SD, n=761)
+ 2 10    10.528±0.022 (±SD, n=805)
+ 3 2-    10.527±0.022 (±SD, n=621)
+ 4 3-    10.536±0.021 (±SD, n=754)
+ 5 4-    10.529±0.017 (±SD, n=546)
+ 6 5-    10.534±0.021 (±SD, n=749)
+ 7 6-    10.53±0.021 (±SD, n=659) 
+ 8 7-    10.534±0.021 (±SD, n=805)
+ 9 8-    10.535±0.021 (±SD, n=791)
+10 9-    10.532±0.021 (±SD, n=820)
+
+> tb_respirometry %>% summarise(t = meanSD(Temp, 3, 
++     3))
+                           t
+1 10.532±0.021 (±SD, n=7311)
+
+> f_avgTemp(tb_tempLog_one, ymd(20200315), ymd(20200715))
+[1] 7.381281
+
+> tb_missing_slopes <- tb_respirometry %>% filter(ID_fish %in% 
++     tb_smr$ID_fish) %>% group_by(ID_fish) %>% summarise(total_phases = Phase %>% 
++     numextract() %>% max(), used_phases = length(unique(Phase)), 
++     missing_phases = total_phases - used_phases) %>% print(n = 150)
+# A tibble: 150 × 4
+    ID_fish   total_phases used_phases missing_phases
+    <chr>            <dbl>       <int>          <dbl>
+  1 1-F1-C1             57          43             14
+  2 1-F1-C15            57          34             23
+  3 1-F10-C10           57          50              7
+  4 1-F11-C11           57          54              3
+  5 1-F12-C12           57          53              4
+  6 1-F13-C13           57          45             12
+  7 1-F14-C14           57          48              9
+  8 1-F2-C16            55          45             10
+  9 1-F2-C2             57          51              6
+ 10 1-F3-C3             57          50              7
+ 11 1-F4-C4             57          48              9
+ 12 1-F5-C5             57          52              5
+ 13 1-F6-C6             57          47             10
+ 14 1-F7-C7             57          51              6
+ 15 1-F8-C8             57          49              8
+ 16 1-F9-C9             57          41             16
+ 17 10-F1-C6            59          43             16
+ 18 10-F10-C1           59          49             10
+ 19 10-F11-C2           59          46             13
+ 20 10-F11-C3           59          51              8
+ 21 10-F13-C4           59          50              9
+ 22 10-F14-C5           59          55              4
+ 23 10-F2-C7            59          51              8
+ 24 10-F3-C8            59          54              5
+ 25 10-F4-C9            53          44              9
+ 26 10-F5-C10           60          51              9
+ 27 10-F6-C11           60          47             13
+ 28 10-F6-C15           60          58              2
+ 29 10-F7-C12           60          58              2
+ 30 10-F7-C16           60          47             13
+ 31 10-F8-C13           60          50             10
+ 32 10-F9-C14           59          51              8
+ 33 2-F1-C14            55          36             19
+ 34 2-F11-C10           55          43             12
+ 35 2-F12-C11           55          45             10
+ 36 2-F13-C12           55          52              3
+ 37 2-F14-C13           55          48              7
+ 38 2-F2-C1             55          44             11
+ 39 2-F3-C15            55          45             10
+ 40 2-F3-C2             54          46              8
+ 41 2-F4-C3             55          40             15
+ 42 2-F5-C4             55          47              8
+ 43 2-F6-C5             55          44             11
+ 44 2-F7-C6             54          43             11
+ 45 2-F8-C7             55          45             10
+ 46 2-F9-C8             55          43             12
+ 47 3-F1-C13            57          50              7
+ 48 3-F10-C8            57          43             14
+ 49 3-F11-C9            57          51              6
+ 50 3-F12-C10           57          43             14
+ 51 3-F13-C11           57          49              8
+ 52 3-F14-C12           57          41             16
+ 53 3-F2-C14            57          48              9
+ 54 3-F3-C1             57          51              6
+ 55 3-F4-C2             57          41             16
+ 56 3-F5-C15            57          52              5
+ 57 3-F5-C3             57          48              9
+ 58 3-F6-C16            57          43             14
+ 59 3-F6-C4             57          49              8
+ 60 3-F7-C5             57          49              8
+ 61 3-F8-C6             57          49              8
+ 62 3-F9-C7             57          47             10
+ 63 4-F1-C12            59          52              7
+ 64 4-F10-C7            59          49             10
+ 65 4-F12-C9            59          47             12
+ 66 4-F13-C10           59          55              4
+ 67 4-F14-C11           59          58              1
+ 68 4-F4-C1             57          46             11
+ 69 4-F5-C2             59          55              4
+ 70 4-F6-C3             59          50              9
+ 71 4-F8-C5             59          55              4
+ 72 4-F9-C6             59          50              9
+ 73 5-F1-C11            59          46             13
+ 74 5-F10-C16           59          50              9
+ 75 5-F10-C6            59          45             14
+ 76 5-F11-C7            59          52              7
+ 77 5-F12-C8            59          50              9
+ 78 5-F13-C9            59          49             10
+ 79 5-F14-C10           59          48             11
+ 80 5-F2-C12            59          48             11
+ 81 5-F3-C13            59          43             16
+ 82 5-F4-C14            59          42             17
+ 83 5-F5-C1             59          41             18
+ 84 5-F6-C2             59          49             10
+ 85 5-F7-C3             59          56              3
+ 86 5-F8-C4             59          54              5
+ 87 5-F9-C15            59          39             20
+ 88 5-F9-C5             59          37             22
+ 89 6-F1-C10            50          42              8
+ 90 6-F10-C5            50          41              9
+ 91 6-F11-C15           50          36             14
+ 92 6-F11-C6            50          39             11
+ 93 6-F12-C7            50          44              6
+ 94 6-F13-C16           50          40             10
+ 95 6-F13-C8            49          44              5
+ 96 6-F14-C9            50          43              7
+ 97 6-F2-C11            50          36             14
+ 98 6-F3-C12            50          46              4
+ 99 6-F4-C13            50          32             18
+100 6-F5-C14            50          47              3
+101 6-F6-C1             50          39             11
+102 6-F7-C2             50          45              5
+103 6-F8-C3             50          43              7
+104 6-F9-C4             50          42              8
+105 7-F1-C16            60          54              6
+106 7-F1-C9             60          47             13
+107 7-F10-C4            60          44             16
+108 7-F11-C5            60          44             16
+109 7-F12-C6            60          48             12
+110 7-F13-C7            60          51              9
+111 7-F14-C15           60          53              7
+112 7-F14-C8            59          47             12
+113 7-F2-C10            60          56              4
+114 7-F3-C11            60          49             11
+115 7-F4-C12            60          52              8
+116 7-F5-C13            60          51              9
+117 7-F6-C14            60          44             16
+118 7-F9-C3             60          54              6
+119 8-F1-C8             58          47             11
+120 8-F10-C3            58          45             13
+121 8-F11-C4            58          50              8
+122 8-F13-C5            58          52              6
+123 8-F13-C6            58          55              3
+124 8-F14-C7            58          50              8
+125 8-F2-C15            57          50              7
+126 8-F2-C9             58          50              8
+127 8-F3-C10            57          51              6
+128 8-F3-C16            58          49              9
+129 8-F4-C11            58          46             12
+130 8-F5-C12            58          53              5
+131 8-F6-C13            58          50              8
+132 8-F7-C14            58          49              9
+133 8-F8-C1             58          52              6
+134 8-F9-C2             58          42             16
+135 9-F1-C7             58          51              7
+136 9-F10-C2            58          47             11
+137 9-F11-C3            58          51              7
+138 9-F12-C4            58          48             10
+139 9-F13-C5            58          52              6
+140 9-F14-C6            58          55              3
+141 9-F2-C8             58          52              6
+142 9-F3-C9             58          55              3
+143 9-F4-C10            58          53              5
+144 9-F4-C15            58          50              8
+145 9-F5-C11            58          54              4
+146 9-F5-C16            58          56              2
+147 9-F6-C12            58          45             13
+148 9-F7-C13            58          54              4
+149 9-F8-C14            58          48             10
+150 9-F9-C1             58          49              9
+
+> tb_missing_slopes$missing_phases %>% meanSD()
+9.25±4.24 (±SD, n=150)
+
+> tb_missing_slopes$used_phases %>% meanSD()
+47.81±5.06 (±SD, n=150)
+
+> tb_missing_slopes$total_phases %>% mean()
+[1] 57.05333
+
+> tb_missing_slopes$missing_phases %>% sum()
+[1] 1387
+
+> tb_resp_raw %>% filter(!str_detect(Phase, "F")) %>% 
++     group_by(name_file, Channel, Phase) %>% summarise(o2min = min(Ox)) %>% 
++     ungroup() %>% pull(o2min) %>% meanSD()
+
+########## END script-Ash2021-4-outputs-various.R status: ERROR: error in evaluating the argument 'x' in selecting a method for function 'mean': ℹ In argument: `!str_detect(Phase, "F")`.
+Caused by error:
+! object 'Phase' not found time_s: 0.1 ##########
+
+
+########## SOURCING script-Ash2021-4-models-mo2.R ##########
+
+> mod_rate1 <- lmerTest::lmer(formula = log10(SMR) ~ 
++     log10(weight) + geno_vgll3 * sex + avgTemp + (1 | family) + 
++         (1 | batch), data = tb_smr)
+
+> mod_rate1 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: log10(SMR) ~ log10(weight) + geno_vgll3 * sex + avgTemp + (1 |  
+    family) + (1 | batch)
+   Data: tb_smr
+
+REML criterion at convergence: -598.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.38616 -0.54010  0.08106  0.53433  2.42218 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 2.002e-04 0.014150
+ batch    (Intercept) 6.334e-06 0.002517
+ Residual             7.277e-04 0.026975
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                       Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)           -0.852679   0.123029   6.951745  -6.931 0.000232 ***
+log10(weight)          0.877721   0.025774  90.518301  34.054  < 2e-16 ***
+geno_vgll3LL           0.004585   0.010237  20.182091   0.448 0.659034    
+sexmale                0.011818   0.006506 134.800612   1.817 0.071492 .  
+avgTemp                0.005707   0.011907   6.833596   0.479 0.646704    
+geno_vgll3LL:sexmale  -0.014553   0.009241 136.127032  -1.575 0.117605    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) lg10() gn_3LL sexmal avgTmp
+log10(wght)  0.258                            
+gen_vgll3LL -0.117 -0.313                     
+sexmale     -0.107 -0.167  0.343              
+avgTemp     -0.998 -0.248  0.076  0.082       
+gn_vgll3LL:  0.074  0.182 -0.460 -0.711 -0.056
+
+> mod_rate1 %>% confint()
+Computing profile confidence intervals ...
+                             2.5 %       97.5 %
+.sig01                0.0066076697  0.021583428
+.sig02                0.0000000000  0.009413060
+.sigma                0.0237609198  0.030232603
+(Intercept)          -1.0944421155 -0.606784373
+log10(weight)         0.8294780684  0.928389146
+geno_vgll3LL         -0.0148932618  0.024080471
+sexmale              -0.0006479033  0.024770186
+avgTemp              -0.0181141887  0.029142481
+geno_vgll3LL:sexmale -0.0326348632  0.003387749
+
+> mod_rate1 %>% sjPlot::plot_model()
+
+> mod_rate1 %>% residuals() %>% qqnorm()
+
+> mod_rate1 %>% plot()
+
+> mod_rate1 %>% anova(type = 3)
+Type III Analysis of Variance Table with Satterthwaite's method
+                Sum Sq Mean Sq NumDF   DenDF   F value Pr(>F)    
+log10(weight)  0.84387 0.84387     1  90.518 1159.6818 <2e-16 ***
+geno_vgll3     0.00006 0.00006     1  12.943    0.0877 0.7718    
+sex            0.00072 0.00072     1 129.113    0.9843 0.3230    
+avgTemp        0.00017 0.00017     1   6.834    0.2297 0.6467    
+geno_vgll3:sex 0.00180 0.00180     1 136.127    2.4803 0.1176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> MuMIn::r.squaredGLMM(mod_rate1)
+           R2m       R2c
+[1,] 0.9251162 0.9416731
+
+> mod_rate1.5 <- lmerTest::lmer(formula = log10(SMR) ~ 
++     log10(weight) + geno_vgll3 + sex + avgTemp + (1 | family) + 
++         (1 | batch), data = tb_smr)
+
+> mod_rate1.5 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: log10(SMR) ~ log10(weight) + geno_vgll3 + sex + avgTemp + (1 |  
+    family) + (1 | batch)
+   Data: tb_smr
+
+REML criterion at convergence: -603.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5243 -0.5987  0.1130  0.5955  2.4993 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 2.097e-04 0.014481
+ batch    (Intercept) 2.536e-06 0.001593
+ Residual             7.362e-04 0.027133
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)    -0.838826   0.119127   6.742557  -7.041 0.000243 ***
+log10(weight)   0.885299   0.025376  91.489816  34.887  < 2e-16 ***
+geno_vgll3LL   -0.002754   0.009246  12.981564  -0.298 0.770514    
+sexmale         0.004544   0.004588 127.676247   0.990 0.323841    
+avgTemp         0.004711   0.011540   6.647886   0.408 0.695936    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) lg10() gn_3LL sexmal
+log10(wght)  0.257                     
+gen_vgll3LL -0.095 -0.258              
+sexmale     -0.079 -0.050  0.024       
+avgTemp     -0.998 -0.250  0.057  0.061
+
+> mod_rate1.5 %>% confint()
+Computing profile confidence intervals ...
+                     2.5 %       97.5 %
+.sig01         0.007087511  0.022012055
+.sig02         0.000000000  0.009135781
+.sigma         0.023998289  0.030424414
+(Intercept)   -1.063565150 -0.609403565
+log10(weight)  0.837504006  0.934935631
+geno_vgll3LL  -0.020245058  0.015110925
+sexmale       -0.004247237  0.013617182
+avgTemp       -0.017523147  0.026477118
+
+> mod_rate1.5 %>% sjPlot::plot_model()
+
+> mod_rate1.5 %>% residuals() %>% qqnorm()
+
+> mod_rate1.5 %>% plot()
+
+> mod_rate1.5 %>% anova(type = 3)
+Type III Analysis of Variance Table with Satterthwaite's method
+               Sum Sq Mean Sq NumDF   DenDF   F value Pr(>F)    
+log10(weight) 0.89605 0.89605     1  91.490 1217.1035 <2e-16 ***
+geno_vgll3    0.00007 0.00007     1  12.982    0.0887 0.7705    
+sex           0.00072 0.00072     1 127.676    0.9809 0.3238    
+avgTemp       0.00012 0.00012     1   6.648    0.1666 0.6959    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> MuMIn::r.squaredGLMM(mod_rate1.5)
+           R2m       R2c
+[1,] 0.9242974 0.9412379
+
+> mod_rate2 <- lmerTest::lmer(formula = log10(SMR) ~ 
++     log10(weight) + sex + avgTemp + (1 | family) + (1 | batch), 
++     data = tb_smr)
+
+> mod_rate2 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: log10(SMR) ~ log10(weight) + sex + avgTemp + (1 | family) + (1 |  
+    batch)
+   Data: tb_smr
+
+REML criterion at convergence: -610.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.5250 -0.5950  0.1162  0.6096  2.5236 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 1.913e-04 0.013831
+ batch    (Intercept) 1.902e-06 0.001379
+ Residual             7.363e-04 0.027136
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)    -0.841352   0.117832   6.694915  -7.140  0.00023 ***
+log10(weight)   0.883574   0.024304  86.887377  36.354  < 2e-16 ***
+sexmale         0.004634   0.004581 128.467029   1.012  0.31365    
+avgTemp         0.004821   0.011449   6.660208   0.421  0.68696    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) lg10() sexmal
+log10(wght)  0.242              
+sexmale     -0.078 -0.045       
+avgTemp     -0.999 -0.244  0.060
+
+> mod_rate2 %>% confint()
+Computing profile confidence intervals ...
+                     2.5 %       97.5 %
+.sig01         0.007202663  0.022126184
+.sig02         0.000000000  0.009054667
+.sigma         0.023994600  0.030419505
+(Intercept)   -1.066299457 -0.614333770
+log10(weight)  0.837058954  0.930881644
+sexmale       -0.004218021  0.013640305
+avgTemp       -0.017241833  0.026672343
+
+> mod_rate2 %>% sjPlot::plot_model()
+
+> mod_rate2 %>% residuals() %>% qqnorm()
+
+> mod_rate2 %>% plot()
+
+> mod_rate2 %>% anova(type = 3)
+Type III Analysis of Variance Table with Satterthwaite's method
+               Sum Sq Mean Sq NumDF   DenDF   F value Pr(>F)    
+log10(weight) 0.97319 0.97319     1  86.887 1321.6483 <2e-16 ***
+sex           0.00075 0.00075     1 128.467    1.0233 0.3136    
+avgTemp       0.00013 0.00013     1   6.660    0.1773 0.6870    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> MuMIn::r.squaredGLMM(mod_rate2)
+           R2m       R2c
+[1,] 0.9261693 0.9415149
+
+> mod_rate3 <- lmerTest::lmer(formula = log10(SMR) ~ 
++     log10(weight) + avgTemp + (1 | family) + (1 | batch), data = tb_smr)
+
+> mod_rate3 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: log10(SMR) ~ log10(weight) + avgTemp + (1 | family) + (1 | batch)
+   Data: tb_smr
+
+REML criterion at convergence: -618.6
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.44907 -0.57115  0.06682  0.58977  2.59223 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 1.990e-04 0.014108
+ batch    (Intercept) 3.112e-06 0.001764
+ Residual             7.335e-04 0.027083
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+               Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)   -0.832534   0.118649  6.757211  -7.017 0.000245 ***
+log10(weight)  0.884506   0.024371 91.083056  36.294  < 2e-16 ***
+avgTemp        0.004171   0.011542  6.745914   0.361 0.728885    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) lg10()
+log10(wght)  0.237       
+avgTemp     -0.999 -0.240
+
+> mod_rate3 %>% confint()
+Computing profile confidence intervals ...
+                     2.5 %      97.5 %
+.sig01         0.007313762  0.02248711
+.sig02         0.000000000  0.00922437
+.sigma         0.024014093  0.03051649
+(Intercept)   -1.070832191 -0.59101212
+log10(weight)  0.837602501  0.93210827
+avgTemp       -0.019317604  0.02736574
+
+> mod_rate3 %>% sjPlot::plot_model()
+
+> mod_rate3 %>% residuals() %>% qqnorm()
+
+> mod_rate3 %>% plot()
+
+> mod_rate3 %>% anova(type = 2)
+Type II Analysis of Variance Table with Satterthwaite's method
+               Sum Sq Mean Sq NumDF  DenDF   F value Pr(>F)    
+log10(weight) 0.96616 0.96616     1 91.083 1317.2622 <2e-16 ***
+avgTemp       0.00010 0.00010     1  6.746    0.1306 0.7289    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> MuMIn::r.squaredGLMM(mod_rate3)
+           R2m       R2c
+[1,] 0.9257158 0.9417659
+
+> AIC(mod_rate1, mod_rate1.5, mod_rate2, mod_rate3)
+            df       AIC
+mod_rate1    9 -580.1777
+mod_rate1.5  8 -587.2554
+mod_rate2    7 -596.7247
+mod_rate3    6 -606.6426
+
+> cvms::cross_validate(data = tb_smr %>% mutate(.folds = factor(ifelse(batch %in% 
++     c(1, 3, 5, 7, 9), 1, 2))) %>% mutate(logsmr = log(SMR), logweight = log(weight)), 
++     models = c("logsmr ~ logweight + sex*geno_vgll3 + avgTemp + (1|family)", 
++         "logsmr ~ logweight + sex + geno_vgll3 + avgTemp + (1|family)", 
++         "logsmr ~ logweight + sex + avgTemp + (1|family)", "logsmr ~ logweight + avgTemp + (1|family)"), 
++     family = "gaussian", REML = T) %>% view()
+
+########## END script-Ash2021-4-models-mo2.R status: ERROR: unused argument (models = c("logsmr ~ logweight + sex*geno_vgll3 + avgTemp + (1|family)", "logsmr ~ logweight + sex + geno_vgll3 + avgTemp + (1|family)", "logsmr ~ logweight + sex + avgTemp + (1|family)", "logsmr ~ logweight + avgTemp + (1|family)")) time_s: 7.4 ##########
+There were 14 warnings (use warnings() to see them)
+
+
+########## SOURCING script-Ash2021-4-models-condition.R ##########
+
+> mod_condition1 <- lmerTest::lmer(formula = condition ~ 
++     geno_vgll3 * sex + (1 | batch) + (1 | family), data = tb_smr)
+
+> mod_condition1 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: condition ~ geno_vgll3 * sex + (1 | batch) + (1 | family)
+   Data: tb_smr
+
+REML criterion at convergence: -359.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7971 -0.5848  0.0048  0.5266  3.4307 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 0.0016275 0.04034 
+ batch    (Intercept) 0.0004157 0.02039 
+ Residual             0.0036974 0.06081 
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)            1.35261    0.01936  19.53582  69.850   <2e-16 ***
+geno_vgll3LL           0.01558    0.02565  16.21878   0.608    0.552    
+sexmale               -0.01824    0.01468 131.67479  -1.243    0.216    
+geno_vgll3LL:sexmale   0.01764    0.02070 130.93327   0.852    0.396    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) gn_3LL sexmal
+gen_vgll3LL -0.669              
+sexmale     -0.362  0.268       
+gn_vgll3LL:  0.247 -0.371 -0.690
+
+> mod_condition1 %>% confint()
+Computing profile confidence intervals ...
+                            2.5 %     97.5 %
+.sig01                0.023243076 0.06053274
+.sig02                0.005034474 0.03995410
+.sigma                0.053637331 0.06867375
+(Intercept)           1.314913545 1.39003525
+geno_vgll3LL         -0.034518513 0.06538149
+sexmale              -0.047745148 0.01028157
+geno_vgll3LL:sexmale -0.022810171 0.05877434
+
+> mod_condition1 %>% sjPlot::plot_model()
+
+> mod_condition1 %>% anova(type = 3)
+Type III Analysis of Variance Table with Satterthwaite's method
+                  Sum Sq   Mean Sq NumDF   DenDF F value Pr(>F)
+geno_vgll3     0.0038775 0.0038775     1  12.177  1.0487 0.3257
+sex            0.0029048 0.0029048     1 136.196  0.7856 0.3770
+geno_vgll3:sex 0.0026835 0.0026835     1 130.933  0.7258 0.3958
+
+> mod_condition1 %>% residuals() %>% qqnorm()
+
+> mod_condition1 %>% plot()
+
+> MuMIn::r.squaredGLMM(mod_condition1)
+            R2m       R2c
+[1,] 0.03129826 0.3760759
+
+> mod_condition1.5 <- lmerTest::lmer(formula = condition ~ 
++     geno_vgll3 + sex + (1 | batch) + (1 | family), data = tb_smr)
+
+> mod_condition1.5 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: condition ~ geno_vgll3 + sex + (1 | batch) + (1 | family)
+   Data: tb_smr
+
+REML criterion at convergence: -364.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8630 -0.5969  0.0467  0.5418  3.5060 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 0.0016321 0.04040 
+ batch    (Intercept) 0.0004455 0.02111 
+ Residual             0.0036777 0.06064 
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+               Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)    1.348449   0.018853  17.422208  71.525   <2e-16 ***
+geno_vgll3LL   0.023722   0.023832  12.144456   0.995    0.339    
+sexmale       -0.009554   0.010613 136.917397  -0.900    0.370    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) gn_3LL
+gen_vgll3LL -0.639       
+sexmale     -0.272  0.018
+
+> mod_condition1.5 %>% confint()
+Computing profile confidence intervals ...
+                    2.5 %     97.5 %
+.sig01        0.023282207 0.06064545
+.sig02        0.006010042 0.04084092
+.sigma        0.053703302 0.06875125
+(Intercept)   1.311732822 1.38498909
+geno_vgll3LL -0.023192055 0.07041496
+sexmale      -0.030783670 0.01106244
+
+> mod_condition1.5 %>% sjPlot::plot_model()
+
+> mod_condition1.5 %>% anova(type = 2)
+Type II Analysis of Variance Table with Satterthwaite's method
+              Sum Sq   Mean Sq NumDF   DenDF F value Pr(>F)
+geno_vgll3 0.0036437 0.0036437     1  12.144  0.9908 0.3390
+sex        0.0029807 0.0029807     1 136.917  0.8105 0.3696
+
+> mod_condition1.5 %>% residuals() %>% qqnorm()
+
+> mod_condition1.5 %>% plot()
+
+> MuMIn::r.squaredGLMM(mod_condition1.5)
+            R2m       R2c
+[1,] 0.02825458 0.3790525
+
+> mod_condition2 <- lmerTest::lmer(formula = condition ~ 
++     sex + (1 | batch) + (1 | family), data = tb_smr)
+
+> mod_condition2 %>% summary()
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: condition ~ sex + (1 | batch) + (1 | family)
+   Data: tb_smr
+
+REML criterion at convergence: -369.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8886 -0.5720  0.0421  0.5405  3.4759 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 0.0016387 0.04048 
+ batch    (Intercept) 0.0004408 0.02100 
+ Residual             0.0036779 0.06065 
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)   1.360446   0.014502  20.833853  93.810   <2e-16 ***
+sexmale      -0.009747   0.010610 137.065436  -0.919     0.36    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+        (Intr)
+sexmale -0.338
+
+> mod_condition2 %>% confint()
+Computing profile confidence intervals ...
+                   2.5 %     97.5 %
+.sig01       0.024942440 0.06333310
+.sig02       0.005873294 0.04076605
+.sigma       0.053705317 0.06875270
+(Intercept)  1.331288193 1.38917399
+sexmale     -0.030868921 0.01099205
+
+> mod_condition2 %>% sjPlot::plot_model()
+
+> mod_condition2 %>% anova(type = 2)
+Type II Analysis of Variance Table with Satterthwaite's method
+       Sum Sq   Mean Sq NumDF  DenDF F value Pr(>F)
+sex 0.0031042 0.0031042     1 137.06   0.844 0.3599
+
+> mod_condition2 %>% residuals() %>% qqnorm()
+
+> mod_condition2 %>% plot()
+
+> MuMIn::r.squaredGLMM(mod_condition2)
+             R2m       R2c
+[1,] 0.004109753 0.3638101
+
+> AIC(mod_condition1, mod_condition1.5, mod_condition2)
+                 df       AIC
+mod_condition1    7 -345.3839
+mod_condition1.5  6 -352.5843
+mod_condition2    5 -359.2294
+
+> cvms::cross_validate(data = tb_smr %>% mutate(.folds = factor(ifelse(batch %in% 
++     c(1, 3, 5, 7, 9), 1, 2))), formulas = c("condition ~ geno_vgll3*sex + (1|batch) + (1|family)", 
++     "condition ~ geno_vgll3 + sex + (1|batch) + (1|family)", 
++     "condition ~ sex + (1|batch) + (1|family)"), family = "gaussian", 
++     REML = T) %>% view()
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 1
+
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 2
+
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 1
+
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 2
+
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 1
+
+---
+cross_validate(): Package 'merDeriv' needs to be installed to compute confidence intervals
+  for random effect parameters.
+For:
+Fold column: .folds
+Fold: 2
+
+
+########## END script-Ash2021-4-models-condition.R status: ok time_s: 9.2 ##########
+
+
+########## SOURCING script-Ash2021-powerAnalysis.R ##########
+
+> sim_formula <- y ~ b0 + b1 * b2
+
+> sim_model <- function(b0, b1, b2 = 0, c_intercept = 1, 
++     c_b0 = 0, c_b1 = 0, c_b2 = 0, c_b01 = 0, c_b02 = 0, c_b12 = 0, 
++     c_b123 = 0, sd = 1) {
++     result <- c_intercept + b0 * c_b0 + b1 * c_b1 + b2 * c_b2 + 
++         b0 * b1 * c_b01 + b0 * b2 * c_b02 + b1 * b2 * c_b12 + 
++         b0 * b1 * b2 * c_b123 + rnorm(n = length(b0), sd = sd, 
++         mean = 0)
++ }
+
+> sim_dataset <- function(n) {
++     table <- data.frame(b0 = rnorm(n = n, mean = 1.07, sd = 0.3), 
++         b1 = c(rep(0, n/2), rep(1, n/2)), b2 = c(0, 1))
++     return(table)
++ }
+
+> sim_power <- function(n, c_intercept = 1, c_b0 = 0.83, 
++     c_b1 = 0.04, c_b2 = 0, c_b01 = 0, c_b02 = 0, c_b12 = 0, c_b123 = 0, 
++     sd = 0.06, coeff = 20, simuls = 500) {
++     n_success = 0
++     for (i in 1:simuls) {
++         tb <- sim_dataset(n) %>% mutate(y = sim_model(b0, b1, 
++             b2, c_intercept, c_b0, c_b1, c_b2, c_b01, c_b02, 
++             c_b12, c_b123, sd))
++         pval = summary(lm(sim_formula, data = tb))$coefficients[coeff]
++         if (pval < 0.05) 
++             sign = T
++         else sign = F
++         if (sign) 
++             n_success = n_success + 1
++     }
++     return(n_success/simuls)
++ }
+
+> tb_powersim_b1 <- data.frame(n = 150, c_b1 = log10(seq(from = 1, 
++     to = 5, by = 0.25)/100 + 1)) %>% rowwise() %>% mutate(power = sim_power(n = n, 
++     c_b1 = c_b1, c_b12 = -c_b1, coeff = 18, sd = 0.027, simuls = 10000), 
++     ) %>% collect()
+
+> tb_powersim_b12 <- data.frame(n = 150, c_b12 = log10(seq(from = -6, 
++     to = 6, by = 0.5)/100 + 1)) %>% rowwise() %>% mutate(power = sim_power(n = n, 
++     c_b12 = c_b12, c_b1 = 0.04, sd = 0.027, coeff = 20, simuls = 10000)) %>% 
++     collect()
+
+########## END script-Ash2021-powerAnalysis.R status: ok time_s: 231.6 ##########

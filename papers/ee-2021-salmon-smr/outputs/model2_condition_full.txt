@@ -1,0 +1,45 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: condition ~ geno_vgll3 * sex + (1 | batch) + (1 | family)
+   Data: tb_smr
+
+REML criterion at convergence: -359.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7971 -0.5848  0.0048  0.5266  3.4307 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ family   (Intercept) 0.0016275 0.04034 
+ batch    (Intercept) 0.0004157 0.02039 
+ Residual             0.0036974 0.06081 
+Number of obs: 150, groups:  family, 14; batch, 10
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)            1.35261    0.01936  19.53582  69.850   <2e-16 ***
+geno_vgll3LL           0.01558    0.02565  16.21878   0.608    0.552    
+sexmale               -0.01824    0.01468 131.67479  -1.243    0.216    
+geno_vgll3LL:sexmale   0.01764    0.02070 130.93327   0.852    0.396    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) gn_3LL sexmal
+gen_vgll3LL -0.669              
+sexmale     -0.362  0.268       
+gn_vgll3LL:  0.247 -0.371 -0.690
+                            2.5 %     97.5 %
+.sig01                0.023243076 0.06053274
+.sig02                0.005034474 0.03995410
+.sigma                0.053637331 0.06867375
+(Intercept)           1.314913545 1.39003525
+geno_vgll3LL         -0.034518513 0.06538149
+sexmale              -0.047745148 0.01028157
+geno_vgll3LL:sexmale -0.022810171 0.05877434
+Type III Analysis of Variance Table with Satterthwaite's method
+                  Sum Sq   Mean Sq NumDF   DenDF F value Pr(>F)
+geno_vgll3     0.0038775 0.0038775     1  12.177  1.0487 0.3257
+sex            0.0029048 0.0029048     1 136.196  0.7856 0.3770
+geno_vgll3:sex 0.0026835 0.0026835     1 130.933  0.7258 0.3958
