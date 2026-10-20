@@ -1,0 +1,15 @@
+# Report card: Emotional intelligence and happiness in clinical medical students: a cross-sectional multicenter study
+
+- DOI: https://doi.org/10.1002/hsr2.1745
+- Journal: Health Science Reports
+- **Overall verdict: Partial**
+- Verdicts are computed by `scripts/compare.py` against tolerances frozen in `claims.json` before reproduction.
+
+| Claim | Paper says | We got | Difference | Tolerance | Verdict | Notes |
+|---|---|---|---|---|---|---|
+| C1: Compared with men, women had significantly lower happiness (gamma regression, log link) (Table 2, row 'Gender (Men) / Women'; Abstract Results gives 'Exp (B) = 0.966, p-value = 0.04') | 0.966 | 0.96869 | 0.00269 | ±0.0005 | Not reproduced | Multivariable gamma GLM (log link), n=405, term Gender2. Exp(B)=0.9687 SE=0.0157 95%CI=[0.9383, 1.0001] z=-1.957 p=0.05038. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |
+| C2: Age was a significant positive predictor of happiness (per year) (Table 2, continuous variables row 'Age'; Abstract Results ('Exp (B) = 1.016, p-value < 0.001')) | 1.016 | 0.99691 | -0.01909 | ±0.0005 | Not reproduced | Multivariable gamma GLM (log link), n=405, term AGE. Exp(B)=0.9969 SE=0.0050 95%CI=[0.9872, 1.0067] z=-0.622 p=0.5337. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |
+| C3: Extroverts had significantly higher happiness than introverts (Table 2, row 'Personality (Introvert) / Extrovert'; Abstract Results ('Exp (B) = 1.076, p-value < 0.001')) | 1.076 | 1.07730 | 0.00130 | ±0.0005 | Partial | Multivariable gamma GLM (log link), n=405, term Personality_assessment2. Exp(B)=1.0773 SE=0.0175 95%CI=[1.0435, 1.1122] z=4.577 p=4.71e-06. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |
+| C4: Higher perceived stress (VAS) was associated with significantly lower happiness (Table 2, continuous variables row 'Stress level perception'; Abstract Results gives 'Exp (B) = 0.990, p-value = 0.01') | 0.990 | 0.98649 | -0.00351 | ±0.0005 | Partial | Multivariable gamma GLM (log link), n=405, term Living_stress_score. Exp(B)=0.9865 SE=0.0039 95%CI=[0.9790, 0.9941] z=-3.481 p=0.0004989. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |
+| C5: Higher perceived somatic health (VAS 0-100) was associated with significantly higher happiness (Table 2, continuous variables row 'Somatic health level perception'; Abstract Results ('Exp (B) = 1.002, p-value < 0.001')) | 1.002 | 1.00107 | -0.00093 | ±0.0005 | Partial | Multivariable gamma GLM (log link), n=405, term self_physical_examination. Exp(B)=1.0011 SE=0.0005 95%CI=[1.0001, 1.0020] z=2.168 p=0.03017. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |
+| C6: Regulation of own emotions (EI domain) is the strongest EI predictor of happiness (Table 2, EI row 'Regulation of own emotions'; also quoted for the GBRT result in Abstract Results and in the Results paragraph after Table 2 ('Exp (B) = 1.042, p-value < 0.001')) | 1.042 | 1.04029 | -0.00171 | ±0.0005 | Partial | Multivariable gamma GLM (log link), n=405, term Regulation_of_own_emotion. Exp(B)=1.0403 SE=0.0079 95%CI=[1.0250, 1.0558] z=5.223 p=1.762e-07. Pearson dispersion=0.022327; z-based p/CI (Stata-style). |

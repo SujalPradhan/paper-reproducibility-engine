@@ -1,0 +1,24 @@
+2026-10-20T13:57:59+0530 START reproduction of hsr-2023-ei-happiness. Read claims.json, data/README.md, paper/fulltext.xml (Statistical analysis), CLAIMS_SCHEMA.md.
+2026-10-20T13:57:59+0530 CHECKSUM data/EI_and_Happiness_raw_Data_with_coding.sav sha256=4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455 -> MATCHES data/README.md.
+2026-10-20T13:57:59+0530 ENV R 4.6.1 (Homebrew). Installed haven 2.5.5 from CRAN into env/rlib (project-local library); jsonlite 2.0.0 already present.
+2026-10-20T13:57:59+0530 Inspected data: 405 x 90; factor codes/labels match methods_steps (Parrents_living_status label 4 unused; levels 1-3 present).
+2026-10-20T13:57:59+0530 ASSUMPTION: Primary model = ONE multivariable gamma GLM (log link) with all 16 categorical + 8 continuous Table 2 predictors, as pre-registered in claims.json; EI_score_total excluded.
+2026-10-20T13:57:59+0530 ASSUMPTION: Outcome = total_Happiness_score/29 (full precision); Exp(B) invariant to the rescaling.
+2026-10-20T13:57:59+0530 ASSUMPTION: Reference levels = code 1 (or 0 for binary yes/no), per methods_steps; unused factor levels dropped.
+2026-10-20T13:57:59+0530 ASSUMPTION: R glm default IRLS fit; dispersion = Pearson chi2/df (R summary.glm default, also Stata glm default); Wald z-based p and CI exp(b +/- 1.96*se) to mimic Stata; SE of Exp(B) = exp(b)*se(b) (Stata eform delta method). No robust SEs (Stata default).
+2026-10-20T13:57:59+0530 ASSUMPTION: Claim mapping: C1 Gender Female vs Male; C2 AGE; C3 Personality Extrovert vs Introvert; C4 Living_stress_score; C5 self_physical_examination; C6 Regulation_of_own_emotion.
+2026-10-20T13:57:59+0530 ASSUMPTION: GBRT second stage not run (not graded, hyperparameters unreported). No randomness -> no seed.
+2026-10-20T13:58:48+0530 Wrote code/reproduce.R. First run: Rscript --vanilla code/reproduce.R from /tmp (fresh session) -> outputs/results.json, outputs/model_output.txt, outputs/sensitivity.json.
+2026-10-20T13:58:48+0530 Sanity vs Table 1 OK: n=405, M/F 208/197, age 24.21 (1.83), intro/extro 233/172, stress 5.82 (2.32), health 81.8 (16.7), EI 34.66 (6.16), happiness 3.78 (0.85). total/29 vs Adj_total_happiness max abs diff 0.0048 (rounding in deposit).
+2026-10-20T13:58:48+0530 POST-HOC: Fixed a bug in the sensitivity-only reduced model. Prefix matching mapped the term Living_stress_score to the factor Living, so stress was left out of the "EI + significant covariates" model. Now uses exact term->variable mapping. The primary model and the graded claims are unaffected.
+2026-10-20T13:58:48+0530 PROBLEM: pyreadstat not installed in python3, so the optional statsmodels cross-check was skipped.
+2026-10-20T13:58:48+0530 Wrote env/sessionInfo.txt, env/rlib_packages.csv, env/install.R (pinned versions into env/rlib), env/Dockerfile (rocker/r-ver:4.6.1, not built). renv.lock not produced; install.R pins versions instead.
+2026-10-20T13:58:48+0530 FINAL (primary multivariable model, n=405, Pearson dispersion 0.02233, z-based):
+2026-10-20T13:58:48+0530   C1 Gender F vs M: Exp(B)=0.9687 SE=0.0157 CI 0.938-1.000 p=0.0504 (paper 0.966, p=0.037)
+2026-10-20T13:58:48+0530   C2 AGE: Exp(B)=0.9969 SE=0.0050 CI 0.987-1.007 p=0.534 (paper 1.016, p<0.001)
+2026-10-20T13:58:48+0530   C3 Extrovert: Exp(B)=1.0773 SE=0.0175 CI 1.043-1.112 p=4.7e-6 (paper 1.076)
+2026-10-20T13:58:48+0530   C4 Stress: Exp(B)=0.9865 SE=0.0039 CI 0.979-0.994 p=0.0005 (paper 0.990, p=0.008)
+2026-10-20T13:58:48+0530   C5 Somatic health: Exp(B)=1.0011 SE=0.0005 CI 1.0001-1.0020 p=0.030 (paper 1.002, p<0.001)
+2026-10-20T13:58:48+0530   C6 Regulation own emotions: Exp(B)=1.0403 SE=0.0079 CI 1.025-1.056 p=1.8e-7 (paper 1.042)
+2026-10-20T13:58:48+0530 Sensitivity (not graded): univariable models do not match either (e.g. Gender 0.939, Age 1.004 p=0.51, Regulation 1.101). In no specification tried is age positive and significant.
+2026-10-20T13:58:48+0530 compare.py: overall Partial; C1 Not reproduced, C2 Not reproduced, C3-C6 Partial. Script runtime ~0.5-1.3 s. No changes to the analysis after compare.py.
