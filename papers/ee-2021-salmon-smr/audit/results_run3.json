@@ -1,0 +1,112 @@
+{
+  "paper_id": "ee-2021-salmon-smr",
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": true,
+    "runtime_s": 308.4,
+    "software": {
+      "R": "4.6.1",
+      "lme4": "2.0.6",
+      "lmerTest": "3.2.1",
+      "mclust": "6.1.3",
+      "MuMIn": "1.48.19",
+      "cvms": "2.0.1",
+      "tidyverse": "2.0.0",
+      "dplyr": "1.2.1",
+      "lubridate": "1.9.5",
+      "readxl": "1.6.0",
+      "car": "3.1.5",
+      "sjPlot": "2.9.0",
+      "ggeffects": "2.3.2",
+      "janitor": "2.2.1",
+      "glue": "1.8.1",
+      "Matrix": "1.7.5",
+      "jsonlite": "2.0.0"
+    },
+    "seed": 1,
+    "author_scripts": {
+      "script-Ash2021-1-prep-functions.R": {
+        "status": "ok",
+        "time_s": 0
+      },
+      "script-Ash2021-2-prep-data.R": {
+        "status": "ok",
+        "time_s": 3.2
+      },
+      "script-Ash2021-4-outputs-various.R": {
+        "status": "ERROR: error in evaluating the argument 'x' in selecting a method for function 'mean': ℹ In argument: `!str_detect(Phase, \"F\")`.\nCaused by error:\n! object 'Phase' not found",
+        "time_s": 0.1
+      },
+      "script-Ash2021-4-models-mo2.R": {
+        "status": "ERROR: unused argument (models = c(\"logsmr ~ logweight + sex*geno_vgll3 + avgTemp + (1|family)\", \"logsmr ~ logweight + sex + geno_vgll3 + avgTemp + (1|family)\", \"logsmr ~ logweight + sex + avgTemp + (1|family)\", \"logsmr ~ logweight + avgTemp + (1|family)\"))",
+        "time_s": 8.8
+      },
+      "script-Ash2021-4-models-condition.R": {
+        "status": "ok",
+        "time_s": 11.2
+      },
+      "script-Ash2021-powerAnalysis.R": {
+        "status": "ok",
+        "time_s": 274.5
+      }
+    },
+    "notes": "Author scripts sourced from code/author_run (copies of code/author with only axomatic, plotting and multidplyr lines commented out; see steps.log). Author console output: outputs/author_run_output.txt."
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "status": "ok",
+      "value": 0.877721,
+      "p": 2.1473e-53,
+      "ci": [0.829478, 0.928389],
+      "se": 0.0257743,
+      "F": 1159.68,
+      "den_df": 90.5183,
+      "notes": "mod_rate1 (authors' script-Ash2021-4-models-mo2.R), lmerTest REML; term 'log10(weight)'; CI = profile confint(); p/F/DenDF = anova(type=3) Satterthwaite for 'log10(weight)'. N=150 (LL=76, EE=74; male=69, female=81; families=14; batches=10). "
+    },
+    {
+      "id": "C2",
+      "status": "ok",
+      "value": 0.00458465,
+      "p": 0.771812,
+      "ci": [-0.0148933, 0.0240805],
+      "se": 0.0102371,
+      "F": 0.0877059,
+      "den_df": 12.9432,
+      "notes": "mod_rate1 (authors' script-Ash2021-4-models-mo2.R), lmerTest REML; term 'geno_vgll3LL'; CI = profile confint(); p/F/DenDF = anova(type=3) Satterthwaite for 'geno_vgll3'. N=150 (LL=76, EE=74; male=69, female=81; families=14; batches=10). Type III F for the main effect is tested with sum-to-zero-type contrasts by lmerTest, so its p need not equal the t-test p of the treatment-coded coefficient."
+    },
+    {
+      "id": "C3",
+      "status": "ok",
+      "value": -0.0145533,
+      "p": 0.117605,
+      "ci": [-0.0326349, 0.00338775],
+      "se": 0.00924089,
+      "F": 2.48025,
+      "den_df": 136.127,
+      "notes": "mod_rate1 (authors' script-Ash2021-4-models-mo2.R), lmerTest REML; term 'geno_vgll3LL:sexmale'; CI = profile confint(); p/F/DenDF = anova(type=3) Satterthwaite for 'geno_vgll3:sex'. N=150 (LL=76, EE=74; male=69, female=81; families=14; batches=10). Coefficient t-test p = 0.1176. Paper prints p=.117 (Table A1) and p=.69 (Results text)."
+    },
+    {
+      "id": "C4",
+      "status": "ok",
+      "value": 0.0269755,
+      "notes": "sigma(mod_rate1). CV of residuals = sigma*ln(10)*100 = 6.211% (paper: 6.19%). Simple model mod_rate3 sigma = 0.02708 (paper 0.0271). N=150 (LL=76, EE=74; male=69, female=81; families=14; batches=10)"
+    },
+    {
+      "id": "C5",
+      "status": "ok",
+      "value": 0.0155829,
+      "p": 0.325719,
+      "ci": [-0.0345185, 0.0653815],
+      "F": 1.04871,
+      "den_df": 12.1772,
+      "notes": "mod_condition1 (authors' script-Ash2021-4-models-condition.R), REML; condition = weight/(length_standard/10)^3*100 as in code. p/F = anova(type=3) for geno_vgll3; coefficient t-test p = 0.5519. N=150."
+    },
+    {
+      "id": "C6",
+      "status": "ok",
+      "value": 4.25,
+      "notes": "Authors' script-Ash2021-powerAnalysis.R run once, sequentially (multidplyr removed), set.seed(1) before sourcing; 10000 sims per grid point, grid seq(1,5,0.25)%. Smallest grid effect with power>=0.8. Power by grid: 1.00%:0.1086, 1.25%:0.1375, 1.50%:0.1733, 1.75%:0.2253, 2.00%:0.2728, 2.25%:0.3351, 2.50%:0.3988, 2.75%:0.4653, 3.00%:0.5373, 3.25%:0.5911, 3.50%:0.6597, 3.75%:0.7258, 4.00%:0.7718, 4.25%:0.8219, 4.50%:0.8496, 4.75%:0.8886, 5.00%:0.9171. Full table: outputs/power_vgll3.csv"
+    }
+  ]
+}

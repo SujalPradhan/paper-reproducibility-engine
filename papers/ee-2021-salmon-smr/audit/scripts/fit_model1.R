@@ -1,0 +1,13 @@
+# Refit model 1 (and model 2) from tb_smr.csv with whatever lme4/lmerTest is first on .libPaths()
+args <- commandArgs(TRUE)
+d <- read.csv(args[1])
+d$family <- factor(d$family); d$batch <- factor(d$batch)
+d$geno_vgll3 <- factor(d$geno_vgll3); d$sex <- factor(d$sex)
+m <- lmerTest::lmer(log10(SMR) ~ log10(weight) + geno_vgll3*sex + avgTemp + (1|family)+(1|batch), data = d)
+cat("lme4", as.character(packageVersion("lme4")), "lmerTest", as.character(packageVersion("lmerTest")),
+    "Matrix", as.character(packageVersion("Matrix")), "\n")
+print(round(lme4::fixef(m), 6)); cat("sigma", sigma(m), " REMLcrit", lme4::REMLcrit(m), "\n")
+print(anova(m, type = 3), digits = 8)
+print(suppressMessages(confint(m)), digits = 7)
+m2 <- lmerTest::lmer(condition ~ geno_vgll3*sex + (1|batch) + (1|family), data = d)
+print(round(lme4::fixef(m2), 6)); print(anova(m2, type = 3), digits = 7)

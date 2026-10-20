@@ -1,0 +1,16 @@
+
+keep_midnight = FALSE  max|avgTemp2 - committed avgTemp| = 4.44e-14  batches1-8 10.178  batches9-10 10.652  overall 10.279 
+M1: AIC -580.178 sigma 0.02698 CV 6.211% | mass 0.87772 [0.8300, 0.9284] F 1159.682 DenDF 90.518 | geno 0.00458 F 0.0877 DenDF 12.943 p 0.7718 | sex 0.01182 DenDF 129.113 p 0.3230 | temp 0.00571 DenDF 6.834 p 0.6467 | int -0.01455 [-0.0326, 0.0034] DenDF 136.127 p 0.1176 | Intercept -0.8527 [-1.0763, -0.6233]
+ Groups   Name        Std.Dev.
+ family   (Intercept) 0.014150
+ batch    (Intercept) 0.002517
+ Residual             0.026975
+M3 simple: AIC -606.643 sigma 0.02708 CV 6.236% mass 0.88451 F 1317.262 DenDF 91.083 temp 0.00417
+
+keep_midnight = TRUE  max|avgTemp2 - committed avgTemp| = 0.00943  batches1-8 10.175  batches9-10 10.646  overall 10.276 
+M1: AIC -580.185 sigma 0.02698 CV 6.211% | mass 0.87775 [0.8304, 0.9284] F 1160.548 DenDF 90.347 | geno 0.00458 F 0.0878 DenDF 12.943 p 0.7717 | sex 0.01182 DenDF 129.139 p 0.3229 | temp 0.00572 DenDF 6.831 p 0.6477 | int -0.01455 [-0.0326, 0.0034] DenDF 136.132 p 0.1177 | Intercept -0.8527 [-1.0772, -0.6232]
+ Groups   Name        Std.Dev.
+ family   (Intercept) 0.014150
+ batch    (Intercept) 0.002521
+ Residual             0.026975
+M3 simple: AIC -606.652 sigma 0.02708 CV 6.236% mass 0.88452 F 1318.099 DenDF 90.953 temp 0.00419

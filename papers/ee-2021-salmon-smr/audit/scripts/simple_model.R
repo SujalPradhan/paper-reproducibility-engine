@@ -1,0 +1,5 @@
+d <- read.csv(commandArgs(TRUE)[1]); for (k in c("family","batch","geno_vgll3","sex")) d[[k]] <- factor(d[[k]])
+m3 <- lmerTest::lmer(log10(SMR) ~ log10(weight) + avgTemp + (1|family)+(1|batch), data = d)
+print(lme4::fixef(m3), digits=6); cat("sigma", sigma(m3), "\n"); print(anova(m3, type=2), digits=7); print(lme4::VarCorr(m3), digits=5)
+m1 <- lmerTest::lmer(log10(SMR) ~ log10(weight) + geno_vgll3*sex + avgTemp + (1|family)+(1|batch), data = d)
+print(lme4::VarCorr(m1), digits=5); print(AIC(m1, m3))

@@ -1,0 +1,49 @@
+{
+  "id": "7086c679-a8db-531c-971e-b5968c002754",
+  "requirements": "Reproduce claim C6 of \"Standard metabolic rate does not associate with age-at-maturity genotype in juvenile Atlantic salmon\"",
+  "weight": 1,
+  "sub_tasks": [
+    {
+      "id": "6c3af0b2-b4dc-5088-8235-8aa788849753",
+      "requirements": "Fetched the deposited dataset and verified it against the SHA-256 checksums in inputs.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Dataset and Model Acquisition"
+    },
+    {
+      "id": "b52cc4b3-c32d-5133-a125-d177e3211a98",
+      "requirements": "Code implements the analysis described in the paper's methods for this claim (model, exclusions, reference levels)",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Code Development",
+      "finegrained_task_category": "Method Implementation"
+    },
+    {
+      "id": "bac695c7-8e69-5d56-aa21-e22c13b38c75",
+      "requirements": "The submitted script runs end to end from a clean environment and writes report.json",
+      "weight": 1,
+      "sub_tasks": [],
+      "task_category": "Code Execution",
+      "finegrained_task_category": "Experimental Setup"
+    },
+    {
+      "id": "96e60750-2bfa-5543-9560-64395cf06e93",
+      "requirements": "Reported value is within tolerance of the expected value 4.25",
+      "weight": 3,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Evaluation, Metrics & Benchmarking"
+    },
+    {
+      "id": "431a6f9c-fd44-55f4-807e-cd7b4ef54b61",
+      "requirements": "The value is computed from the data, not hard-coded or copied from the paper",
+      "weight": 2,
+      "sub_tasks": [],
+      "task_category": "Result Analysis",
+      "finegrained_task_category": "Logging, Analysis & Presentation"
+    }
+  ],
+  "task_category": null,
+  "finegrained_task_category": null
+}

@@ -4,7 +4,7 @@
   "n_screened": 32,
   "n_gated": 8,
   "n_on_request": 3,
-  "n_tasks": 18,
+  "n_tasks": 24,
   "n_papers_reproduced": 1,
   "n_papers_partial": 3,
   "median_runtime_s": 1,

@@ -32,7 +32,7 @@
   "chart_caption": "Colour is the verdict, not the distance: a dot can sit close to zero and still be 'Not reproduced' when the significance conclusion flips. The axis is logarithmic beyond one unit so small and large misses fit on one scale. Hover or focus a row for both values, the tolerance and the relative difference. {n_not_reproducible} claims could not be computed from the deposited data.",
   "narrative": [
     "<b>Reproducibility is not a yes-or-no property of a paper.</b> Within a single paper, some numbers came back to the last printed digit and others did not. The useful output is the claim-level table, not a badge.",
-    "<b>When a number misses, the paper usually tells you why, if you read closely.</b> In the papers that did not fully reproduce, the reviewers found inconsistencies inside the papers themselves: sample sizes printed differently in different places, standard errors that cannot produce the printed p-values, and Discussion sections that contradict their own tables. These are exactly the signals an editor would want before publication.",
+    "<b>When a number misses, there is usually a specific, checkable reason.</b> Across these papers the auditors found sample sizes printed differently in different places, standard errors that cannot produce the printed p-values, a Discussion that contradicts its own table, a decimal point slipped in a printed statistic, and, in one case, a software update that silently drops a slice of the data when the authors' own code is re-run today. These are exactly the signals an editor would want before publication, and none of them needs the authors to be wrong about their science.",
     "<b>The method is the product, not the verdict count.</b> {n_papers} papers is not a rate, and we picked papers we expected to be tractable. What carries over is the pipeline: claims frozen in git before analysis, scripted re-runs from the original repositories, and an independent auditor who re-ran everything from a clean checkout."
   ],
   "screening_heading": "Finding reproducible papers is itself a signal",
@@ -63,8 +63,8 @@
     },
     "ee-2021-salmon-smr": {
       "short": "Salmon metabolic rate",
-      "finding": "The authors' own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss only at the last printed digit, most likely from newer versions of the mixed-model packages. The run also shows a printed F statistic with a slipped decimal point.",
-      "teaser": "Conclusions hold; three numbers miss only at the last printed digit."
+      "finding": "The authors' own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss at the last printed digit. The auditor found why: on current R, a date-parsing call in the authors' code silently drops every midnight temperature reading. Keeping those rows reproduces the paper's model table exactly.",
+      "teaser": "Conclusions hold. A silent date-parsing change explains the last-digit misses."
     },
     "hsr-2023-ei-happiness": {
       "short": "Medical students' happiness",
@@ -75,7 +75,8 @@
   "audit": {
     "cam4-2024-hpd": "A separate agent re-downloaded the data, re-ran the script three times with identical results, and recomputed the estimates by an independent route (direct GLMM and the meta package). It agreed with every verdict. It noted that the paper's Table uses z-based intervals while our script uses t-based ones (only intervals and p-values differ), and that the paper's tumour-type intervals match no standard test.",
     "ee-2022-roedeer-sexratio": "A separate agent re-ran everything three times with identical results and recomputed every claim in Python to five or more decimals. It agreed with every verdict. It found that the data give exactly the sample size printed in the paper's Tables when no year filter is applied, so the different number in the Abstract is probably a transposition.",
-    "hsr-2023-ei-happiness": "A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total."
+    "hsr-2023-ei-happiness": "A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total.",
+    "ee-2021-salmon-smr": "A separate agent re-downloaded the data and the authors' scripts, confirmed the scripts are byte-identical to the deposit and that our only edits were to plotting lines, and re-ran everything three times with identical results. It agreed with every verdict. It ruled out package versions as the cause of the small gaps and traced them to a date-parsing change that drops midnight readings. It also found a bug in our environment installer, which we fixed."
   },
   "tools": [
     {

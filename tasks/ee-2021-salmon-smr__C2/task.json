@@ -1,0 +1,88 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Standard metabolic rate does not associate with age-at-maturity genotype in juvenile Atlantic salmon",
+  "capsule_id": "ee-2021-salmon-smr__C2",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8408) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the fixed-effect estimate vgll3(LL); type III Satterthwaite F-test, in log10(mg O2 h^-1) behind the claim \"No significant effect of vgll3 genotype (LL vs EE reference) on mass-adjusted log10 SMR in the full model\" (paper location: Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers).",
+  "results": [
+    {
+      "Report the fixed-effect estimate vgll3(LL); type III Satterthwaite F-test, in log10(mg O2 h^-1) behind the claim \"No significant effect of vgll3 genotype (LL vs EE reference) on mass-adjusted log10 SMR in the full model\" (paper location: Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers).": 0.00458465
+    },
+    {
+      "Report the fixed-effect estimate vgll3(LL); type III Satterthwaite F-test, in log10(mg O2 h^-1) behind the claim \"No significant effect of vgll3 genotype (LL vs EE reference) on mass-adjusted log10 SMR in the full model\" (paper location: Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers).": 0.00458465
+    },
+    {
+      "Report the fixed-effect estimate vgll3(LL); type III Satterthwaite F-test, in log10(mg O2 h^-1) behind the claim \"No significant effect of vgll3 genotype (LL vs EE reference) on mass-adjusted log10 SMR in the full model\" (paper location: Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers).": 0.00458465
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8408",
+  "difficulty": "hard",
+  "paper_value": "0.004",
+  "expected_value": 0.00458465,
+  "ground_truth_basis": "independent re-run; paper's printed value differs (verdict: Partial)",
+  "verdict": "Partial",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "reported_precision",
+      "reason": "Deterministic. 3 dp gives ±0.0005. The estimate is close to 0, so also judge by sign of CI (spans 0) and p > 0.05."
+    },
+    "abs": 0.0005,
+    "frozen_tag": "claims-frozen-ee-2021-salmon-smr"
+  },
+  "source_location": "Appendix 2, Table A1(A), row 'vgll3 (LL)'. Results paragraph 2 says 'The vgll3 genotype had no significant effect on SMR (Figure 3)', and the Abstract states the same conclusion without numbers",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.5255061",
+      "license": "CC BY 4.0",
+      "files": [
+        "data-Ash2021-respirometry.txt",
+        "data-Ash2021-sampled-fish.xlsx",
+        "data-Ash2021-genotypes.txt",
+        "data-Ash2021-tank-densities.txt",
+        "data-Ash2021-temp-loggers-small-tanks-Dec2020.txt",
+        "README-Ash2021-description-of-files.txt"
+      ]
+    },
+    "files": [
+      {
+        "name": "README-Ash2021-description-of-files.txt",
+        "sha256": "43bad2f5963bd68d729041a6704a7a31c6699028a0955d6c1c6d3f3ab314718e",
+        "bytes": 4744
+      },
+      {
+        "name": "data-Ash2021-genotypes.txt",
+        "sha256": "bda6684ee43aee8dedf2af87115679bccba48838fe3796eb566699bc074b60dd",
+        "bytes": 2258
+      },
+      {
+        "name": "data-Ash2021-respirometry.txt",
+        "sha256": "deac6d387e99829ccb16bba819fde127d670388f87185eac26b7a14564547ee3",
+        "bytes": 1635924
+      },
+      {
+        "name": "data-Ash2021-sampled-fish.xlsx",
+        "sha256": "f5ef8ac895a88bdb4deb2037f61c677d14fa6020f2f28726edad817fcb48ee6c",
+        "bytes": 24135
+      },
+      {
+        "name": "data-Ash2021-tank-densities.txt",
+        "sha256": "dbb9f9d2b410793b6d14da989cd6547055053f66f6ffaecf8e3da46c7164c3fd",
+        "bytes": 110
+      },
+      {
+        "name": "data-Ash2021-temp-loggers-small-tanks-Dec2020.txt",
+        "sha256": "6965ab2feded5a7b37619d7cc66c2b2b6222c87f6ac9555cd6347ac3677c4521",
+        "bytes": 7783119
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2021-salmon-smr/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}

@@ -16,7 +16,7 @@
 <section class="hero">
 <p class="kicker">Ecology and Evolution · 2021 · CC BY 4.0</p>
 <h1>Standard metabolic rate does not associate with age-at-maturity genotype in juvenile Atlantic salmon</h1>
-<p class="lead">The authors&#x27; own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss only at the last printed digit, most likely from newer versions of the mixed-model packages. The run also shows a printed F statistic with a slipped decimal point.</p>
+<p class="lead">The authors&#x27; own code ran with only plotting lines disabled, and every conclusion holds: the scaling exponent, the absent genotype effect and the power analysis all come back. Three numbers miss at the last printed digit. The auditor found why: on current R, a date-parsing call in the authors&#x27; code silently drops every midnight temperature reading. Keeping those rows reproduces the paper&#x27;s model table exactly.</p>
 <p><span class="badge warn"><span aria-hidden="true">≈</span> Partial</span></p>
 <p class="links"><a href="https://doi.org/10.1002/ece3.8408">Article (doi:10.1002/ece3.8408)</a> · <a href="https://doi.org/10.5281/zenodo.5255061">Dataset (CC BY 4.0)</a> · <a href="https://doi.org/10.5281/zenodo.5255061">Authors' code</a> · <a href="https://github.com/SujalPradhan/paper-reproducibility-engine/tree/main/papers/ee-2021-salmon-smr">Our reproduction files</a></p>
 </section>
@@ -36,7 +36,7 @@
 <li>Script: <a href="https://github.com/SujalPradhan/paper-reproducibility-engine/blob/main/papers/ee-2021-salmon-smr/code/reproduce.R"><code>code/reproduce.R</code></a> · runtime 260.6 s</li>
 <li>Software: R 4.6.1, lme4 2.0.6, lmerTest 3.2.1, mclust 6.1.3, MuMIn 1.48.19, cvms 2.0.1, tidyverse 2.0.0, dplyr 1.2.1, lubridate 1.9.5, readxl 1.6.0, car 3.1.5, sjPlot 2.9.0, ggeffects 2.3.2, janitor 2.2.1, glue 1.8.1, Matrix 1.7.5, jsonlite 2.0.0</li>
 <li>Claims and tolerances were frozen in git (tag <code>claims-frozen-ee-2021-salmon-smr</code>) before any analysis ran.</li>
-
+<li>Independent audit: A separate agent re-downloaded the data and the authors&#x27; scripts, confirmed the scripts are byte-identical to the deposit and that our only edits were to plotting lines, and re-ran everything three times with identical results. It agreed with every verdict. It ruled out package versions as the cause of the small gaps and traced them to a date-parsing change that drops midnight readings. It also found a bug in our environment installer, which we fixed.</li>
 </ul>
 <details><summary>Step log</summary><pre>2026-10-20 13:57:27 START reproduction of ee-2021-salmon-smr (Reproducer agent)
 2026-10-20 14:00:27 Read claims.json (frozen, not edited), data/README.md, paper/fulltext.xml, code/author/*.R (Windows-1252), CLAIMS_SCHEMA.md.
@@ -71,7 +71,9 @@
 2026-10-20 14:09:41 FINAL C5: condition vgll3(LL) 0.015583, CI [-0.034519, 0.065382], F 1.0487 DenDF 12.177, p 0.3257 (paper 0.016 [-0.035,0.065], F 1.049, DenDF 12.177, p .326) - exact at printed precision.
 2026-10-20 14:09:41 FINAL C6: seed 1, 10000 sims/grid point; power at 4.00% = 0.7718, at 4.25% = 0.8219 -&gt; MDE 4.25% (paper 4.25%).
 2026-10-20 14:09:41 SENSITIVITY S1 (pre-planned): mclust 5.4.7 gives SMR identical to mclust 6.1.3 for all 150 fish (max abs diff 5e-16) and identical model results; mclust version is not the source of the small model-1 gaps. S2 (post-hoc diagnostic): TZ=Europe/Helsinki changes nothing. Remaining small gaps in model 1 (e.g. DenDF 90.518 vs 90.347, F 1159.68 vs 1160.55, 3rd-decimal estimates) are unexplained; candidates are lme4/lmerTest version differences (1.1-26/3.1-3 vs 2.0-6/3.2-1) or minor data-prep differences in the authors&#x27; 2021 environment (dplyr/lubridate/readxl). Not pursued further (time box).
-2026-10-20 14:09:45 COMPARE: compare.py run once -&gt; overall Partial; C1 Reproduced, C2 Partial (0.00458 vs 0.004), C3 Partial (-0.01455 vs -0.014), C4 Partial (0.026975 vs 0.0269), C5 Reproduced, C6 Reproduced. p-values/CIs/significance conclusions for C2/C3 match Table A1. No tuning done after seeing verdicts. END.</pre></details>
+2026-10-20 14:09:45 COMPARE: compare.py run once -&gt; overall Partial; C1 Reproduced, C2 Partial (0.00458 vs 0.004), C3 Partial (-0.01455 vs -0.014), C4 Partial (0.026975 vs 0.0269), C5 Reproduced, C6 Reproduced. p-values/CIs/significance conclusions for C2/C3 match Table A1. No tuning done after seeing verdicts. END.
+2026-10-20T15:45:00 CORRECTION (lead, after independent audit; see audit.md): the earlier statement that the &quot;5377 failed to parse&quot; warning concerns respirometry.txt was wrong. The auditor traced it to the authors&#x27; ymd_hms() call on the temperature log: on R &gt;= 4.3 it drops all 5,377 midnight readings, which shifts avgTemp. Keeping those rows reproduces every Table A1 F, DenDF and AIC exactly; no graded value moves by more than 3e-5. The graded results remain those of the authors&#x27; code run as-is (pre-registered). The lme4/lmerTest version hypothesis was tested by the auditor and not supported.
+2026-10-20T15:45:00 FIX (lead, after audit): env/install.R now puts env/Rlib on .libPaths() and compares versions with package_version(); it previously failed on a clean checkout. Analysis code unchanged.</pre></details>
 </section>
 <nav class="pager"><a href="ee-2022-roedeer-sexratio.html">← Previous paper</a><a href="../index.html">Overview</a><a href="hsr-2023-ei-happiness.html">Next paper →</a></nav>
 

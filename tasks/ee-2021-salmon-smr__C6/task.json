@@ -1,0 +1,90 @@
+{
+  "field": "Life Sciences",
+  "language": "R",
+  "capsule_title": "Standard metabolic rate does not associate with age-at-maturity genotype in juvenile Atlantic salmon",
+  "capsule_id": "ee-2021-salmon-smr__C6",
+  "task_prompt": "Using only the paper (doi:10.1002/ece3.8408) and the dataset in inputs.json, reproduce the analysis behind this claim and save report.json with the answer: Report the simulated minimum detectable effect (power >= 0.8, alpha 0.05, 10000 simulations per grid point), in % change in mass-adjusted SMR behind the claim \"Post hoc power analysis: minimum vgll3 effect size on mass-adjusted (non-log) SMR detectable with 80% power\" (paper location: Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2).",
+  "results": [
+    {
+      "Report the simulated minimum detectable effect (power >= 0.8, alpha 0.05, 10000 simulations per grid point), in % change in mass-adjusted SMR behind the claim \"Post hoc power analysis: minimum vgll3 effect size on mass-adjusted (non-log) SMR detectable with 80% power\" (paper location: Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2).": 4.25
+    },
+    {
+      "Report the simulated minimum detectable effect (power >= 0.8, alpha 0.05, 10000 simulations per grid point), in % change in mass-adjusted SMR behind the claim \"Post hoc power analysis: minimum vgll3 effect size on mass-adjusted (non-log) SMR detectable with 80% power\" (paper location: Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2).": 4.25
+    },
+    {
+      "Report the simulated minimum detectable effect (power >= 0.8, alpha 0.05, 10000 simulations per grid point), in % change in mass-adjusted SMR behind the claim \"Post hoc power analysis: minimum vgll3 effect size on mass-adjusted (non-log) SMR detectable with 80% power\" (paper location: Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2).": 4.25
+    }
+  ],
+  "capsule_doi": "https://doi.org/10.1002/ece3.8408",
+  "difficulty": "hard",
+  "paper_value": "4.25%",
+  "expected_value": 4.25,
+  "ground_truth_basis": "paper and independent re-run agree",
+  "verdict": "Reproduced",
+  "tolerance": {
+    "rule": "PI95_or_tol",
+    "pre_registered": {
+      "type": "abs",
+      "value": 0.25,
+      "partial_rel": 0.25,
+      "reason": "Stochastic Monte Carlo (rnorm, no seed in author script). The result is the first point at which power reaches 0.8 on a discrete grid with step 0.25% (seq(1,5,by=0.25) in script-Ash2021-powerAnalysis.R). Near the 0.8 threshold, Monte Carlo error can move the crossing by one grid step, so ±1 grid step (0.25 percentage points) is allowed. The companion interaction value '6%' (grid step 0.5%) is not scored as a separate claim."
+    },
+    "abs": 0.25,
+    "frozen_tag": "claims-frozen-ee-2021-salmon-smr"
+  },
+  "source_location": "Results paragraph 3 ('minimum effect size of 4.25% and 6% ... for the vgll3 and the vgll3:sex effects'), Discussion paragraph 1, Appendix 2 Figure A2",
+  "data_sources": {
+    "dataset": {
+      "url": "https://doi.org/10.5281/zenodo.5255061",
+      "license": "CC BY 4.0",
+      "files": [
+        "data-Ash2021-respirometry.txt",
+        "data-Ash2021-sampled-fish.xlsx",
+        "data-Ash2021-genotypes.txt",
+        "data-Ash2021-tank-densities.txt",
+        "data-Ash2021-temp-loggers-small-tanks-Dec2020.txt",
+        "README-Ash2021-description-of-files.txt"
+      ]
+    },
+    "files": [
+      {
+        "name": "README-Ash2021-description-of-files.txt",
+        "sha256": "43bad2f5963bd68d729041a6704a7a31c6699028a0955d6c1c6d3f3ab314718e",
+        "bytes": 4744
+      },
+      {
+        "name": "data-Ash2021-genotypes.txt",
+        "sha256": "bda6684ee43aee8dedf2af87115679bccba48838fe3796eb566699bc074b60dd",
+        "bytes": 2258
+      },
+      {
+        "name": "data-Ash2021-respirometry.txt",
+        "sha256": "deac6d387e99829ccb16bba819fde127d670388f87185eac26b7a14564547ee3",
+        "bytes": 1635924
+      },
+      {
+        "name": "data-Ash2021-sampled-fish.xlsx",
+        "sha256": "f5ef8ac895a88bdb4deb2037f61c677d14fa6020f2f28726edad817fcb48ee6c",
+        "bytes": 24135
+      },
+      {
+        "name": "data-Ash2021-tank-densities.txt",
+        "sha256": "dbb9f9d2b410793b6d14da989cd6547055053f66f6ffaecf8e3da46c7164c3fd",
+        "bytes": 110
+      },
+      {
+        "name": "data-Ash2021-temp-loggers-small-tanks-Dec2020.txt",
+        "sha256": "6965ab2feded5a7b37619d7cc66c2b2b6222c87f6ac9555cd6347ac3677c4521",
+        "bytes": 7783119
+      }
+    ]
+  },
+  "env": {
+    "language": "R",
+    "lock": "papers/ee-2021-salmon-smr/env/"
+  },
+  "audit": {
+    "status": "audited",
+    "report": "audit.md"
+  }
+}
