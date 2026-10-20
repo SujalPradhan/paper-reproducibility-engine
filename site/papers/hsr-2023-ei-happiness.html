@@ -36,7 +36,7 @@
 <li>Script: <a href="https://github.com/SujalPradhan/paper-reproducibility-engine/blob/main/papers/hsr-2023-ei-happiness/code/reproduce.R"><code>code/reproduce.R</code></a> · runtime 0.46 s</li>
 <li>Software: R 4.6.1, haven 2.5.5, jsonlite 2.0.0</li>
 <li>Claims and tolerances were frozen in git (tag <code>claims-frozen-hsr-2023-ei-happiness</code>) before any analysis ran.</li>
-
+<li>Independent audit: A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total.</li>
 </ul>
 <details><summary>Step log</summary><pre>2026-10-20T13:57:59+0530 START reproduction of hsr-2023-ei-happiness. Read claims.json, data/README.md, paper/fulltext.xml (Statistical analysis), CLAIMS_SCHEMA.md.
 2026-10-20T13:57:59+0530 CHECKSUM data/EI_and_Happiness_raw_Data_with_coding.sav sha256=4eb2f96328154cf5f3b96c8572f9eb9f5fec664ceb40fa89fddb24ac333a6455 -&gt; MATCHES data/README.md.

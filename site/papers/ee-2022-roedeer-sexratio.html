@@ -36,7 +36,7 @@
 <li>Script: <a href="https://github.com/SujalPradhan/paper-reproducibility-engine/blob/main/papers/ee-2022-roedeer-sexratio/code/reproduce.R"><code>code/reproduce.R</code></a> · runtime 1.42 s</li>
 <li>Software: R 4.6.1, metafor 5.2.1, jsonlite 2.0.0, stats 4.6.1</li>
 <li>Claims and tolerances were frozen in git (tag <code>claims-frozen-ee-2022-roedeer-sexratio</code>) before any analysis ran.</li>
-
+<li>Independent audit: A separate agent re-ran everything three times with identical results and recomputed every claim in Python to five or more decimals. It agreed with every verdict. It found that the data give exactly the sample size printed in the paper&#x27;s Tables when no year filter is applied, so the different number in the Abstract is probably a transposition.</li>
 </ul>
 <details><summary>Step log</summary><pre>2026-10-20T08:27:24Z Started reproduction of ee-2022-roedeer-sexratio. Read claims.json, data/README.md, paper/fulltext.xml (Methods 2.1, Table 1, Results 3.2), CLAIMS_SCHEMA.md.
 2026-10-20T08:27:24Z CHECKSUM: SHA-256 of Sex_BW.csv, Metafor_roe_sex.csv, Temp_Data_comma_sep.csv all match data/README.md (shasum -a 256). Script re-verifies at runtime.

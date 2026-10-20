@@ -36,7 +36,7 @@
 <li>Script: <a href="https://github.com/SujalPradhan/paper-reproducibility-engine/blob/main/papers/cam4-2024-hpd/code/reproduce.R"><code>code/reproduce.R</code></a> · runtime 1.5 s</li>
 <li>Software: R 4.6.1, metafor 5.2.1, meta 8.5.0, lme4 2.0.6, readxl 1.6.0, jsonlite 2.0.0</li>
 <li>Claims and tolerances were frozen in git (tag <code>claims-frozen-cam4-2024-hpd</code>) before any analysis ran.</li>
-
+<li>Independent audit: A separate agent re-downloaded the data, re-ran the script three times with identical results, and recomputed the estimates by an independent route (direct GLMM and the meta package). It agreed with every verdict. It noted that the paper&#x27;s Table uses z-based intervals while our script uses t-based ones (only intervals and p-values differ), and that the paper&#x27;s tumour-type intervals match no standard test.</li>
 </ul>
 <details><summary>Step log</summary><pre>2026-10-20T14:00:26 START reproduction of cam4-2024-hpd (Reproducer). Read claims.json, data/README.md, paper/fulltext.xml (Methods + Table 1), CLAIMS_SCHEMA.md.
 2026-10-20T14:00:26 CHECKSUM data/updated_extracted_data_HPD_22.08.29.xlsx sha256=6535d5b38afba2ea4473dea9abb29f00c819824f1ff2fa3cf56472da210b0f3a size=126259 -&gt; MATCHES README.

@@ -72,7 +72,11 @@
       "teaser": "Directions mostly hold; the age effect flips."
     }
   },
-  "audit": {},
+  "audit": {
+    "cam4-2024-hpd": "A separate agent re-downloaded the data, re-ran the script three times with identical results, and recomputed the estimates by an independent route (direct GLMM and the meta package). It agreed with every verdict. It noted that the paper's Table uses z-based intervals while our script uses t-based ones (only intervals and p-values differ), and that the paper's tumour-type intervals match no standard test.",
+    "ee-2022-roedeer-sexratio": "A separate agent re-ran everything three times with identical results and recomputed every claim in Python to five or more decimals. It agreed with every verdict. It found that the data give exactly the sample size printed in the paper's Tables when no year filter is applied, so the different number in the Abstract is probably a transposition.",
+    "hsr-2023-ei-happiness": "A separate agent re-ran the script three times with identical results and refitted the model in Python, matching to six decimals. It agreed with every verdict and flagged that the women-versus-men claim fails only narrowly on significance. It also found that one happiness item correlates negatively with the rest of the scale, which suggests a scoring problem in the deposited total."
+  },
   "tools": [],
   "task_example": null,
   "footnotes": [
@@ -80,6 +84,7 @@
     "Dryad, the most common data repository for Wiley ecology papers, blocks anonymous file downloads (HTTP 401) as of 20 October 2026. Machine access needs an API token.",
     "Verdicts are produced by <code>scripts/compare.py</code>; its rules and unit tests were committed before any reproduction ran.",
     "Article text was retrieved as JATS XML from Europe PMC. Wiley Online Library blocks scripted access.",
-    "Prior art: CODECHECK, ReScience C, the Institute for Replication, the Odum Institute (AJPS) and SEER-Repro (arXiv 2610.23845) have reproduced some Wiley papers. None covers Wiley's ecology and health portfolio systematically. See landscape.md."
+    "Prior art: CODECHECK, ReScience C, the Institute for Replication, the Odum Institute (AJPS) and SEER-Repro (arXiv 2610.23845) have reproduced some Wiley papers. None covers Wiley's ecology and health portfolio systematically. See landscape.md.",
+    "Limitation we found in our own process: the claims freeze is verifiable in git, but the reproducers' statement that each assumption was logged before results were seen is self-reported (code, log and outputs were committed together). The next version commits the analysis plan before the first run."
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "paper_id": "cam4-2024-hpd",
+  "run": {
+    "script": "code/reproduce.R",
+    "used_author_code": false,
+    "runtime_s": 1.5,
+    "software": {
+      "R": "4.6.1",
+      "metafor": "5.2.1",
+      "meta": "8.5.0",
+      "lme4": "2.0.6",
+      "readxl": "1.6.0",
+      "jsonlite": "2.0.0"
+    },
+    "seed": null
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "status": "ok",
+      "value": 12.3984744,
+      "ci": [10.20285228, 14.98772577],
+      "notes": "Pooled incidence % from rma.glmm(PLO, ML, test='t'), back-transformed; t-based 95% CI 10.2-15.0%, 95% PI 4.5-29.6%, I2=78.7%, k=34, events/N=558/4117."
+    },
+    {
+      "id": "C2",
+      "status": "ok",
+      "value": 119.31950295,
+      "p": 1.0602315e-11,
+      "notes": "Wald-type heterogeneity Q (QE.Wld) from rma.glmm, df=33. LRT Q=141.88 (sensitivity.json). meta::metaprop Wald Q=119.32; meta I2=72.3% (metafor I2=78.7%)."
+    },
+    {
+      "id": "C3",
+      "status": "ok",
+      "value": 10.82650882,
+      "p": 0.00052302,
+      "ci": [3.12836353, 37.46792598],
+      "notes": "Adjusted OR AGC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 3.13-37.47, df=27."
+    },
+    {
+      "id": "C4",
+      "status": "ok",
+      "value": 7.99367842,
+      "p": 0.00139941,
+      "ci": [2.41237831, 26.48792449],
+      "notes": "Adjusted OR HCC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 2.41-26.49, df=27."
+    },
+    {
+      "id": "C5",
+      "status": "ok",
+      "value": 7.14121972,
+      "p": 0.00169279,
+      "ci": [2.24526164, 22.71317437],
+      "notes": "Adjusted OR NSCLC vs RCC from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 2.25-22.71, df=27."
+    },
+    {
+      "id": "C6",
+      "status": "ok",
+      "value": 1.81949972,
+      "p": 0.03332325,
+      "ci": [1.05227295, 3.14612215],
+      "notes": "Adjusted OR definition B vs C from rma.glmm(PLO, ML, test='t', mods=~histology+definition; ref RCC, C); t-based 95% CI 1.05-3.15, df=27."
+    }
+  ]
+}
