@@ -21,6 +21,6 @@ Pitch: 2026-10-21 17:30 IST · Freeze: 2026-10-21 15:00 IST
 | id | journal | stage | verdict | issue |
 |---|---|---|---|---|
 | cam4-2024-hpd | Cancer Medicine | reproducing | — | #1 |
-| ee-2022-roedeer-sexratio | Ecology and Evolution | reproducing | — | #2 |
+| ee-2022-roedeer-sexratio | Ecology and Evolution | audit | Partial (pre-audit): 2 reproduced, 2 partial, 2 not | #2 |
 | ee-2021-salmon-smr | Ecology and Evolution | reproducing | — | #3 |
-| hsr-2023-ei-happiness | Health Science Reports | reproducing | — | #4 |
+| hsr-2023-ei-happiness | Health Science Reports | audit | Partial (pre-audit): 4 partial, 2 not (age direction flips) | #4 |
